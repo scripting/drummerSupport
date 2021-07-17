@@ -16,7 +16,11 @@ An Electron version of Drummer for the Mac is coming. I am using it every day to
 
 <a href="http://scripting.com/code/docserver/?verb=op.go">Verb docs</a> are available now. 
 
-### Deal-stopper bug reports only for now...
+### Only deal-stopper bug reports for now...
 
-The only bug reports I want at this time are problems that are preventing you from getting work done. If something is broken and in your way, report it. Say what you were doing, what you expected to happen, what actually happen. Screen shots are good. Remember we're not there with you.
+The only <a href="https://github.com/scripting/drummerTesting/issues">bug reports</a> I want at this time are problems that are preventing you from getting work done. 
+
+Say what you were doing, what you expected to happen, what actually happen. Screen shots are good. Remember we're not there with you.
+
+You can post updates on what you're doing as <a href="https://github.com/scripting/drummerTesting/issues">issues</a>. 
 
