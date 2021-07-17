@@ -8,7 +8,7 @@ As a member of this site you are invited to give <a href="http://drummer.scripti
 
 You can do that now, or later -- no rush. This product isn't shipping for a while.
 
-I invited you because some of the examples I'm posting will probably interest you. We're basically retracing the steps that led to Frontier from a user scripting standpoint. Only this time the language is JavaScript, and the verb set applies to files and apps that exist in the cloud. 
+I invited you because some of the examples I'm posting will probably interest you. We're basically retracing the steps that led to Frontier from a user scripting standpoint. Only this time the language is JavaScript, and the <a href="http://scripting.com/code/docserver/?verb=op.go">verb set</a> applies to files and apps that exist in the cloud. 
 
 There are new features in the outliner and more to come. The tabs system is new. Bookmarks are new, and they have surprising power -- they point to individual headlines in outlines, they're like permalinks. I think this method will lead us to cloning, I think we're actually pretty close now. I was never that big a fan of cloning, but people really like it, at some point it should happen. 
 
