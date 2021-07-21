@@ -2,6 +2,10 @@
 
 A private site for support of early Drummer users.
 
+### What is Drummer?
+
+Drummer is a web scripting environment built around outlining and JavaScript.
+
 ### Quick overview
 
 As a member of this site you are invited to give <a href="http://drummer.scripting.com/">Drummer</a> a try.
