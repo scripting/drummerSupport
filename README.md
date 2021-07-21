@@ -6,6 +6,8 @@ A private site for support of early Drummer users.
 
 Drummer is a web scripting environment built around outlining and JavaScript.
 
+Most of the language and runtime are not documented yet, but the <a href="http://scripting.com/code/docserver/?verb=dialog.about">verbs</a> are. 
+
 ### Quick overview
 
 As a member of this site you are invited to give <a href="http://drummer.scripting.com/">Drummer</a> a try.
