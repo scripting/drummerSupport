@@ -24,13 +24,13 @@ An Electron version of Drummer for the Mac is coming. I am using it every day to
 
 ### Docs
 
-Drummer is very much in development mode, but a some of the docs are already available. 
-
-* <a href="http://docserver.scripting.com/">DocServer</a> -- a collection of docs for the verb set.
+Drummer is very much in development mode, but some of the docs are already available. 
 
 * <a href="http://docserver.scripting.com/drummer/scripting.opml">Scripting in Drummer</a>
 
 * <a href="http://docserver.scripting.com/drummer/instantOutlines.opml">Instant outlines</a>
+
+* <a href="http://docserver.scripting.com/">DocServer</a> -- a collection of docs for the verb set.
 
 * <a href="http://drummer.scripting.com/davewiner/drummer/changeNotes.opml">Change notes</a> (opens in Drummer)
 
