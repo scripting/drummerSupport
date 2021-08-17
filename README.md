@@ -28,6 +28,8 @@ Drummer is very much in development mode, but some of the docs are already avail
 
 * <a href="http://docserver.scripting.com/drummer/scripting.opml">Scripting in Drummer</a>
 
+* <a href="http://docserver.scripting.com/drummer/blogging.opml">Blogging in Drummer</a>
+
 * <a href="http://docserver.scripting.com/drummer/instantOutlines.opml">Instant outlines</a>
 
 * <a href="http://docserver.scripting.com/">DocServer</a> -- a collection of docs for the verb set.
