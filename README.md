@@ -26,6 +26,8 @@ An Electron version of Drummer for the Mac is coming. I am using it every day to
 
 Drummer is very much in development mode, but some of the docs are already available. 
 
+* <a href="http://docserver.scripting.com/drummer/files.opml">Files and the File menu</a>
+
 * <a href="http://docserver.scripting.com/drummer/scripting.opml">Scripting in Drummer</a>
 
 * <a href="http://docserver.scripting.com/drummer/blogging.opml">Blogging in Drummer</a>
