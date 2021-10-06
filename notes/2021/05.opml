@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="2.0">
+	<head>
+		<title>notes/2021/05.md</title>
+		<dateModified>&lt;%dateModified%></dateModified>
+		<expansionState></expansionState>
+		<vertScrollState>1</vertScrollState>
+		<windowTop>300</windowTop>
+		<windowLeft>700</windowLeft>
+		<windowBottom>900</windowBottom>
+		<windowRight>1500</windowRight>
+		</head>
+	<body created="Wed, 21 Jul 2021 18:57:36 GMT" text="notes/2021/05.mdo">
+		<outline created="Mon, 31 May 2021 13:13:30 GMT" name="31" text="May 31" type="calendarDay">
+			<outline created="Mon, 31 May 2021 19:54:04 GMT" text="Carry forward" type="outline">
+				<outline created="Tue, 01 Jun 2021 13:06:36 GMT" text="Find command -- stack overflow" type="outline"></outline>
+				<outline created="Mon, 31 May 2021 19:56:35 GMT" text="Settings command!">
+					<outline created="Mon, 31 May 2021 19:58:08 GMT" text="Max open tabs?">
+						<outline created="Mon, 31 May 2021 19:58:15 GMT" text="tells you how much horiz space to alloc to each tab."></outline>
+						</outline>
+					</outline>
+				<outline created="Fri, 28 May 2021 14:20:09 GMT" text="the tabs could occupy less horiz space">
+					<outline created="Fri, 28 May 2021 14:20:21 GMT" text="would allow more files to be usable at once"></outline>
+					</outline>
+				<outline created="Mon, 31 May 2021 13:13:31 GMT" text="update davewiner.com" type="outline">
+					<outline created="Mon, 31 May 2021 13:13:41 GMT" text="it should be exactly what's on the about page on scripting.com"></outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 31 May 2021 19:50:34 GMT" text="Change tagline on Twitter account" type="outline">
+				<outline created="Mon, 31 May 2021 19:51:34 GMT" text="New">
+					<outline created="Mon, 31 May 2021 19:50:46 GMT" text="Developer of outliners, blogging tools, RSS aggregators, podcasting."></outline>
+					</outline>
+				<outline created="Mon, 31 May 2021 19:51:03 GMT" text="Previously: ">
+					<outline created="Mon, 31 May 2021 19:51:29 GMT" text="On the net since mid-70s. Started two Silicon Valley companies. Wrote for Wired. Fellow at Harvard, NYU. Founder of podcasting, blogging, RSS. Open web."></outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 31 May 2021 14:00:59 GMT" text="instant outline url for scripting news" type="outline">
+				<outline created="Mon, 31 May 2021 14:01:06 GMT" text="http://instantoutliner.com/pa" type="link" url="http://instantoutliner.com/pa"></outline>
+				</outline>
+			<outline created="Mon, 31 May 2021 13:20:01 GMT" text="popover doesn't show folder for some files" type="outline">
+				<outline created="Mon, 31 May 2021 13:20:11 GMT" text="if options.fname is just a name and not a full path, no folder"></outline>
+				<outline created="Mon, 31 May 2021 13:20:31 GMT" text="this means the file is in the &quot;data folder&quot;"></outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 30 May 2021 14:19:47 GMT" name="30" text="May 30" type="calendarDay">
+			<outline created="Sun, 30 May 2021 15:47:54 GMT" text="Use ED to write SN" type="outline">
+				<outline created="Sun, 30 May 2021 15:48:03 GMT" text="This is the big test."></outline>
+				<outline created="Sun, 30 May 2021 15:48:08 GMT" text="Change URLs in Old School config.json"></outline>
+				<outline created="Sun, 30 May 2021 15:48:47 GMT" text="Check the nightly emailer to see if it depends on electricserver.scripting.com.">
+					<outline created="Sun, 30 May 2021 16:06:54 GMT" text="it backs up the glossary from an electricserver address"></outline>
+					<outline created="Sun, 30 May 2021 16:08:01 GMT" text="the readme for the blog directory on github, the source OPML is on electricserver."></outline>
+					</outline>
+				<outline created="Sun, 30 May 2021 16:05:05 GMT" text="Old School Template -- the user logs into electricserver, it can stay that way for now."></outline>
+				</outline>
+			<outline created="Sun, 30 May 2021 15:34:23 GMT" text="Built it as an app" type="outline">
+				<outline created="Sun, 30 May 2021 15:34:28 GMT" text="it seems to have worked"></outline>
+				<outline created="Sun, 30 May 2021 15:34:32 GMT" text="now I have to change the icon from the cow (EO) to the drummer"></outline>
+				<outline created="Sun, 30 May 2021 15:51:31 GMT" text="this is the app i used to make the icns file">
+					<outline created="Sun, 30 May 2021 15:51:40 GMT" text="https://anyconv.com/png-to-icns-converter/"></outline>
+					</outline>
+				</outline>
+			<outline created="Sun, 30 May 2021 15:14:58 GMT" text="Tested root.opml" type="outline">
+				<outline created="Sun, 30 May 2021 15:15:03 GMT" text="It works in the new environment fine."></outline>
+				</outline>
+			<outline created="Sun, 30 May 2021 14:19:48 GMT" text="Let's get image uploading working" type="outline">
+				<outline created="Sun, 30 May 2021 14:19:54 GMT" image="http://scripting.com/images/2021/05/30/nancy.png" text="this headline will have an image attribute, when it works"></outline>
+				<outline created="Sun, 30 May 2021 14:26:26 GMT" text="this one &quot;just worked&quot;"></outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 29 May 2021 15:06:00 GMT" name="29" text="May 29" type="calendarDay">
+			<outline created="Sat, 29 May 2021 15:30:27 GMT" name="filexxxVerbsReview" text="file.xxx verbs review" type="outline">
+				<outline created="Sat, 29 May 2021 15:30:31 GMT" text="Decided for now that the file verbs will not run against local files. I want to be more careful about this."></outline>
+				<outline created="Sat, 29 May 2021 15:30:53 GMT" text="file.exists (&quot;happy.opml&quot;)">
+					<outline created="Sat, 29 May 2021 15:52:09 GMT" isComment="true" text="false"></outline>
+					</outline>
+				<outline created="Sat, 29 May 2021 15:30:53 GMT" text="file.writeWholeFile (&quot;hello.txt&quot;, &quot;Hello World&quot;)">
+					<outline created="Sat, 29 May 2021 16:12:06 GMT" isComment="true" text="true"></outline>
+					</outline>
+				<outline created="Sat, 29 May 2021 15:30:53 GMT" text="file.makeFilePublic (&quot;hello.txt&quot;)">
+					<outline created="Sat, 29 May 2021 16:12:23 GMT" isComment="true" text="http://drummer.scripting.com/davewiner/hello.txt"></outline>
+					</outline>
+				<outline created="Sat, 29 May 2021 16:12:25 GMT" text="http.readUrl (&quot;http://drummer.scripting.com/davewiner/hello.txt&quot;)">
+					<outline created="Sat, 29 May 2021 16:12:54 GMT" isComment="true" text="Hello World"></outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 29 May 2021 15:08:56 GMT" name="imageUploader" text="image uploader" type="outline"></outline>
+			<outline created="Sat, 29 May 2021 15:06:01 GMT" name="electricDrummer" text="Electric Drummer" type="outline">
+				<outline created="Sat, 29 May 2021 15:06:08 GMT" text="I've checked out most of the cool Drummer stuff in the Electron version and it's working nicely."></outline>
+				<outline created="Sat, 29 May 2021 15:06:36 GMT" text="I really need the capabilities of a desktop computer to do all the docs I am working on. I have a lot better control of the content here, and in a pinch I can run a Frontier script against this data. "></outline>
+				<outline created="Sat, 29 May 2021 15:07:13 GMT" text="I figure a few more days before I'm working on non-Electron stuff. In a way it's lucky the weather is so yucky this weekend. "></outline>
+				</outline>
+			<outline created="Sat, 29 May 2021 15:08:15 GMT" name="fixedProblemInDaveappserverRelatedToTheSubscribingProblem" text="Fixed problem in daveappserver related to the subscribing problem" type="outline">
+				<outline created="Sat, 29 May 2021 15:08:26 GMT" text="some code was commented out, saying i'd debug it later"></outline>
+				<outline created="Sat, 29 May 2021 15:08:36 GMT" text="&quot;later&quot; came. i just uncommented it, it worked fine. "></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 28 May 2021 14:00:36 GMT" name="28" text="May 28" type="calendarDay">
+			<outline created="Sat, 29 May 2021 01:58:28 GMT" text="First thing tomorrow" type="outline">
+				<outline created="Sat, 29 May 2021 01:58:33 GMT" text="subscribing to outlines still has problem">
+					<outline created="Sat, 29 May 2021 01:58:44 GMT" text="look in Drummer, it's subscribed to scratchpad in ED"></outline>
+					<outline created="Sat, 29 May 2021 01:59:00 GMT" text="it's getting a copy of the JSON outline not the XML outline"></outline>
+					</outline>
+				</outline>
+			<outline created="Fri, 28 May 2021 14:00:37 GMT" text="Lots of quick hits today" type="outline">
+				<outline created="Fri, 28 May 2021 16:37:14 GMT" text="image uploader">
+					<outline created="Fri, 28 May 2021 16:37:18 GMT" text=""></outline>
+					</outline>
+				<outline created="Fri, 28 May 2021 16:27:07 GMT" text="public writing code is wrong">
+					<outline created="Fri, 28 May 2021 16:27:13 GMT" text="i don't know how this worked when we were using electricserver."></outline>
+					<outline created="Fri, 28 May 2021 16:27:27 GMT" text="anyway...">
+						<outline created="Fri, 28 May 2021 16:27:30 GMT" text="we have to hook into the electronOptions.uploadFile call">
+							<outline created="Fri, 28 May 2021 16:28:18 GMT" text="we look at the OPML to see if it's a public file, and if so we arrange for it to be uploaded to the server"></outline>
+							<outline created="Fri, 28 May 2021 16:28:57 GMT" text="if path ends with .opml"></outline>
+							<outline created="Fri, 28 May 2021 16:29:03 GMT" text="look for &lt;flPublic&gt;true&lt;/flPublic&gt; "></outline>
+							<outline created="Fri, 28 May 2021 16:31:08 GMT" text="then we call uploadPublicOpml"></outline>
+							</outline>
+						</outline>
+					</outline>
+				<outline created="Fri, 28 May 2021 16:14:37 GMT" text="test dns verbs">
+					<outline created="Fri, 28 May 2021 15:49:15 GMT" text="dns.getDomainName (dns.getDottedId (&quot;scripting.com&quot;))">
+						<outline created="Mon, 31 May 2021 19:55:12 GMT" isComment="true" text="s3-website-us-east-1.amazonaws.com"></outline>
+						</outline>
+					<outline created="Fri, 28 May 2021 16:14:46 GMT" text="btw there was a problem with bullmancuso.com">
+						<outline created="Fri, 28 May 2021 16:14:53 GMT" text="there was an error doing a reverse dns lookup on it, and the error was not being transmitted back to the caller from the client"></outline>
+						</outline>
+					</outline>
+				<outline created="Fri, 28 May 2021 15:31:16 GMT" text="file popover">
+					<outline created="Fri, 28 May 2021 15:31:19 GMT" text="why do some files not show a folder?"></outline>
+					</outline>
+				<outline created="Fri, 28 May 2021 14:23:38 GMT" text="twitter verbs">
+					<outline created="Fri, 28 May 2021 14:23:56 GMT" text="this calls drummer.scripting.com, it should call whatever server the ED user is logged into">
+						<outline created="Fri, 28 May 2021 14:23:41 GMT" text="twitter.getScreenname (12)">
+							<outline created="Fri, 28 May 2021 15:15:50 GMT" isComment="true" text="jack"></outline>
+							</outline>
+						</outline>
+					<outline created="Fri, 28 May 2021 14:51:43 GMT" text="so i set it up so that drummerHome knows which server to talk to">
+						<outline created="Fri, 28 May 2021 14:52:06 GMT" text="problem: electricserver.scripting.com is running nodeStorage, and doesn't have the extensions that the twitter verbs need"></outline>
+						</outline>
+					<outline created="Fri, 28 May 2021 14:52:58 GMT" text="choice">
+						<outline created="Fri, 28 May 2021 14:53:00 GMT" text="upgrade electricserver.scripting.com to the new software">
+							<outline created="Fri, 28 May 2021 14:53:48 GMT" text="risks breaking the current Scripting News editorial interface"></outline>
+							</outline>
+						<outline created="Fri, 28 May 2021 14:53:11 GMT" text="point ED at drummer.scripting.com &lt;--- this is the one">
+							<outline created="Fri, 28 May 2021 14:54:29 GMT" text="risks the data I have at drummer.scripting.com"></outline>
+							</outline>
+						<outline created="Fri, 28 May 2021 14:53:21 GMT" text="point ED at new server running the new software">
+							<outline created="Fri, 28 May 2021 14:54:51 GMT" text="too much new work for now, and opportunity for mistake"></outline>
+							</outline>
+						</outline>
+					</outline>
+				<outline created="Fri, 28 May 2021 14:17:55 GMT" text="verbs to access local file system">
+					<outline created="Fri, 28 May 2021 14:19:03 GMT" text="actually, the file.xxx verbs should work locally in ED."></outline>
+					</outline>
+				<outline created="Fri, 28 May 2021 14:03:06 GMT" text="menubar.opml">
+					<outline created="Fri, 28 May 2021 14:03:16 GMT" text="run some of the commands in the Scripts menu, let's see what works">
+						<outline created="Fri, 28 May 2021 14:03:28 GMT" text="tested op.visit verbs"></outline>
+						<outline created="Fri, 28 May 2021 14:09:17 GMT" text="made a sub-menu"></outline>
+						</outline>
+					</outline>
+				<outline created="Fri, 28 May 2021 14:01:44 GMT" text="instead of waiting 3 seconds of idle time to save, wait .5 seconds">
+					<outline created="Fri, 28 May 2021 14:02:02 GMT" text="this is how we had it set in EO"></outline>
+					<outline created="Fri, 28 May 2021 14:02:08 GMT" text="it's necessary to get a quick response to changing live scripts"></outline>
+					<outline created="Fri, 28 May 2021 14:14:35 GMT" text="problem: we're only checking once a second, so .5 seconds might as well be 1 second."></outline>
+					</outline>
+				<outline created="Fri, 28 May 2021 14:02:43 GMT" text="done">
+					<outline created="Fri, 28 May 2021 14:00:43 GMT" text="iconbar.opml">
+						<outline created="Fri, 28 May 2021 14:00:53 GMT" text="added a new icon, smile">
+							<outline created="Fri, 28 May 2021 14:00:59 GMT" text="it uses dialog.alert to put up a message"></outline>
+							</outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 27 May 2021 14:41:17 GMT" name="27" text="May 27" type="calendarDay">
+			<outline created="Thu, 27 May 2021 15:02:11 GMT" text="Add &lt;i&gt;Open data folder&lt;/i&gt; command to File menu" type="outline"></outline>
+			<outline created="Thu, 27 May 2021 20:07:34 GMT" text="Done">
+				<outline created="Thu, 27 May 2021 15:03:23 GMT" text="Import OPML command needs to use local file system" type="outline"></outline>
+				<outline created="Thu, 27 May 2021 15:00:14 GMT" text="Move bookmarks from EO" type="outline"></outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 26 May 2021 17:53:55 GMT" name="26" text="May 26" type="calendarDay">
+			<outline created="Wed, 26 May 2021 14:00:59 GMT" name="nextUpInNextSession" text="Next up in next session" type="outline">
+				<outline created="Wed, 26 May 2021 17:53:00 GMT" text="create an electricDrummer project">
+					<outline created="Wed, 26 May 2021 17:53:15 GMT" text="include files in the Drummer repo"></outline>
+					</outline>
+				<outline created="Wed, 26 May 2021 17:53:27 GMT" text="check out errors in the terminal window"></outline>
+				<outline created="Wed, 26 May 2021 17:50:21 GMT" text="Get shareable link command"></outline>
+				<outline created="Wed, 26 May 2021 17:50:47 GMT" text="Subscribe to outline"></outline>
+				<outline created="Wed, 26 May 2021 17:51:34 GMT" text="test">
+					<outline created="Wed, 26 May 2021 17:51:38 GMT" text="scripts menu"></outline>
+					<outline created="Wed, 26 May 2021 17:52:01 GMT" text="icon bar"></outline>
+					<outline created="Wed, 26 May 2021 17:52:03 GMT" text="scheduler"></outline>
+					<outline created="Wed, 26 May 2021 17:52:13 GMT" text="root"></outline>
+					<outline created="Wed, 26 May 2021 17:52:34 GMT" text="cmd-/"></outline>
+					<outline created="Wed, 26 May 2021 17:52:46 GMT" text="bookmarks">
+						<outline created="Wed, 26 May 2021 17:52:49 GMT" text="import bookmarks menu from EO"></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Wed, 26 May 2021 13:46:37 GMT" name="done" text="Done" type="outline">
+				<outline created="Wed, 26 May 2021 15:35:36 GMT" text="now we need to be called back when an outline is saved over in drummer so we can save it from Electric Drummer "></outline>
+				<outline created="Wed, 26 May 2021 14:01:02 GMT" text="was able after much farting around to get a public file to save"></outline>
+				<outline created="Tue, 25 May 2021 16:41:59 GMT" text="the version of font awesome is missing some of my characters"></outline>
+				<outline created="Tue, 25 May 2021 16:36:23 GMT" text="biggest problem -- the workspace is much narrower than the window">
+					<outline created="Tue, 25 May 2021 16:36:40 GMT" text="i need the space to get work done"></outline>
+					</outline>
+				<outline created="Wed, 26 May 2021 17:53:56 GMT" name="electricDrummer" text="Electric Drummer" type="outline">
+					<outline created="Wed, 26 May 2021 17:54:02 GMT" text="I have private files working now. "></outline>
+					<outline created="Wed, 26 May 2021 17:54:08 GMT" text="I can create them, and they sync up to electricserver (same one EO syncs to)"></outline>
+					<outline created="Wed, 26 May 2021 17:54:28 GMT" text="the goal here is to be able to us eDrum to edit everything EO does, including Scripting News"></outline>
+					<outline created="Wed, 26 May 2021 17:55:13 GMT" text="In the next session I will test all the special outlines"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 25 May 2021 12:46:23 GMT" name="25" text="May 25" type="calendarDay">
+			<outline created="Tue, 25 May 2021 16:36:17 GMT" name="electricDrummer" text="Electric Drummer" type="outline">
+				<outline created="Tue, 25 May 2021 16:36:58 GMT" text="on the good side --">
+					<outline created="Tue, 25 May 2021 16:37:02 GMT" text="Bookmarks work"></outline>
+					<outline created="Tue, 25 May 2021 16:37:07 GMT" text="the Scripts menu works">
+						<outline created="Tue, 25 May 2021 16:37:12 GMT" text="but there's a terminology mismatch here">
+							<outline created="Tue, 25 May 2021 16:37:23 GMT" text="menubar.opml"></outline>
+							<outline created="Tue, 25 May 2021 16:37:26 GMT" text="the scripts menu"></outline>
+							</outline>
+						<outline created="Tue, 25 May 2021 16:37:56 GMT" text="when you open the file from the special files menu, if it doesn't exist, create it">
+							<outline created="Tue, 25 May 2021 16:38:10 GMT" text="it should have a top level item named Scripts"></outline>
+							<outline created="Tue, 25 May 2021 16:38:32 GMT" text="file should be called scriptsMenu.opml"></outline>
+							<outline created="Tue, 25 May 2021 16:38:50 GMT" text="just calling it scripts.opml implies these are the only scripts"></outline>
+							<outline created="Tue, 25 May 2021 16:39:02 GMT" text="oy!"></outline>
+							</outline>
+						</outline>
+					</outline>
+				<outline created="Tue, 25 May 2021 16:39:32 GMT" text="next to do">
+					<outline created="Tue, 25 May 2021 16:39:35 GMT" text="public files"></outline>
+					<outline created="Tue, 25 May 2021 16:39:41 GMT" text="connection to the electric server"></outline>
+					</outline>
+				</outline>
+			<outline created="Tue, 25 May 2021 12:46:24 GMT" text="Security problem in Old School?" type="outline">
+				<outline created="Tue, 25 May 2021 12:46:30 GMT" text="the tag server ping value in config.json has an oauth token and secret."></outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 24 May 2021 21:06:48 GMT" name="24" text="May 24" type="calendarDay">
+			<outline created="Mon, 24 May 2021 21:03:52 GMT" name="whereWePickUpTomorrow" text="Where we pick up tomorrow" type="outline">
+				<outline created="Mon, 24 May 2021 21:03:58 GMT" text="The tabs work, you can use it to edit stuff, just like Drummer."></outline>
+				<outline created="Mon, 24 May 2021 21:04:18 GMT" text="Obvious next steps">
+					<outline created="Mon, 24 May 2021 21:04:22 GMT" text="Bring in the menu bar from Drummer">
+						<outline created="Mon, 24 May 2021 21:04:34 GMT" text="Review each of the commands, do they make sense, here?"></outline>
+						<outline created="Mon, 24 May 2021 21:04:51 GMT" text="Use EO as prior art."></outline>
+						</outline>
+					<outline created="Mon, 24 May 2021 21:04:56 GMT" text="Download all the files from the drummer server, and move them into a folder here">
+						<outline created="Mon, 24 May 2021 21:05:15 GMT" text="These will be the real copies"></outline>
+						</outline>
+					<outline created="Mon, 24 May 2021 21:05:21 GMT" text="Go through EO and start listing the custom Electron-only features that need to be moved">
+						<outline created="Mon, 24 May 2021 21:05:43 GMT" text="Two immediate examples, image uploader, and public outlines"></outline>
+						<outline created="Mon, 24 May 2021 21:05:57 GMT" text="Enough so I can use this to write Scripting News and this.how docs"></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 24 May 2021 18:04:48 GMT" text="Prefs now are sorted out" type="outline">
+				<outline created="Mon, 24 May 2021 18:05:01 GMT" text="I needed to calm down and refer to the working code in EO, and then got it working."></outline>
+				<outline created="Mon, 24 May 2021 18:05:25 GMT" text="It now restores tabs as it does in Drummer. "></outline>
+				</outline>
+			<outline created="Mon, 24 May 2021 21:06:49 GMT" name="electricDrummerProgressReport" text="Electric Drummer progress report" type="outline">
+				<outline created="Mon, 24 May 2021 21:07:01 GMT" text="The tabs work, you can use it to edit stuff, just like Drummer."></outline>
+				<outline created="Mon, 24 May 2021 21:07:06 GMT" text="Obvious next steps">
+					<outline text="Bring in the menu bar from Drummer">
+						<outline text="Review each of the commands, do they make sense, here?"></outline>
+						<outline text="Use EO as prior art."></outline>
+						</outline>
+					<outline created="Mon, 24 May 2021 21:07:19 GMT" text="Download all the files from the drummer server, and move them into a folder here">
+						<outline text="These will be the real copies"></outline>
+						</outline>
+					<outline created="Mon, 24 May 2021 21:07:25 GMT" text="Go through EO and start listing the custom Electron-only features that need to be moved">
+						<outline text="Two immediate examples, image uploader, and public outlines"></outline>
+						<outline text="Enough so I can use this to write Scripting News and this.how docs"></outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 23 May 2021 17:04:50 GMT" name="23" text="May 23" type="calendarDay">
+			<outline created="Sun, 23 May 2021 17:04:51 GMT" name="imWorkingOnTheElectronVersionOfDrummer" text="I'm working on the Electron version of Drummer" type="outline">
+				<outline created="Sun, 23 May 2021 17:05:04 GMT" text="Making good progress, but it's slow."></outline>
+				<outline created="Sun, 23 May 2021 17:05:11 GMT" text="The payoff -- one outliner, not two."></outline>
+				<outline created="Sun, 23 May 2021 17:05:17 GMT" text="Any changes made in one automatically are in the other. "></outline>
+				</outline>
+			<outline created="Sun, 23 May 2021 20:34:45 GMT" name="whereIStoppedForTheDay" text="Where I stopped for the day" type="outline">
+				<outline created="Sun, 23 May 2021 20:34:53 GMT" text="I have File/New and File/Open working."></outline>
+				<outline created="Sun, 23 May 2021 20:35:04 GMT" text="And prefs.json appears to be correctly saved."></outline>
+				<outline created="Sun, 23 May 2021 20:35:15 GMT" text="But when we re-open, the tabs are not being restored."></outline>
+				</outline>
+			<outline created="Sun, 23 May 2021 15:25:32 GMT" text="storage.json" type="outline">
+				<outline created="Sun, 23 May 2021 15:25:52 GMT" text="is written when it changes">
+					<outline created="Sun, 23 May 2021 15:34:14 GMT" text="when writing to the server, it calls &quot;writewholefile&quot; which doesn't care if it's public or private, where drummerUploadFile must be told if it's public or private. it's the first functionality we want. in the electron version there is no public version, so we write tit the same way we do for drummerUploadFile. "></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 21 May 2021 15:52:03 GMT" name="21" text="May 21" type="calendarDay">
+			<outline created="Fri, 21 May 2021 15:52:04 GMT" text="By adding this line, we cause the outline to stretch horizontally so it fills all the space available to it. Not sure how I can make it fill the space without this trick." type="outline"></outline>
+			</outline>
+		<outline created="Thu, 20 May 2021 16:53:06 GMT" name="20" text="May 20" type="calendarDay">
+			<outline created="Thu, 20 May 2021 20:47:39 GMT" name="firstThingsToLookAtTomorrow" text="First things to look at tomorrow" type="outline">
+				<outline created="Thu, 20 May 2021 20:47:44 GMT" text="why is the horizontal space so poorly allocated"></outline>
+				<outline created="Thu, 20 May 2021 20:48:00 GMT" text="file open/close etc"></outline>
+				</outline>
+			<outline created="Thu, 20 May 2021 16:53:07 GMT" text="Electric Drummer starts working. " type="outline">
+				<outline created="Thu, 20 May 2021 20:04:28 GMT" text="Dave is a happy camper!"></outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 19 May 2021 14:59:29 GMT" name="19" text="May 19" type="calendarDay">
+			<outline created="Wed, 19 May 2021 14:59:30 GMT" text="Code grooming, preparing for the Electron version" type="outline">
+				<outline created="Wed, 19 May 2021 14:59:36 GMT" text="In Drummer codebase,">
+					<outline created="Wed, 19 May 2021 15:01:34 GMT" text="remove all references to previous tab system. Most of it is commented out already.">
+						<outline created="Wed, 19 May 2021 14:59:54 GMT" text="the thing to search for is appPrefs.ixCurrentTab. It doesn't exist any longer. Any code that references it is for the old tab model."></outline>
+						</outline>
+					<outline created="Wed, 19 May 2021 15:11:21 GMT" text="update the repo, review the code by scrolling through, look for more problems"></outline>
+					<outline created="Wed, 19 May 2021 15:01:52 GMT" text="implement file reading and writing via callbacks in newOutlineInTab">
+						<outline created="Wed, 19 May 2021 15:02:11 GMT" text="in Electric Drummer, these callbacks will write to the local file system "></outline>
+						</outline>
+					<outline created="Wed, 19 May 2021 15:03:04 GMT" text="move as much general functionality into a file that can be included in Electric Drummer">
+						<outline created="Wed, 19 May 2021 15:03:25 GMT" text="drummer functionality that is above the file functionality "></outline>
+						</outline>
+					</outline>
+				<outline created="Wed, 19 May 2021 15:00:38 GMT" text="I forked the Electric Outliner code base, it's running. ">
+					<outline created="Wed, 19 May 2021 15:01:01 GMT" text="I'm going to completely remove the outliner and replace it with code that calls into the shared code "></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 17 May 2021 13:33:57 GMT" name="17" text="May 17" type="calendarDay">
+			<outline created="Mon, 17 May 2021 14:14:44 GMT" text="Changed the way autosave is configured. " type="outline">
+				<outline text="Generally want to make it more conservative, less save-happy. ;-)"></outline>
+				<outline text="Instead of resetting on a keystroke, we reset on a user action, which could include a mouse click, or whatever we think should delay the save to keep the machine responsive for the user. "></outline>
+				<outline text="We also don't do more than one autosave every X seconds."></outline>
+				</outline>
+			<outline created="Mon, 17 May 2021 13:41:33 GMT" text="I was using double-square brackets incorrectly " type="outline">
+				<outline created="Mon, 17 May 2021 13:41:42 GMT" text="In previous notes, I was using them as categories, but they're actually file names."></outline>
+				<outline created="Mon, 17 May 2021 13:41:59 GMT" text="I refer to a file in double-square brackets, like a link. "></outline>
+				<outline created="Mon, 17 May 2021 13:42:35 GMT" text="If I click on such a link and there is no page with that name, I am offered the chance to create it. "></outline>
+				<outline created="Mon, 17 May 2021 13:42:53 GMT" text="That was borrowed from wikis. "></outline>
+				</outline>
+			<outline created="Mon, 17 May 2021 13:37:59 GMT" text="This feels slow" type="outline">
+				<outline created="Mon, 17 May 2021 13:38:08 GMT" text="Not sure if this is for real or just in my mind.">
+					<outline created="Mon, 17 May 2021 13:38:15 GMT" text="I just typed this section, after reloading the app, and it's very fast."></outline>
+					<outline created="Mon, 17 May 2021 13:38:34 GMT" text="I'm going to have to figure out how to do profiling of background processes."></outline>
+					<outline created="Mon, 17 May 2021 13:38:51 GMT" text="Oh after pausing a bit, it just slowed down. But now it's fast again."></outline>
+					<outline created="Mon, 17 May 2021 13:39:49 GMT" text="I have four tabs open">
+						<outline created="Mon, 17 May 2021 13:39:58 GMT" text="Dave status (this file)"></outline>
+						<outline created="Mon, 17 May 2021 13:40:04 GMT" text="Drummer todo"></outline>
+						<outline created="Mon, 17 May 2021 13:40:07 GMT" text="verbDocs"></outline>
+						<outline created="Mon, 17 May 2021 13:40:10 GMT" text="scratchpad"></outline>
+						</outline>
+					</outline>
+				<outline created="Mon, 17 May 2021 13:43:54 GMT" text="Maybe the slowness is connected with auto saving">
+					<outline created="Mon, 17 May 2021 13:44:04 GMT" text=""></outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 17 May 2021 13:33:58 GMT" text="Cleanup work on op.getSelectedText and op.replaceSelectedText." type="outline">
+				<outline created="Mon, 17 May 2021 13:34:41 GMT" text="op.getSelectedText ()">
+					<outline created="Mon, 17 May 2021 13:35:20 GMT" isComment="true" text="&quot;change notes&quot;"></outline>
+					</outline>
+				<outline created="Mon, 17 May 2021 13:34:41 GMT" text="op.replaceSelectedText (string.upper (op.getSelectedText ()))">
+					<outline created="Mon, 17 May 2021 13:36:39 GMT" isComment="true" text="&quot;OUTLINE&quot;"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 16 May 2021 19:57:14 GMT" name="16" text="May 16" type="calendarDay">
+			<outline created="Mon, 17 May 2021 01:47:01 GMT" text="Status outline" type="outline">
+				<outline created="Mon, 17 May 2021 01:47:19 GMT" text="I archived the February, March and April sub-outlines in files that are now included. "></outline>
+				<outline created="Mon, 17 May 2021 01:47:46 GMT" text="This file is now much smaller."></outline>
+				</outline>
+			<outline created="Mon, 17 May 2021 01:40:42 GMT" text="Archived change notes" type="outline">
+				<outline created="Mon, 17 May 2021 01:40:48 GMT" text="Changes I made while reorganizing the tabs in Drummer, with little or no updates to status outline." type="include" url="http://drummer.scripting.com/davewiner/aprilMayDrummerChanges.opml"></outline>
+				</outline>
+			<outline created="Sun, 16 May 2021 19:57:15 GMT" text="[[Verbs]]" type="outline">
+				<outline created="Sun, 16 May 2021 19:57:23 GMT" text="Two new op verbs.">
+					<outline created="Sun, 16 May 2021 19:57:28 GMT" text="op.getSelectedText" type="link" url="http://scripting.com/code/docserver/?verb=op.getSelectedText"></outline>
+					<outline created="Sun, 16 May 2021 19:57:33 GMT" text="op.replaceSelectedText" type="link" url="http://scripting.com/code/docserver/?verb=op.replaceSelectedText"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 15 May 2021 16:04:45 GMT" name="15" text="May 15" type="calendarDay">
+			<outline created="Sat, 15 May 2021 16:04:46 GMT" text="[[Drummer]]" type="outline">
+				<outline created="Sat, 15 May 2021 22:13:00 GMT" text="Bumped version to 2.0.3."></outline>
+				<outline created="Sat, 15 May 2021 16:04:52 GMT" text="The popover linked to the file icon in the tabs now reflects what's in the file, has been tuned up, looks good. "></outline>
+				<outline created="Sat, 15 May 2021 16:05:51 GMT" text="We get as much info as we can from the &lt;head&gt; section of the opml text, which means we must read the file even if the tab isn't open. "></outline>
+				<outline created="Sat, 15 May 2021 16:06:22 GMT" text="There's a difference between what we show for instant outlines relative to our own outlines, but the user probably won't notice. "></outline>
+				<outline created="Sat, 15 May 2021 20:03:55 GMT" text="Updated so that now the title of instant outlines changes if the author changes the title, without you having to click on the tab, as does the information in the popovers. "></outline>
+				<outline created="Sat, 15 May 2021 20:04:33 GMT" text="Unless there are bugs, the popovers are finished now. "></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 14 May 2021 15:31:12 GMT" name="14" text="May 14" type="calendarDay">
+			<outline created="Fri, 14 May 2021 15:31:13 GMT" text="[[Drummer]]" type="outline">
+				<outline created="Fri, 14 May 2021 15:31:21 GMT" text="When you hover over the title of a tab you see the description from the &lt;head&gt; section of the OPML file.">
+					<outline created="Fri, 14 May 2021 15:32:07 GMT" text="This works even if you haven't activated the tab, ie the OPML hasn't &quot;officially&quot; been read yet. "></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 13 May 2021 20:51:33 GMT" name="13" text="May 13" type="calendarDay">
+			<outline created="Thu, 13 May 2021 20:52:26 GMT" text="New howto for outliner devs" type="outline">
+				<outline created="Thu, 13 May 2021 20:52:32 GMT" text="Checklist of examples, specs, advice on supporting OPML in apps. " type="link" url="http://this.how/opmlChecklist/"></outline>
+				</outline>
+			<outline created="Thu, 13 May 2021 20:51:34 GMT" text="New Twitter app" type="outline">
+				<outline created="Thu, 13 May 2021 20:51:39 GMT" text="Drummer is no longer hitching a ride on Little Outliner. "></outline>
+				<outline created="Thu, 13 May 2021 20:51:52 GMT" text="It's got its own app. So you'll have to log off and log on. "></outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 12 May 2021 16:41:05 GMT" name="12" text="May 12" type="calendarDay">
+			<outline created="Wed, 12 May 2021 16:41:06 GMT" text="[[drummer]]" type="outline">
+				<outline created="Wed, 12 May 2021 16:41:10 GMT" text="local includes">
+					<outline created="Wed, 12 May 2021 16:41:16 GMT" text="If the url attribute of an include node begins with file:// it's interpreted as a local include."></outline>
+					<outline created="Wed, 12 May 2021 16:41:44 GMT" text="Instead of reading the file over http, which requires that it be public, it reads the file using the API. "></outline>
+					<outline created="Wed, 12 May 2021 16:42:08 GMT" text="If you have a folder structure on the server, you can reflect that in the url, for example:">
+						<outline created="Wed, 12 May 2021 16:42:37 GMT" text="file://project1/plan.opml"></outline>
+						</outline>
+					<outline created="Wed, 12 May 2021 16:42:50 GMT" text="Examples">
+						<outline created="Wed, 12 May 2021 16:35:14 GMT" text="example of a remote include" type="include" url="http://drummer.scripting.com/davewiner/twitterVerbDocs.opml"></outline>
+						<outline created="Wed, 12 May 2021 16:36:20 GMT" text="example of a local include (probably won't work for you, see below)" type="include" url="file://states.opml">
+							<outline created="Mon, 06 Aug 2018 15:11:04 GMT" text="United States">
+								<outline created="Mon, 06 Aug 2018 15:11:25 GMT" text="Far West">
+									<outline created="Sat, 21 Mar 2020 17:33:29 GMT" text="Alaska">
+										<outline created="Sat, 21 Mar 2020 17:33:30 GMT" text="Alaska is the largest U.S. state by area and the seventh largest subnational division in the world. It is the third least populous and the most sparsely populated state, but by far the continent's most populous territory located mostly north of the 60th parallel, with an estimated population of 738,432 as 2015‰¥ämore than quadruple the combined populations of Northern Canada and Greenland.[4]">
+											<outline created="Sat, 21 Mar 2020 17:33:57 GMT" text="Approximately half of Alaska's residents live within the Anchorage metropolitan area. The state capital of Juneau is the second largest city in the United States by area, comprising more territory than the states of Rhode Island and Delaware."></outline>
+											</outline>
+										</outline>
+									<outline created="Sun, 22 Mar 2020 17:45:58 GMT" text="California">
+										<outline created="Sun, 22 Mar 2020 17:45:59 GMT" text="California is a state in the Pacific Region of the United States. With 39.5 million residents across a total area of about 163,696 square miles (423,970 km2), California is the most populous U.S. state and the third-largest by area. ">
+											<outline created="Sun, 22 Mar 2020 17:46:26 GMT" text="The state capital is Sacramento. The Greater Los Angeles Area and the San Francisco Bay Area are the nation's second- and fifth-most populous urban regions, with 18.7 million and 9.7 million residents respectively.[13] Los Angeles is California's most populous city, and the country's second-most populous, after New York City. California also has the nation's most populous county, Los Angeles County, and its largest county by area, San Bernardino County. The City and County of San Francisco is both the country's second most densely populated major city after New York City and the fifth most densely populated county, behind only four of the five New York City boroughs."></outline>
+											</outline>
+										</outline>
+									<outline text="Hawaii"></outline>
+									<outline created="Mon, 06 Aug 2018 15:11:27 GMT" text="Nevada">
+										<outline text="Reno"></outline>
+										<outline created="Mon, 06 Aug 2018 15:11:33 GMT" text="Las Vegas">
+											<outline created="Mon, 06 Aug 2018 15:11:35 GMT" text="The strip">
+												<outline created="Mon, 06 Aug 2018 15:11:37 GMT" text="Caesar's Palace">
+													<outline created="Wed, 08 Aug 2018 20:14:40 GMT" text="nice hotel">
+														<outline text="muy expensive"></outline>
+														</outline>
+													<outline text="gambling"></outline>
+													<outline text="music"></outline>
+													<outline created="Mon, 06 Aug 2018 15:11:39 GMT" text="restaurant"></outline>
+													<outline created="Mon, 06 Aug 2018 15:11:40 GMT" text="waste">
+														<outline created="Mon, 06 Aug 2018 15:11:43 GMT" text="human waste"></outline>
+														<outline created="Mon, 06 Aug 2018 15:11:46 GMT" text="chemical waste"></outline>
+														<outline created="Mon, 06 Aug 2018 15:11:49 GMT" text="animal waste"></outline>
+														<outline created="Mon, 06 Aug 2018 15:16:31 GMT" text="programming errors"></outline>
+														<outline created="Mon, 06 Aug 2018 15:16:37 GMT" text="porta potties"></outline>
+														</outline>
+													<outline text="racketball"></outline>
+													<outline text="bowling"></outline>
+													<outline text="archery"></outline>
+													<outline text="prostitution"></outline>
+													</outline>
+												<outline text="Venetian">
+													<outline text="like a trip to venezia"></outline>
+													</outline>
+												<outline text="Wynn"></outline>
+												</outline>
+											</outline>
+										<outline created="Fri, 06 Mar 2020 01:56:33 GMT" text="Ely"></outline>
+										<outline text="Gerlach"></outline>
+										</outline>
+									<outline text="Oregon"></outline>
+									<outline text="Washington"></outline>
+									</outline>
+								<outline created="Fri, 06 Mar 2020 01:56:35 GMT" text="Great Plains">
+									<outline created="Fri, 06 Mar 2020 01:56:37 GMT" text="Kansas"></outline>
+									<outline text="Nebraska"></outline>
+									<outline text="North Dakota"></outline>
+									<outline text="Oklahoma"></outline>
+									<outline text="South Dakota">
+										<outline text="okay if this works, this will &lt;i&gt;show up&lt;/i&gt; in the saved file."></outline>
+										<outline text="let's see if this shows up...">
+											<outline text="One two three four who are we fighting for??"></outline>
+											<outline text="Hello dolly well hello dolly..."></outline>
+											</outline>
+										</outline>
+									</outline>
+								<outline text="Mid-Atlantic">
+									<outline text="Delaware"></outline>
+									<outline text="Maryland"></outline>
+									<outline text="New Jersey"></outline>
+									<outline text="New York"></outline>
+									<outline text="Pennsylvania"></outline>
+									</outline>
+								<outline text="Midwest">
+									<outline text="Illinois"></outline>
+									<outline text="Indiana"></outline>
+									<outline text="Iowa"></outline>
+									<outline text="Kentucky"></outline>
+									<outline text="Michigan"></outline>
+									<outline text="Minnesota"></outline>
+									<outline text="Missouri"></outline>
+									<outline text="Ohio"></outline>
+									<outline text="West Virginia"></outline>
+									<outline text="Wisconsin"></outline>
+									</outline>
+								<outline text="Mountains">
+									<outline text="Colorado"></outline>
+									<outline text="Idaho"></outline>
+									<outline text="Montana"></outline>
+									<outline text="Utah"></outline>
+									<outline text="Wyoming"></outline>
+									</outline>
+								<outline text="New England">
+									<outline text="Connecticut"></outline>
+									<outline text="Maine"></outline>
+									<outline text="Massachusetts"></outline>
+									<outline text="New Hampshire"></outline>
+									<outline text="Rhode Island"></outline>
+									<outline text="Vermont"></outline>
+									</outline>
+								<outline text="South">
+									<outline text="Alabama"></outline>
+									<outline text="Arkansas"></outline>
+									<outline text="Florida"></outline>
+									<outline text="Georgia"></outline>
+									<outline text="Louisiana"></outline>
+									<outline text="Mississippi"></outline>
+									<outline text="North Carolina"></outline>
+									<outline text="South Carolina"></outline>
+									<outline text="Tennessee"></outline>
+									<outline text="Virginia"></outline>
+									</outline>
+								<outline text="Southwest">
+									<outline text="Arizona"></outline>
+									<outline text="New Mexico"></outline>
+									<outline text="Texas"></outline>
+									</outline>
+								</outline>
+							</outline>
+						</outline>
+					<outline created="Wed, 12 May 2021 16:43:20 GMT" text="I'm guessing the local include will not work on your system, unless you have a file called states.opml in your folder on the server. ">
+						<outline created="Wed, 12 May 2021 16:44:14 GMT" text="Which is kind of interesting, in its own way??"></outline>
+						</outline>
+					</outline>
+				<outline created="Wed, 12 May 2021 16:52:07 GMT" text="The &lt;i&gt;Include OPML&lt;/i&gt; command in the File menu changes ">
+					<outline created="Wed, 12 May 2021 16:52:26 GMT" text="Instead of creating a new headline, it adds the attributes to the bar cursor headline. "></outline>
+					<outline created="Wed, 12 May 2021 16:52:46 GMT" text="so to create an include:">
+						<outline created="Wed, 12 May 2021 16:52:50 GMT" text="press return to create a headline"></outline>
+						<outline created="Wed, 12 May 2021 16:52:57 GMT" text="enter some text if you want to do that fist "></outline>
+						<outline created="Wed, 12 May 2021 16:53:06 GMT" text="choose Include OPML command"></outline>
+						<outline created="Wed, 12 May 2021 16:53:17 GMT" text="enter the url of the outline, or cancel if this isn't what you wanted to do."></outline>
+						</outline>
+					</outline>
+				<outline created="Tue, 11 May 2021 02:10:27 GMT" text="Made suboutline visibility more selective">
+					<outline created="Wed, 12 May 2021 17:15:32 GMT" text="only on these operations">
+						<outline created="Wed, 12 May 2021 17:15:36 GMT" text="cursor moved"></outline>
+						<outline created="Wed, 12 May 2021 17:15:40 GMT" text="expand"></outline>
+						</outline>
+					<outline created="Wed, 12 May 2021 17:16:13 GMT" text="stop doing it..">
+						<outline created="Wed, 12 May 2021 17:16:19 GMT" text="on reorg"></outline>
+						<outline created="Wed, 12 May 2021 17:16:23 GMT" text="collapse"></outline>
+						<outline created="Wed, 12 May 2021 17:16:52 GMT" text="every second"></outline>
+						</outline>
+					<outline created="Tue, 11 May 2021 02:10:39 GMT" text="everything else is too jarring"></outline>
+					<outline created="Tue, 11 May 2021 02:10:45 GMT" text="&lt;i&gt;might&lt;/i&gt; be places where we want to make the bch visible"></outline>
+					<outline created="Tue, 11 May 2021 02:10:58 GMT" text="not sure"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 10 May 2021 15:38:02 GMT" name="10" text="May 10" type="calendarDay">
+			<outline created="Mon, 10 May 2021 23:51:18 GMT" text="[[concordScript]]" type="outline">
+				<outline created="Mon, 10 May 2021 23:51:27 GMT" text="Here's a script in my root.opml file.">
+					<outline created="Mon, 10 May 2021 23:52:04 GMT" text="getFriendsInfo">
+						<outline created="Mon, 10 May 2021 23:52:08 GMT" text="function () {">
+							<outline text="var theArray = new Array ();"></outline>
+							<outline created="Tue, 11 May 2021 02:08:31 GMT" text="var theProfile = twitter.getUserProfile (&quot;davewiner&quot;);"></outline>
+							<outline text="console.log (jsonStringify (theProfile))"></outline>
+							<outline text="theArray.push (theProfile);"></outline>
+							<outline text="return (theArray);"></outline>
+							<outline text="}"></outline>
+							</outline>
+						</outline>
+					</outline>
+				<outline created="Mon, 10 May 2021 23:52:18 GMT" text="I call it from a script that I run from an outline.">
+					<outline created="Mon, 10 May 2021 23:52:32 GMT" text="root.getFriendsInfo ()">
+						<outline created="Mon, 10 May 2021 23:53:03 GMT" isComment="true" text="[">
+							<outline created="Mon, 10 May 2021 23:53:13 GMT" text="{ }"></outline>
+							<outline text="]"></outline>
+							</outline>
+						</outline>
+					</outline>
+				<outline created="Tue, 11 May 2021 02:08:17 GMT" text="What I expected">
+					<outline created="Mon, 10 May 2021 23:53:03 GMT" isComment="true" text="[">
+						<outline created="Tue, 11 May 2021 02:08:40 GMT" isComment="true" text="{">
+							<outline created="Tue, 11 May 2021 02:08:40 GMT" text="&quot;screenname&quot;: &quot;davewiner&quot;,"></outline>
+							<outline created="Tue, 11 May 2021 02:08:40 GMT" text="&quot;name&quot;: &quot;Dave Winer&quot;,"></outline>
+							<outline created="Tue, 11 May 2021 02:08:40 GMT" text="&quot;id&quot;: &quot;3839&quot;,"></outline>
+							<outline created="Tue, 11 May 2021 02:08:40 GMT" text="&quot;description&quot;: &quot;On the net since mid-70s. Started two Silicon Valley companies. Wrote for Wired. Fellow at Harvard, NYU. Founder of podcasting, blogging, RSS. Open web.&quot;,"></outline>
+							<outline created="Tue, 11 May 2021 02:08:40 GMT" text="&quot;location&quot;: &quot;Woodstock, NY&quot;,"></outline>
+							<outline created="Tue, 11 May 2021 02:08:40 GMT" text="&quot;whenCreated&quot;: &quot;Sat, 05 Aug 2006 23:04:08 GMT&quot;,"></outline>
+							<outline created="Tue, 11 May 2021 02:08:40 GMT" text="&quot;ctFollowers&quot;: 67385,"></outline>
+							<outline created="Tue, 11 May 2021 02:08:40 GMT" text="&quot;ctFollowed&quot;: 3876,"></outline>
+							<outline created="Tue, 11 May 2021 02:08:40 GMT" text="&quot;ctFavorites&quot;: 17596,"></outline>
+							<outline created="Tue, 11 May 2021 02:08:40 GMT" text="&quot;ctTweets&quot;: 191880"></outline>
+							<outline created="Tue, 11 May 2021 02:08:40 GMT" text="}"></outline>
+							</outline>
+						<outline text="]"></outline>
+						</outline>
+					</outline>
+				<outline created="Mon, 10 May 2021 23:53:16 GMT" text="I added some debugging code, and the contents of the { } was a promise that was not evaluated."></outline>
+				</outline>
+			<outline created="Mon, 10 May 2021 15:38:03 GMT" text="[[drummer]]" type="outline">
+				<outline created="Mon, 10 May 2021 15:38:14 GMT" text="Coolest new feature in a while."></outline>
+				<outline created="Mon, 10 May 2021 15:38:22 GMT" text="Now when you use cmd-/ in an outline, if the returned value is an object, array or any combination there of, instead of inserting the result as text, we build the structure in an outline, generating valid JSON if you copy/paste the text."></outline>
+				<outline created="Mon, 10 May 2021 15:39:19 GMT" text="We're now on our way to having the outliner be a good JSON editor, btw."></outline>
+				<outline created="Mon, 10 May 2021 15:39:29 GMT" text="But testing scripts now got a whole lot easier and much more fun. "></outline>
+				<outline created="Mon, 10 May 2021 15:39:42 GMT" text="This is one of those &quot;just works&quot; sort of features. "></outline>
+				<outline created="Mon, 10 May 2021 15:39:56 GMT" text="Here's an example of an array of objects.">
+					<outline created="Mon, 10 May 2021 15:40:22 GMT" text="[">
+						<outline created="Mon, 10 May 2021 15:42:13 GMT" text="{">
+							<outline text="&quot;i&quot;: 0,"></outline>
+							<outline text="&quot;square&quot;: 0,"></outline>
+							<outline text="&quot;cube&quot;: 0,"></outline>
+							<outline text="&quot;snark&quot;: &quot;Use your mind!&quot;"></outline>
+							<outline text="},"></outline>
+							</outline>
+						<outline text="{">
+							<outline text="&quot;i&quot;: 1,"></outline>
+							<outline text="&quot;square&quot;: 1,"></outline>
+							<outline text="&quot;cube&quot;: 1,"></outline>
+							<outline text="&quot;snark&quot;: &quot;That rug really tied the room together.&quot;"></outline>
+							<outline text="},"></outline>
+							</outline>
+						<outline text="{">
+							<outline text="&quot;i&quot;: 2,"></outline>
+							<outline text="&quot;square&quot;: 4,"></outline>
+							<outline text="&quot;cube&quot;: 8,"></outline>
+							<outline text="&quot;snark&quot;: &quot;If it doesn't have a feed it isn't a podcast.&quot;"></outline>
+							<outline text="},"></outline>
+							</outline>
+						<outline text="{">
+							<outline text="&quot;i&quot;: 3,"></outline>
+							<outline text="&quot;square&quot;: 9,"></outline>
+							<outline text="&quot;cube&quot;: 27,"></outline>
+							<outline text="&quot;snark&quot;: &quot;This is unfortunate and we're stuck with it forever.&quot;"></outline>
+							<outline text="},"></outline>
+							</outline>
+						<outline text="{">
+							<outline text="&quot;i&quot;: 4,"></outline>
+							<outline text="&quot;square&quot;: 16,"></outline>
+							<outline text="&quot;cube&quot;: 64,"></outline>
+							<outline text="&quot;snark&quot;: &quot;Wear a mask.&quot;"></outline>
+							<outline text="},"></outline>
+							</outline>
+						<outline text="{">
+							<outline text="&quot;i&quot;: 5,"></outline>
+							<outline text="&quot;square&quot;: 25,"></outline>
+							<outline text="&quot;cube&quot;: 125,"></outline>
+							<outline text="&quot;snark&quot;: &quot;When in doubt, blog.&quot;"></outline>
+							<outline text="},"></outline>
+							</outline>
+						<outline text="{">
+							<outline text="&quot;i&quot;: 6,"></outline>
+							<outline text="&quot;square&quot;: 36,"></outline>
+							<outline text="&quot;cube&quot;: 216,"></outline>
+							<outline text="&quot;snark&quot;: &quot;You should never argue with a crazy man.&quot;"></outline>
+							<outline text="},"></outline>
+							</outline>
+						<outline text="{">
+							<outline text="&quot;i&quot;: 7,"></outline>
+							<outline text="&quot;square&quot;: 49,"></outline>
+							<outline text="&quot;cube&quot;: 343,"></outline>
+							<outline text="&quot;snark&quot;: &quot;That rug really tied the room together.&quot;"></outline>
+							<outline text="},"></outline>
+							</outline>
+						<outline text="{">
+							<outline text="&quot;i&quot;: 8,"></outline>
+							<outline text="&quot;square&quot;: 64,"></outline>
+							<outline text="&quot;cube&quot;: 512,"></outline>
+							<outline text="&quot;snark&quot;: &quot;Ask not what the Internet can do for you.&quot;"></outline>
+							<outline text="},"></outline>
+							</outline>
+						<outline text="{">
+							<outline text="&quot;i&quot;: 9,"></outline>
+							<outline text="&quot;square&quot;: 81,"></outline>
+							<outline text="&quot;cube&quot;: 729,"></outline>
+							<outline text="&quot;snark&quot;: &quot;Choose to not be offended.&quot;"></outline>
+							<outline text="}"></outline>
+							</outline>
+						<outline text="]"></outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 09 May 2021 14:06:10 GMT" name="09" text="May 9" type="calendarDay">
+			<outline created="Sun, 09 May 2021 14:11:11 GMT" text="[[drummer]]" type="outline">
+				<outline created="Sun, 09 May 2021 14:37:09 GMT" text="&lt;i&gt;Include OPML&lt;/i&gt; command in File menu">
+					<outline created="Sun, 09 May 2021 14:37:17 GMT" text="ask dialog asks for the URL of the file you want to include"></outline>
+					<outline created="Sun, 09 May 2021 14:37:53 GMT" text="enter the URL, click OK, the include node is added with the cursor in text mode"></outline>
+					<outline created="Sun, 09 May 2021 15:08:39 GMT" text="if the previous outline is expanded, we insert to the right, otherwise down"></outline>
+					<outline created="Sun, 09 May 2021 15:08:51 GMT" text="attributes: type == &quot;include&quot;, url == url you entered in dialog, created == current time"></outline>
+					<outline created="Sun, 09 May 2021 15:09:40 GMT" text="three commands:">
+						<outline created="Sun, 09 May 2021 15:09:45 GMT" text="View OPML"></outline>
+						<outline created="Sun, 09 May 2021 15:09:48 GMT" text="Insert OPML"></outline>
+						<outline created="Sun, 09 May 2021 15:09:51 GMT" text="Include OPML"></outline>
+						</outline>
+					</outline>
+				<outline created="Sun, 09 May 2021 14:34:24 GMT" text="In File/Open dialog, only present files whose names end with .opml."></outline>
+				<outline created="Sun, 09 May 2021 14:11:21 GMT" text="We are not saving the tabs immediately after opening a file via a bookmark.">
+					<outline created="Sun, 09 May 2021 14:11:38 GMT" text="to reproduce --">
+						<outline created="Sun, 09 May 2021 14:11:43 GMT" text="choose a file that isn't already open from Bookmarks menu"></outline>
+						<outline created="Sun, 09 May 2021 14:11:55 GMT" text="reload the page"></outline>
+						<outline created="Sun, 09 May 2021 14:12:00 GMT" text="the file you opened will not be in the tabs"></outline>
+						</outline>
+					<outline created="Sun, 09 May 2021 14:12:13 GMT" text="I think it's as simple as calling prefsChanged () after opening a new file">
+						<outline created="Sun, 09 May 2021 14:18:58 GMT" text="It was, the problem appears to be fixed. "></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Sun, 09 May 2021 14:10:52 GMT" text="[[concord]] &amp; [[drummer]]" type="outline">
+				<outline created="Sun, 09 May 2021 14:10:58 GMT" text="Make the bar cursor suboutline visible as you reorg using keyboard"></outline>
+				<outline created="Sun, 09 May 2021 14:06:37 GMT" text="In Concord, add opReorg callback."></outline>
+				<outline created="Sun, 09 May 2021 14:07:08 GMT" text="Catch the callback in drummerHome."></outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 08 May 2021 15:16:52 GMT" name="08" text="May 8" type="calendarDay">
+			<outline created="Sun, 09 May 2021 00:27:25 GMT" text="[[davetwitter]]" type="outline">
+				<outline created="Sun, 09 May 2021 00:27:30 GMT" text="Updated &lt;a href=&quot;https://github.com/scripting/twitter&quot;&gt;repository&lt;/a&gt; on GitHub with the latest backend for Drummer verbs."></outline>
+				</outline>
+			<outline created="Sat, 08 May 2021 17:09:37 GMT" text="[[drummer]]" type="outline">
+				<outline created="Sat, 08 May 2021 17:09:43 GMT" text="twitter.getTweet was returning the unprocessed object that Twitter sends us.">
+					<outline created="Sat, 08 May 2021 17:10:05 GMT" text="I rewrote it so that it returns a simplified object, with the information a script might need. "></outline>
+					<outline created="Sat, 08 May 2021 15:57:59 GMT" text="twitter.getTweet" type="link" url="http://scripting.com/code/docserver/?verb=twitter.getTweet"></outline>
+					</outline>
+				<outline created="Sat, 08 May 2021 17:45:29 GMT" text="Updated twitter.getThread so it returns the same info about a tweet as twitter.getTweet does.">
+					<outline created="Sat, 08 May 2021 17:45:08 GMT" text="twitter.getThread" type="link" url="http://scripting.com/code/docserver/?verb=twitter.getThread"></outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 08 May 2021 15:16:53 GMT" text="[[docserver]]" type="outline">
+				<outline created="Sat, 08 May 2021 15:16:56 GMT" text="Reviewing docs for new twitter verbs.">
+					<outline created="Sat, 08 May 2021 15:42:36 GMT" text="twitter.getUserLists" type="link" url="http://scripting.com/code/docserver/?verb=twitter.getUserLists"></outline>
+					<outline created="Sat, 08 May 2021 15:57:59 GMT" text="twitter.getListMembers" type="link" url="http://scripting.com/code/docserver/?verb=twitter.getTweet"></outline>
+					<outline created="Sat, 08 May 2021 15:59:23 GMT" text="twitter.getListInfo" type="link" url="http://scripting.com/code/docserver/?verb=twitter.updateListInfo"></outline>
+					<outline created="Sat, 08 May 2021 15:59:23 GMT" text="twitter.updateListInfo" type="link" url="http://scripting.com/code/docserver/?verb=twitter.updateListInfo"></outline>
+					<outline created="Sat, 08 May 2021 16:13:18 GMT" text="twitter.addMemberToList" type="link" url="http://scripting.com/code/docserver/?verb=twitter.addMemberToList"></outline>
+					<outline created="Sat, 08 May 2021 16:14:25 GMT" text="twitter.addGroupToList" type="link" url="http://scripting.com/code/docserver/?verb=twitter.addGroupToList"></outline>
+					<outline created="Sat, 08 May 2021 16:15:37 GMT" text="twitter.removeUserFromList" type="link" url="http://scripting.com/code/docserver/?verb=twitter. removeUserFromList"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 07 May 2021 14:30:28 GMT" name="07" text="May 7" type="calendarDay">
+			<outline created="Fri, 07 May 2021 14:30:29 GMT" text="[[Drummer]]" type="outline">
+				<outline created="Fri, 07 May 2021 14:31:16 GMT" text="Write glue for new Twitter list verbs.">
+					<outline created="Sun, 28 Mar 2021 23:56:08 GMT" text="twitter.getUserLists"></outline>
+					<outline created="Fri, 07 May 2021 15:40:07 GMT" text="twitter.getListMembers"></outline>
+					<outline created="Fri, 07 May 2021 16:16:55 GMT" text="twitter.getListInfo"></outline>
+					<outline created="Fri, 07 May 2021 17:01:36 GMT" text="twitter.addMemberToList"></outline>
+					<outline created="Fri, 07 May 2021 17:01:36 GMT" text="twitter.addGroupToList"></outline>
+					<outline created="Fri, 07 May 2021 19:31:38 GMT" text="twitter.removeUserFromList"></outline>
+					<outline created="Fri, 07 May 2021 19:49:51 GMT" text="twitter.removeGroupFromList"></outline>
+					</outline>
+				</outline>
+			<outline created="Fri, 07 May 2021 14:34:30 GMT" text="[[davetwitter]]" type="outline">
+				<outline created="Fri, 07 May 2021 14:34:35 GMT" text="Implemented new Twitter list functionality, to be called from Art Show and Drummer. "></outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 06 May 2021 14:12:37 GMT" name="06" text="May 6" type="calendarDay">
+			<outline created="Thu, 06 May 2021 14:12:38 GMT" text="[[Drummer]]" type="outline">
+				<outline created="Thu, 06 May 2021 14:12:48 GMT" text="Back to work on Drummer after almost a full month working on the new tabs implementation, which makes large files perform much better, since they stay in memory over a tab switch. Also will be easier to add features to the UI because we're using a big closure for each tab. "></outline>
+				</outline>
+			</outline>
+		</body>
+	</opml>

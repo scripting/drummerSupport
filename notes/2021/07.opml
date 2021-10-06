@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="2.0">
+	<head>
+		<title>notes/2021/07.md</title>
+		<dateModified>&lt;%dateModified%></dateModified>
+		<expansionState></expansionState>
+		<vertScrollState>1</vertScrollState>
+		<windowTop>300</windowTop>
+		<windowLeft>700</windowLeft>
+		<windowBottom>900</windowBottom>
+		<windowRight>1500</windowRight>
+		</head>
+	<body created="Thu, 01 Jul 2021 12:29:08 GMT" name="july2021" text="notes/2021/07.mdo" type="calendarMonth">
+		<outline created="Sat, 31 Jul 2021 21:33:28 GMT" name="31" text="July 31" type="calendarDay">
+			<outline created="Sat, 31 Jul 2021 22:04:22 GMT" name="electricDrummer" text="electric drummer" type="outline">
+				<outline created="Sat, 31 Jul 2021 22:04:26 GMT" text="todo">
+					<outline created="Sat, 31 Jul 2021 22:04:27 GMT" text="make outline public command doesn't work in E/D"></outline>
+					<outline created="Sat, 31 Jul 2021 22:04:38 GMT" text="all you have to do is add a flPublic header attribute with a value true"></outline>
+					<outline created="Sat, 31 Jul 2021 22:04:50 GMT" text="E/D takes care of the rest"></outline>
+					<outline created="Sat, 31 Jul 2021 22:05:03 GMT" text="but it's not doing that"></outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 31 Jul 2021 21:33:29 GMT" text="drummer" type="outline">
+				<outline created="Sat, 31 Jul 2021 21:33:33 GMT" text="change notes outline for the testers">
+					<outline created="Sat, 31 Jul 2021 21:33:39 GMT" text="a command off the Docs menu"></outline>
+					</outline>
+				<outline created="Sat, 31 Jul 2021 21:34:04 GMT" text="start setup of testers nightly email"></outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 29 Jul 2021 13:55:23 GMT" name="29" text="July 29" type="calendarDay">
+			<outline created="Thu, 29 Jul 2021 16:45:14 GMT" text="docs" type="outline">
+				<outline created="Thu, 29 Jul 2021 16:45:17 GMT" text="working on Scripting in Drummer doc"></outline>
+				<outline created="Thu, 29 Jul 2021 16:45:28 GMT" text="the test menu -- this is is where i put scripts that i want you to try out">
+					<outline created="Thu, 29 Jul 2021 16:46:24 GMT" text="new preference setting">
+						<outline created="Thu, 29 Jul 2021 16:46:35 GMT" text="checkbox: include DW's test menu? "></outline>
+						<outline created="Thu, 29 Jul 2021 16:47:38 GMT" text="appPrefs.flIncludeDwTestMenu -- default false"></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 29 Jul 2021 13:55:24 GMT" text="pagepark" type="outline">
+				<outline created="Thu, 29 Jul 2021 13:55:26 GMT" text="todo -- i want to create a special version of docserver with a config.json structure">
+					<outline created="Thu, 29 Jul 2021 14:40:22 GMT" text="pass over enough info to docserver somehow to tell it where to find its opml file"></outline>
+					<outline created="Thu, 29 Jul 2021 14:40:37 GMT" text="i tried using a url param, but it wasn't being sent across"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 28 Jul 2021 15:33:01 GMT" name="28" text="July 28" type="calendarDay">
+			<outline created="Wed, 28 Jul 2021 15:35:35 GMT" text="drummer" type="outline">
+				<outline created="Wed, 28 Jul 2021 15:35:37 GMT" text="gather notes about scripting in drummer"></outline>
+				</outline>
+			<outline created="Wed, 28 Jul 2021 15:33:02 GMT" text="pagepark" type="outline">
+				<outline created="Wed, 28 Jul 2021 15:33:03 GMT" text="flServeConfigJson -- a new config value -- defaults false. ">
+					<outline created="Wed, 28 Jul 2021 15:33:27 GMT" text="Determines whether we serve the config.json file from each folder that has one. "></outline>
+					<outline created="Wed, 28 Jul 2021 15:33:42 GMT" text="This was an oversight. I want to close this door asap, but in case people have an application for it, I want to make it possible to open door in a single case or globally."></outline>
+					<outline created="Wed, 28 Jul 2021 15:34:26 GMT" text="if flServeConfigJson is false, we will report 404 not found for config.json files in domain folders. If it's true, we'll serve it just like any other file."></outline>
+					</outline>
+				<outline created="Wed, 28 Jul 2021 15:35:07 GMT" text="Fix docs for running apps that says you can't launch new apps without rebooting pagepark, it's not true, i do it all the time."></outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 27 Jul 2021 13:36:59 GMT" name="27" text="July 27" type="calendarDay">
+			<outline created="Tue, 27 Jul 2021 21:27:46 GMT" name="pagepark" text="pagepark" type="outline">
+				<outline created="Tue, 27 Jul 2021 21:27:49 GMT" text="Shouldn't be serving config.json from sub-folders of the domains folder."></outline>
+				</outline>
+			<outline created="Tue, 27 Jul 2021 14:33:38 GMT" name="docserver" text="docserver" type="outline">
+				<outline created="Tue, 27 Jul 2021 14:33:41 GMT" text="docserver app moves to docserver.scripting.com"></outline>
+				<outline created="Tue, 27 Jul 2021 15:15:24 GMT" text="The command in the Menu changes its name to &quot;Go to this page&quot; -- instead of putting up a dialog it opens the page specific to the current verb. "></outline>
+				<outline created="Tue, 27 Jul 2021 15:17:16 GMT" text="The page title now incorporates the name of the verb whose docs we're looking at."></outline>
+				<outline created="Tue, 27 Jul 2021 15:18:09 GMT" text="Allow the URL of the outline to be passed in as a param."></outline>
+				<outline created="Tue, 27 Jul 2021 15:17:35 GMT" text=""></outline>
+				<outline created="Tue, 27 Jul 2021 15:17:36 GMT" text=""></outline>
+				<outline created="Tue, 27 Jul 2021 15:17:36 GMT" text=""></outline>
+				<outline created="Tue, 27 Jul 2021 15:17:36 GMT" text=""></outline>
+				<outline created="Tue, 27 Jul 2021 14:33:55 GMT" text="home page is the DocServer app"></outline>
+				<outline created="Tue, 27 Jul 2021 14:34:02 GMT" text="it has a Docs menu, which is an outline of course">
+					<outline created="Tue, 27 Jul 2021 14:34:12 GMT" text="in it are Drummer docs pages"></outline>
+					<outline created="Tue, 27 Jul 2021 14:34:26 GMT" text="same menu is in the Drummer app?"></outline>
+					<outline created="Tue, 27 Jul 2021 14:34:57 GMT" text="generated from same outline"></outline>
+					</outline>
+				<outline created="Tue, 27 Jul 2021 14:35:43 GMT" text="the docs pages are served from a sub-folder of the domain folder">
+					<outline created="Tue, 27 Jul 2021 14:35:55 GMT" text="served from a static folder on Miami"></outline>
+					</outline>
+				</outline>
+			<outline created="Tue, 27 Jul 2021 14:33:33 GMT" text="docserver"></outline>
+			<outline created="Tue, 27 Jul 2021 13:55:05 GMT" text="daveappserver" type="outline">
+				<outline created="Tue, 27 Jul 2021 13:55:32 GMT" text="serving static files">
+					<outline created="Tue, 27 Jul 2021 13:55:07 GMT" text="suppose a request comes in for myapp.com/docs/">
+						<outline created="Tue, 27 Jul 2021 13:55:47 GMT" text="right now daveappserver just returns 404 not found."></outline>
+						</outline>
+					<outline created="Tue, 27 Jul 2021 13:56:08 GMT" text="instead, let's handle it">
+						<outline created="Tue, 27 Jul 2021 13:56:19 GMT" text=""></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Tue, 27 Jul 2021 13:37:00 GMT" text="drummer" type="outline">
+				<outline created="Tue, 27 Jul 2021 13:42:50 GMT" text="overall docs question -- where are we going to put the docs for drummer?">
+					<outline created="Tue, 27 Jul 2021 13:43:01 GMT" text="once this is solved, we can get on with shipping">
+						<outline created="Tue, 27 Jul 2021 13:43:08 GMT" text="until it's solved just chipping away at the edges"></outline>
+						</outline>
+					<outline created="Tue, 27 Jul 2021 13:44:34 GMT" text="options">
+						<outline created="Tue, 27 Jul 2021 13:44:45 GMT" text="docserver.scripting.com/drummer"></outline>
+						<outline created="Tue, 27 Jul 2021 14:24:44 GMT" text="docserver.org/drummer"></outline>
+						<outline created="Tue, 27 Jul 2021 13:44:50 GMT" text="drummer.scripting.com/docs"></outline>
+						<outline created="Tue, 27 Jul 2021 13:44:45 GMT" text="drummerdocs.scripting.com"></outline>
+						<outline created="Tue, 27 Jul 2021 13:47:30 GMT" text="drummer.garden/docs"></outline>
+						<outline created="Tue, 27 Jul 2021 13:47:30 GMT" text="drummer.pub/docs"></outline>
+						<outline created="Tue, 27 Jul 2021 13:47:30 GMT" text="drummer.love/docs"></outline>
+						<outline created="Tue, 27 Jul 2021 13:47:30 GMT" text="drummer.farm/docs"></outline>
+						</outline>
+					</outline>
+				<outline created="Tue, 27 Jul 2021 13:41:35 GMT" text="docs for various coding constructs">
+					<outline created="Tue, 27 Jul 2021 13:39:07 GMT" text="iconbar"></outline>
+					<outline created="Tue, 27 Jul 2021 13:41:59 GMT" text="scheduler "></outline>
+					<outline created="Tue, 27 Jul 2021 13:42:01 GMT" text="root"></outline>
+					<outline created="Tue, 27 Jul 2021 13:42:02 GMT" text="scripts menu"></outline>
+					</outline>
+				<outline created="Tue, 27 Jul 2021 13:42:23 GMT" text="docserver should be usable for other projects">
+					<outline created="Tue, 27 Jul 2021 13:42:32 GMT" text="url param, points to the outline containing the docs"></outline>
+					</outline>
+				<outline created="Tue, 27 Jul 2021 13:41:04 GMT" text="the filename is not displayed in the about box">
+					<outline created="Tue, 27 Jul 2021 13:41:15 GMT" text="that's crazy, how are you supposed to figure it out"></outline>
+					</outline>
+				<outline created="Tue, 27 Jul 2021 13:37:05 GMT" text="check out bookmarks and instant outlines"></outline>
+				<outline created="Tue, 27 Jul 2021 13:38:58 GMT" text="subscribe to my worknotes outline"></outline>
+				</outline>
+			<outline created="Tue, 27 Jul 2021 13:38:07 GMT" text="instant outlines" type="outline">
+				<outline created="Tue, 27 Jul 2021 13:38:11 GMT" text="new rule, when you subscribe to an instant outline and it has a &lt;urlPublic&gt; header element, that's the outline we read, and the outline we subscribe to.">
+					<outline created="Tue, 27 Jul 2021 13:38:39 GMT" name="writtenUpAHrefhttpsgithubcomscriptingdrummertestingissues17herea" text="written up &lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/17&quot;&gt;here&lt;/a&gt;." type="link" url="https://github.com/scripting/drummerTesting/issues/17"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 26 Jul 2021 14:54:29 GMT" name="26" text="July 26" type="calendarDay">
+			<outline created="Mon, 26 Jul 2021 18:04:33 GMT" text="scripting news" type="outline">
+				<outline created="Mon, 26 Jul 2021 18:04:36 GMT" text="bring back the close box, move the arrows to the empty lower left corner of dialog.">
+					<outline created="Mon, 26 Jul 2021 18:49:03 GMT" text="didn't work. there's a reason the dialog is set up the way it is"></outline>
+					</outline>
+				<outline created="Mon, 26 Jul 2021 18:49:14 GMT" text="todo: i want a permalink for a tagref">
+					<outline created="Tue, 27 Jul 2021 13:36:32 GMT" text="done" type="link" url="http://scripting.com/2021/07/26.html#a190836"></outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 26 Jul 2021 16:16:29 GMT" text="socketServer" type="outline">
+				<outline created="Mon, 26 Jul 2021 16:16:34 GMT" text="it was manufacturing the URL to notify about">
+					<outline created="Mon, 26 Jul 2021 16:16:49 GMT" text="instead use the urlPublic value"></outline>
+					<outline created="Mon, 26 Jul 2021 16:16:56 GMT" text="we're reading the opmltext anyway"></outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 26 Jul 2021 14:55:25 GMT" text="drummer" type="outline">
+				<outline created="Mon, 26 Jul 2021 15:30:02 GMT" text="when you subscribe to an outline, use the urlPublic value, no matter what URL the user gave you."></outline>
+				<outline created="Mon, 26 Jul 2021 15:50:21 GMT" text="this means anyone who has a tab open to an instant outline in drummer now, has to close it and re-open it to be sure they'll get updates."></outline>
+				<outline created="Mon, 26 Jul 2021 14:55:27 GMT" text="stress test for instant outlines">
+					<outline created="Mon, 26 Jul 2021 15:00:38 GMT" text="I opened three outlines for twitter feeds, as managed by the instantOutlines repo."></outline>
+					<outline created="Tue, 27 Jul 2021 13:37:29 GMT" text="and updated them in unpredictable orders"></outline>
+					<outline created="Tue, 27 Jul 2021 13:37:36 GMT" text="there were problems, but i got everything in sync"></outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 26 Jul 2021 14:55:31 GMT" text="pagepark" type="outline">
+				<outline created="Mon, 26 Jul 2021 14:55:33 GMT" text="v0.8.21 and 22, now it should be possible for people to host sites where they edit the home page using LO2, or any app that generates OPML."></outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 24 Jul 2021 13:23:40 GMT" name="24" text="July 24" type="calendarDay">
+			<outline created="Mon, 26 Jul 2021 14:54:30 GMT" text="drummer" type="outline">
+				<outline created="Mon, 26 Jul 2021 14:54:40 GMT" text="Get My Tweets was set up to use littleoutliner.com credentials, and in Drummer we have its credentials, so it doesn't work. Decided to integrate the feature into davetwitter, so every app that uses this can do it through its own server. "></outline>
+				</outline>
+			<outline created="Sat, 24 Jul 2021 13:23:41 GMT" text="davetwitter" type="outline">
+				<outline created="Sat, 24 Jul 2021 13:26:03 GMT" text="added Get My Tweets functionality used by Drummer"></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 23 Jul 2021 18:58:10 GMT" name="23" text="July 23" type="calendarDay">
+			<outline created="Fri, 23 Jul 2021 18:58:11 GMT" name="opmltweets" text="opmltweets" type="outline">
+				<outline created="Fri, 23 Jul 2021 18:58:27 GMT" text="the app was moved to a public server -- opmltweets.scripting.com."></outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 22 Jul 2021 15:18:08 GMT" name="22" text="July 22" type="calendarDay">
+			<outline created="Thu, 22 Jul 2021 16:15:32 GMT" text="drummer" type="outline">
+				<outline created="Thu, 22 Jul 2021 21:12:50 GMT" text="added opml.js to the includes">
+					<outline created="Thu, 22 Jul 2021 21:12:56 GMT" text="&lt;script src=&quot;http://scripting.com/code/opmlpackage/client/opml.js&quot;&gt;&lt;/script&gt;"></outline>
+					</outline>
+				<outline created="Thu, 22 Jul 2021 16:15:38 GMT" text="sort out issue with instant outline updates coming in and overwriting the content of another tab">
+					<outline created="Thu, 22 Jul 2021 16:16:01 GMT" text="a data-losing situation"></outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 22 Jul 2021 15:20:10 GMT" text="scripting news" type="outline">
+				<outline created="Thu, 22 Jul 2021 15:20:19 GMT" text="tags feature announced">
+					<outline created="Thu, 22 Jul 2021 15:20:26 GMT" text="http://scripting.com/2021/07/22/135636.html?title=taggingInScriptingNews" type="link" url="http://scripting.com/2021/07/22/135636.html?title=taggingInScriptingNews"></outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 22 Jul 2021 15:18:09 GMT" text="tagserver" type="outline">
+				<outline created="Thu, 22 Jul 2021 15:18:11 GMT" text="repeatable bug">
+					<outline created="Thu, 22 Jul 2021 15:18:25 GMT" text="this is a [[tag]]"></outline>
+					<outline created="Thu, 22 Jul 2021 15:19:15 GMT" text="save outline"></outline>
+					<outline created="Thu, 22 Jul 2021 15:19:21 GMT" text="it shows up"></outline>
+					<outline created="Thu, 22 Jul 2021 15:19:24 GMT" text="change the text to ">
+						<outline created="Thu, 22 Jul 2021 15:19:30 GMT" text="this might be a tag [[tag]]"></outline>
+						</outline>
+					<outline created="Thu, 22 Jul 2021 15:19:52 GMT" text="save"></outline>
+					<outline created="Thu, 22 Jul 2021 15:19:39 GMT" text="the tag ref is gone"></outline>
+					<outline created="Thu, 22 Jul 2021 15:19:47 GMT" text="make a change"></outline>
+					<outline created="Thu, 22 Jul 2021 15:20:02 GMT" text="save"></outline>
+					<outline created="Thu, 22 Jul 2021 15:20:03 GMT" text="the tag is back"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 21 Jul 2021 13:37:07 GMT" name="21" text="July 21" type="calendarDay">
+			<outline created="Wed, 21 Jul 2021 14:29:47 GMT" text="scripting news" type="outline">
+				<outline created="Wed, 21 Jul 2021 14:29:52 GMT" text="move closebox vertically"></outline>
+				<outline created="Wed, 21 Jul 2021 14:30:13 GMT" text="move the back arrow further to the left"></outline>
+				<outline created="Wed, 21 Jul 2021 14:30:21 GMT" text="color/bold when you hover over a tag"></outline>
+				<outline created="Wed, 21 Jul 2021 17:07:23 GMT" text="i've got the tagref dialog integrated with scripting news, but i'm not calling out the tags yet. i want to have a settle-in session with it. time for a break."></outline>
+				</outline>
+			<outline created="Wed, 21 Jul 2021 13:40:24 GMT" text="drummer" type="outline">
+				<outline created="Wed, 21 Jul 2021 13:40:26 GMT" text="bridge between drummer and github">
+					<outline created="Wed, 21 Jul 2021 13:40:34 GMT" text="i want to be able to edit docs that flow to github but are written in drummer"></outline>
+					</outline>
+				</outline>
+			<outline created="Wed, 21 Jul 2021 13:37:08 GMT" text="test group" type="outline">
+				<outline created="Wed, 21 Jul 2021 13:37:31 GMT" text="tiensonqin"></outline>
+				<outline created="Wed, 21 Jul 2021 13:37:37 GMT" text="RCmerci"></outline>
+				<outline created="Wed, 21 Jul 2021 13:37:45 GMT" text="weihua-lu"></outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 18 Jul 2021 17:15:24 GMT" name="18" text="July 18" type="calendarDay">
+			<outline created="Sun, 18 Jul 2021 17:41:57 GMT" text="scripting news" type="outline">
+				<outline created="Sun, 18 Jul 2021 17:42:00 GMT" text="i want to try a different approach to tags">
+					<outline created="Sun, 18 Jul 2021 17:42:07 GMT" text="let's adapt OPML Tags Home to tags.scripting.com"></outline>
+					<outline created="Sun, 18 Jul 2021 17:42:19 GMT" text="make a [[xxx]] link into a link into that app"></outline>
+					<outline created="Sun, 18 Jul 2021 17:42:42 GMT" text="get on with it"></outline>
+					</outline>
+				</outline>
+			<outline created="Sun, 18 Jul 2021 17:15:25 GMT" text="tagbase" type="outline">
+				<outline created="Sun, 18 Jul 2021 17:15:33 GMT" text="add a permalink field to the database for each tag ref"></outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 17 Jul 2021 15:25:04 GMT" name="17" text="July 17" type="calendarDay">
+			<outline created="Sat, 17 Jul 2021 15:25:05 GMT" text="scripting news" type="outline">
+				<outline created="Sat, 17 Jul 2021 15:25:09 GMT" text="replace a tag with a link to a special kind of popup window that displays other posts that are similarly tagged. "></outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 15 Jul 2021 15:05:13 GMT" name="15" text="July 15" type="calendarDay">
+			<outline created="Fri, 16 Jul 2021 02:17:12 GMT" text="scripting news" type="outline">
+				<outline created="Fri, 16 Jul 2021 02:17:15 GMT" text="UI for tagging"></outline>
+				</outline>
+			<outline created="Thu, 15 Jul 2021 15:05:48 GMT" text="drummer" type="outline">
+				<outline created="Thu, 15 Jul 2021 15:05:51 GMT" text="no more subscribe to outline">
+					<outline created="Thu, 15 Jul 2021 15:06:02 GMT" text="the command changes to Open URL..."></outline>
+					<outline created="Thu, 15 Jul 2021 15:06:12 GMT" text="because that's all it is"></outline>
+					<outline created="Thu, 15 Jul 2021 15:06:17 GMT" text="if it has a websocket, we subscribe"></outline>
+					<outline created="Thu, 15 Jul 2021 15:06:23 GMT" text="you can bookmark it"></outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 15 Jul 2021 15:05:14 GMT" text="tagServer is modernized" type="outline">
+				<outline created="Thu, 15 Jul 2021 15:05:22 GMT" text="It's a package, and it returns results in OPML. "></outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 11 Jul 2021 17:18:01 GMT" name="11" text="July 11" type="calendarDay">
+			<outline created="Sun, 11 Jul 2021 18:28:09 GMT" text="Hoover" type="outline">
+				<outline created="Sun, 11 Jul 2021 18:28:12 GMT" text="next-up for hoover, have it only pay attention to the most recent day">
+					<outline created="Sun, 11 Jul 2021 18:28:31 GMT" text="that goes for the visiting routine and"></outline>
+					<outline created="Sun, 11 Jul 2021 18:28:38 GMT" text="for getting history"></outline>
+					<outline created="Sun, 11 Jul 2021 18:28:46 GMT" text="thus you can edit or delete items in the rest of the outline, we only care about today."></outline>
+					</outline>
+				</outline>
+			<outline created="Sun, 11 Jul 2021 17:18:02 GMT" text="Drummer" type="outline">
+				<outline created="Sun, 11 Jul 2021 17:18:04 GMT" text="Make dark mode an option.">
+					<outline created="Sun, 11 Jul 2021 17:18:21 GMT" text="Also let users configure their own CSS."></outline>
+					<outline created="Sun, 11 Jul 2021 17:18:30 GMT" text="Publish the source for the darkmode CSS."></outline>
+					<outline created="Sun, 11 Jul 2021 17:18:40 GMT" text="What we have now is crude, just black and white. "></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 10 Jul 2021 14:30:37 GMT" name="10" text="July 10" type="calendarDay">
+			<outline created="Sun, 11 Jul 2021 02:26:05 GMT" text="idea" type="outline">
+				<outline created="Sun, 11 Jul 2021 02:26:09 GMT" text="Something like nodeEditor inside Drummer."></outline>
+				</outline>
+			<outline created="Sat, 10 Jul 2021 15:07:01 GMT" text="verbs" type="outline">
+				<outline created="Sat, 10 Jul 2021 15:06:39 GMT" text="op.attributes.deleteOne appears to not work"></outline>
+				</outline>
+			<outline created="Sat, 10 Jul 2021 15:06:14 GMT" text="electric drummer" type="outline">
+				<outline created="Sat, 10 Jul 2021 15:06:19 GMT" text="Docs menu must be added">
+					<outline created="Sat, 10 Jul 2021 15:06:26 GMT" text="it should be copied into the includes folder"></outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 10 Jul 2021 14:31:03 GMT" text="hoover" type="outline">
+				<outline created="Sat, 10 Jul 2021 14:31:05 GMT" text="have a framework up and running, something that will likely replace tagserver. "></outline>
+				<outline created="Sat, 10 Jul 2021 14:31:34 GMT" text="the plan -- every headline of type outline goes in the database">
+					<outline created="Sat, 10 Jul 2021 14:31:46 GMT" text="the headline of the outline node is the tag, unless there's one or more [[xxx]] strings in the text, in which case its not tagged on the text of the headline, and is tagged by the values of each of the [[xxx]]s.  "></outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 10 Jul 2021 14:30:38 GMT" text="support" type="outline">
+				<outline created="Sat, 10 Jul 2021 14:30:40 GMT" text="started a private support group on Github for drummer"></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 09 Jul 2021 14:28:25 GMT" name="09" text="July 9" type="calendarDay">
+			<outline created="Fri, 09 Jul 2021 15:27:33 GMT" text="hoover" type="outline">
+				<outline created="Fri, 09 Jul 2021 15:28:27 GMT" text="I have one outline I use to feed stuff into a tagserver type database"></outline>
+				<outline created="Fri, 09 Jul 2021 15:29:06 GMT" text="follows a calendar structure. any item with a type attribute gets included in the database."></outline>
+				<outline created="Fri, 09 Jul 2021 15:29:32 GMT" text="i can request to see all the items with a given tag">
+					<outline created="Fri, 09 Jul 2021 15:29:45 GMT" text="as an outline i can subscribe to"></outline>
+					</outline>
+				</outline>
+			<outline created="Fri, 09 Jul 2021 14:28:26 GMT" text="drumkit" type="outline">
+				<outline created="Fri, 09 Jul 2021 14:28:28 GMT" text="a package for hosting your own drummer"></outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 08 Jul 2021 11:51:37 GMT" name="08" text="July 8" type="calendarDay">
+			<outline created="Thu, 08 Jul 2021 11:52:25 GMT" text="tagbase" type="outline">
+				<outline created="Thu, 08 Jul 2021 11:58:02 GMT" text="give it a calendar structured outline">
+					<outline created="Thu, 08 Jul 2021 11:58:29 GMT" text="everything with a type attribute defines a document, something that can be tagged"></outline>
+					<outline created="Thu, 08 Jul 2021 11:58:44 GMT" text="the top level headline is the tag, in the case of this outline, the name of a product"></outline>
+					<outline created="Thu, 08 Jul 2021 11:59:13 GMT" text="case insensitive"></outline>
+					</outline>
+				<outline created="Thu, 08 Jul 2021 11:59:25 GMT" text="you can view all the notes for a topic">
+					<outline created="Thu, 08 Jul 2021 12:00:31 GMT" text="in a web page"></outline>
+					<outline created="Thu, 08 Jul 2021 12:00:35 GMT" text="or in OPML, so you can include it in an outline"></outline>
+					</outline>
+				<outline created="Thu, 08 Jul 2021 12:01:03 GMT" text="most outlines will not go into the tagbase">
+					<outline created="Thu, 08 Jul 2021 12:01:11 GMT" text="it's designed for development diaries like this one"></outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 08 Jul 2021 13:27:22 GMT" text="drummer" type="outline">
+				<outline created="Thu, 08 Jul 2021 13:27:24 GMT" text="moved from http://scripting.com/code/testing/drummer">
+					<outline created="Thu, 08 Jul 2021 13:27:36 GMT" text="to http://scripting.com/code/drummer "></outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 08 Jul 2021 11:51:38 GMT" text="electric drummer" type="outline">
+				<outline created="Thu, 08 Jul 2021 14:14:42 GMT" text="note because of includes folder, we now how to rebuild the includes when we make a change to anything it depends on"></outline>
+				<outline created="Thu, 08 Jul 2021 14:14:03 GMT" text="the file/close command works again">
+					<outline created="Thu, 08 Jul 2021 14:14:17 GMT" text="i had changed the css on the close box, so I wasn't finding the visible one when i searched for it"></outline>
+					</outline>
+				<outline created="Thu, 08 Jul 2021 13:02:51 GMT" text="i created an includes folder and put test.js in it with one routine and i was able to call it">
+					<outline created="Thu, 08 Jul 2021 13:28:54 GMT" text="code is in nodeEditorSuite.suckDownElectricDrummerIncludes"></outline>
+					<outline created="Thu, 08 Jul 2021 13:03:23 GMT" text="so i'm going to suck down all the files ED includes over the net and put them in the includes folder">
+						<outline created="Thu, 08 Jul 2021 12:55:22 GMT" text="http://s3.amazonaws.com/scripting.com/code/includes/jquery-1.9.1.min.js"></outline>
+						<outline text="http://s3.amazonaws.com/scripting.com/code/includes/bootstrap.css"></outline>
+						<outline created="Thu, 08 Jul 2021 13:05:14 GMT" text="http://s3.amazonaws.com/scripting.com/code/includes/bootstrap.min.js"></outline>
+						<outline text="http://scripting.com/code/fontawesome/5.12.0/css/all.css"></outline>
+						<outline text="http://s3.amazonaws.com/scripting.com/code/includes/basic/code.js"></outline>
+						<outline text="http://s3.amazonaws.com/scripting.com/code/includes/basic/styles.css"></outline>
+						<outline text="http://fargo.io/code/storage/api.js"></outline>
+						<outline text="http://scripting.com/code/concord/testing/3.0.6/concord.js"></outline>
+						<outline text="http://scripting.com/code/concord/testing/3.0.6/concordstyles.css"></outline>
+						<outline text="http://fargo.io/code/shared/outliner.js"></outline>
+						<outline text="http://fargo.io/code/shared/xml.js"></outline>
+						<outline text="http://fargo.io/code/shared/arrowpad.js"></outline>
+						<outline text="http://fargo.io/code/shared/twoutliner.js"></outline>
+						<outline text="http://fargo.io/code/sparkmd5/spark-md5.min.js"></outline>
+						<outline text="http://fargo.io/code/keypress.js"></outline>
+						<outline text="http://scripting.com/code/xmlrpcbrowserclient/xmlrpc.js"></outline>
+						<outline text="http://fargo.io/code/shared/buildrss.js"></outline>
+						<outline text="http://fargo.io/code/shared/tableeditor.js"></outline>
+						<outline text="http://fargo.io/code/shared/tableeditor.css"></outline>
+						<outline text="http://scripting.com/publicfolder/code/jsParserForLO2/acorn.js"></outline>
+						<outline text="http://scripting.com/publicfolder/code/jsParserForLO2/escodegen.browser.js"></outline>
+						<outline text="http://scripting.com/code/concord/concordscript/scripting.js?ghi=6"></outline>
+						<outline text="http://scripting.com/code/concord/concordscript/verbs.js?ghi=9"></outline>
+						<outline text="http://fargo.io/code/shared/outlinedialog.css"></outline>
+						<outline text="http://fargo.io/code/shared/outlinedialog.js"></outline>
+						<outline text="http://scripting.com/code/testing/drummerhome/code.js?ghi=6"></outline>
+						<outline text="http://scripting.com/code/testing/drummerhome/styles.css?ghi=6"></outline>
+						<outline text="http://fonts.googleapis.com/css?family=Ubuntu:400,500i,700"></outline>
+						<outline text="http://fonts.googleapis.com/css?family=Rancho"></outline>
+						<outline text="http://scripting.com/code/fontawesome/5.12.0/webfonts/fa-solid-900.woff2"></outline>
+						<outline text="http://scripting.com/code/fontawesome/5.12.0/webfonts/fa-brands-400.woff2"></outline>
+						<outline text="http://fargo.io/code/node/shared/askdialog.html"></outline>
+						</outline>
+					</outline>
+				<outline created="Thu, 08 Jul 2021 13:00:21 GMT" text="moved it to http://scripting.com/code/electricdrummer/"></outline>
+				<outline created="Thu, 08 Jul 2021 11:52:21 GMT" text="the icon for electric drummer is driving me crazy. have to get it back to the drummer">
+					<outline created="Thu, 08 Jul 2021 12:16:32 GMT" text="what i did to get it right -- deleted the copy of the ED app in the Applications Folder, and in the development folder, and then built the app with the correct icon. "></outline>
+					<outline created="Thu, 08 Jul 2021 12:17:04 GMT" text="since the icon won't change again, we should not have to do this again!"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 07 Jul 2021 13:35:15 GMT" name="07" text="July 7" type="calendarDay">
+			<outline created="Thu, 08 Jul 2021 02:09:39 GMT" text="Development diary" type="outline">
+				<outline created="Thu, 08 Jul 2021 02:10:29 GMT" text="Need a non ad hoc flow for daily development notes. This is a good application for tags."></outline>
+				<outline created="Thu, 08 Jul 2021 02:10:00 GMT" text="Finally lets get a system in place that works as well as what we have for Scripting News."></outline>
+				</outline>
+			<outline created="Wed, 07 Jul 2021 18:19:59 GMT" text="PagePark" type="outline">
+				<outline created="Wed, 07 Jul 2021 18:20:02 GMT" text="Andrew reports a problem with mirrors and index files.">
+					<outline created="Wed, 07 Jul 2021 20:47:29 GMT" text="https://github.com/scripting/pagePark/issues/21" type="link" url="https://github.com/scripting/pagePark/issues/21"></outline>
+					</outline>
+				</outline>
+			<outline created="Wed, 07 Jul 2021 13:58:26 GMT" text="Drummer" type="outline">
+				<outline created="Wed, 07 Jul 2021 15:44:12 GMT" text="Creating a connection between DocServer and Drummer">
+					<outline created="Wed, 07 Jul 2021 15:44:22 GMT" text="To start a command in the Docs menu. You enter the name of a verb, and it opens DS to that page."></outline>
+					<outline created="Wed, 07 Jul 2021 15:44:43 GMT" text="But there's a problem, the source outlines in ED were pointing to testing.littleoutliner.com. Not good."></outline>
+					<outline created="Wed, 07 Jul 2021 15:45:24 GMT" text="I need to be able to work on ED, esp to update how it handles pub/sub. that's changing, no instantoutliner.com needed, we get all the info we need from the head of the outline. "></outline>
+					</outline>
+				<outline created="Wed, 07 Jul 2021 13:58:29 GMT" text="The File Open dialog was a mess because I created some files with huge names">
+					<outline created="Wed, 07 Jul 2021 13:58:49 GMT" text="made it so the cells don't wrap, so the table expands and we get a horiz scroll bar, which is preferable to the mess we were seeing before"></outline>
+					<outline created="Wed, 07 Jul 2021 13:59:20 GMT" text="made the text smaller"></outline>
+					<outline created="Wed, 07 Jul 2021 13:59:27 GMT" text="renamed the files"></outline>
+					<outline created="Wed, 07 Jul 2021 13:59:30 GMT" text="now it looks great"></outline>
+					</outline>
+				</outline>
+			<outline created="Tue, 06 Jul 2021 22:24:38 GMT" text="electric drummer" type="outline">
+				<outline created="Wed, 07 Jul 2021 17:12:24 GMT" text="when you view OPML, if the file is public, the window opens in a browser outside of Electron "></outline>
+				<outline created="Tue, 06 Jul 2021 22:24:43 GMT" text="if you type cmd-f, drummer goes into a stack overflow condition">
+					<outline created="Wed, 07 Jul 2021 13:33:53 GMT" text="i was prepared this morning to roll up my sleeves and deal with this, but now it's not happening."></outline>
+					<outline created="Wed, 07 Jul 2021 13:34:08 GMT" text="i can do all the finding I want, either by choosing the command from the menu, or typing cmd-f. "></outline>
+					<outline created="Wed, 07 Jul 2021 13:35:00 GMT" text="so i'm going to have to fall back to my other stuff, and hope it shows up again. "></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 05 Jul 2021 13:59:22 GMT" name="05" text="July 5" type="calendarDay">
+			<outline created="Mon, 05 Jul 2021 20:36:30 GMT" text="instantoutliner.com" type="outline">
+				<outline created="Mon, 05 Jul 2021 20:36:34 GMT" text="no longer needed, all the subscription info is contained in the &lt;head&gt; section of the OPML file."></outline>
+				<outline created="Mon, 05 Jul 2021 20:37:17 GMT" text="but i will keep it running so the links don't break! ;-)"></outline>
+				</outline>
+			<outline created="Mon, 05 Jul 2021 20:35:57 GMT" text="tagserver" type="outline">
+				<outline created="Mon, 05 Jul 2021 20:36:00 GMT" text="you can have your own tag server. "></outline>
+				</outline>
+			<outline created="Mon, 05 Jul 2021 20:32:30 GMT" text="Set up a Drum Kit" type="outline">
+				<outline created="Mon, 05 Jul 2021 20:32:39 GMT" text="Server that you can run Drummer from. "></outline>
+				<outline created="Mon, 05 Jul 2021 20:32:50 GMT" text="Just add the address I give you to config.json in the right place, and run Drummer from your own server."></outline>
+				<outline created="Mon, 05 Jul 2021 20:33:06 GMT" text="It can even be on your local computer, or LAN."></outline>
+				</outline>
+			<outline created="Mon, 05 Jul 2021 20:26:31 GMT" text="Electric Drummer" type="outline">
+				<outline created="Mon, 05 Jul 2021 20:26:38 GMT" text="Get it building again, and have process for easier updates."></outline>
+				</outline>
+			<outline created="Mon, 05 Jul 2021 14:00:15 GMT" text="default folder for pagepark" type="outline">
+				<outline created="Mon, 05 Jul 2021 14:00:20 GMT" text="let's start with zero chance of breakage"></outline>
+				<outline created="Mon, 05 Jul 2021 14:00:36 GMT" text="if a request comes in for a host that doesn't have a domains folder, and there is a domains folder called default, serve the request from that folder"></outline>
+				</outline>
+			<outline created="Mon, 05 Jul 2021 13:59:23 GMT" text="opml.org" type="outline">
+				<outline created="Mon, 05 Jul 2021 13:59:27 GMT" text="i want to do a lite update to the opml.org site, along the lines of what i did for xml-rpc."></outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 04 Jul 2021 15:56:28 GMT" name="04" text="July 4" type="calendarDay">
+			<outline created="Sun, 04 Jul 2021 15:57:01 GMT" text="opml package" type="outline">
+				<outline created="Sun, 04 Jul 2021 15:57:07 GMT" text="i think it should be possible to ship it today"></outline>
+				<outline created="Sun, 04 Jul 2021 15:57:15 GMT" text="clean up this page">
+					<outline created="Sun, 04 Jul 2021 15:58:46 GMT" text="http://scripting.com/code/opmlpackage/client/index.html"></outline>
+					<outline created="Sun, 04 Jul 2021 15:58:47 GMT" text="needs description, spacing between boxes"></outline>
+					</outline>
+				<outline created="Sun, 04 Jul 2021 15:58:59 GMT" text="home page readme">
+					<outline created="Sun, 04 Jul 2021 15:59:05 GMT" text="point to other code for opml devs"></outline>
+					<outline created="Sun, 04 Jul 2021 15:59:14 GMT" text="place to ask questions, comment"></outline>
+					<outline created="Sun, 04 Jul 2021 15:59:54 GMT" text="add outline browser to client code?">
+						<outline created="Sun, 04 Jul 2021 16:00:35 GMT" text="http://fargo.io/code/browsers/outlinebrowserdemo.html"></outline>
+						<outline created="Sun, 04 Jul 2021 16:00:37 GMT" text="reason -- there's confusion around which is the &quot;real&quot; version"></outline>
+						<outline created="Sun, 04 Jul 2021 16:00:49 GMT" text="this could be the real version, with docs, public facing?"></outline>
+						<outline created="Sun, 04 Jul 2021 16:00:58 GMT" text="or we could just point to it?"></outline>
+						</outline>
+					<outline created="Sun, 04 Jul 2021 16:01:29 GMT" text="point to instantOutlines project"></outline>
+					</outline>
+				</outline>
+			<outline created="Sun, 04 Jul 2021 15:56:29 GMT" text="dev.opml.org" type="outline">
+				<outline created="Sun, 04 Jul 2021 15:56:36 GMT" text="I found the Manila source for the website, it's in the S3 bucket, and in the Inactive Tools folder for OPML Editor on my desktop."></outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 03 Jul 2021 14:18:31 GMT" name="03" text="July 3" type="calendarDay">
+			<outline created="Sat, 03 Jul 2021 20:10:55 GMT" text="scripting.com story posted to github" type="outline">
+				<outline created="Sat, 03 Jul 2021 20:11:06 GMT" text="it's another app i ping when i update my blog"></outline>
+				<outline created="Sat, 03 Jul 2021 20:11:26 GMT" text="it reads the opml of scripting.com, scans for all the stories, "></outline>
+				</outline>
+			<outline created="Sat, 03 Jul 2021 20:10:10 GMT" text="a service that posts something to github" type="outline">
+				<outline created="Sat, 03 Jul 2021 20:10:19 GMT" text="take all the configuration out of it"></outline>
+				<outline created="Sat, 03 Jul 2021 20:10:33 GMT" text="you just have to know the url, have an authorized account"></outline>
+				</outline>
+			<outline created="Sat, 03 Jul 2021 14:19:01 GMT" text="opml package" type="outline">
+				<outline created="Sat, 03 Jul 2021 20:13:46 GMT" text="factor it down so the browser code is minimized">
+					<outline created="Sat, 03 Jul 2021 20:13:53 GMT" text="let's not use anything but">
+						<outline created="Sat, 03 Jul 2021 20:14:02 GMT" text="jquery"></outline>
+						</outline>
+					</outline>
+				<outline created="Sat, 03 Jul 2021 14:19:12 GMT" text="write docs, release it"></outline>
+				</outline>
+			<outline created="Sat, 03 Jul 2021 14:18:32 GMT" text="Drummer" type="outline">
+				<outline created="Sat, 03 Jul 2021 14:18:37 GMT" text="Set it up so it runs from a server on Glitch."></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 02 Jul 2021 13:36:08 GMT" name="02" text="July 2" type="calendarDay">
+			<outline created="Fri, 02 Jul 2021 17:11:53 GMT" text="Notes on Andrew's checklist" type="outline">
+				<outline created="Fri, 02 Jul 2021 17:12:00 GMT" text="&lt;i&gt;Manage Your Projects&lt;/i&gt; was at the top of my page, not the bottom, per the instructions."></outline>
+				<outline created="Fri, 02 Jul 2021 17:13:41 GMT" text="There was no &lt;i&gt;Import from Github&lt;/i&gt; on the page, but there was a &lt;i&gt;New Project&lt;/i&gt; button in the top right corner of the page. I clicked it.  "></outline>
+				<outline created="Fri, 02 Jul 2021 17:21:42 GMT" text="A menu pops up and at the bottom of the menu there's &lt;i&gt;Import from Github&lt;/i&gt;. "></outline>
+				<outline created="Fri, 02 Jul 2021 17:22:00 GMT" text="I clicked it, a dialog appears asking for the full URL of the repository, which I entered per the instructions. "></outline>
+				<outline created="Fri, 02 Jul 2021 17:21:57 GMT" text="The instructions for setting up the first sub-folder of the domains folder are difficult, it took a few tries to get it right. It could be made a little simpler, but the task is inherently tricky. "></outline>
+				<outline created="Fri, 02 Jul 2021 17:24:29 GMT" text="I have some ideas about how it could be made simpler, I'm going to think about it a bit. "></outline>
+				<outline created="Fri, 02 Jul 2021 17:24:47 GMT" text="Thanks for doing this."></outline>
+				</outline>
+			<outline created="Fri, 02 Jul 2021 13:36:09 GMT" text="opmlPackage repository" type="outline">
+				<outline created="Fri, 02 Jul 2021 15:30:39 GMT" text="the project is outlined in the opml file for the project">
+					<outline created="Fri, 02 Jul 2021 15:30:51 GMT" text="fill in the blanks, add more blanks, next session."></outline>
+					</outline>
+				<outline created="Fri, 02 Jul 2021 14:47:03 GMT" text="i already have a git project named opml">
+					<outline created="Fri, 02 Jul 2021 14:47:14 GMT" text="i'm going to leave it alone"></outline>
+					<outline created="Fri, 02 Jul 2021 14:47:19 GMT" text="this project will be in the opmlPackage repository"></outline>
+					</outline>
+				<outline created="Fri, 02 Jul 2021 14:47:41 GMT" text=""></outline>
+				<outline created="Fri, 02 Jul 2021 14:47:42 GMT" text="package starts with two calls">
+					<outline created="Fri, 02 Jul 2021 14:49:01 GMT" text="opml.parse"></outline>
+					<outline created="Fri, 02 Jul 2021 14:49:07 GMT" text="opml.stringify"></outline>
+					</outline>
+				<outline created="Fri, 02 Jul 2021 14:47:42 GMT" text=""></outline>
+				<outline created="Tue, 29 Jun 2021 16:29:51 GMT" text="both client and server">
+					<outline created="Tue, 29 Jun 2021 15:52:44 GMT" text="opml.parse (opmltext) returns an outline structure "></outline>
+					<outline created="Tue, 29 Jun 2021 15:53:37 GMT" text="opml.stringify (theOutline)"></outline>
+					</outline>
+				<outline created="Tue, 29 Jun 2021 16:30:07 GMT" text="client only">
+					<outline created="Tue, 29 Jun 2021 16:30:10 GMT" text="read and parse an outline over http, using $.ajax"></outline>
+					<outline created="Tue, 29 Jun 2021 16:30:50 GMT" text="subscribe to an outline">
+						<outline created="Tue, 29 Jun 2021 16:30:53 GMT" text="opml.subscribe (url, callback)">
+							<outline created="Tue, 29 Jun 2021 16:31:10 GMT" text="whenever we are notified that an outline has been modified, the callback is called with the outline as a JS structure."></outline>
+							</outline>
+						</outline>
+					</outline>
+				<outline created="Tue, 29 Jun 2021 16:30:20 GMT" text="server only">
+					<outline created="Tue, 29 Jun 2021 16:30:10 GMT" text="read and parse an outline over http, using request"></outline>
+					<outline created="Tue, 29 Jun 2021 16:31:44 GMT" text="handle websocket subscription and notification"></outline>
+					</outline>
+				<outline created="Fri, 02 Jul 2021 14:47:03 GMT" text=""></outline>
+				<outline created="Fri, 02 Jul 2021 14:47:03 GMT" text=""></outline>
+				<outline created="Fri, 02 Jul 2021 14:47:03 GMT" text=""></outline>
+				<outline created="Fri, 02 Jul 2021 14:47:04 GMT" text=""></outline>
+				<outline created="Fri, 02 Jul 2021 13:36:12 GMT" text="finally get started with this"></outline>
+				</outline>
+			<outline created="Fri, 02 Jul 2021 14:42:22 GMT" text="glitch" type="outline">
+				<outline created="Fri, 02 Jul 2021 14:42:26 GMT" text="andrew says he was able to get it running"></outline>
+				<outline created="Fri, 02 Jul 2021 14:42:34 GMT" text="sounds like it was easy?"></outline>
+				</outline>
+			<outline created="Fri, 02 Jul 2021 13:36:39 GMT" text="checklist to build electric drummer" type="outline">
+				<outline created="Fri, 02 Jul 2021 13:37:04 GMT" text="also, move all source files into the project folder, it should not read any source code over the net."></outline>
+				<outline created="Fri, 02 Jul 2021 13:54:21 GMT" text="file/new command -- file browser is fucked up, folder navigation doesn't work."></outline>
+				<outline created="Fri, 02 Jul 2021 14:01:33 GMT" text="when you click on the Eye icon, the page should open outside of Electric Drummer, in the web browser."></outline>
+				</outline>
+			<outline created="Fri, 02 Jul 2021 13:36:20 GMT" text="simplify pub/sub user commands in File menu" type="outline">
+				<outline created="Fri, 02 Jul 2021 13:36:37 GMT" text=""></outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 01 Jul 2021 12:29:09 GMT" name="01" text="July 1" type="calendarDay">
+			<outline created="Thu, 01 Jul 2021 12:31:20 GMT" text="npm/opml" type="outline">
+				<outline created="Thu, 01 Jul 2021 12:31:35 GMT" text="let's go!"></outline>
+				<outline created="Thu, 01 Jul 2021 14:42:23 GMT" text="add outline viewer code"></outline>
+				</outline>
+			<outline created="Thu, 01 Jul 2021 12:36:46 GMT" text="think about member database that can be accessed by all my apps" type="outline">
+				<outline created="Thu, 01 Jul 2021 12:37:10 GMT" text="where to put the database configuration data on each server?"></outline>
+				</outline>
+			<outline created="Thu, 01 Jul 2021 12:36:23 GMT" text="convert instantoutliner.com to mysql" type="outline">
+				<outline created="Thu, 01 Jul 2021 12:36:33 GMT" text="the coding is already done, just have to do the installation"></outline>
+				</outline>
+			<outline created="Thu, 01 Jul 2021 12:32:00 GMT" text="order a hard drive for mac mini" type="outline"></outline>
+			<outline created="Thu, 01 Jul 2021 12:33:27 GMT" text="roll over scripting.com opml for new month" type="outline"></outline>
+			<outline created="Thu, 01 Jul 2021 12:29:10 GMT" text="teach pagepark how to do a straight outline -- not done" type="outline">
+				<outline created="Thu, 01 Jul 2021 14:41:42 GMT" text="we didn't need it, i found the source listings app."></outline>
+				<outline created="Thu, 01 Jul 2021 12:29:36 GMT" text="use the same renderer as we currently use for outlines"></outline>
+				<outline created="Thu, 01 Jul 2021 13:57:38 GMT" text="http://this.how/opmlChecklist/?format=outline"></outline>
+				<outline created="Thu, 01 Jul 2021 12:29:46 GMT" isComment="true" text="a new &lt;head&gt; attribute says which way to render the outline">
+					<outline created="Thu, 01 Jul 2021 12:30:44 GMT" text="renderOutlineAs">
+						<outline created="Thu, 01 Jul 2021 12:30:54 GMT" text="howto (the default, the current method)"></outline>
+						<outline created="Thu, 01 Jul 2021 12:31:04 GMT" text="indentedOutline (like davewiner.com)"></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 01 Jul 2021 12:31:42 GMT" text="opmltweets" type="outline">
+				<outline created="Thu, 01 Jul 2021 14:43:22 GMT" text="handle emoji short codes"></outline>
+				<outline created="Thu, 01 Jul 2021 12:31:45 GMT" text="reduce http://t.co/ links using regex"></outline>
+				</outline>
+			</outline>
+		</body>
+	</opml>

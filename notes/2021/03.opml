@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="2.0">
+	<head>
+		<title>notes/2021/03.md</title>
+		<dateModified>&lt;%dateModified%></dateModified>
+		<expansionState></expansionState>
+		<vertScrollState>1</vertScrollState>
+		<windowTop>300</windowTop>
+		<windowLeft>700</windowLeft>
+		<windowBottom>900</windowBottom>
+		<windowRight>1500</windowRight>
+		</head>
+	<body created="Sat, 17 Jul 2021 15:27:40 GMT" text="notes/2021/03.mdo">
+		<outline created="Wed, 31 Mar 2021 14:58:23 GMT" name="31" text="March 31" type="calendarDay">
+			<outline created="Wed, 31 Mar 2021 19:11:38 GMT" text="[[drummer]]" type="outline">
+				<outline created="Wed, 31 Mar 2021 19:11:44 GMT" text="Scheduler">
+					<outline created="Wed, 31 Mar 2021 19:11:52 GMT" text="A new special outline file: scheduler.opml."></outline>
+					<outline created="Wed, 31 Mar 2021 19:12:01 GMT" text="Automatically opened at startup, if it's present."></outline>
+					<outline created="Wed, 31 Mar 2021 19:12:10 GMT" text="There are five defined summits:">
+						<outline created="Wed, 31 Mar 2021 19:12:17 GMT" text="startup"></outline>
+						<outline created="Wed, 31 Mar 2021 19:12:21 GMT" text="everySecond"></outline>
+						<outline created="Wed, 31 Mar 2021 19:12:25 GMT" text="everyMinute"></outline>
+						<outline created="Wed, 31 Mar 2021 19:12:29 GMT" text="everyHour"></outline>
+						<outline created="Wed, 31 Mar 2021 19:12:35 GMT" text="overnight"></outline>
+						</outline>
+					<outline created="Wed, 31 Mar 2021 19:12:42 GMT" text="They define the times that the scripts underneath run."></outline>
+					<outline created="Wed, 31 Mar 2021 19:12:54 GMT" text="Each script has a title and underneath it is the code that runs when the script runs."></outline>
+					<outline created="Wed, 31 Mar 2021 19:13:39 GMT" text="Example">
+						<outline created="Wed, 31 Mar 2021 16:25:53 GMT" text="startup">
+							<outline created="Wed, 31 Mar 2021 16:26:35 GMT" text="good morning">
+								<outline created="Wed, 31 Mar 2021 16:55:15 GMT" text="dialog.alert (&quot;Good morning sports fans!&quot;);"></outline>
+								</outline>
+							<outline created="Wed, 31 Mar 2021 19:36:47 GMT" text="init stuff">
+								<outline created="Wed, 31 Mar 2021 19:36:49 GMT" text="storage.ct = 0"></outline>
+								</outline>
+							</outline>
+						<outline created="Wed, 31 Mar 2021 19:36:56 GMT" text="everySecond">
+							<outline created="Wed, 31 Mar 2021 19:36:59 GMT" text="counter">
+								<outline created="Wed, 31 Mar 2021 19:37:01 GMT" text="storage.ct++;"></outline>
+								</outline>
+							</outline>
+						</outline>
+					<outline created="Wed, 31 Mar 2021 19:14:47 GMT" text="Names are unicase, so startup is the same as StARtuP."></outline>
+					<outline created="Wed, 31 Mar 2021 19:14:52 GMT" text="Comments are ignored at the top level and at the names level. Not sure if they're ignored in the scripts but they should be."></outline>
+					<outline created="Wed, 31 Mar 2021 19:15:11 GMT" text="There's an item in the Special files sub-menu of the Files menu. "></outline>
+					<outline created="Wed, 31 Mar 2021 19:15:43 GMT" text="You can have sections at the top level that don't match the names, they are ignored."></outline>
+					<outline created="Wed, 31 Mar 2021 15:43:33 GMT" text="The scripts run in parallel, not sequentially."></outline>
+					</outline>
+				</outline>
+			<outline created="Wed, 31 Mar 2021 14:58:24 GMT" text="[[LO2]]" type="outline">
+				<outline created="Wed, 31 Mar 2021 16:30:28 GMT" text="Removed the test scripts menu">
+					<outline created="Wed, 31 Mar 2021 16:30:33 GMT" text="It was created originally as a way for me to share scripts with test users. "></outline>
+					<outline created="Wed, 31 Mar 2021 16:30:45 GMT" text="We now have better ways to do that, and more coming."></outline>
+					</outline>
+				<outline created="Wed, 31 Mar 2021 14:58:27 GMT" text="Fixed a problem in how updates of instant outlines were being processed">
+					<outline created="Wed, 31 Mar 2021 15:01:14 GMT" text="The problem">
+						<outline created="Wed, 31 Mar 2021 14:59:06 GMT" text="Suppose you have at least one instant outline open. "></outline>
+						<outline created="Wed, 31 Mar 2021 14:59:29 GMT" text="Then you close another tab before it in the tab list (to its left)."></outline>
+						<outline created="Wed, 31 Mar 2021 14:59:50 GMT" text="An update comes in for that outline. "></outline>
+						<outline created="Wed, 31 Mar 2021 15:00:03 GMT" text="We'll either try to apply the update to a tab that doesn't exist (does no harm) or we'll apply the update to one that does exist but is not the outline that updated. "></outline>
+						</outline>
+					<outline created="Wed, 31 Mar 2021 15:01:21 GMT" text="How to test">
+						<outline created="Wed, 31 Mar 2021 15:02:27 GMT" text="Open a shareable outline in a tab, so you can edit it and cause updates to happen."></outline>
+						<outline created="Wed, 31 Mar 2021 15:02:43 GMT" text="Choose &lt;i&gt;Subscribe to outline&lt;/i&gt; in the File menu and enter the I/O url for the outline created in the previous step."></outline>
+						<outline created="Wed, 31 Mar 2021 15:03:21 GMT" text="Click on the tab with the actual outline, make a change. Can be as little as expanding or collapsing a headline."></outline>
+						<outline created="Wed, 31 Mar 2021 15:04:06 GMT" text="The lightning bolt icon in the instant outline should go green."></outline>
+						<outline created="Wed, 31 Mar 2021 15:04:42 GMT" text="Assuming that went as planned, now close some other tab and repeat the test. It should go green when you make a change. "></outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 30 Mar 2021 16:54:32 GMT" name="30" text="March 30" type="calendarDay">
+			<outline created="Tue, 30 Mar 2021 18:36:05 GMT" text="[[LO2]]" type="outline">
+				<outline created="Tue, 30 Mar 2021 18:36:10 GMT" text="When we close a file, we close the socket connection, so we will no longer receive notifications of changes to the file."></outline>
+				</outline>
+			<outline created="Tue, 30 Mar 2021 16:54:33 GMT" text="[[drummer]]" type="outline">
+				<outline created="Tue, 30 Mar 2021 16:54:36 GMT" text="The op.attributes verbs are tested and documented.">
+					<outline created="Tue, 30 Mar 2021 16:54:51 GMT" text="http://scripting.com/code/docserver/?verb=op.attributes.getOne" type="link" url="http://scripting.com/code/docserver/?verb=op.attributes.getOne"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 29 Mar 2021 15:49:32 GMT" name="29" text="March 29" type="calendarDay">
+			<outline created="Mon, 29 Mar 2021 17:23:47 GMT" text="[[drummer]]" type="outline">
+				<outline created="Mon, 29 Mar 2021 17:23:51 GMT" text="You can now use the global &lt;i&gt;storage&lt;/i&gt; object in your scripts.">
+					<outline created="Mon, 29 Mar 2021 17:24:01 GMT" text="storage.x = 12">
+						<outline created="Mon, 29 Mar 2021 17:27:23 GMT" isComment="true" text="12"></outline>
+						</outline>
+					<outline created="Mon, 29 Mar 2021 17:24:01 GMT" text="storage.y = number.random (100, 200)">
+						<outline created="Mon, 29 Mar 2021 17:27:23 GMT" isComment="true" text="143"></outline>
+						</outline>
+					<outline created="Sun, 28 Mar 2021 18:59:42 GMT" text="storage.mylist = [1, 2, 3, 4]">
+						<outline created="Mon, 29 Mar 2021 17:27:28 GMT" isComment="true" text="[     1,     2,     3,     4 ]"></outline>
+						</outline>
+					<outline created="Mon, 29 Mar 2021 17:27:01 GMT" text="storage.x = storage.y + 12">
+						<outline created="Mon, 29 Mar 2021 17:27:34 GMT" isComment="true" text="138"></outline>
+						</outline>
+					<outline created="Mon, 29 Mar 2021 17:38:36 GMT" text="storage.x">
+						<outline created="Mon, 29 Mar 2021 17:38:39 GMT" isComment="true" text="138"></outline>
+						</outline>
+					</outline>
+				<outline created="Mon, 29 Mar 2021 17:26:31 GMT" text="How it works">
+					<outline created="Mon, 29 Mar 2021 17:24:19 GMT" text="It's just a JavaScript object. "></outline>
+					<outline created="Mon, 29 Mar 2021 17:26:18 GMT" text="It's loaded when the app starts. "></outline>
+					<outline created="Mon, 29 Mar 2021 17:26:22 GMT" text="Every second it checks if the object has changed, and if so, it updates it on the server. "></outline>
+					</outline>
+				<outline created="Mon, 29 Mar 2021 17:26:44 GMT" text="Constraints">
+					<outline created="Sun, 28 Mar 2021 19:01:08 GMT" text="it's useful for a few MB at most, because of all the transmission that takes place"></outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 29 Mar 2021 15:49:33 GMT" text="[[LO2]]" type="outline">
+				<outline created="Mon, 29 Mar 2021 15:49:36 GMT" text="Set titles &amp; description command changes to Set title...">
+					<outline created="Mon, 29 Mar 2021 15:49:52 GMT" text="The dialog, as a result is just an instance of askDialog."></outline>
+					<outline created="Mon, 29 Mar 2021 15:50:07 GMT" text="A lot simpler, direct, and features we no longer use are no longer in the UI."></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 28 Mar 2021 15:33:00 GMT" name="28" text="March 28" type="calendarDay">
+			<outline created="Mon, 29 Mar 2021 00:12:51 GMT" text="[[verbs]]" type="outline">
+				<outline created="Mon, 29 Mar 2021 00:12:55 GMT" text="Two new Twitter verbs.">
+					<outline created="Mon, 29 Mar 2021 00:13:03 GMT" text="twitter.getFollowers" type="link" url="http://scripting.com/code/docserver/?verb=twitter.getFollowers"></outline>
+					<outline created="Mon, 29 Mar 2021 00:13:08 GMT" text="twitter.getFollowed" type="link" url="http://scripting.com/code/docserver/?verb=twitter.getFollowed"></outline>
+					</outline>
+				<outline created="Mon, 29 Mar 2021 00:13:20 GMT" text="They had been implemented in davetwitter and therefore in the outliner server, but I had not written glue scripts or docserver pages. That's what I just did. "></outline>
+				</outline>
+			<outline created="Sun, 28 Mar 2021 16:02:38 GMT" text="[[LO2]]" type="outline">
+				<outline created="Sun, 28 Mar 2021 16:02:43 GMT" text="New sub-menu of the File menu">
+					<outline created="Sun, 28 Mar 2021 16:02:50 GMT" text="Special files">
+						<outline created="Sun, 28 Mar 2021 16:02:53 GMT" text="Menubar"></outline>
+						<outline created="Sun, 28 Mar 2021 16:03:06 GMT" text="Iconbar"></outline>
+						<outline created="Sun, 28 Mar 2021 16:03:08 GMT" text="Bookmarks"></outline>
+						</outline>
+					</outline>
+				<outline created="Sun, 28 Mar 2021 18:09:18 GMT" text="You can add icons to the end of the iconbar">
+					<outline created="Sun, 28 Mar 2021 18:09:32 GMT" text="To do so, open iconbar.opml using the command in the Special menu"></outline>
+					<outline created="Sun, 28 Mar 2021 18:09:48 GMT" text="The top level headlines are names of Font-awesome icons. ">
+						<outline created="Sun, 28 Mar 2021 18:10:05 GMT" text="https://fontawesome.com/icons?d=gallery&amp;p=2&amp;m=free" type="link" url="https://fontawesome.com/icons?d=gallery&amp;p=2&amp;m=free"></outline>
+						</outline>
+					<outline created="Sun, 28 Mar 2021 18:10:24 GMT" text="Underneath, at the second level and lower is the script that runs when you click the icon.">
+						<outline created="Sun, 28 Mar 2021 18:10:47 GMT" text="Example">
+							<outline created="Sun, 28 Mar 2021 18:10:50 GMT" text="bus">
+								<outline created="Sun, 28 Mar 2021 18:11:13 GMT" text="dialog.alert (&quot;Do you have buses where you live?&quot;)"></outline>
+								</outline>
+							</outline>
+						</outline>
+					</outline>
+				<outline created="Sun, 28 Mar 2021 16:03:21 GMT" text="The outlines are hot-linked to the resource">
+					<outline created="Sun, 28 Mar 2021 18:56:43 GMT" text="ie when you change an outline, the resource changes immediately."></outline>
+					</outline>
+				</outline>
+			<outline created="Sun, 28 Mar 2021 15:33:01 GMT" text="[[wishlist]]" type="outline">
+				<outline created="Sun, 28 Mar 2021 15:33:05 GMT" text="I want a command that works as follows.">
+					<outline created="Sun, 28 Mar 2021 15:33:15 GMT" text="I select 5 headlines."></outline>
+					<outline created="Sun, 28 Mar 2021 15:33:21 GMT" text="Choose the command."></outline>
+					<outline created="Sun, 28 Mar 2021 15:33:24 GMT" text="They merge into one headline, with spaces after sentences. "></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 27 Mar 2021 15:22:39 GMT" name="27" text="March 27" type="calendarDay">
+			<outline created="Sat, 27 Mar 2021 15:22:40 GMT" text="[[LO2]]" type="outline">
+				<outline created="Sun, 28 Mar 2021 15:07:16 GMT" text="tab.openInstantOutline">
+					<outline created="Sun, 28 Mar 2021 15:07:18 GMT" text="new verb. does what you'd think it does."></outline>
+					</outline>
+				<outline created="Sat, 27 Mar 2021 17:35:51 GMT" text="tab.openFile verb works">
+					<outline created="Sat, 27 Mar 2021 17:36:02 GMT" text="http://scripting.com/code/docserver/?verb=tab.openFile" type="link" url="http://scripting.com/code/docserver/?verb=tab.openFile"></outline>
+					</outline>
+				<outline created="Sat, 27 Mar 2021 16:05:00 GMT" text="Demo of tweeting in LO2.">
+					<outline created="Sat, 27 Mar 2021 16:05:11 GMT" text="https://www.youtube.com/watch?v=TkRYxgbbv1E"></outline>
+					</outline>
+				<outline created="Sat, 27 Mar 2021 15:22:45 GMT" text="Bookmarking instant outlines now works">
+					<outline created="Sat, 27 Mar 2021 15:22:56 GMT" text="how to test">
+						<outline created="Sat, 27 Mar 2021 15:22:59 GMT" text="open a tab with an instant outline in it"></outline>
+						<outline created="Sat, 27 Mar 2021 15:23:17 GMT" text="choose Add bookmark from the Bookmarks menu. "></outline>
+						<outline created="Sat, 27 Mar 2021 15:23:33 GMT" text="confirm"></outline>
+						<outline created="Sat, 27 Mar 2021 15:23:36 GMT" text="the bookmarks outline should open with the title of the tab at the top"></outline>
+						<outline created="Sat, 27 Mar 2021 15:23:54 GMT" text="you can edit the outline or close it"></outline>
+						<outline created="Sat, 27 Mar 2021 15:24:05 GMT" text="close the tab you made a bookmark of"></outline>
+						<outline created="Sat, 27 Mar 2021 15:24:16 GMT" text="choose it from the Bookmarks menu"></outline>
+						<outline created="Sat, 27 Mar 2021 15:24:24 GMT" text="it should open correctly"></outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 26 Mar 2021 19:43:15 GMT" name="26" text="March 26" type="calendarDay">
+			<outline created="Fri, 26 Mar 2021 19:43:16 GMT" text="[[LO2]]" type="outline">
+				<outline created="Fri, 26 Mar 2021 19:43:20 GMT" text="Bookmarks menu">
+					<outline created="Fri, 26 Mar 2021 19:43:25 GMT" text="To test, reload the app. There should be a new Bookmarks menu."></outline>
+					<outline created="Fri, 26 Mar 2021 19:43:51 GMT" text="The first command in the menu is Add Bookmark. "></outline>
+					<outline created="Fri, 26 Mar 2021 19:44:07 GMT" text="Open the file you want to bookmark, if it's not already open. "></outline>
+					<outline created="Fri, 26 Mar 2021 19:44:26 GMT" text="Click on its tab."></outline>
+					<outline created="Fri, 26 Mar 2021 19:44:31 GMT" text="Choose Add Bookmark from the Bookmarks menu."></outline>
+					<outline created="Fri, 26 Mar 2021 19:44:40 GMT" text="A confirmation dialog should appear. Click OK."></outline>
+					<outline created="Fri, 26 Mar 2021 19:44:53 GMT" text="In a moment a new tab should open named Bookmarks, with a bookmark for your file inserted. "></outline>
+					<outline created="Fri, 26 Mar 2021 19:45:12 GMT" text="You can change the text if you want."></outline>
+					<outline created="Fri, 26 Mar 2021 19:45:18 GMT" text="When you edit the text, it should be immediately reflects in the menu."></outline>
+					<outline created="Fri, 26 Mar 2021 19:45:35 GMT" text="Then you can close the Bookmarks tab. The menu should still work."></outline>
+					<outline created="Fri, 26 Mar 2021 19:45:56 GMT" text="Try bookmarking another file, this tests another branch of the code. "></outline>
+					<outline created="Fri, 26 Mar 2021 19:46:15 GMT" text="Let me know if it works. ÝÄù¥"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 24 Mar 2021 14:55:47 GMT" name="24" text="March 24" type="calendarDay">
+			<outline created="Wed, 24 Mar 2021 14:55:48 GMT" text="[[LO2]]" type="outline">
+				<outline created="Wed, 24 Mar 2021 14:55:51 GMT" text="The View OPML command now works for private files.">
+					<outline created="Wed, 24 Mar 2021 14:56:01 GMT" text="It broke when I moved the app to test.littleoutliner.com. "></outline>
+					<outline created="Wed, 24 Mar 2021 14:56:12 GMT" text="It depended on being able to open a static page on the same domain as the app."></outline>
+					<outline created="Wed, 24 Mar 2021 14:56:26 GMT" text="daveappserver could have that function, by opening files in the privateFiles folder, but it doesn't now have that feature."></outline>
+					</outline>
+				<outline created="Wed, 24 Mar 2021 15:58:41 GMT" text="Get public link command  turns into two commands">
+					<outline created="Wed, 24 Mar 2021 15:01:49 GMT" text="Make outline public">
+						<outline created="Wed, 24 Mar 2021 15:02:09 GMT" text="This gives you the link to an OPML file, useful for includes"></outline>
+						</outline>
+					<outline created="Wed, 24 Mar 2021 15:01:54 GMT" text="Get shareable link">
+						<outline created="Wed, 24 Mar 2021 15:02:27 GMT" text="This gives you an instantoutliner.com link, suitable for giving to friends to read on its own"></outline>
+						</outline>
+					</outline>
+				<outline created="Wed, 24 Mar 2021 16:09:39 GMT" text="dns.getDomainName (dns.getDottedId (&quot;liveblog.co&quot;))">
+					<outline created="Wed, 24 Mar 2021 16:09:59 GMT" isComment="true" text="s3-website-us-east-1.amazonaws.com"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 23 Mar 2021 13:36:04 GMT" name="23" text="March 23" type="calendarDay">
+			<outline created="Tue, 23 Mar 2021 13:36:05 GMT" text="[[LO2]]" type="outline">
+				<outline created="Tue, 23 Mar 2021 14:18:58 GMT" text="Trying for performance boost in tab switching with largeish outlines">
+					<outline created="Tue, 23 Mar 2021 14:16:46 GMT" text="When you save the outline in a tab, in saveCurrentTab, keep a copy of the opmltext in the tab structure. "></outline>
+					<outline created="Tue, 23 Mar 2021 14:18:32 GMT" text="When you click to activate a tab, check to see if you have the opmltext already in memory, if so, use it."></outline>
+					</outline>
+				<outline created="Tue, 23 Mar 2021 15:14:05 GMT" text="Net-net -- the performance difference is there, but not significant. ">
+					<outline created="Tue, 23 Mar 2021 15:14:26 GMT" text="to get the real performance we're going to have to cache the outline data structure"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 22 Mar 2021 13:19:05 GMT" name="22" text="March 22" type="calendarDay">
+			<outline created="Mon, 22 Mar 2021 13:19:06 GMT" text="[[verbs]]" type="outline">
+				<outline created="Mon, 22 Mar 2021 13:19:14 GMT" text="Andrew, there's a problem with the verb dialog.ask"></outline>
+				<outline created="Mon, 22 Mar 2021 13:19:23 GMT" text="It correctly returns the string the user entered as the returned value of the call.">
+					<outline created="Mon, 22 Mar 2021 13:19:42 GMT" text="var result = dialog.ask (&quot;prompt&quot;, &quot;default&quot;, &quot;placeholder&quot;);"></outline>
+					<outline created="Mon, 22 Mar 2021 13:20:05 GMT" text="console.log (result)"></outline>
+					</outline>
+				<outline created="Mon, 22 Mar 2021 13:20:10 GMT" text="But what is the protocol if the user hits Cancel?"></outline>
+				<outline created="Mon, 22 Mar 2021 13:20:31 GMT" text="It appears to be returning the empty string."></outline>
+				<outline created="Mon, 22 Mar 2021 13:22:50 GMT" text="It's a problem, because there's only one spot"></outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 21 Mar 2021 22:32:00 GMT" name="21" text="March 21" type="calendarDay">
+			<outline created="Sun, 21 Mar 2021 22:32:01 GMT" text="[[davetwitter]]" type="outline">
+				<outline created="Sun, 21 Mar 2021 22:32:06 GMT" text="We've got some documented and tested Twitter verbs. ">
+					<outline created="Sun, 21 Mar 2021 22:32:18 GMT" text="http://scripting.com/code/docserver/" type="link" url="http://scripting.com/code/docserver/"></outline>
+					</outline>
+				<outline created="Sun, 21 Mar 2021 22:32:20 GMT" text="I've NPM published the new davetwitter."></outline>
+				<outline created="Sun, 21 Mar 2021 22:33:39 GMT" text="The new version, v0.6.0, is up on github"></outline>
+				<outline created="Sun, 21 Mar 2021 22:33:52 GMT" text="Tomorrow I move off Twitter verbs into something different. "></outline>
+				<outline created="Sun, 21 Mar 2021 22:34:02 GMT" text="Thank you."></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 19 Mar 2021 19:46:07 GMT" name="19" text="March 19" type="calendarDay">
+			<outline created="Fri, 19 Mar 2021 19:46:08 GMT" description="something for a demoasdfasdfasdf" text="[[Demo for Roam Folk]]" type="outline">
+				<outline created="Fri, 19 Mar 2021 19:46:46 GMT" text="now is the time for all good men to come to the aid of their country"></outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 18 Mar 2021 15:53:56 GMT" name="18" text="March 18" type="calendarDay">
+			<outline created="Thu, 18 Mar 2021 21:39:39 GMT" text="[[davetwitter]]" type="outline">
+				<outline created="Thu, 18 Mar 2021 21:39:43 GMT" text="What a day. Oy. Rainy and ugly and I did a lot of sloshing around, but finally got my shit together. "></outline>
+				<outline created="Thu, 18 Mar 2021 21:40:03 GMT" text="I need a really good test bed for Twitter verbs, and now I have it. I have a copy of outlinerserver.js running locally, and a copy of LO2 is coming out of its home page."></outline>
+				<outline created="Thu, 18 Mar 2021 21:40:46 GMT" text="Now I can write glue for new verbs in LO2, which is where I need to test it. And i can do calls that require authentication because I'm authenticated in LO2 and it's debugged. "></outline>
+				<outline created="Thu, 18 Mar 2021 21:41:28 GMT" text="I have twGetAccountSettings working, tomorrow I'll do twSetAccountSettings. "></outline>
+				<outline created="Thu, 18 Mar 2021 21:41:51 GMT" text="I have getFollowers and getFollowed working. I really was running into the rate-limit getting followers, but i got it working. "></outline>
+				<outline created="Thu, 18 Mar 2021 21:42:16 GMT" text="Twitter's api has always been a slog, but I now have the environment I need to march through it. I think!"></outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 17 Mar 2021 16:07:43 GMT" name="17" text="March 17" type="calendarDay">
+			<outline created="Wed, 17 Mar 2021 16:08:39 GMT" text="[[davetwitter]]" type="outline">
+				<outline created="Wed, 17 Mar 2021 20:25:27 GMT" text="todo">
+					<outline created="Wed, 17 Mar 2021 20:25:28 GMT" text="review the names of params to the rest interface">
+						<outline created="Wed, 17 Mar 2021 20:25:39 GMT" text="it's a bit of a hodgepodge"></outline>
+						<outline created="Wed, 17 Mar 2021 20:25:49 GMT" text="for example, some places the param is named screen_name and others it's screenname"></outline>
+						</outline>
+					</outline>
+				<outline created="Wed, 17 Mar 2021 16:43:40 GMT" text="howto">
+					<outline created="Wed, 17 Mar 2021 16:43:42 GMT" text="there's a test app included with davetwitter, but as it was provided previously it didn't do anything. now it does."></outline>
+					<outline created="Wed, 17 Mar 2021 16:44:08 GMT" text="you have to put a config.json file in the same folder, and it has to provide at least twitterConsumerKey and twitterConsumerSecret. i've put one in the repo with obviously dummy values."></outline>
+					<outline created="Wed, 17 Mar 2021 16:44:59 GMT" text="when you launch the app this is what it does">
+						<outline created="Wed, 17 Mar 2021 16:45:17 GMT" text="reads config.json"></outline>
+						<outline created="Wed, 17 Mar 2021 16:45:21 GMT" text="initializes davetwitter with it"></outline>
+						<outline created="Wed, 17 Mar 2021 16:45:27 GMT" text="reads a tweet and displays its text"></outline>
+						</outline>
+					<outline created="Wed, 17 Mar 2021 16:45:58 GMT" text="it requires the davetwitter.js file from its parent directory (the main davetwitter file)"></outline>
+					<outline created="Wed, 17 Mar 2021 16:45:34 GMT" text="from there you can test anything"></outline>
+					</outline>
+				<outline created="Wed, 17 Mar 2021 16:43:34 GMT" text="plan">
+					<outline created="Wed, 17 Mar 2021 16:08:45 GMT" text="my only programming job for the day is to get davetwitter in a form where i can work on it without publishing new versions to NPM. this bit of code is transitioning back to a work in progress from being one that i'm not actively working on. the adaptation of the threading code to the package was way too painful because i didn't take this step."></outline>
+					<outline created="Wed, 17 Mar 2021 16:09:53 GMT" text="then i want to see what verbs i can add that address the questions:">
+						<outline created="Wed, 17 Mar 2021 16:10:08 GMT" text="who do i follow and"></outline>
+						<outline created="Wed, 17 Mar 2021 16:10:12 GMT" text="who follows me"></outline>
+						</outline>
+					<outline created="Wed, 17 Mar 2021 16:10:19 GMT" text="there's going to be some factoring, because they use a &quot;paging&quot; method to return bits of a very large sequence per api call. i always wonder why they prefer N calls to one that returns a huge structure. maybe because the hugeness puts a big load on their system? anyway -- it is what it is."></outline>
+					</outline>
+				</outline>
+			<outline created="Wed, 17 Mar 2021 16:07:44 GMT" text="[[scriptable apps]]" type="outline">
+				<outline created="Wed, 17 Mar 2021 16:07:51 GMT" text="&lt;a href=&quot;http://scripting.com/2021/03/17.html#a154038&quot;&gt;Wrote&lt;/a&gt; up on scripting news what's the diff between a scriptable app and an app with an API." type="link" url="http://scripting.com/2021/03/17.html#a154038"></outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 15 Mar 2021 15:43:09 GMT" name="15" text="March 15" type="calendarDay">
+			<outline created="Mon, 15 Mar 2021 21:13:04 GMT" text="[[scriptable apps]]" type="outline">
+				<outline created="Mon, 15 Mar 2021 21:13:10 GMT" text="How to design a scripting interface for an app">
+					<outline created="Mon, 15 Mar 2021 21:13:18 GMT" text="Make a list of things a user would want to do with an app.">
+						<outline created="Mon, 15 Mar 2021 21:13:30 GMT" text="If it's a text editor for example, the most basic things are in the File menu.">
+							<outline created="Mon, 15 Mar 2021 21:13:53 GMT" text="Create a new file, open an existing file, delete a file. "></outline>
+							<outline created="Mon, 15 Mar 2021 21:14:10 GMT" text="Get the contents of the front file (if it's a tabbed interface, the current tab)."></outline>
+							</outline>
+						<outline created="Mon, 15 Mar 2021 21:15:16 GMT" text="If it's a RSS reader:">
+							<outline created="Mon, 15 Mar 2021 21:15:23 GMT" text="Subscribe and unsubscribe a feed."></outline>
+							<outline created="Mon, 15 Mar 2021 21:15:36 GMT" text="Get the updates from a given feed in chronologic order."></outline>
+							<outline created="Mon, 15 Mar 2021 21:15:52 GMT" text="Forward an item to another feed."></outline>
+							</outline>
+						<outline created="Mon, 15 Mar 2021 21:14:51 GMT" text="If it's Twitter:">
+							<outline created="Mon, 15 Mar 2021 21:16:09 GMT" text="Send a tweet."></outline>
+							<outline created="Mon, 15 Mar 2021 21:16:15 GMT" text="Get a user's most recent tweets"></outline>
+							<outline created="Mon, 15 Mar 2021 21:16:22 GMT" text="Get a thread."></outline>
+							</outline>
+						</outline>
+					</outline>
+				<outline created="Mon, 15 Mar 2021 21:16:37 GMT" text="When it's time to specify the interface, the actual params">
+					<outline created="Mon, 15 Mar 2021 21:16:50 GMT" text="Look for prior art. If there's a popular app that works like yours does, the default should be do exactly what they do. Even if you don't like something about what they do."></outline>
+					<outline created="Mon, 15 Mar 2021 21:17:28 GMT" text="Strive for simplicity, approachability. You want a user to look at it and nod their head, saying &quot;this makes sense.&quot;"></outline>
+					<outline created="Mon, 15 Mar 2021 21:17:58 GMT" text="Write the docs. If there's something that's hard to understand, try to redesign the interface so it's easier. The simplicity of the docs matters too. It's all part of a package, the intent is to make it useful to the most people. Many of our users don't think of themselves as programmers, and don't want to. (Even though we know they &lt;i&gt;are&lt;/i&gt; programmers.) "></outline>
+					</outline>
+				<outline created="Mon, 15 Mar 2021 21:19:30 GMT" text="Test your interface">
+					<outline created="Mon, 15 Mar 2021 21:19:35 GMT" text="Most important thing -- write a useful app!"></outline>
+					<outline created="Mon, 15 Mar 2021 21:19:44 GMT" text="If you can't write a one, try to imagine one, and think about what's missing in your interface. "></outline>
+					<outline created="Mon, 15 Mar 2021 21:20:07 GMT" text="If possible go back to the first step and implement the new verb."></outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 15 Mar 2021 15:44:35 GMT" text="[[scriptingNews]]" type="outline">
+				<outline created="Mon, 15 Mar 2021 15:44:43 GMT" text="The email didn't go out last night. It &lt;i&gt;does not&lt;/i&gt; appear to have anything to do with Daylight Savings Time as I initially thought. ">
+					<outline created="Mon, 15 Mar 2021 15:45:07 GMT" text="I notice that the Scripting News &lt;a href=&quot;https://github.com/scripting/Scripting-News/tree/master/blog/days/2021/03&quot;&gt;repo&lt;/a&gt; is missing the JSON file for the 14th. "></outline>
+					<outline created="Mon, 15 Mar 2021 15:52:17 GMT" text="The nightly email app first looks on S3 for the html file representing the last day's posts.">
+						<outline created="Mon, 15 Mar 2021 15:52:45 GMT" text="http://scripting.com/data/pages/2021/03/14.html">
+							<outline created="Mon, 15 Mar 2021 15:53:07 GMT" text="the file is there."></outline>
+							</outline>
+						</outline>
+					<outline created="Mon, 15 Mar 2021 15:55:04 GMT" text="Then it looks in github, and the file is not there.">
+						<outline created="Mon, 15 Mar 2021 15:55:15 GMT" text="https://github.com/scripting/Scripting-News/tree/master/blog/pages/2021/03"></outline>
+						</outline>
+					<outline created="Mon, 15 Mar 2021 15:55:17 GMT" text="And the json file is not there either, suggesting that it couldn't post it">
+						<outline created="Mon, 15 Mar 2021 15:55:34 GMT" text="I think something may be deprecated, have to see how these files are uploaded. "></outline>
+						<outline created="Mon, 15 Mar 2021 15:55:47 GMT" text="however this appears to be the night they broke, previous archives are there."></outline>
+						</outline>
+					<outline created="Mon, 15 Mar 2021 16:03:21 GMT" text="The app that does the nightly backup to github is called oldSchoolNightly.">
+						<outline created="Mon, 15 Mar 2021 16:03:41 GMT" text="In its log it shows that it uploaded the files from the 13th at midnight, not the 14th."></outline>
+						</outline>
+					<outline created="Mon, 15 Mar 2021 16:07:16 GMT" text="I fixed the problem on github by">
+						<outline created="Mon, 15 Mar 2021 16:07:24 GMT" text="editing the stats.json file on oldschoolnightly so the last update was one day earlier"></outline>
+						<outline created="Mon, 15 Mar 2021 16:07:42 GMT" text="rebooted the app"></outline>
+						<outline created="Mon, 15 Mar 2021 16:07:46 GMT" text="it then updated the files for the 14th in the github repo"></outline>
+						</outline>
+					<outline created="Mon, 15 Mar 2021 16:07:57 GMT" text="now about the emails">
+						<outline created="Mon, 15 Mar 2021 16:08:02 GMT" text="i tried the same thing. edited stat.json, set the lastupdate time to a day earlier, and restarted. "></outline>
+						<outline created="Mon, 15 Mar 2021 16:16:15 GMT" text="the correct emails went out."></outline>
+						</outline>
+					<outline created="Mon, 15 Mar 2021 16:16:26 GMT" text="problem solved for now, let's see what happens tonight"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 14 Mar 2021 14:35:19 GMT" name="14" text="March 14" type="calendarDay">
+			<outline created="Mon, 15 Mar 2021 15:43:10 GMT" text="[[threadViewer]]" type="outline">
+				<outline created="Mon, 15 Mar 2021 15:43:20 GMT" text="Implemented a cache and reloading, described in the howto doc."></outline>
+				<outline created="Mon, 15 Mar 2021 15:43:40 GMT" text="ThreadViewer is now useful and I can return to other projects. "></outline>
+				<outline created="Mon, 15 Mar 2021 15:43:55 GMT" text="Whew. That was supposed to originally be a one-day detour."></outline>
+				<outline created="Mon, 15 Mar 2021 15:44:06 GMT" text="But it had the benefit of getting all that new thread functionality into davetwitter, and therefore will be easily added to Drummer. "></outline>
+				</outline>
+			<outline created="Sun, 14 Mar 2021 14:35:20 GMT" text="[[docServer]]" type="outline">
+				<outline created="Sun, 14 Mar 2021 14:35:25 GMT" text="continue to work on verb docs"></outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 13 Mar 2021 15:18:15 GMT" name="13" text="March 13" type="calendarDay">
+			<outline created="Sat, 13 Mar 2021 22:57:50 GMT" text="[[davetwitter]]" type="outline">
+				<outline created="Sat, 13 Mar 2021 22:57:58 GMT" text="it got the ability to do general searches of timelines, needed to make threadviewer really work."></outline>
+				<outline created="Sat, 13 Mar 2021 22:58:32 GMT" text="the code was already completely debugged in tweetSucker, which I wrote in 2020."></outline>
+				<outline created="Sat, 13 Mar 2021 22:58:46 GMT" text="and this code will be part of every davetwitter installation now. "></outline>
+				<outline created="Sat, 13 Mar 2021 22:59:00 GMT" text="it's good to get this basic stuff debugged and fully deployed. "></outline>
+				</outline>
+			<outline created="Sat, 13 Mar 2021 22:59:14 GMT" text="[[threadviewer]]">
+				<outline created="Sat, 13 Mar 2021 22:59:19 GMT" text="it's now much more solid, but still not done all the way."></outline>
+				<outline created="Sat, 13 Mar 2021 22:59:28 GMT" text="http://threadviewer.com/1370863807715762179" type="link" url="http://threadviewer.com/1370863807715762179"></outline>
+				<outline created="Sat, 13 Mar 2021 22:59:50 GMT" text="that thread might stop working after 24 hours depending on whether i solve the remaining problem before it goes poof"></outline>
+				<outline created="Sat, 13 Mar 2021 23:00:11 GMT" text="i have to pick a time when the thread is frozen. reading teh timeline for 24 hours worth is fair, but going back months or even years is crazy"></outline>
+				</outline>
+			<outline created="Sat, 13 Mar 2021 23:00:53 GMT" text="[[docserver]]">
+				<outline created="Sat, 13 Mar 2021 23:00:59 GMT" text="I finished documenting the string verbs, then went back to utils.js and found more that i want to suck in. "></outline>
+				<outline created="Sat, 13 Mar 2021 23:01:17 GMT" text="also got a bunch of date verbs."></outline>
+				<outline created="Sat, 13 Mar 2021 23:01:24 GMT" text="i love this process. the verb set itself should be useful even outside of Digger."></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 12 Mar 2021 16:03:53 GMT" name="12" text="March 12" type="calendarDay">
+			<outline created="Fri, 12 Mar 2021 18:00:15 GMT" name="threadviewer" text="[[threadViewer]]" type="outline">
+				<outline created="Fri, 12 Mar 2021 18:00:22 GMT" text="I was really sloppy factoring some code down into davetwitter, and lost about 24 freaking hours fixing it."></outline>
+				<outline created="Fri, 12 Mar 2021 18:00:42 GMT" text="Should've waited till I was fresh to do the factoring. It's the most error prone thing I do. "></outline>
+				<outline created="Fri, 12 Mar 2021 18:01:03 GMT" text="Wrote it up &lt;a href=&quot;http://scripting.com/2021/03/12/160733.html?title=slowDownToHurryUp&quot;&gt;on Scripting&lt;/a&gt;. "></outline>
+				</outline>
+			<outline created="Fri, 12 Mar 2021 17:59:36 GMT" text="[[docServer]]" type="outline">
+				<outline created="Fri, 12 Mar 2021 17:59:41 GMT" text="Now can display results of example scripts, and outline hierarchies in explanatory text. "></outline>
+				</outline>
+			<outline created="Fri, 12 Mar 2021 16:03:54 GMT" text="[[davetwitter]]" type="outline">
+				<outline created="Fri, 12 Mar 2021 16:03:58 GMT" text="New version includes routines that get a single tweet and one that gets a full thread in chronologic order. Released."></outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 08 Mar 2021 20:05:08 GMT" name="08" text="March 8" type="calendarDay">
+			<outline created="Mon, 08 Mar 2021 20:09:15 GMT" text="[[LO2]]">
+				<outline created="Mon, 08 Mar 2021 20:09:18 GMT" text="assign single keystrokes to user script commands">
+					<outline created="Mon, 08 Mar 2021 20:09:27 GMT" text="i want cmd-4, which is a timestamper in frontier"></outline>
+					<outline created="Mon, 08 Mar 2021 20:09:38 GMT" text="desperately want it here."></outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 08 Mar 2021 20:06:37 GMT" text="[[threadviewer]]" type="outline">
+				<outline created="Mon, 08 Mar 2021 20:07:00 GMT" text="new app, a prototype for something that could be written in drummer, when it's ready"></outline>
+				<outline created="Mon, 08 Mar 2021 20:07:16 GMT" text="urls look like this:">
+					<outline created="Mon, 08 Mar 2021 20:07:35 GMT" text="http://threadviewer.com/1368932412386902027"></outline>
+					</outline>
+				<outline created="Mon, 08 Mar 2021 20:08:09 GMT" text="this would display a nice-looking blog-post-like page with the three paragraphs from the tweets, easily read, without distractions">
+					<outline created="Mon, 08 Mar 2021 20:09:55 GMT" text="I am convinced there very much is a need for what NFTs do, for developers. It'll seem weird to people who think we are &quot;coders.&quot; But we create a lot of stuff, put our best ideas out there, and it's really hard to get credit for our contributions."></outline>
+					<outline created="Mon, 08 Mar 2021 20:10:04 GMT" text="There needs to be an economy of credit that doesn't involve patents, taking a job at a bigco, or otherwise interfering with your artistic choices. It's the only way we take really big steps in tech."></outline>
+					<outline created="Mon, 08 Mar 2021 20:10:10 GMT" text="I chose a creative life developing software in the late 70s. I stuck with it and it worked. But the world doesn't yet acknowledge such a thing exists. A huge impediment. So an open platform for artifacts from successful tech creativity. Good thing, I say."></outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 08 Mar 2021 20:05:09 GMT" text="[[davetwitter]]" type="outline">
+				<outline created="Mon, 08 Mar 2021 20:05:15 GMT" text="/gettweet">
+					<outline created="Mon, 08 Mar 2021 20:05:22 GMT" text="believe it or not there was no call in the nodeStorage api that took an id and returned the tweet. "></outline>
+					<outline created="Mon, 08 Mar 2021 20:05:44 GMT" text="it wasn't there in the Frontier glue either. "></outline>
+					<outline created="Mon, 08 Mar 2021 20:05:52 GMT" text="have i never written a script that needed to get a tweet? is that possible??"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 07 Mar 2021 16:08:11 GMT" name="07" text="March 7" type="calendarDay">
+			<outline created="Sun, 07 Mar 2021 17:44:11 GMT" text="[[tagserver]]" type="outline">
+				<outline created="Sun, 07 Mar 2021 17:44:15 GMT" text="I think the tagserver as it works right now is more in the way than it's helping."></outline>
+				<outline created="Sun, 07 Mar 2021 17:44:30 GMT" text="I'm going to move my notes to a simpler outline format. Maybe even use DocServer? What a hack that would be. "></outline>
+				</outline>
+			<outline created="Sun, 07 Mar 2021 17:42:51 GMT" text="[[LO2]] &amp; [[daveappserver]]" type="outline">
+				<outline created="Sun, 07 Mar 2021 17:43:18 GMT" text="The Download My Files command in the Tools menu now works. "></outline>
+				<outline created="Sun, 07 Mar 2021 17:43:42 GMT" text="I had to add the command to daveappserver. Totally belongs there. It's all about file management. "></outline>
+				</outline>
+			<outline created="Sun, 07 Mar 2021 16:09:05 GMT" text="[[drummer]]" type="outline">
+				<outline created="Sun, 07 Mar 2021 17:45:09 GMT" text="Thinking out loud">
+					<outline created="Sun, 07 Mar 2021 20:17:17 GMT" text="one special file opened at launch, root.opml">
+						<outline created="Sun, 07 Mar 2021 20:17:29 GMT" text="root">
+							<outline created="Sun, 07 Mar 2021 20:17:31 GMT" text="system">
+								<outline created="Sun, 07 Mar 2021 20:17:38 GMT" text="at launch we load the contents of this table from the drummer server. ">
+									<outline created="Sun, 07 Mar 2021 20:18:10 GMT" text="it's the system distribution, written in JS that runs on the drummer platform."></outline>
+									<outline created="Sun, 07 Mar 2021 20:18:58 GMT" text="also default data, initial menubar, templates, whatever"></outline>
+									</outline>
+								<outline created="Sun, 07 Mar 2021 20:19:47 GMT" text="runtime data, like the paths table"></outline>
+								</outline>
+							<outline created="Sun, 07 Mar 2021 20:17:33 GMT" text="user">
+								<outline created="Sun, 07 Mar 2021 20:18:46 GMT" text="where the user's scripts and data live, also known as userland.">
+									<outline created="Sun, 07 Mar 2021 20:20:41 GMT" text="the menubar.opml outline would be sucked into this as would icons.opml"></outline>
+									</outline>
+								</outline>
+							</outline>
+						</outline>
+					<outline created="Sun, 07 Mar 2021 20:21:32 GMT" text="both system and user have a table called background, with subtables named">
+						<outline created="Sun, 07 Mar 2021 20:22:01 GMT" text="everySecond"></outline>
+						<outline created="Sun, 07 Mar 2021 20:22:03 GMT" text="everyMinute"></outline>
+						<outline created="Sun, 07 Mar 2021 20:22:07 GMT" text="everyHour"></outline>
+						<outline created="Sun, 07 Mar 2021 20:22:11 GMT" text="overnight"></outline>
+						</outline>
+					<outline created="Sun, 07 Mar 2021 20:22:59 GMT" text="both system and user have a table called startup, all the scripts in that table run at startup">
+						<outline created="Sun, 07 Mar 2021 20:23:21 GMT" text="in general system scripts run first, so the user table version can override it"></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Sun, 07 Mar 2021 16:08:12 GMT" text="[[daveappserver]]" type="outline">
+				<outline created="Sun, 07 Mar 2021 16:08:19 GMT" text="done -- implement the /myfiles call">
+					<outline created="Sun, 07 Mar 2021 16:08:35 GMT" text="return a zipped archive of the users files"></outline>
+					<outline created="Sun, 07 Mar 2021 16:08:44 GMT" text="nodeStorage does it, and it's nice to have"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 06 Mar 2021 15:24:29 GMT" name="06" text="March 6" type="calendarDay">
+			<outline created="Sat, 06 Mar 2021 18:04:04 GMT" text="[[daveappserver]]">
+				<outline created="Sat, 06 Mar 2021 20:41:10 GMT" text="the websocket interface needs to be worked on on the local machine with the debugger on">
+					<outline created="Sat, 06 Mar 2021 20:41:37 GMT" text="i'm not going to divert for that now, so automatic updates are going to be slower than they need to be until this is fixed"></outline>
+					<outline created="Sat, 06 Mar 2021 20:42:07 GMT" text="i'm basically going to read the opml file from the source when i get an update message"></outline>
+					</outline>
+				<outline created="Sat, 06 Mar 2021 18:03:06 GMT" text="there was a bug in daveappserver that i had to fix">
+					<outline created="Sat, 06 Mar 2021 18:03:15 GMT" text="it was jsonStringifying the payload, which it should not have been doing"></outline>
+					<outline created="Sat, 06 Mar 2021 18:03:37 GMT" text="added an optional param to specify that the payload is a string (opmltext)"></outline>
+					</outline>
+				<outline created="Sat, 06 Mar 2021 20:09:10 GMT" text="need the ability to watch a single file">
+					<outline created="Sat, 06 Mar 2021 20:09:19 GMT" text="watch "></outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 06 Mar 2021 15:24:30 GMT" text="[[docServer]]" type="outline">
+				<outline created="Sat, 06 Mar 2021 16:46:42 GMT" text="done">
+					<outline created="Sat, 06 Mar 2021 15:24:34 GMT" text="Remember the last verb page you were on."></outline>
+					<outline created="Sat, 06 Mar 2021 15:24:43 GMT" text="Menu command to get link to the page you're on."></outline>
+					<outline created="Sat, 06 Mar 2021 16:46:15 GMT" text="hook docserver up to the notification websocket so it always has the newest version loaded"></outline>
+					</outline>
+				<outline created="Sat, 06 Mar 2021 15:25:40 GMT" text="todo">
+					<outline created="Sat, 06 Mar 2021 20:08:40 GMT" text="phone and tablet version">
+						<outline created="Sat, 06 Mar 2021 20:08:46 GMT" text="this app requires a desktop browser, for now. sorry."></outline>
+						</outline>
+					<outline created="Sat, 06 Mar 2021 18:04:23 GMT" text="another daveappserver problem">
+						<outline created="Sat, 06 Mar 2021 18:04:28 GMT" text="it's sending notifications for every updated file"></outline>
+						<outline created="Sat, 06 Mar 2021 18:04:36 GMT" text="not good, i only want notifications on the file i'm interested in"></outline>
+						</outline>
+					<outline created="Sat, 06 Mar 2021 15:25:46 GMT" text="Write more docserver pages"></outline>
+					<outline created="Sat, 06 Mar 2021 15:26:05 GMT" text="Give it a better URL">
+						<outline created="Sat, 06 Mar 2021 15:26:12 GMT" text="docserver.scripting.com?"></outline>
+						</outline>
+					<outline created="Sat, 06 Mar 2021 15:35:03 GMT" text="Bring DocServer into LO2?">
+						<outline created="Sat, 06 Mar 2021 15:34:39 GMT" text="How do examples work?"></outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 05 Mar 2021 14:15:14 GMT" name="05" text="March 5" type="calendarDay">
+			<outline created="Fri, 05 Mar 2021 15:32:31 GMT" text="[[docServer]]" type="outline">
+				<outline created="Fri, 05 Mar 2021 14:15:19 GMT" text="edit the source code for docServerHome, take out all the extra stuff"></outline>
+				<outline created="Fri, 05 Mar 2021 14:15:47 GMT" text="add the left navigation outline, a lot like the tagserver user interface.">
+					<outline created="Fri, 05 Mar 2021 14:16:10 GMT" text="and bingeworthy. "></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 04 Mar 2021 21:15:55 GMT" name="04" text="March 4" type="calendarDay">
+			<outline created="Thu, 04 Mar 2021 21:15:56 GMT" text="[[docServer]]" type="outline">
+				<outline created="Thu, 04 Mar 2021 21:16:02 GMT" text="Switched from a server to a single-page app. It didn't require an actual server."></outline>
+				<outline created="Thu, 04 Mar 2021 21:17:51 GMT" text="screen shot, at close of business today. " type="link" url="http://scripting.com/images/2021/03/04/docserverscreenshot.png"></outline>
+				<outline created="Thu, 04 Mar 2021 21:16:25 GMT" text="todo">
+					<outline created="Thu, 04 Mar 2021 21:16:38 GMT" text="add a left navigation outline that lists all the verbs, categorized">
+						<outline created="Thu, 04 Mar 2021 21:16:56 GMT" text="move the cursor to refresh the verb display"></outline>
+						<outline created="Thu, 04 Mar 2021 21:17:05 GMT" text="a lot like the tagserver display"></outline>
+						</outline>
+					<outline created="Thu, 04 Mar 2021 21:17:12 GMT" text="the links at the top of the page should not re-load the app, it should just show a new verb">
+						<outline created="Thu, 04 Mar 2021 21:17:36 GMT" text="there has to be a way to get a permalink to a verb, it won't be in the address bar. "></outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 03 Mar 2021 15:38:01 GMT" name="03" text="March 3" type="calendarDay">
+			<outline created="Wed, 03 Mar 2021 15:38:02 GMT" text="[[docServer]]" type="outline">
+				<outline created="Wed, 03 Mar 2021 15:38:07 GMT" text="Working on a new version of docServer app."></outline>
+				<outline created="Wed, 03 Mar 2021 15:38:19 GMT" text="todo">
+					<outline created="Wed, 03 Mar 2021 15:38:27 GMT" text="use a common serif font"></outline>
+					<outline created="Wed, 03 Mar 2021 15:43:35 GMT" text="reload the outline on each view for testing"></outline>
+					<outline created="Wed, 03 Mar 2021 15:44:48 GMT" text="fix up handle http request so it works when you're not looking at docs"></outline>
+					<outline created="Wed, 03 Mar 2021 15:38:33 GMT" text="orange line under verb name"></outline>
+					<outline created="Wed, 03 Mar 2021 15:38:42 GMT" text="use tablecells to display the body"></outline>
+					<outline created="Wed, 03 Mar 2021 15:38:50 GMT" text="prev and next navigation"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 01 Mar 2021 14:40:15 GMT" name="01" text="March 1" type="calendarDay">
+			<outline created="Mon, 01 Mar 2021 14:40:16 GMT" text="[[LO2]] -- codename, Drummer. what is it" type="outline">
+				<outline created="Mon, 01 Mar 2021 14:40:26 GMT" text="I have a codename (I think): Drummer.">
+					<outline created="Mon, 01 Mar 2021 14:40:49 GMT" text="It's not a place, it's the name of my favorite character in The Expanse. "></outline>
+					<outline created="Mon, 01 Mar 2021 14:41:11 GMT" text="Drummer is a good name for a scripting environment."></outline>
+					</outline>
+				<outline created="Mon, 01 Mar 2021 14:41:20 GMT" text="What it is">
+					<outline created="Mon, 01 Mar 2021 14:41:22 GMT" text="It's a web scripting environment built around outlining and javascript. "></outline>
+					<outline created="Mon, 01 Mar 2021 14:41:33 GMT" text="Not as broad as Frontier, focused.">
+						<outline created="Mon, 01 Mar 2021 14:41:55 GMT" text="what it's good for">
+							<outline created="Mon, 01 Mar 2021 14:42:00 GMT" text="managing a network of resources for a writer or programmer"></outline>
+							</outline>
+						<outline created="Mon, 01 Mar 2021 14:42:17 GMT" text="components">
+							<outline created="Mon, 01 Mar 2021 14:42:30 GMT" text="outliner (of course), for editing scripts and public writing"></outline>
+							<outline created="Mon, 01 Mar 2021 14:42:43 GMT" text="the language is pre-processed javascript. ">
+								<outline created="Mon, 01 Mar 2021 14:43:40 GMT" text="minimal enhancement, you call synchronous and asynchronous functions the same way, as every other programming language does. "></outline>
+								</outline>
+							<outline created="Mon, 01 Mar 2021 14:44:08 GMT" text="verb set covering, file system (cloud storage), net function (http, dns), twitter, outliner.">
+								<outline created="Mon, 01 Mar 2021 14:44:53 GMT" text="we are treating twitter as if it were an open resource, knowing that it's a corporate system."></outline>
+								<outline created="Mon, 01 Mar 2021 14:45:14 GMT" text="the api is excellent, performs well, and twitter has been generous with it. "></outline>
+								<outline created="Mon, 01 Mar 2021 14:45:29 GMT" text="if they should break it, we will have to recreate the server functions that we depend on."></outline>
+								<outline created="Mon, 01 Mar 2021 14:46:36 GMT" text="as with Frontier, a way to add support for external applications accessible over HTTP."></outline>
+								</outline>
+							<outline created="Mon, 01 Mar 2021 14:49:36 GMT" text="server">
+								<outline created="Mon, 01 Mar 2021 14:49:37 GMT" text="there is a server, running an instance of daveappserver, a replacement for nodeStorage."></outline>
+								</outline>
+							<outline created="Mon, 01 Mar 2021 14:45:53 GMT" text="applications">
+								<outline created="Mon, 01 Mar 2021 14:45:56 GMT" text="basic application is web writing, but it will also be great for devops"></outline>
+								</outline>
+							<outline created="Mon, 01 Mar 2021 14:46:18 GMT" text="script-running">
+								<outline created="Mon, 01 Mar 2021 14:46:23 GMT" text="menu editor for accessing scripts, in the runtime environment, also in other apps via equivalent of Frontier menu sharing."></outline>
+								<outline created="Mon, 01 Mar 2021 14:48:46 GMT" text="lots of other ways to run scripts with access to the functionality"></outline>
+								</outline>
+							</outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		</body>
+	</opml>

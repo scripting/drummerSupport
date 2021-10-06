@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="2.0">
+	<head>
+		<title>notes/2021/04.md</title>
+		<dateModified>&lt;%dateModified%></dateModified>
+		<expansionState></expansionState>
+		<vertScrollState>1</vertScrollState>
+		<windowTop>300</windowTop>
+		<windowLeft>700</windowLeft>
+		<windowBottom>900</windowBottom>
+		<windowRight>1500</windowRight>
+		</head>
+	<body created="Sat, 17 Jul 2021 15:27:40 GMT" text="notes/2021/04.mdo">
+		<outline created="Fri, 09 Apr 2021 15:18:32 GMT" name="09" text="April 9" type="calendarDay">
+			<outline created="Fri, 09 Apr 2021 15:18:33 GMT" name="drummer" text="[[Drummer]]" type="outline">
+				<outline created="Fri, 09 Apr 2021 15:18:36 GMT" text="Beautiful example script that gets the names of the first users of Twitter. ">
+					<outline created="Fri, 09 Apr 2021 15:19:14 GMT" text="http://scripting.com/2021/04/09/141443.html?title=aDrummerExample" type="link" url="http://scripting.com/2021/04/09/141443.html?title=aDrummerExample"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 08 Apr 2021 14:48:41 GMT" name="08" text="April 8" type="calendarDay">
+			<outline created="Thu, 08 Apr 2021 16:21:25 GMT" name="drummer" text="[[Drummer]]" type="outline">
+				<outline created="Thu, 08 Apr 2021 16:22:03 GMT" text="New verb: twitter.getScreenname ">
+					<outline created="Thu, 08 Apr 2021 16:21:30 GMT" text="http://scripting.com/code/docserver/?verb=twitter.getScreenname " type="link" url="http://scripting.com/code/docserver/?verb=twitter.getScreenname "></outline>
+					<outline created="Thu, 08 Apr 2021 22:26:24 GMT" text="twitter.getScreenname (&quot;3842&quot;)">
+						<outline created="Thu, 08 Apr 2021 22:26:54 GMT" isComment="true" text="Jason"></outline>
+						</outline>
+					<outline created="Thu, 08 Apr 2021 22:26:24 GMT" text="twitter.getScreenname (twitter.getUserProfile (&quot;jack&quot;).id)">
+						<outline created="Thu, 08 Apr 2021 22:26:54 GMT" isComment="true" text="jack"></outline>
+						</outline>
+					</outline>
+				<outline created="Thu, 08 Apr 2021 16:52:53 GMT" text="New verb: drummer.runScript">
+					<outline created="Thu, 08 Apr 2021 16:56:22 GMT" text="http://scripting.com/code/docserver/?verb=drummer.runScript" type="link" url="http://scripting.com/code/docserver/?verb=drummer.runScript"></outline>
+					<outline created="Thu, 08 Apr 2021 16:53:03 GMT" text="There is a problem, and it's the general problem with running script text at this point."></outline>
+					<outline created="Thu, 08 Apr 2021 16:53:18 GMT" text="I wanted to implement and document this verb because I needed to make a decision on where it goes."></outline>
+					<outline created="Thu, 08 Apr 2021 16:53:33 GMT" text="I chose to create a class called drummer because it's what it is. I'm asking Drummer to run the script. "></outline>
+					<outline created="Thu, 08 Apr 2021 16:53:57 GMT" text="I spent a lot of time staring at the Frontier verb set before deciding on this. "></outline>
+					<outline created="Thu, 08 Apr 2021 16:54:11 GMT" text="Frontier has a class called Frontier, which is basically a grab bag of random stuff Frontier does on its own behalf. "></outline>
+					<outline created="Thu, 08 Apr 2021 16:54:37 GMT" text="I also plan to have a thread class, that launches scripts in threads. But not yet. "></outline>
+					</outline>
+				<outline created="Thu, 08 Apr 2021 17:41:00 GMT" text="Places for callbacks in Drummer, yes there are some">
+					<outline created="Thu, 08 Apr 2021 17:40:00 GMT" text="I want to have a server component in the browser app, but we can't receive HTTP, so the next best thing I can think of is websockets, so I'm designing an interface for that. Curiously, it must use callbacks. Not the only place, the op visit verbs do too. They are not asynchronous. "></outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 08 Apr 2021 14:48:42 GMT" name="docserver" text="[[DocServer]]" type="outline">
+				<outline created="Thu, 08 Apr 2021 14:48:46 GMT" text="New navigation approach">
+					<outline created="Thu, 08 Apr 2021 14:48:51 GMT" text="There's a new Verbs menu. "></outline>
+					<outline created="Thu, 08 Apr 2021 14:49:19 GMT" text="It's a two-level hierarchy."></outline>
+					<outline created="Thu, 08 Apr 2021 14:49:11 GMT" text="At the top level, verb classes."></outline>
+					<outline created="Thu, 08 Apr 2021 14:49:25 GMT" text="At the second level, verb names."></outline>
+					<outline created="Thu, 08 Apr 2021 14:49:33 GMT" text="Choose a verb name, and the docs for that verb appear."></outline>
+					</outline>
+				<outline created="Thu, 08 Apr 2021 15:15:25 GMT" text="Problem">
+					<outline created="Thu, 08 Apr 2021 15:15:27 GMT" text="A long class like string.xxx is too long to fit even on my big screen. "></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 07 Apr 2021 16:19:21 GMT" name="07" text="April 7" type="calendarDay">
+			<outline created="Wed, 07 Apr 2021 16:19:22 GMT" text="[[Drummer]]" type="outline">
+				<outline created="Wed, 07 Apr 2021 16:19:26 GMT" text="opml verbs">
+					<outline created="Wed, 07 Apr 2021 16:19:30 GMT" text="There are four verbs:">
+						<outline created="Wed, 07 Apr 2021 16:19:35 GMT" text="opml.getHeaders" type="link" url="http://scripting.com/code/docserver/?verb=opml.getHeaders"></outline>
+						<outline created="Wed, 07 Apr 2021 16:19:39 GMT" text="opml.setHeaders" type="link" url="http://scripting.com/code/docserver/?verb=opml.setHeaders"></outline>
+						<outline created="Wed, 07 Apr 2021 16:19:45 GMT" text="opml.getCurrentOpml" type="link" url="http://scripting.com/code/docserver/?verb=opml.getCurrentOpml"></outline>
+						<outline created="Wed, 07 Apr 2021 16:19:51 GMT" text="opml.getCurrentObject" type="link" url="http://scripting.com/code/docserver/?verb=opml.getCurrentObject"></outline>
+						</outline>
+					<outline created="Wed, 07 Apr 2021 16:19:58 GMT" text="All are tested and documented."></outline>
+					<outline created="Wed, 07 Apr 2021 16:22:42 GMT" text="The idea behind this class is to gather all the whole-file outline operations in one place. "></outline>
+					<outline created="Wed, 07 Apr 2021 16:23:06 GMT" text="There are OPML-related verbs in op, they do not deal with the whole file. ">
+						<outline created="Wed, 07 Apr 2021 16:23:50 GMT" text="op.getCursorOpml and op.insertOpml"></outline>
+						</outline>
+					<outline created="Wed, 07 Apr 2021 16:24:32 GMT" text="I did not implement the other side of getCurrentObject because I have trouble even thinking about it. ;-)"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 06 Apr 2021 17:17:45 GMT" name="06" text="April 6" type="calendarDay">
+			<outline created="Tue, 06 Apr 2021 22:01:54 GMT" text="[[LO2]]" type="outline">
+				<outline created="Tue, 06 Apr 2021 22:03:12 GMT" text="New bookmarks include info about where the cursor should go.">
+					<outline created="Tue, 06 Apr 2021 22:01:59 GMT" text="When you create a bookmark, now it attaches to the bookmark, as an attribute, the value of the created attribute of the headline the bar cursor is on when you create the bookmark. Later, when you choose the bookmark, after it opens the outline, it looks for a headline with the remembered created it, and if it finds it, that's where the bar cursor shows up."></outline>
+					</outline>
+				</outline>
+			<outline created="Tue, 06 Apr 2021 17:39:57 GMT" text="[[Docs]]" type="outline">
+				<outline created="Tue, 06 Apr 2021 17:40:01 GMT" text="I've now got a strategy for doing docs."></outline>
+				<outline created="Tue, 06 Apr 2021 17:40:08 GMT" text="I use one-level includes in the verb docs file, so op verbs, for example is in its own OPML file."></outline>
+				<outline created="Tue, 06 Apr 2021 17:40:28 GMT" text="I tie them all together through the Bookmarks menu as well as via includes in the OPML source."></outline>
+				<outline created="Tue, 06 Apr 2021 17:40:51 GMT" text="So editing is still pretty easy. I depend much less on remembering names of files and whether they're public or private. Bookmarks hides all that, and let's me use more characters to describe what's going on. Big win for complex projects and documenting Drummer is probably the most complex writing project I've ever done. I've never written the docs for my own product before. "></outline>
+				</outline>
+			<outline created="Tue, 06 Apr 2021 17:17:46 GMT" text="[[Drummer]]" type="outline">
+				<outline created="Tue, 06 Apr 2021 17:17:49 GMT" text="The op &quot;visit&quot; routines are tested and documented.">
+					<outline created="Tue, 06 Apr 2021 17:18:02 GMT" text="They were in poor shape, basically they didn't work."></outline>
+					<outline created="Tue, 06 Apr 2021 17:18:15 GMT" text="Note: The callbacks are not asynchronous, so they do not have to be called with promises."></outline>
+					<outline created="Tue, 06 Apr 2021 17:18:34 GMT" text="The three verbs are:">
+						<outline created="Tue, 06 Apr 2021 17:18:40 GMT" text="op.visitAll" type="link" url="http://scripting.com/code/docserver/?verb=op.visitAll"></outline>
+						<outline created="Tue, 06 Apr 2021 17:18:43 GMT" text="op.visitSubs" type="link" url="http://scripting.com/code/docserver/?verb=op.visitSubs"></outline>
+						<outline created="Tue, 06 Apr 2021 17:18:47 GMT" text="op.visitToSummit" type="link" url="http://scripting.com/code/docserver/?verb=op.visitToSummit"></outline>
+						</outline>
+					<outline created="Tue, 06 Apr 2021 17:18:51 GMT" text="The examples are a bit more complicated than the other verbs, so they are not meant to be run with Cmd-/."></outline>
+					</outline>
+				<outline created="Tue, 06 Apr 2021 18:01:00 GMT" text="file.readOptionalFile, new verb, written, tested, documented ">
+					<outline created="Tue, 06 Apr 2021 18:01:31 GMT" text="http://scripting.com/code/docserver/?verb=file.readOptionalFile" type="link" url="http://scripting.com/code/docserver/?verb=file.readOptionalFile"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 05 Apr 2021 16:25:34 GMT" name="05" text="April 5" type="calendarDay">
+			<outline created="Mon, 05 Apr 2021 19:42:18 GMT" text="[[LO2]]">
+				<outline created="Mon, 05 Apr 2021 19:42:23 GMT" text="It's been a rough couple of days. after a week of big progress, I started going into areas of the program that are hard to deal with and came up empty in all cases. Shit happens. ">
+					<outline created="Mon, 05 Apr 2021 19:42:52 GMT" text="I wanted to have a popup on each file in a tab that displays info about the file, it's size, dates, private or public. But it turns out that the way bootstrap sets up tabs, anchor elements are blocks, not inline. Trying to override that ended up with even more problems. "></outline>
+					<outline created="Mon, 05 Apr 2021 19:44:07 GMT" text="I figured out how to make switching between tabs instantaneous, by keeping around the DOM structure that Concord manages instead of having to reload OPML. But the tabclick routine does a lot. Handles hoisting, instant outlines, and more. Which makes this pretty complex. Might require another rewrite of tabclick to get this done, but it will get done. "></outline>
+					<outline created="Mon, 05 Apr 2021 19:45:32 GMT" text="There were a few others. I have to regroup and plan out my next steps."></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 03 Apr 2021 14:14:06 GMT" name="03" text="April 3" type="calendarDay">
+			<outline created="Sat, 03 Apr 2021 14:14:07 GMT" text="[[Drummer]] -- root.opml" type="outline">
+				<outline created="Sat, 03 Apr 2021 14:14:13 GMT" text="root.opml is where your global scripts and data go. ">
+					<outline created="Sat, 03 Apr 2021 14:14:46 GMT" text="like the other special files, it is opened automatically at startup, if it exists."></outline>
+					<outline created="Sat, 03 Apr 2021 14:15:06 GMT" text="the top level of the root outline has names. they must be valid JS names. "></outline>
+					<outline created="Sat, 03 Apr 2021 14:15:53 GMT" text="below the top level is up to you, however it must be legal JS syntax."></outline>
+					<outline created="Sat, 03 Apr 2021 14:16:33 GMT" text="when it loads the root outline, drummer loops over each of the summits, and for each, does an assignment:">
+						<outline created="Sat, 03 Apr 2021 14:17:10 GMT" text="root [name] = subtext">
+							<outline created="Sat, 03 Apr 2021 14:17:18 GMT" text="root is a global object in Drummer."></outline>
+							<outline created="Sat, 03 Apr 2021 14:17:34 GMT" text="name is the name from the summit"></outline>
+							<outline created="Sat, 03 Apr 2021 14:17:40 GMT" text="subtext is all the subordinate text"></outline>
+							</outline>
+						</outline>
+					<outline created="Sat, 03 Apr 2021 14:18:04 GMT" text="here's an example, what's in my root.opml right now. if you want you can put it in yours, and the examples in the next section should work.">
+						<outline created="Fri, 02 Apr 2021 14:44:08 GMT" text="test ">
+							<outline created="Fri, 02 Apr 2021 15:59:10 GMT" text="function (name) {">
+								<outline created="Fri, 02 Apr 2021 15:53:17 GMT" text="dialog.alert (&quot;Greetings: &quot; + name);"></outline>
+								<outline created="Fri, 02 Apr 2021 15:59:57 GMT" text="}"></outline>
+								</outline>
+							</outline>
+						<outline created="Fri, 02 Apr 2021 16:19:57 GMT" text="myPrefs">
+							<outline created="Fri, 02 Apr 2021 16:20:47 GMT" text="{">
+								<outline created="Fri, 02 Apr 2021 16:20:21 GMT" text="age: 34, "></outline>
+								<outline created="Sat, 03 Apr 2021 14:13:51 GMT" text="country: &quot;USA&quot;,"></outline>
+								<outline created="Fri, 02 Apr 2021 16:58:23 GMT" text="favoriteMovies: [">
+									<outline created="Fri, 02 Apr 2021 16:58:32 GMT" text="&quot;babe&quot;,"></outline>
+									<outline created="Fri, 02 Apr 2021 17:03:43 GMT" text="&quot;the departed&quot;,"></outline>
+									<outline created="Fri, 02 Apr 2021 17:03:56 GMT" text="&quot;casablanca&quot;"></outline>
+									<outline created="Fri, 02 Apr 2021 16:58:40 GMT" text="]"></outline>
+									</outline>
+								<outline created="Fri, 02 Apr 2021 16:20:41 GMT" text="}"></outline>
+								</outline>
+							</outline>
+						</outline>
+					<outline created="Sat, 03 Apr 2021 14:19:18 GMT" text="what can I do with this?">
+						<outline created="Sat, 03 Apr 2021 14:19:25 GMT" text="root.test (&quot;Bull Mancuso&quot;)">
+							<outline created="Sat, 03 Apr 2021 14:20:41 GMT" isComment="true" text="undefined"></outline>
+							</outline>
+						<outline created="Sat, 03 Apr 2021 14:20:16 GMT" text="root.myPrefs.favoriteMovies [1]">
+							<outline created="Sat, 03 Apr 2021 14:20:35 GMT" isComment="true" text="the departed"></outline>
+							</outline>
+						</outline>
+					<outline created="Sat, 03 Apr 2021 14:20:50 GMT" text="as with the other special outlines, as you're editing root.opml it is processed as if you were starting up, so your changes are immediate."></outline>
+					<outline created="Sat, 03 Apr 2021 14:21:31 GMT" text="root is in the Special files sub-menu of the Files menu."></outline>
+					<outline created="Fri, 02 Apr 2021 15:07:05 GMT" text="prior art">
+						<outline created="Fri, 02 Apr 2021 15:07:08 GMT" text="root in Frontier"></outline>
+						<outline created="Fri, 02 Apr 2021 15:07:12 GMT" text="The glossary in Old School (and going back to Frontier website framework)"></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 03 Apr 2021 15:55:57 GMT" text="[[LO2]]" type="outline">
+				<outline created="Sat, 03 Apr 2021 16:12:16 GMT" text="The close box only appears in the current tab. More economical use of horiz space."></outline>
+				<outline created="Sat, 03 Apr 2021 15:56:00 GMT" text="Double-clicking on an include node now expands it.">
+					<outline created="Sat, 03 Apr 2021 15:56:10 GMT" text="As far as I can tell this hasn't worked since I switched to the new server."></outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 03 Apr 2021 15:48:04 GMT" text="[[DocServer]]" type="outline">
+				<outline created="Sat, 03 Apr 2021 15:48:08 GMT" text="My verbDocs.opml file was getting too large to manage in LO2. "></outline>
+				<outline created="Sat, 03 Apr 2021 15:48:35 GMT" text="I needed to break it up to multiple files, and link them together with includes."></outline>
+				<outline created="Sat, 03 Apr 2021 15:48:49 GMT" text="So I added a one-level include feature in DocServer."></outline>
+				<outline created="Sat, 03 Apr 2021 15:48:59 GMT" text="I'm going to be doing more with includes, this is a first step."></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 02 Apr 2021 17:50:16 GMT" name="02" text="April 2" type="calendarDay">
+			<outline created="Fri, 02 Apr 2021 21:33:30 GMT" text="[[LO2]]" type="outline">
+				<outline created="Fri, 02 Apr 2021 21:28:46 GMT" text="Each tab now has an x which, if you click it, will close the tab."></outline>
+				<outline created="Fri, 02 Apr 2021 21:29:07 GMT" text="This makes closing tabs easier in two ways.">
+					<outline created="Fri, 02 Apr 2021 21:29:15 GMT" text="1. You don't have to activate the tab you want to close."></outline>
+					<outline created="Fri, 02 Apr 2021 21:29:25 GMT" text="2. You don't have to go to the File menu."></outline>
+					</outline>
+				<outline created="Fri, 02 Apr 2021 21:29:39 GMT" text="Still thinking about whether I want every tab to have a close box.">
+					<outline created="Fri, 02 Apr 2021 21:29:52 GMT" text="It adds 10px horizontal to each tab. "></outline>
+					<outline created="Fri, 02 Apr 2021 21:30:06 GMT" text="It might not be worth the tradeoff."></outline>
+					</outline>
+				</outline>
+			<outline created="Fri, 02 Apr 2021 17:50:17 GMT" text="[[DocServer]]" type="outline">
+				<outline created="Fri, 02 Apr 2021 17:50:20 GMT" text="the left column now lists verb categories, not verbs. ">
+					<outline created="Fri, 02 Apr 2021 17:50:35 GMT" text="the list was getting too long to be useful."></outline>
+					</outline>
+				<outline created="Fri, 02 Apr 2021 21:31:19 GMT" text="watch out for UI glitches, there probably are some. "></outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 01 Apr 2021 14:55:25 GMT" name="01" text="April 1" type="calendarDay">
+			<outline created="Thu, 01 Apr 2021 21:07:18 GMT" text="[[question for andrew]]" type="outline">
+				<outline created="Thu, 01 Apr 2021 21:07:25 GMT" text="There are two ways to run a script. In one, I can have multiple lines of code, logic and looping. ">
+					<outline created="Thu, 01 Apr 2021 21:07:53 GMT" text="In the other, I can just have one expression."></outline>
+					<outline created="Thu, 01 Apr 2021 21:08:02 GMT" text="Yet when I look at the code, they do the same thing, they both call runScriptText."></outline>
+					<outline created="Thu, 01 Apr 2021 21:08:17 GMT" text="I want to create example scripts, for DocServer, that have more than one statement on a line, and have been trying to figure out how this works. I thought I understood, but apparently not"></outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 01 Apr 2021 14:55:26 GMT" text="[[drummer]]" type="outline">
+				<outline created="Thu, 01 Apr 2021 18:21:49 GMT" text="scripts that run when you expand a headline">
+					<outline created="Thu, 01 Apr 2021 18:21:57 GMT" text="a new section to the scheduler outline">
+						<outline created="Thu, 01 Apr 2021 18:22:12 GMT" text="the scripts run when you expand a headline"></outline>
+						</outline>
+					<outline created="Thu, 01 Apr 2021 18:22:20 GMT" text="example">
+						<outline created="Thu, 01 Apr 2021 15:44:47 GMT" text="expand">
+							<outline created="Thu, 01 Apr 2021 15:47:49 GMT" text="echo type">
+								<outline created="Thu, 01 Apr 2021 16:22:50 GMT" text="var type = op.attributes.getOne (&quot;type&quot;);"></outline>
+								<outline created="Thu, 01 Apr 2021 16:22:55 GMT" text="if (type === undefined) {">
+									<outline created="Thu, 01 Apr 2021 16:23:01 GMT" text="console.log (&quot;no type&quot;);"></outline>
+									<outline created="Thu, 01 Apr 2021 16:23:10 GMT" text="}"></outline>
+									</outline>
+								<outline created="Thu, 01 Apr 2021 16:23:10 GMT" text="else {">
+									<outline created="Thu, 01 Apr 2021 16:08:20 GMT" text="console.log (type)"></outline>
+									<outline created="Thu, 01 Apr 2021 16:23:12 GMT" text="}"></outline>
+									</outline>
+								</outline>
+							<outline created="Thu, 01 Apr 2021 15:47:49 GMT" text="echo text">
+								<outline created="Thu, 01 Apr 2021 16:08:20 GMT" text="console.log (op.getLineText ())"></outline>
+								</outline>
+							</outline>
+						</outline>
+					<outline created="Thu, 01 Apr 2021 18:23:01 GMT" text="quiet power">
+						<outline created="Thu, 01 Apr 2021 18:23:08 GMT" text="in frontier we had a feature called nodetypes">
+							<outline created="Thu, 01 Apr 2021 18:23:18 GMT" text="based on the type of a node, certain things happen"></outline>
+							<outline created="Thu, 01 Apr 2021 18:23:27 GMT" text="LO2 already has certain types defined">
+								<outline created="Thu, 01 Apr 2021 18:23:34 GMT" text="include"></outline>
+								<outline created="Thu, 01 Apr 2021 18:23:38 GMT" text="link"></outline>
+								<outline created="Thu, 01 Apr 2021 18:23:39 GMT" text="word"></outline>
+								<outline created="Thu, 01 Apr 2021 18:24:05 GMT" text="tweet"></outline>
+								</outline>
+							<outline created="Thu, 01 Apr 2021 18:24:09 GMT" text="with this feature you can add your own"></outline>
+							</outline>
+						</outline>
+					</outline>
+				<outline created="Thu, 01 Apr 2021 18:21:05 GMT" text="scheduled scripts">
+					<outline created="Thu, 01 Apr 2021 18:21:11 GMT" text="Fixed a bug where it would only run the first script in a given class. "></outline>
+					</outline>
+				<outline created="Thu, 01 Apr 2021 14:55:28 GMT" text="file.getFileInfo">
+					<outline created="Thu, 01 Apr 2021 14:55:41 GMT" text="http://scripting.com/code/docserver/?verb=file.getFileInfo" type="link" url="http://scripting.com/code/docserver/?verb=file.getFileInfo"></outline>
+					</outline>
+				</outline>
+			</outline>
+		</body>
+	</opml>

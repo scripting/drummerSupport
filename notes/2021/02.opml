@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="2.0">
+	<head>
+		<title>notes/2021/02.md</title>
+		<dateModified>&lt;%dateModified%></dateModified>
+		<expansionState></expansionState>
+		<vertScrollState>1</vertScrollState>
+		<windowTop>300</windowTop>
+		<windowLeft>700</windowLeft>
+		<windowBottom>900</windowBottom>
+		<windowRight>1500</windowRight>
+		</head>
+	<body created="Wed, 21 Jul 2021 19:00:25 GMT" text="notes/2021/02.mdo">
+		<outline created="Sun, 28 Feb 2021 14:27:27 GMT" name="28" text="February 28" type="calendarDay">
+			<outline created="Sun, 28 Feb 2021 14:27:28 GMT" name="lo2" text="[[LO2]]" type="outline">
+				<outline created="Sun, 28 Feb 2021 14:39:00 GMT" text="I figured out how to make cmd-/ work properly, inserting the result as a comment below the line containing the script.">
+					<outline created="Sun, 28 Feb 2021 14:39:06 GMT" text="Below are a few one-liners. ">
+						<outline created="Sun, 28 Feb 2021 15:25:20 GMT" text="random (0, 1000)">
+							<outline created="Sun, 28 Feb 2021 15:25:25 GMT" isComment="true" text="515"></outline>
+							</outline>
+						<outline created="Sun, 28 Feb 2021 14:27:32 GMT" text="file.writeWholeFile (&quot;tmp.txt&quot;, &quot;hooray for hollywood&quot;)">
+							<outline created="Sun, 28 Feb 2021 15:25:13 GMT" text="true"></outline>
+							</outline>
+						<outline created="Sun, 28 Feb 2021 14:32:48 GMT" text="string.upper (file.readWholeFile (&quot;tmp.txt&quot;))">
+							<outline created="Sun, 28 Feb 2021 15:15:07 GMT" isComment="true" text="HOORAY FOR HOLLYWOOD"></outline>
+							</outline>
+						</outline>
+					</outline>
+				<outline created="Sun, 28 Feb 2021 15:14:15 GMT" text="Spoke with Andrew, he's actually working on this, so I'll defer to what he comes up with, but glad to have this temporary functionality for testing and doc writing. "></outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 27 Feb 2021 17:59:55 GMT" name="27" text="February 27" type="calendarDay">
+			<outline created="Sat, 27 Feb 2021 18:05:39 GMT" text="[[LO2]]" type="outline">
+				<outline created="Sat, 27 Feb 2021 22:14:01 GMT" text="Let's see if we can figure out how to get cmd-/ to work properly">
+					<outline created="Sat, 27 Feb 2021 22:14:15 GMT" text="12 +5"></outline>
+					<outline created="Sat, 27 Feb 2021 22:14:41 GMT" text="When I click on cmd-/ on the previous line, it should create a sub with the value 17. It does not. "></outline>
+					<outline created="Sat, 27 Feb 2021 22:15:13 GMT" text="I'm going to try watching the code run in the debugger and see if the number 17 shows up anywhere."></outline>
+					<outline created="Sat, 27 Feb 2021 22:24:33 GMT" text="Result: No, ever saw a 17. I'll try again.."></outline>
+					</outline>
+				<outline created="Sat, 27 Feb 2021 18:05:42 GMT" text="Bug in new Testing menu. The menu disappears if I make a change in my menubar.opml.">
+					<outline created="Sat, 27 Feb 2021 18:06:02 GMT" text="This causes everything past the Docs menu to be rebuilt, without re-adding the Testing menu."></outline>
+					<outline created="Sat, 27 Feb 2021 18:06:23 GMT" text="Also I think the Scripts menu should be last. It's the one I work with the most, make it easiest to find."></outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 27 Feb 2021 17:59:56 GMT" name="verbs" text="[[verbs]]" type="outline">
+				<outline created="Sat, 27 Feb 2021 18:00:00 GMT" text="dns.getDomainName (dottedid) and dns.getDottedId (name) ">
+					<outline created="Sat, 27 Feb 2021 18:00:13 GMT" text="there are two new commands in the (new) Net sub-menu that test these two verbs."></outline>
+					<outline created="Sat, 27 Feb 2021 18:00:51 GMT" text="implemented as http calls in daveappserver."></outline>
+					<outline created="Sat, 27 Feb 2021 18:01:09 GMT" text="the &lt;a href=&quot;http://docs.littleoutliner.com/davewiner/verbDocs.opml&quot;&gt;verb docs&lt;/a&gt; are written."></outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 27 Feb 2021 18:01:24 GMT" text="[[scripting]]" type="outline">
+				<outline created="Sat, 27 Feb 2021 18:01:31 GMT" text="I have ideas about how to include verbs, server-side, that are not implemented in daveappserver."></outline>
+				<outline created="Sat, 27 Feb 2021 18:01:57 GMT" text="so far I've only written generic things, like http and dns. file system support. think of those as system verbs. "></outline>
+				<outline created="Sat, 27 Feb 2021 18:02:19 GMT" text="how to extend is starting to come into view. but there are a lot of decisions. so i'm going to keep going, defining, testing, documenting, thinking about the verbs that belong in the core.  "></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 26 Feb 2021 14:56:54 GMT" name="26" text="February 26" type="calendarDay">
+			<outline created="Fri, 26 Feb 2021 20:23:31 GMT" text="[[verbs]]" type="outline">
+				<outline created="Fri, 26 Feb 2021 20:23:34 GMT" text="http.readUrl">
+					<outline created="Fri, 26 Feb 2021 20:24:03 GMT" text="Implemented a call in daveappserver to serve as a proxy. "></outline>
+					<outline created="Fri, 26 Feb 2021 20:24:22 GMT" text="Wrote verbDocs for the verb. "></outline>
+					<outline created="Fri, 26 Feb 2021 20:24:30 GMT" text="Wanted to get at least one verb implemented today."></outline>
+					<outline created="Fri, 26 Feb 2021 20:25:01 GMT" text="Issue: should this be tcp.httpReadUrl as it is in Frontier?"></outline>
+					</outline>
+				</outline>
+			<outline created="Fri, 26 Feb 2021 14:56:55 GMT" text="[[LO2]]" type="outline">
+				<outline created="Fri, 26 Feb 2021 15:11:26 GMT" text="publishing docs from test.littleoutliner.com">
+					<outline created="Fri, 26 Feb 2021 15:11:42 GMT" text="all docs will be at this domain: docs.littleoutliner.com"></outline>
+					<outline created="Fri, 26 Feb 2021 15:11:56 GMT" text="the outlines will be rendered as howto-style outlines, as they &lt;a href=&quot;http://my.this.how/davewiner/howtosInLittleOutliner.opml&quot;&gt;are&lt;/a&gt; on littleoutliner.com."></outline>
+					<outline created="Fri, 26 Feb 2021 15:12:19 GMT" text="the urls will be of this form: http://docs.littleoutliner.com/davewiner/verbDocs.opml"></outline>
+					<outline created="Fri, 26 Feb 2021 15:13:01 GMT" text="docs.littleoutliner.com is implemented as a &lt;a href=&quot;http://pagepark.io/docs/plugins.md&quot;&gt;pagepark plug-in&lt;/a&gt;. "></outline>
+					<outline created="Fri, 26 Feb 2021 15:36:13 GMT" text="it works -- you can now read the verb docs here. not pretty but they're there.">
+						<outline created="Fri, 26 Feb 2021 15:36:26 GMT" text="http://docs.littleoutliner.com/davewiner/verbDocs.opml" type="link" url="http://docs.littleoutliner.com/davewiner/verbDocs.opml"></outline>
+						</outline>
+					</outline>
+				<outline created="Fri, 26 Feb 2021 14:56:58 GMT" text="Added a link to the &lt;a href=&quot;http://this.how/littleoutliner/versions.opml&quot;&gt;Version notes outline&lt;/a&gt; in the Docs menu. ">
+					<outline created="Fri, 26 Feb 2021 14:57:11 GMT" text="I should be adding to this outline, but it's weird because nothing I add now will be public. "></outline>
+					<outline created="Fri, 26 Feb 2021 14:57:26 GMT" text="I think pretty soon I'm going to have to transition this to a public release."></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 25 Feb 2021 15:53:26 GMT" name="25" text="February 25" type="calendarDay">
+			<outline created="Thu, 25 Feb 2021 18:25:23 GMT" text="[[rfc]]" type="outline">
+				<outline created="Thu, 25 Feb 2021 18:25:27 GMT" text="request for comment (andrew)">
+					<outline created="Thu, 25 Feb 2021 18:25:34 GMT" text="goal: a reference set of test scripts that are easily accessible to all"></outline>
+					<outline created="Thu, 25 Feb 2021 18:26:12 GMT" text="proposed solution: I hard-code the loading of this menu at startup in LO2"></outline>
+					<outline created="Thu, 25 Feb 2021 18:26:50 GMT" text="advantages: reliable, requires nothing of the user, updating the menu is done by reloading the app"></outline>
+					</outline>
+				<outline created="Thu, 25 Feb 2021 21:22:24 GMT" text="implementation">
+					<outline created="Thu, 25 Feb 2021 21:22:28 GMT" text="I will have two menubars myself, one place to edit stuff, and one to deploy to users of the test system.">
+						<outline created="Thu, 25 Feb 2021 21:22:53 GMT" text="The place to edit stuff will be my menubar.opml."></outline>
+						<outline created="Thu, 25 Feb 2021 21:23:10 GMT" text="The place to deploy test scripts/examples, will be at: ">
+							<outline created="Thu, 25 Feb 2021 21:23:27 GMT" text="http://test.littleoutliner.com/davewiner/myOutlines/testMenubar.opml" type="link" url="http://test.littleoutliner.com/davewiner/myOutlines/testMenubar.opml"></outline>
+							</outline>
+						</outline>
+					<outline created="Thu, 25 Feb 2021 21:25:40 GMT" text="When LO2 starts up it looks for this file, if it finds it, it is inserted the same way the user's menubar is.">
+						<outline created="Thu, 25 Feb 2021 21:26:05 GMT" text="Voila! :-)"></outline>
+						</outline>
+					</outline>
+				<outline created="Thu, 25 Feb 2021 18:27:49 GMT" text="how to respond">
+					<outline created="Thu, 25 Feb 2021 18:27:52 GMT" text="please use Signal"></outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 25 Feb 2021 18:18:31 GMT" text="[[davehttp]]" type="outline">
+				<outline created="Thu, 25 Feb 2021 18:18:36 GMT" text="when a POST is received but not handled, there appears to be no 404 error returned. have to investigate. it could also be in davetwitter. the behavior is exhibited in daveappserver."></outline>
+				</outline>
+			<outline created="Thu, 25 Feb 2021 15:55:15 GMT" text="[[radio open source]]" type="outline">
+				<outline created="Thu, 25 Feb 2021 15:55:24 GMT" text="Andy Sylvester is doing a good job putting together the initial community site. ">
+					<outline created="Thu, 25 Feb 2021 15:55:39 GMT" text="We're going to redirect from a scripting.com cname. "></outline>
+					<outline created="Thu, 25 Feb 2021 15:56:07 GMT" text="Eventually want to turn it over to Mary and Chris."></outline>
+					<outline created="Thu, 25 Feb 2021 15:56:02 GMT" text="The spec is &quot;recreate the community ROS had in 2003.&quot;"></outline>
+					<outline created="Thu, 25 Feb 2021 15:56:37 GMT" text="That's something Chris and Mary understand, and wish they had again."></outline>
+					<outline created="Thu, 25 Feb 2021 15:56:47 GMT" text="I've been on their case about starting a community, but realized I should have been listening better, and just given them what they want. "></outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 25 Feb 2021 15:54:30 GMT" text="[[verbs]]" type="outline">
+				<outline created="Wed, 24 Feb 2021 20:52:32 GMT" text="file.writeWholeFile">
+					<outline created="Wed, 24 Feb 2021 20:52:38 GMT" text="Needed a rewrite too. ">
+						<outline created="Wed, 24 Feb 2021 20:52:44 GMT" text="If the file doesn't exist, we create a private file."></outline>
+						<outline created="Wed, 24 Feb 2021 20:53:04 GMT" text="If it does exist, we replace the first one we find."></outline>
+						<outline created="Wed, 24 Feb 2021 20:53:16 GMT" text="We start looking for the public file, then the private one. "></outline>
+						</outline>
+					<outline created="Thu, 25 Feb 2021 18:11:48 GMT" text="Tested and works"></outline>
+					</outline>
+				<outline created="Thu, 25 Feb 2021 18:11:53 GMT" text="Now the first four commands in the Files sub-menu work."></outline>
+				<outline created="Thu, 25 Feb 2021 18:12:18 GMT" text="Whether or not a file is private or public is transparent to these verbs. They work on whatever we have. "></outline>
+				</outline>
+			<outline created="Thu, 25 Feb 2021 15:53:27 GMT" text="[[sysop]]" type="outline">
+				<outline created="Thu, 25 Feb 2021 15:53:35 GMT" text="Added nightly backup script to copy my status outline, the menubar and verb docs to the devteam folder (which itself is backed up)."></outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 24 Feb 2021 20:44:50 GMT" name="24" text="February 24" type="calendarDay">
+			<outline created="Wed, 24 Feb 2021 20:44:51 GMT" text="[[verbs]]" type="outline">
+				<outline created="Wed, 24 Feb 2021 20:52:26 GMT" text="file.readWholeFile">
+					<outline created="Wed, 24 Feb 2021 20:46:14 GMT" text="New implementation of file.readWholeFile.">
+						<outline created="Wed, 24 Feb 2021 20:46:34 GMT" text="readWholeFile: function (path) { ">
+							<outline created="Wed, 24 Feb 2021 20:46:54 GMT" text="return new Promise (function (resolve, reject) {">
+								<outline created="Wed, 24 Feb 2021 20:46:55 GMT" text="servercall (&quot;readwholefile&quot;, {relpath: path}, true, function (err, data) {">
+									<outline created="Wed, 24 Feb 2021 20:46:57 GMT" text="if (err) {">
+										<outline text="reject (err);"></outline>
+										<outline text="}"></outline>
+										</outline>
+									<outline created="Wed, 24 Feb 2021 20:47:01 GMT" text="else {">
+										<outline text="resolve (data.filetext); "></outline>
+										<outline text="}"></outline>
+										</outline>
+									<outline text="});"></outline>
+									</outline>
+								<outline text="});"></outline>
+								</outline>
+							<outline text="},"></outline>
+							</outline>
+						</outline>
+					<outline created="Wed, 24 Feb 2021 20:47:41 GMT" text="Corresponding [[daveappserver]] call">
+						<outline created="Wed, 24 Feb 2021 20:44:54 GMT" text="//readwholefile">
+							<outline created="Wed, 24 Feb 2021 20:45:46 GMT" text="first it tries to read the public version, if it works, it returns that, then it returns the private version. "></outline>
+							<outline created="Wed, 24 Feb 2021 20:46:05 GMT" text="it's an error if neither exist."></outline>
+							</outline>
+						</outline>
+					<outline created="Wed, 24 Feb 2021 20:48:43 GMT" text="Note there's already a call //getfile that differs in that it takes a boolean param saying if it's public or private. ">
+						<outline created="Wed, 24 Feb 2021 20:49:06 GMT" text="Not sure if LO2 needs this. If not, it can be deleted, since this is new stuff, no breakage possible."></outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 23 Feb 2021 15:16:19 GMT" name="23" text="February 23" type="calendarDay">
+			<outline created="Tue, 23 Feb 2021 15:17:23 GMT" text="[[LO2]]" type="outline">
+				<outline created="Tue, 23 Feb 2021 15:17:29 GMT" text="Silver lining to not having integrated this with the main littleoutliner.com site. ">
+					<outline created="Tue, 23 Feb 2021 15:17:46 GMT" text="1. I can change the default folder structure. the myOutlines folder was a mistake. "></outline>
+					<outline created="Tue, 23 Feb 2021 15:18:06 GMT" text="2. It can have a new name that does not contain the word little, and might also give it a new mission beyond being an outliner. I'm thinking this product will ultimately do three things well:">
+						<outline created="Tue, 23 Feb 2021 15:18:44 GMT" text="Manage a cloud-based file system with scripting. "></outline>
+						<outline created="Tue, 23 Feb 2021 15:18:55 GMT" text="Connect to Twitter in the way a prodigious influencer would want to."></outline>
+						<outline created="Tue, 23 Feb 2021 15:19:19 GMT" text="Connect file system and twitter. "></outline>
+						</outline>
+					<outline created="Tue, 23 Feb 2021 15:19:52 GMT" text="3. It will do one other thing in a rudimentary and simple way:">
+						<outline created="Tue, 23 Feb 2021 15:20:04 GMT" text="Publish stuff to the web. That's what public folders are all about. "></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Tue, 23 Feb 2021 15:16:20 GMT" text="[[verbs]]" type="outline">
+				<outline created="Tue, 23 Feb 2021 16:30:19 GMT" text="file.delete">
+					<outline created="Tue, 23 Feb 2021 16:30:22 GMT" text="Implemented, including glue script, example in my menubar.opml file and verbdocs. "></outline>
+					<outline created="Tue, 23 Feb 2021 16:30:48 GMT" text="This is starting to get to be a routine, which is what I want. Get an idea for a verb, implement in a variety of places. "></outline>
+					<outline created="Tue, 23 Feb 2021 16:31:15 GMT" text="Also note that the server side is going into daveappserver, which is very nicely developing as the 2021 version of nodestorage. only stuff every app needs, and the filesystem stuff is actually covered by a preference. if you don't want your appserver doing stuff with files, it's easily disabled. "></outline>
+					</outline>
+				<outline created="Tue, 23 Feb 2021 15:16:26 GMT" text="Wrote docs for file.getFileHierarchy in the verb docs outline.">
+					<outline created="Tue, 23 Feb 2021 15:16:32 GMT" text="http://instantoutliner.com/np"></outline>
+					</outline>
+				<outline created="Tue, 23 Feb 2021 15:16:51 GMT" text="To do -- a docserver-like rendering of the verb docs. It should be linked into the Docs menu in LO2. "></outline>
+				</outline>
+			<outline created="Tue, 23 Feb 2021 15:26:32 GMT" text="[[todo]]" type="outline">
+				<outline created="Tue, 23 Feb 2021 15:26:34 GMT" text="codename for product, use that for the domain name, which is not necessarily littleoutliners.com."></outline>
+				<outline created="Tue, 23 Feb 2021 15:27:03 GMT" text="pagepark plugin to make beautiful renderings of public files stored in users' public folders"></outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 22 Feb 2021 15:36:01 GMT" name="22" text="February 22" type="calendarDay">
+			<outline created="Mon, 22 Feb 2021 18:17:42 GMT" text="[[LO2]] -- outline file hierarchy" type="outline">
+				<outline created="Mon, 22 Feb 2021 18:17:57 GMT" text="New command in the Tools menu: Outline file hierarchy">
+					<outline created="Mon, 22 Feb 2021 18:18:10 GMT" text="To use, open a scratch outline, or clear a little space in the outline you're working on by pressing Return a few times. Then choose the command from the Tools menu. After a short delay, an outline appears, with two branches, Private files and Public files. You can see all the files LO2 is storing for you. You can also see when they were created by looking at the attributes display at the bottom of the tab. That's pretty much all you can do at this point. But it seems to work. Nice to finally have a way to see wtf is going on on the server .;-)"></outline>
+					</outline>
+				<outline created="Mon, 22 Feb 2021 18:21:32 GMT" text="Expand to see the result on my system.">
+					<outline created="Mon, 22 Feb 2021 18:21:45 GMT" text="File hierarchy">
+						<outline created="Mon, 22 Feb 2021 18:21:46 GMT" text="Private files">
+							<outline created="1/26/2021, 12:43:12 PM" text="myOutlines">
+								<outline created="1/28/2021, 12:46:03 PM" text="hello2.opml"></outline>
+								<outline created="1/31/2021, 5:04:35 PM" text="menubar.opml"></outline>
+								<outline created="1/26/2021, 12:43:12 PM" text="myFirstOutline.opml"></outline>
+								<outline created="2/19/2021, 9:47:39 AM" text="verb docs.opml"></outline>
+								<outline created="2/19/2021, 10:15:41 AM" text="verbDocs.opml"></outline>
+								</outline>
+							<outline created="1/28/2021, 4:41:51 PM" text="outlinerPrefs.json"></outline>
+							<outline created="1/28/2021, 1:24:53 PM" text="outlinerPrefsBackup.json"></outline>
+							</outline>
+						<outline created="Mon, 22 Feb 2021 18:21:45 GMT" text="Public files">
+							<outline created="2/19/2021, 10:02:54 AM" text="alert.js"></outline>
+							<outline created="2/19/2021, 9:59:09 AM" text="code">
+								<outline created="2/19/2021, 9:59:09 AM" text="alert.js"></outline>
+								</outline>
+							<outline created="1/26/2021, 12:43:12 PM" text="myOutlines">
+								<outline created="2/20/2021, 1:23:31 PM" text="hello2.opml"></outline>
+								<outline created="2/8/2021, 11:13:30 AM" text="menubar.opml"></outline>
+								<outline created="1/26/2021, 12:43:12 PM" text="myFirstOutline.opml"></outline>
+								<outline created="1/26/2021, 12:43:12 PM" text="myPublicOutline.opml"></outline>
+								<outline created="1/26/2021, 12:43:12 PM" text="undefined"></outline>
+								<outline created="2/20/2021, 11:15:27 AM" text="verbDocs.opml"></outline>
+								</outline>
+							<outline created="2/3/2021, 12:46:39 PM" text="myStatus">
+								<outline created="2/3/2021, 12:46:39 PM" text="2021">
+									<outline created="2/3/2021, 12:46:39 PM" text="02">
+										<outline created="2/3/2021, 12:46:39 PM" text="03.opml"></outline>
+										<outline created="2/4/2021, 11:33:52 AM" text="04.opml"></outline>
+										<outline created="2/5/2021, 10:28:14 AM" text="05.opml"></outline>
+										<outline created="2/6/2021, 9:41:29 PM" text="06.opml"></outline>
+										<outline created="2/7/2021, 9:09:00 AM" text="07.opml"></outline>
+										<outline created="2/8/2021, 12:31:16 PM" text="08.opml"></outline>
+										<outline created="2/9/2021, 11:28:49 AM" text="09.opml"></outline>
+										<outline created="2/10/2021, 3:15:57 PM" text="10.opml"></outline>
+										<outline created="2/11/2021, 1:57:32 PM" text="11.opml"></outline>
+										<outline created="2/12/2021, 11:09:17 AM" text="12.opml"></outline>
+										<outline created="2/13/2021, 8:06:13 AM" text="13.opml"></outline>
+										<outline created="2/18/2021, 11:51:22 AM" text="18.opml"></outline>
+										<outline created="2/19/2021, 10:40:04 AM" text="19.opml"></outline>
+										<outline created="2/20/2021, 11:17:27 AM" text="20.opml"></outline>
+										<outline created="2/21/2021, 1:21:36 PM" text="21.opml"></outline>
+										<outline created="2/22/2021, 10:39:14 AM" text="22.opml"></outline>
+										</outline>
+									</outline>
+								</outline>
+							<outline created="2/7/2021, 10:17:31 AM" text="testing">
+								<outline created="2/7/2021, 10:17:31 AM" text="test.txt"></outline>
+								</outline>
+							</outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 22 Feb 2021 15:36:02 GMT" text="[[code management]]" type="outline">
+				<outline created="Mon, 22 Feb 2021 15:36:12 GMT" text="these are notes just for me. you can ignore."></outline>
+				<outline created="Mon, 22 Feb 2021 15:54:09 GMT" text="the problem">
+					<outline created="Mon, 22 Feb 2021 15:36:28 GMT" text="i wanted to get to the bottom of why the rewrite of everyMinute wasn't making it into littleoutliner."></outline>
+					<outline created="Mon, 22 Feb 2021 15:36:55 GMT" text="turns out its because the utils.js is part of a set of files that i merge into one code.js, to cut down on the number of file inclusions. but it has to be rebuilt for changes in utils.js and other files show up to the client apps."></outline>
+					<outline created="Mon, 22 Feb 2021 15:37:48 GMT" text="i can never remember how to rebuild this. the code is somewhere in nodeEditor.root. i just spent 1/2 hour looking for it. last time it was rebuilt was on 8/2/2020 (going by the file mod dates on S3). "></outline>
+					<outline created="Mon, 22 Feb 2021 15:38:31 GMT" text="the purpose of this is to mark this process for once, and leave a trail that's possible to follow. I will figure this out, and will add it to this tag. "></outline>
+					</outline>
+				<outline created="Mon, 22 Feb 2021 15:54:12 GMT" text="&lt;s&gt;what i'm going to do in LO2&lt;/s&gt;">
+					<outline created="Mon, 22 Feb 2021 15:54:28 GMT" text="i'm going to include the files that are part of code. js and styles.css, so I get the latest code changes, and we trade off for some speed in loading. i have to find the solution here, but i'm not finding it today. ;-)"></outline>
+					</outline>
+				<outline created="Mon, 22 Feb 2021 16:04:40 GMT" text="change in plan -- I found it">
+					<outline created="Mon, 22 Feb 2021 16:04:45 GMT" text="It isn't built by scripts, I have a project for it. Much simpler. ">
+						<outline created="Mon, 22 Feb 2021 16:04:57 GMT" text="i left a clue at the top of the nodeEditor menu in my dev system"></outline>
+						<outline created="Mon, 22 Feb 2021 16:05:35 GMT" text="there's a command called Includes. It opens the project, which is called basicIncludes"></outline>
+						<outline created="Mon, 22 Feb 2021 16:31:13 GMT" text="to build it you just press the Save button. "></outline>
+						<outline created="Mon, 22 Feb 2021 16:31:22 GMT" text="so simple, but i lost the thread! oy oy oy"></outline>
+						</outline>
+					<outline created="Mon, 22 Feb 2021 16:06:01 GMT" text="How I'm going to leave trailers behind">
+						<outline created="Mon, 22 Feb 2021 16:06:08 GMT" text="adding a readme in all the places i stared at pointing to this project"></outline>
+						</outline>
+					<outline created="Mon, 22 Feb 2021 16:09:13 GMT" text="Also there was a notes.opml file in the folder on S3, I didn't see it. oy."></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 21 Feb 2021 18:19:08 GMT" name="21" text="February 21" type="calendarDay">
+			<outline created="Sun, 21 Feb 2021 18:23:26 GMT" text="[[verbs]]" type="outline">
+				<outline created="Sun, 21 Feb 2021 18:23:29 GMT" text="I checked the verbs.js file on the server, but the code appears to be correct.">
+					<outline created="Sun, 21 Feb 2021 18:23:54 GMT" text="http://scripting.com/code/concord/concordscript/verbs.js" type="link" url="http://scripting.com/code/concord/concordscript/verbs.js"></outline>
+					</outline>
+				<outline created="Sun, 21 Feb 2021 18:25:42 GMT" text="Here's the source. ">
+					<outline created="Sun, 21 Feb 2021 18:25:47 GMT" text="makeFilePublic: function (path) { ">
+						<outline created="Sun, 21 Feb 2021 18:26:03 GMT" text="return new Promise (function (resolve, reject) {">
+							<outline created="Sun, 21 Feb 2021 18:26:05 GMT" text="servercall (&quot;makefilepublic&quot;, {relpath: path}, true, function (err, data) {">
+								<outline created="Sun, 21 Feb 2021 18:26:06 GMT" text="if (err) {">
+									<outline text="reject (err);"></outline>
+									<outline text="}"></outline>
+									</outline>
+								<outline created="Sun, 21 Feb 2021 18:26:18 GMT" text="else {">
+									<outline text="resolve (data.url);"></outline>
+									<outline text="}"></outline>
+									</outline>
+								<outline text="});"></outline>
+								</outline>
+							<outline text="});"></outline>
+							</outline>
+						<outline text="},"></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Sun, 21 Feb 2021 18:19:09 GMT" text="[[folderToJson]]" type="outline">
+				<outline created="Sun, 21 Feb 2021 18:19:17 GMT" text="A new package. To be used in generating OPML for the user's file, so they can be viewed, and perhaps later, reorganize. I found I needed a good visualization of files, if I'm expected to manage them. ">
+					<outline created="Sun, 21 Feb 2021 18:20:32 GMT" text="https://github.com/scripting/folderToJson" type="link" url="https://github.com/scripting/folderToJson"></outline>
+					<outline created="Sun, 21 Feb 2021 18:21:06 GMT" text="https://www.npmjs.com/package/foldertojson" type="link" url="https://www.npmjs.com/package/foldertojson"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 20 Feb 2021 16:13:21 GMT" name="20" text="February 20" type="calendarDay">
+			<outline created="Sat, 20 Feb 2021 18:48:03 GMT" name="tomorrowTodo" text="tomorrow todo" type="outline">
+				<outline created="Sat, 20 Feb 2021 18:48:06 GMT" text="Outline my files script">
+					<outline created="Sat, 20 Feb 2021 18:48:20 GMT" text="make a call to the server to get an opml representation of the user's file system"></outline>
+					<outline created="Sat, 20 Feb 2021 18:48:43 GMT" text="i need a way to see clearly the files i have"></outline>
+					<outline created="Sat, 20 Feb 2021 18:48:52 GMT" text="i think i want to get rid of the myOutlines folder as a default, but it's kind of burned in there. "></outline>
+					<outline created="Sat, 20 Feb 2021 18:49:11 GMT" text="have to think of a way to do a corner turn. "></outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 20 Feb 2021 16:13:22 GMT" text="[[verbs]]" type="outline">
+				<outline created="Sat, 20 Feb 2021 18:46:31 GMT" text="error reporting mechanism working, sometimes">
+					<outline created="Sat, 20 Feb 2021 18:46:39 GMT" text="I have three scripts in the shared menubar.opml in the Errors sub-menu, one each for syntax, runtime error, and a call into the debugger. they all work! that's good.">
+						<outline created="Sat, 20 Feb 2021 18:50:01 GMT" text="http://instantoutliner.com/nk" type="link" url="http://instantoutliner.com/nk"></outline>
+						</outline>
+					<outline created="Sat, 20 Feb 2021 18:47:15 GMT" text="but when you try to make a non-existent file public, through file.makeFilePublic, there is no error reported even though the server is reporting an error, and I'm passing it through reject per the spec."></outline>
+					</outline>
+				<outline created="Sat, 20 Feb 2021 18:17:17 GMT" text="getting the value from runScriptText">
+					<outline created="Sat, 20 Feb 2021 18:17:26 GMT" text="Look at runCursorScript in code.js for test.littleoutliner.com"></outline>
+					<outline created="Sat, 20 Feb 2021 18:17:46 GMT" text="I naively hoped that the second param to the callback from runScriptText would be the value generated by script, but no such luck. "></outline>
+					<outline created="Sat, 20 Feb 2021 18:18:08 GMT" text="How do I get the value returned from runScriptText?"></outline>
+					</outline>
+				<outline created="Sat, 20 Feb 2021 17:22:17 GMT" text="very basic verb question">
+					<outline created="Sat, 20 Feb 2021 17:22:23 GMT" text="I have to implement a new verb from scratch -- file.makeFilePublic">
+						<outline created="Sat, 20 Feb 2021 17:22:34 GMT" text="the implementation that was there is wrong, takes the wrong param, does the wrong thing."></outline>
+						<outline created="Sat, 20 Feb 2021 17:22:50 GMT" text="that's why it's &quot;from scratch&quot;."></outline>
+						</outline>
+					<outline created="Sat, 20 Feb 2021 17:23:02 GMT" text="here's the body of the verb implementation">
+						<outline created="Sat, 20 Feb 2021 17:24:30 GMT" text="makeFilePublic: function (path) { ">
+							<outline created="Sat, 20 Feb 2021 17:24:34 GMT" text="return new Promise (function (resolve) {">
+								<outline created="Sat, 20 Feb 2021 17:24:36 GMT" text="serverCall (&quot;makefilepublic&quot;, {path}, true, function (err, data) {">
+									<outline created="Sat, 20 Feb 2021 17:25:10 GMT" text="if (err) {">
+										<outline text="console.log (&quot;err.message == &quot; + err.message);"></outline>
+										<outline text="}"></outline>
+										</outline>
+									<outline created="Sat, 20 Feb 2021 17:25:10 GMT" text="else {">
+										<outline text="resolve (data.url);"></outline>
+										<outline text="}"></outline>
+										</outline>
+									<outline text="});"></outline>
+									</outline>
+								<outline text="});"></outline>
+								</outline>
+							<outline text="},"></outline>
+							</outline>
+						</outline>
+					<outline created="Sat, 20 Feb 2021 17:24:53 GMT" text="it doesn't do anything, doesn't call the server, put anything out to console. i set a breakpoint in serverCall, it never gets there. "></outline>
+					</outline>
+				<outline created="Sat, 20 Feb 2021 16:15:39 GMT" text="verbdocs public">
+					<outline created="Sat, 20 Feb 2021 16:15:42 GMT" text="I made the verbdocs file public.">
+						<outline created="Sat, 20 Feb 2021 16:15:48 GMT" text="http://instantoutliner.com/np"></outline>
+						</outline>
+					<outline created="Sat, 20 Feb 2021 16:15:49 GMT" text="For me verb docs are like a todo list and a bug database.">
+						<outline created="Sat, 20 Feb 2021 16:16:07 GMT" text="I found I wished we had made the verb docs a programmer project from the beginning at UserLand. Instead we hired a docs writer to write the manual, and he invented terminology that was buggy and inconsistent with the product. I don't blame him, I like writing these docs anyway."></outline>
+						</outline>
+					</outline>
+				<outline created="Sat, 20 Feb 2021 16:14:21 GMT" text="file.writeWholeFile">
+					<outline created="Sat, 20 Feb 2021 16:13:24 GMT" text="Changed to save a private file instead of a public file. The rationale: since when you use the outliner interactively, when you create a file it is private and you must make it public, I want the scripting interface to work the same way. "></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 19 Feb 2021 15:23:10 GMT" name="19" text="February 19" type="calendarDay">
+			<outline created="Fri, 19 Feb 2021 15:56:54 GMT" text="[[LO2]]" type="outline">
+				<outline created="Fri, 19 Feb 2021 15:56:59 GMT" text="apparent bug -- the Run Selection command does not paste the value in the outliner">
+					<outline created="Fri, 19 Feb 2021 15:57:17 GMT" text="the cause seems to be that runScriptText returns undefined."></outline>
+					<outline created="Fri, 19 Feb 2021 15:57:30 GMT" text="to reproduce, enter 12 + 1 in a headline and choose Run Selection from the File menu.">
+						<outline created="Fri, 19 Feb 2021 15:58:00 GMT" text="12 + 1">
+							<outline created="Fri, 19 Feb 2021 16:01:06 GMT" isComment="true" text=""></outline>
+							</outline>
+						</outline>
+					<outline created="Fri, 19 Feb 2021 15:59:32 GMT" text="the script is running, as evidenced by this one-liner">
+						<outline created="Fri, 19 Feb 2021 15:58:13 GMT" text="alert (12 + 1)">
+							<outline created="Fri, 19 Feb 2021 15:58:38 GMT" text=""></outline>
+							</outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Fri, 19 Feb 2021 15:23:11 GMT" text="[[concord]]" type="outline">
+				<outline created="Fri, 19 Feb 2021 15:33:54 GMT" text="apparent bug -- in the keydown handler, search for this line --">
+					<outline created="Fri, 19 Feb 2021 15:35:02 GMT" text="var keyCaptured = event.concord.flKeyCaptured;"></outline>
+					</outline>
+				<outline created="Fri, 19 Feb 2021 15:35:11 GMT" text="very nice!">
+					<outline created="Fri, 19 Feb 2021 15:37:50 GMT" text="you'd think that if I set event.concord.flKeyCaptured true before returning that Concord would ignore the keystroke, but no such luck."></outline>
+					<outline created="Fri, 19 Feb 2021 15:35:39 GMT" text="then you have to wonder, wtf is this feature there for. "></outline>
+					<outline created="Fri, 19 Feb 2021 15:36:00 GMT" text="I searched the codebase for concord.flKeyCaptured, the only reference I found to it was in LO2 when the user presses meta-meta-/ -- which I thought was help, but doesn't seem to work either. oy."></outline>
+					<outline created="Fri, 19 Feb 2021 15:37:42 GMT" text="not sure what happened here, but that's the exact mechanism I want to override Concord's implementation of cmd-/."></outline>
+					</outline>
+				<outline created="Fri, 19 Feb 2021 15:38:16 GMT" text="choices">
+					<outline created="Fri, 19 Feb 2021 15:38:23 GMT" text="keyCaptured only works for cmd-/ and is ignored for all other key commands as it currently is"></outline>
+					<outline created="Fri, 19 Feb 2021 15:38:56 GMT" text="keyCaptured really does what it says, and if set true, any keystroke is ignored"></outline>
+					</outline>
+				<outline created="Fri, 19 Feb 2021 15:39:14 GMT" text="tradeoffs">
+					<outline created="Fri, 19 Feb 2021 15:39:18 GMT" text="the first is unlikely to break anything"></outline>
+					<outline created="Fri, 19 Feb 2021 15:39:26 GMT" text="the second is more likely to break something, but it is correct, or so it appears"></outline>
+					</outline>
+				<outline created="Fri, 19 Feb 2021 16:37:43 GMT" text="what i did">
+					<outline created="Fri, 19 Feb 2021 16:37:45 GMT" text="i made the first, more conservative change. tested, it works, but uncovered another problem, which is documented under LO2. "></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 18 Feb 2021 16:10:10 GMT" name="18" text="February 18" type="calendarDay">
+			<outline created="Thu, 18 Feb 2021 19:45:17 GMT" text="[[test.littleoutliner.com]]">
+				<outline created="Thu, 18 Feb 2021 19:45:24 GMT" text="It was getting too confusing using LO2 from my desktop machine as server, so I'm moving all my work to the server. "></outline>
+				<outline created="Thu, 18 Feb 2021 19:45:55 GMT" text="This means I can share menubar.opml as a &quot;live&quot; file. ">
+					<outline created="Thu, 18 Feb 2021 19:48:46 GMT" text="http://instantoutliner.com/nk" type="link" url="http://instantoutliner.com/nk"></outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 18 Feb 2021 18:01:12 GMT" text="[[menubar.opml]]">
+				<outline created="Thu, 18 Feb 2021 18:10:04 GMT" text="Here's the menubar I'm using to test, for now.">
+					<outline created="Thu, 18 Feb 2021 19:49:07 GMT" text="http://instantoutliner.com/nk"></outline>
+					</outline>
+				<outline created="Thu, 18 Feb 2021 18:01:18 GMT" text="I'm reviewing the scripts in the aggregated menubar.opml.">
+					<outline created="Thu, 18 Feb 2021 18:01:31 GMT" text="I created the file by joining the three different files I had. "></outline>
+					<outline created="Thu, 18 Feb 2021 18:01:48 GMT" text="Not all the scripts are intended to work at this time, this provides a beginning checklist of problems to look at."></outline>
+					<outline created="Thu, 18 Feb 2021 18:02:08 GMT" text="There is a section for errors, and those can be addressed now. ">
+						<outline created="Thu, 18 Feb 2021 18:02:20 GMT" text="Syntax, runtime errors not being reported."></outline>
+						<outline created="Thu, 18 Feb 2021 18:02:27 GMT" text="Call to the built-in debugger function used to work, but doesn't now. "></outline>
+						</outline>
+					<outline created="Thu, 18 Feb 2021 18:04:34 GMT" text="The three twitter test scripts do not work, I'm going to work here.">
+						<outline created="Thu, 18 Feb 2021 18:04:53 GMT" text="BTW, I think some of the things the proxy was meant to cover are already built into davetwitter, which is automatically part of the functionality of daveappserver. I plan to support direclty in daveappserver, all the verbs that the language needs. I want that in davetwitter. "></outline>
+						</outline>
+					<outline created="Thu, 18 Feb 2021 18:07:06 GMT" text="Import File Text does not work">
+						<outline created="Thu, 18 Feb 2021 18:07:18 GMT" text="You have to have a file called denton.opml."></outline>
+						<outline created="Thu, 18 Feb 2021 18:07:26 GMT" text="And it doesn't use the new syntax. "></outline>
+						<outline created="Thu, 18 Feb 2021 18:07:33 GMT" text="I will work here. "></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 18 Feb 2021 17:16:53 GMT" text="[[LO2]]">
+				<outline created="Thu, 18 Feb 2021 17:16:56 GMT" text="Cmd-/ work. For example if I press Cmd-/ on the line below, it works -- I get 24 " type="outline">
+					<outline created="Thu, 18 Feb 2021 17:17:11 GMT" isComment="true" text="12 + 12">
+						<outline created="Thu, 18 Feb 2021 17:17:39 GMT" text="24"></outline>
+						</outline>
+					</outline>
+				<outline created="Thu, 18 Feb 2021 17:17:42 GMT" text="But if I press Cmd-/ on this line, I don't get what I expect.">
+					<outline created="Thu, 18 Feb 2021 17:17:54 GMT" isComment="true" text="file.readWholeFile (&quot;menubar.opml&quot;) ">
+						<outline created="Thu, 18 Feb 2021 17:18:06 GMT" text="[object Promise]"></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 18 Feb 2021 16:49:52 GMT" text="[[process]]" type="outline">
+				<outline created="Thu, 18 Feb 2021 16:50:02 GMT" text="Suppose a project no longer needs a file, but you don't want to remove it from its repo">
+					<outline created="Thu, 18 Feb 2021 16:50:25 GMT" text="Makes sense sometimes, the code was useful and might be useful again."></outline>
+					<outline created="Thu, 18 Feb 2021 16:50:38 GMT" text="But you don't want to confuse a newcomer. "></outline>
+					<outline created="Thu, 18 Feb 2021 16:50:48 GMT" text="So create a folder called old stuff and put it there."></outline>
+					<outline created="Thu, 18 Feb 2021 16:50:56 GMT" text="It meets both needs. 1. It won't confuse a newbie. 2. It preserves the work."></outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 18 Feb 2021 16:10:11 GMT" text="[[LO2]]" type="outline">
+				<outline created="Thu, 18 Feb 2021 16:10:20 GMT" text="Docs -- If you want to create a sub-menu in menubar.opml, add an attribute called flSubMenu and set it true. The subs will be commands, and their subs will be the script that runs when the command is selected. "></outline>
+				<outline created="Thu, 18 Feb 2021 16:11:34 GMT" text="We need a codename for the scripting project. Probably will be the name of a place, as with all previous releases. "></outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 14 Feb 2021 15:42:30 GMT" name="14" text="February 14" type="calendarDay">
+			<outline created="Sun, 14 Feb 2021 15:42:31 GMT" text="[[everyMinute]]" type="outline">
+				<outline created="Sun, 14 Feb 2021 15:42:41 GMT" text="Did a careful release, now including it in utils.js and daveutils so all my software runs code at the top of the minute without drift.">
+					<outline created="Sun, 14 Feb 2021 15:43:55 GMT" text="https://github.com/scripting/everyMinute" type="link" url="https://github.com/scripting/everyMinute"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 13 Feb 2021 13:01:06 GMT" name="13" text="February 13" type="calendarDay">
+			<outline created="Sat, 13 Feb 2021 13:02:16 GMT" text="[[everyMinute]]" type="outline">
+				<outline created="Sat, 13 Feb 2021 13:02:21 GMT" text="My brute force method worked, and it's actually quite elegant. I'm going to install it in daveutils, so it'll be available to all my apps. There already is a routine there called runEveryMinute, and this will just replace it. ">
+					<outline created="Sat, 13 Feb 2021 13:05:07 GMT" text="function newRunEveryMinute (callback) { //2/12/21 by DW">
+						<outline created="Sat, 13 Feb 2021 13:05:13 GMT" isComment="true" text="Changes ">
+							<outline created="Sat, 13 Feb 2021 13:05:14 GMT" text="2/12/21; 11:24:28 AM by DW">
+								<outline created="Sat, 13 Feb 2021 13:05:30 GMT" text="The goal is to reduce drift in my everyMinute functions. This is how I do it. ">
+									<outline text="Every second we check if it's time for us to run the everyMinute script, if so we do. "></outline>
+									</outline>
+								<outline text="It still isn't accurate, but it does eliminate drift. "></outline>
+								<outline text="It always is within a second or at most two from the top of the minute, and then it gets back on track with the next call. "></outline>
+								<outline text="Drift is gone. Accuracy is still mediocre. "></outline>
+								</outline>
+							</outline>
+						<outline text="var whenLastEveryMinute = new Date (0);"></outline>
+						<outline created="Sat, 13 Feb 2021 13:05:46 GMT" text="function everySecond () {">
+							<outline text="var now = new Date ();"></outline>
+							<outline created="Sat, 13 Feb 2021 13:05:49 GMT" text="if (now.getSeconds () == 0) {">
+								<outline text="whenLastEveryMinute = now;"></outline>
+								<outline text="callback ();"></outline>
+								<outline text="}"></outline>
+								</outline>
+							<outline created="Sat, 13 Feb 2021 13:05:52 GMT" text="else {">
+								<outline created="Sat, 13 Feb 2021 13:05:54 GMT" text="if (secondsSince (whenLastEveryMinute) &gt; 60) {">
+									<outline text="whenLastEveryMinute = now;"></outline>
+									<outline text="callback ();"></outline>
+									<outline text="}"></outline>
+									</outline>
+								<outline text="}"></outline>
+								</outline>
+							<outline text="}"></outline>
+							</outline>
+						<outline text="setInterval (everySecond, 1000);"></outline>
+						<outline text="}"></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 13 Feb 2021 13:01:07 GMT" text="[[copyright]]" type="outline">
+				<outline created="Sat, 13 Feb 2021 13:01:16 GMT" text="Fixed. It needed to be in the OPML head section, per Andrew's suggestion. "></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 12 Feb 2021 16:05:28 GMT" name="12" text="February 12" type="calendarDay">
+			<outline created="Fri, 12 Feb 2021 16:05:29 GMT" text="[[everyMinute]]" type="outline">
+				<outline created="Fri, 12 Feb 2021 16:05:32 GMT" text="I tried to fix everyMinute by detecting drift and then restarting the everyMinute process, but no luck. Maybe the thing to do is to do a scheduler for JS that works in the browser. With accuracy down to a second. So you run the scheduler every second, and it fires up timed tasks as-needed. I bet it could be done reasonably efficiently just by brute force.">
+					<outline created="Fri, 12 Feb 2021 16:30:09 GMT" text="For now I do something more modest. If it works, I'll document the change on scripting.com."></outline>
+					</outline>
+				</outline>
+			<outline created="Fri, 12 Feb 2021 16:07:21 GMT" text="[[davetwitter]]" type="outline">
+				<outline created="Fri, 12 Feb 2021 16:07:32 GMT" text="I added a new call yesterday, copied from nodeStorage, /getmymentions.">
+					<outline created="Fri, 12 Feb 2021 16:07:51 GMT" text="I'm going to tune it up, and plan out adding the rest of the twitter entry points from nodeStorage. "></outline>
+					</outline>
+				</outline>
+			<outline created="Fri, 12 Feb 2021 16:08:18 GMT" text="[[scriptingNightlyEmail]]">
+				<outline created="Fri, 12 Feb 2021 16:08:26 GMT" text="The copyright macro is broken. The emails went out last night with [%copyright%] at the top of the footer. ">
+					<outline created="Fri, 12 Feb 2021 16:18:16 GMT" text="I swear last night's email came to me with the macro unresolved, but now I just re-checked, and everything is fine. Oy."></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 11 Feb 2021 15:34:53 GMT" name="11" text="February 11" type="calendarDay">
+			<outline created="Thu, 11 Feb 2021 15:34:54 GMT" text="[[LO2]]" type="outline">
+				<outline created="Thu, 11 Feb 2021 15:34:57 GMT" text="it wasn't calling everyMinute properly -- fixed"></outline>
+				<outline created="Thu, 11 Feb 2021 18:57:14 GMT" text="/getmymentions">
+					<outline created="Thu, 11 Feb 2021 18:55:05 GMT" text="there's another call that LO2 makes that is part of nodeStorage"></outline>
+					<outline created="Thu, 11 Feb 2021 18:55:43 GMT" text="there's a pref that if set true, LO2 will, every three minutes, look for replies to tweets in your outline">
+						<outline created="Thu, 11 Feb 2021 18:56:10 GMT" text="appPrefs.flCheckForReplies"></outline>
+						</outline>
+					<outline created="Thu, 11 Feb 2021 18:56:48 GMT" text="here's the tweet i'll use to test this feature">
+						<outline created="Thu, 11 Feb 2021 18:50:33 GMT" text="I'm testing some software. I'm going to be responding to this tweet with test tweets." tweetId="1359937960389595154" tweetUserName="davewiner" type="tweet">
+							<outline created="Thu Feb 11 18:56:03 +0000 2021" text="@jy: syntax error" tweetId="1359939271180890115" tweetUserName="jy" type="tweet"></outline>
+							</outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 10 Feb 2021 20:14:56 GMT" name="10" text="February 10" type="calendarDay">
+			<outline created="Wed, 10 Feb 2021 20:14:57 GMT" text="[[scripting]]" type="outline">
+				<outline created="Wed, 10 Feb 2021 20:15:04 GMT" text="&lt;a href=&quot;https://github.com/scripting/Scripting-News/issues/199#issuecomment-776823796&quot;&gt;Released&lt;/a&gt; the prototype &lt;a href=&quot;https://github.com/scripting/jsPreprocessor/blob/main/compile.js&quot;&gt;JavaScript pre-processor&lt;/a&gt;. "></outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 09 Feb 2021 16:19:27 GMT" name="09" text="February 9" type="calendarDay">
+			<outline created="Tue, 09 Feb 2021 16:19:28 GMT" text="[[scripting]]" type="outline">
+				<outline created="Tue, 09 Feb 2021 16:19:32 GMT" text="using  the &lt;a href=&quot;https://github.com/acornjs/acorn&quot;&gt;acorn parser&lt;/a&gt; for testing/playing. ">
+					<outline created="Tue, 09 Feb 2021 16:39:04 GMT" text="the functions are stored outside the user's code"></outline>
+					<outline created="Tue, 09 Feb 2021 16:39:11 GMT" text="their names are stored in an array"></outline>
+					<outline created="Tue, 09 Feb 2021 16:39:40 GMT" text="when we're processing the user's code, we look for calls to these functions"></outline>
+					<outline created="Tue, 09 Feb 2021 16:39:56 GMT" text="and add the word await in front of the call"></outline>
+					<outline created="Tue, 09 Feb 2021 16:40:17 GMT" text="all other function calls are left alone"></outline>
+					<outline created="Tue, 09 Feb 2021 16:40:23 GMT" text="the functions in the array must be declared as async"></outline>
+					</outline>
+				<outline created="Tue, 09 Feb 2021 17:25:44 GMT" text="example 1">
+					<outline created="Tue, 09 Feb 2021 17:25:47 GMT" text="joan ()">
+						<outline created="Tue, 09 Feb 2021 17:25:53 GMT" text="CallExpression">
+							<outline created="Tue, 09 Feb 2021 17:26:40 GMT" text="callee">
+								<outline created="Tue, 09 Feb 2021 17:27:21 GMT" text="Identifier">
+									<outline created="Tue, 09 Feb 2021 17:27:28 GMT" text="name: &quot;joan&quot;"></outline>
+									</outline>
+								</outline>
+							</outline>
+						</outline>
+					<outline created="Tue, 09 Feb 2021 17:27:52 GMT" text="suppose joan is called async, then you'd have to:">
+						<outline created="Tue, 09 Feb 2021 17:28:04 GMT" text="wrap the CallExpression in AwaitExpression"></outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 08 Feb 2021 15:25:53 GMT" name="08" text="February 8" type="calendarDay">
+			<outline created="Mon, 08 Feb 2021 15:25:54 GMT" text="[[verbs]] -- just started" type="outline">
+				<outline created="Mon, 08 Feb 2021 17:28:08 GMT" text="What I learned">
+					<outline created="Mon, 08 Feb 2021 17:28:13 GMT" text="Right now for this to work, people who create asynchronous functions in this language need to label them as async and call them with await. There are some circumstances where we can generate the glue thus hiding the distinction, but the rules are complex. To really solve the problem will require generating code using a compiler. String processing, which is what we do now is not enough. "></outline>
+					</outline>
+				<outline created="Mon, 08 Feb 2021 15:25:58 GMT" text="Back to verbs. ">
+					<outline created="Mon, 08 Feb 2021 15:26:01 GMT" text="I want to write the tagserver ping script in JSS. ">
+						<outline created="Mon, 08 Feb 2021 15:26:23 GMT" text="get today's opml"></outline>
+						<outline created="Mon, 08 Feb 2021 15:27:25 GMT" text="upload the file, get the url"></outline>
+						<outline created="Mon, 08 Feb 2021 15:27:44 GMT" text="ping tagserver"></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 08 Feb 2021 15:32:45 GMT" text="[[LO2]] -- bugs" type="outline">
+				<outline created="Mon, 08 Feb 2021 15:32:49 GMT" text="If you press cmd-\ to toggle comment, it's also picked up in the JS debugger and it halts the script. ">
+					<outline created="Mon, 08 Feb 2021 15:35:23 GMT" text="Obviously there's a key conflict. "></outline>
+					<outline created="Mon, 08 Feb 2021 15:35:33 GMT" text="We have to use cmd-\, so we should find a way to disable it in the browser."></outline>
+					</outline>
+				<outline created="Mon, 08 Feb 2021 15:34:29 GMT" text=" When editing a script the spellchecker in the browser marks every variable name as a mis-spelling. "></outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 07 Feb 2021 14:08:21 GMT" name="07" text="February 7" type="calendarDay">
+			<outline created="Sun, 07 Feb 2021 14:08:22 GMT" text="[[verbs]]" type="outline">
+				<outline created="Sun, 07 Feb 2021 15:13:50 GMT" text="the version of verbs.js in littleoutliner appears to be an old pre-promises one">
+					<outline created="Sun, 07 Feb 2021 15:14:10 GMT" text="i just downloaded the code from the verbs repo, and installed it in LO2"></outline>
+					<outline created="Sun, 07 Feb 2021 15:14:26 GMT" text="so now i'm running the proper version"></outline>
+					</outline>
+				<outline created="Sun, 07 Feb 2021 15:14:33 GMT" text="will test some verbs now, let's see what we have">
+					<outline created="Sun, 07 Feb 2021 15:14:46 GMT" text="i'm hopefully ready to work on it now."></outline>
+					</outline>
+				<outline created="Sun, 07 Feb 2021 15:15:38 GMT" text="testing one-liners">
+					<outline created="Sun, 07 Feb 2021 15:19:41 GMT" text="file.writeWholeFile">
+						<outline created="Sun, 07 Feb 2021 15:16:53 GMT" isComment="true" text="file.writeWholeFile (&quot;testing/test.txt&quot;, &quot;oh the buzzing&quot;)">
+							<outline created="Sun, 07 Feb 2021 15:17:31 GMT" text="[object Promise]"></outline>
+							</outline>
+						<outline created="Sun, 07 Feb 2021 15:19:47 GMT" text="it worked, there is a file in the public testing folder named test.text, but the returned value of [object Promise] is not good. I want whatever would have been returned to the callback">
+							<outline created="Sun, 07 Feb 2021 15:20:28 GMT" text="that means an error dialog if there was an error, or the returned struct"></outline>
+							<outline created="Sun, 07 Feb 2021 15:20:43 GMT" text="the next step would be to return the url not the struct, because this is scripting"></outline>
+							</outline>
+						</outline>
+					<outline created="Sun, 07 Feb 2021 15:19:41 GMT" text="file.writeWholeFile">
+						<outline created="Sun, 07 Feb 2021 15:16:53 GMT" isComment="true" text="file.writeWholeFile (&quot;testing/test.txt&quot;, string.filledString (&quot;oh the buzzing\n&quot;, 50))">
+							<outline created="Sun, 07 Feb 2021 15:22:49 GMT" text="[object Promise]"></outline>
+							</outline>
+						<outline created="Sun, 07 Feb 2021 15:19:47 GMT" text="this worked too"></outline>
+						</outline>
+					<outline created="Sun, 07 Feb 2021 15:19:41 GMT" text="file.readWholeFile">
+						<outline created="Sun, 07 Feb 2021 15:16:53 GMT" isComment="true" text="file.readWholeFile (&quot;testing/test.txt&quot;)">
+							<outline created="Sun, 07 Feb 2021 15:25:40 GMT" text="[object Promise]"></outline>
+							</outline>
+						<outline created="Sun, 07 Feb 2021 15:19:47 GMT" text="this did not work -- there's no way to access the result from the oneliner, does it work when it's in a script?"></outline>
+						</outline>
+					</outline>
+				<outline created="Sun, 07 Feb 2021 15:27:17 GMT" text="testing menu scripts">
+					<outline created="Sun, 07 Feb 2021 15:27:21 GMT" text=""></outline>
+					</outline>
+				<outline created="Sun, 07 Feb 2021 15:05:15 GMT" text="ideas">
+					<outline created="Sun, 07 Feb 2021 02:35:08 GMT" text="op verbs">
+						<outline created="Sun, 07 Feb 2021 14:10:11 GMT" text="different from the op verbs in Frontier"></outline>
+						<outline created="Sun, 07 Feb 2021 02:35:16 GMT" text="you can navigate through the outline structure without moving the cursor"></outline>
+						<outline created="Sun, 07 Feb 2021 14:11:12 GMT" text="examples">
+							<outline created="Sun, 07 Feb 2021 02:36:59 GMT" text="adr = op.firstsummit () adr is a pointer to the first summit in the outline structure"></outline>
+							<outline created="Sun, 07 Feb 2021 14:07:01 GMT" text="adr = adr.go (right, 1) returns a pointer to the first child of the headline that adr points to"></outline>
+							<outline created="Sun, 07 Feb 2021 14:07:40 GMT" text="adr = adr.insert (&quot;hello&quot;, down) creates a new sibling down from adr and returns a pointer to it"></outline>
+							</outline>
+						<outline created="Sun, 07 Feb 2021 02:38:19 GMT" text="the outline structure we're referring to is the one in the active tab"></outline>
+						<outline created="Sun, 07 Feb 2021 14:10:27 GMT" text="btw, &quot;op&quot; is pronounced as oh-pee not op. it means outline processor."></outline>
+						</outline>
+					<outline created="Sun, 07 Feb 2021 02:35:50 GMT" text="file verbs">
+						<outline created="Sun, 07 Feb 2021 02:35:54 GMT" text="read from and save to your storage on the server">
+							<outline created="Sun, 07 Feb 2021 02:38:38 GMT" text="filetext = file.readwholefile (path)"></outline>
+							<outline created="Sun, 07 Feb 2021 02:38:55 GMT" text="file.writewholefile (path, filetext)"></outline>
+							</outline>
+						</outline>
+					<outline created="Sun, 07 Feb 2021 02:36:15 GMT" text="http verbs">
+						<outline created="Sun, 07 Feb 2021 02:36:19 GMT" text="allow you to send a message over http">
+							<outline created="Sun, 07 Feb 2021 02:39:44 GMT" text="http.client (method, path, params, flauthenticated, body)"></outline>
+							</outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 05 Feb 2021 14:56:12 GMT" name="05" text="February 5" type="calendarDay">
+			<outline created="Fri, 05 Feb 2021 17:54:10 GMT" text="[[lo2]] -- an idea -- electron version of LO2" type="outline">
+				<outline created="Fri, 05 Feb 2021 17:54:14 GMT" text="I've been using LO2 for my note taking the last few days. it's good, but I wish there was an icon in the dock that would bring it up. maybe an electron app that's nothing more than LO2, no local file storage, would be useful. "></outline>
+				</outline>
+			<outline created="Fri, 05 Feb 2021 17:47:56 GMT" text="[[tagserver]] -- outline caching was a problem" type="outline">
+				<outline created="Fri, 05 Feb 2021 17:48:05 GMT" text="stopped doing it">
+					<outline created="Fri, 05 Feb 2021 17:48:12 GMT" text="i added this when the outline I was sending was so large that it would make cursor movement slow."></outline>
+					<outline created="Fri, 05 Feb 2021 17:48:29 GMT" text="now i've got bite-size outlines coming out of LO2, i'm going to just turn the cache off. "></outline>
+					<outline created="Fri, 05 Feb 2021 17:53:32 GMT" text="added a flOpmlCacheEnabled boolean to disable the caching "></outline>
+					</outline>
+				</outline>
+			<outline created="Fri, 05 Feb 2021 16:09:46 GMT" text="[[tagserver]] -- fix websockets connection" type="outline">
+				<outline created="Fri, 05 Feb 2021 16:38:48 GMT" text="The theory was incorrect. The &quot;reload&quot; notification happens if you force it. And the list reloads. ">
+					<outline created="Fri, 05 Feb 2021 16:09:57 GMT" text="Theory: it broke in the transition to the new config.json behavior and format implemented recently."></outline>
+					<outline created="Fri, 05 Feb 2021 16:10:20 GMT" text="The setup">
+						<outline created="Fri, 05 Feb 2021 16:10:26 GMT" text="Run the server on localhost in the Node debugger. "></outline>
+						<outline created="Fri, 05 Feb 2021 16:10:42 GMT" text="Set breakpoints to see if it gets a request for reload notices from the client."></outline>
+						<outline created="Fri, 05 Feb 2021 16:11:04 GMT" text="See if the notices are being sent. "></outline>
+						</outline>
+					</outline>
+				<outline created="Sat, 06 Feb 2021 16:42:41 GMT" text="The problem was in everySecond believe it or not.">
+					<outline created="Sat, 06 Feb 2021 16:42:51 GMT" text="There's an everySecond routine in practically everything I write."></outline>
+					<outline created="Sat, 06 Feb 2021 16:43:03 GMT" text="In tagserver, it's hooked into daveappserver's everySecond through the options struct that initializes DAS."></outline>
+					<outline created="Sat, 06 Feb 2021 16:43:34 GMT" text="But daveappserver's everySecond routine was not calling the one in the config struct.  "></outline>
+					<outline created="Sat, 06 Feb 2021 16:44:03 GMT" text="The stupidest possible error, nothing subtle about it. But it wasn't even slightly suspected until all the other possibilities were eliminated."></outline>
+					<outline created="Sat, 06 Feb 2021 16:44:32 GMT" text="An analogy. You're trying to figure out why a baseball player has such a low batting average. But you fail to see he has only one arm. "></outline>
+					</outline>
+				</outline>
+			<outline created="Fri, 05 Feb 2021 14:56:13 GMT" text="[[pagepark]] -- outgoing requests to localhost not routed properly" type="outline">
+				<outline created="Fri, 05 Feb 2021 15:52:10 GMT" text="The problem">
+					<outline created="Fri, 05 Feb 2021 14:56:17 GMT" text="I posted a &lt;a href=&quot;https://github.com/scripting/pagePark/issues/17&quot;&gt;braintrust query&lt;/a&gt; yesterday about same-machine requests from apps being served by pagepark on the same machine. And it seems I have gotten the answer, now I have to try to apply it."></outline>
+					<outline created="Fri, 05 Feb 2021 15:29:19 GMT" text="The advice was to add this line to the startup script:">
+						<outline created="Fri, 05 Feb 2021 15:25:57 GMT" text="iptables -t nat -A OUTPUT -p tcp -o lo --dport 80 -j REDIRECT --to-ports 1339"></outline>
+						</outline>
+					<outline created="Fri, 05 Feb 2021 15:29:50 GMT" text="In other words, the routing from 80 to 1339 was only going one way, when an outside request was coming into the server. For requests made going out of the server, the same mapping must apply. "></outline>
+					<outline created="Fri, 05 Feb 2021 15:30:32 GMT" text="And it works. :-)"></outline>
+					</outline>
+				<outline created="Fri, 05 Feb 2021 15:31:17 GMT" text="Done">
+					<outline created="Fri, 05 Feb 2021 15:31:21 GMT" text="Updated pagePark docs to reflect this. "></outline>
+					<outline created="Fri, 05 Feb 2021 15:31:35 GMT" text="Updated restart.sh script on Palatka. "></outline>
+					<outline created="Fri, 05 Feb 2021 16:00:24 GMT" text="pagepark.io caching problem, restarted pagepark server on miami and the cache was cleared"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 04 Feb 2021 16:31:28 GMT" name="04" text="February 4" type="calendarDay">
+			<outline created="Thu, 04 Feb 2021 17:00:21 GMT" text="[[tagserver]]" type="outline">
+				<outline created="Thu, 04 Feb 2021 21:18:44 GMT" text="Where to resume tomorrow">
+					<outline created="Thu, 04 Feb 2021 21:18:49 GMT" text="The websocket connection isn't working in tagserver. "></outline>
+					<outline created="Thu, 04 Feb 2021 21:19:08 GMT" text="It's almost certainly a configuration error."></outline>
+					<outline created="Thu, 04 Feb 2021 21:19:15 GMT" text="Have to set up the server on local machine and watch what's goin on in the debugger. "></outline>
+					</outline>
+				<outline created="Thu, 04 Feb 2021 20:32:21 GMT" text="Fixed a crashing bug. ">
+					<outline created="Thu, 04 Feb 2021 20:32:27 GMT" text="Long story, but there are two versions of opmlToJs.parse, one that returns just the outline structure, and the other, opmlToJs.parseWithError that returns the Node-standard (err, data) form. We were calling the old version, but the code thought we were calling the one that returns the err struct. So when there was an error, tagserver would crash. Now it should just report the error. "></outline>
+					</outline>
+				<outline created="Thu, 04 Feb 2021 17:01:22 GMT" text="The chronological view is very slow to load now.">
+					<outline created="Thu, 04 Feb 2021 17:01:34 GMT" text="We probably don't need everything dating back to December 2."></outline>
+					<outline created="Thu, 04 Feb 2021 17:01:53 GMT" text="However this suggests we need a good search capability in tagserver. "></outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 04 Feb 2021 17:50:32 GMT" text="[[scripting]]" type="outline">
+				<outline created="Thu, 04 Feb 2021 17:50:36 GMT" text="Let's start a set of DNS verbs. ">
+					<outline created="Thu, 04 Feb 2021 17:50:48 GMT" text="It's a good simple, contained verb set."></outline>
+					<outline created="Thu, 04 Feb 2021 17:50:58 GMT" text="Nothing speculative."></outline>
+					<outline created="Thu, 04 Feb 2021 17:51:02 GMT" text="Should we call it ">
+						<outline created="Thu, 04 Feb 2021 17:51:06 GMT" text="tcp.dns"></outline>
+						</outline>
+					<outline created="Thu, 04 Feb 2021 17:51:10 GMT" text="Or just ">
+						<outline created="Thu, 04 Feb 2021 17:51:13 GMT" text="dns"></outline>
+						</outline>
+					<outline created="Thu, 04 Feb 2021 17:51:14 GMT" text="Advantage of the first, we could just clone the interface in Frontier. "></outline>
+					<outline created="Thu, 04 Feb 2021 17:51:32 GMT" text="Advantage of the second, it's simpler, and consistent with Node, although the API for DNS in Node is overly rich for scripting. "></outline>
+					<outline created="Thu, 04 Feb 2021 17:53:09 GMT" text="I use DNS a lot in one-line scripts, to be sure a domain maps where I think it should. For example">
+						<outline created="Thu, 04 Feb 2021 17:53:28 GMT" text="tcp.dns.getDottedId (&quot;woodstockweed.org&quot;)"></outline>
+						</outline>
+					<outline created="Thu, 04 Feb 2021 17:54:12 GMT" text="It might be interesting to add a next-level-up that keeps a list of domains i own">
+						<outline created="Thu, 04 Feb 2021 17:54:27 GMT" text="and allows me to do something like this">
+							<outline created="Thu, 04 Feb 2021 17:54:36 GMT" text="myDomainList.match (tcp.dns.getDottedId (&quot;woodstockweed.org&quot;))"></outline>
+							</outline>
+						<outline created="Thu, 04 Feb 2021 17:54:55 GMT" text="if it worked the response would be">
+							<outline created="Thu, 04 Feb 2021 17:55:03 GMT" text="miami.scripting.com"></outline>
+							</outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 04 Feb 2021 16:59:18 GMT" text="[[LO2]]" type="outline">
+				<outline created="Thu, 04 Feb 2021 16:59:26 GMT" text="Changed it so the outline I generate for pinging [[tagserver]] now has a top level headline with the date."></outline>
+				<outline created="Thu, 04 Feb 2021 16:59:51 GMT" text="I found it claustrophobic to see no indication of context for each item."></outline>
+				</outline>
+			<outline created="Thu, 04 Feb 2021 16:31:29 GMT" text="[[pagepark]]" type="outline">
+				<outline created="Thu, 04 Feb 2021 16:31:43 GMT" text="Fixed bug in command-line tool, pp. Now we look for config.json in the directory we were launched from not the cwd. This would cause weird problems if the directory we were in had a config.json file that specified a &quot;port&quot; value. Now we're reading the correct config.json file no matter where you are in the directory structure. "></outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 03 Feb 2021 17:12:29 GMT" name="03" text="February 3" type="calendarDay">
+			<outline created="Wed, 03 Feb 2021 18:12:46 GMT" text="[[pagepark]]" type="outline">
+				<outline created="Wed, 03 Feb 2021 18:13:00 GMT" text="Longstanding problem."></outline>
+				<outline created="Wed, 03 Feb 2021 18:13:07 GMT" text="Suppose two apps are running on the same machine where PP is the http server."></outline>
+				<outline created="Wed, 03 Feb 2021 18:13:21 GMT" text="Say one app is on the domain hello.com and the other is goodbye.com."></outline>
+				<outline created="Wed, 03 Feb 2021 18:13:39 GMT" text="Suppose the first makes a request of the second.">
+					<outline created="Wed, 03 Feb 2021 18:13:50 GMT" text="http://goodbye.com/index.html"></outline>
+					</outline>
+				<outline created="Wed, 03 Feb 2021 18:14:00 GMT" text="It will get a connection refused."></outline>
+				<outline created="Wed, 03 Feb 2021 18:14:09 GMT" text="Make the request from another server and it works fine. "></outline>
+				<outline created="Wed, 03 Feb 2021 18:14:21 GMT" text="Have to say I haven't spent a lot of time tracking this down, but it's irritating."></outline>
+				<outline created="Wed, 03 Feb 2021 18:14:39 GMT" text="I hit it today because both tagserver and test.littleoutliner.com are running on the same machine. "></outline>
+				<outline created="Wed, 03 Feb 2021 18:15:04 GMT" text="I hacked it by adding the port to the URL, that works, because it doesn't get routed through PP."></outline>
+				</outline>
+			<outline created="Wed, 03 Feb 2021 18:02:56 GMT" text="Something cool is working in [[LO2]]" type="outline">
+				<outline created="Wed, 03 Feb 2021 18:03:02 GMT" text="Notice this ping is coming from a much smaller outline, so everything is nice and fast. "></outline>
+				</outline>
+			<outline created="Wed, 03 Feb 2021 17:12:30 GMT" text="Pinging my tagged status outline in [[LO2]]" type="outline">
+				<outline created="Wed, 03 Feb 2021 17:13:43 GMT" text="Big picture">
+					<outline created="Wed, 03 Feb 2021 17:12:49 GMT" text="I am building a first version of something that I expect to be able to write in JSS. It's a bootstrap step. First write it in low-level language, then factor so it can be done at a higher level."></outline>
+					<outline created="Wed, 03 Feb 2021 17:13:47 GMT" text="I looked at doing it in EO first, but the scripting support there is far behind that in LO2, if you can believe it. It's a real mess. Here at least there's a beginning to some order to it. "></outline>
+					</outline>
+				<outline created="Wed, 03 Feb 2021 17:14:31 GMT" text="In the LO2 source">
+					<outline created="Wed, 03 Feb 2021 17:14:38 GMT" text="If you look in the source you'll see a routine named pingDavesTags. I call that from the JS console in the browser. It navigates to the current day in the outline structure, generates the OPML text for that structure   (this much works now), saves it to a public file on the server, and then pings the tag server with the URL of the file. This should all happen in less than a second. "></outline>
+					</outline>
+				<outline created="Wed, 03 Feb 2021 17:16:36 GMT" text="The user experience">
+					<outline created="Wed, 03 Feb 2021 17:16:40 GMT" text="Obviously calling a script at the command line is not the final UI. ;-)"></outline>
+					<outline created="Wed, 03 Feb 2021 17:16:54 GMT" text="Otherwise the UI is about as simple as it can be. When you want to update the tag server, just run the script."></outline>
+					</outline>
+				<outline created="Wed, 03 Feb 2021 17:17:25 GMT" text="Next steps in bootstrap">
+					<outline created="Wed, 03 Feb 2021 17:18:25 GMT" text="We'll need verbs to:">
+						<outline created="Wed, 03 Feb 2021 17:18:31 GMT" text="get the headers of the current outline"></outline>
+						<outline created="Wed, 03 Feb 2021 17:18:38 GMT" text="navigating to a node in the outline"></outline>
+						<outline created="Wed, 03 Feb 2021 17:19:10 GMT" text="getting the opml text for that node"></outline>
+						<outline created="Wed, 03 Feb 2021 17:19:17 GMT" text="writing a public file to the server"></outline>
+						<outline created="Wed, 03 Feb 2021 17:19:31 GMT" text="getting the url of the file"></outline>
+						<outline created="Wed, 03 Feb 2021 17:19:35 GMT" text="making an HTTP request of a server"></outline>
+						</outline>
+					<outline created="Wed, 03 Feb 2021 17:19:47 GMT" text="Questions">
+						<outline created="Wed, 03 Feb 2021 17:19:50 GMT" text="i'm thinking about a new kind of outline navigation verbs, maintaining support for the ones ported from the ThinkTank world, ones that are more JavaScripty. "></outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 02 Feb 2021 17:13:59 GMT" name="02" text="February 2" type="calendarDay">
+			<outline created="Tue, 02 Feb 2021 17:14:00 GMT" text="How to make a tag-capable status center out of [[LO2]]" type="outline">
+				<outline created="Tue, 02 Feb 2021 17:13:13 GMT" text="What happens when you ping">
+					<outline created="Tue, 02 Feb 2021 17:15:53 GMT" text="what's in the current outline is up to you, it is never sent to the tag server"></outline>
+					<outline created="Tue, 02 Feb 2021 17:16:05 GMT" text="instead, when you ping, the script grabs the most recent day (assuming a calendar structure) saves it to a public file on the server, and sends the URL of that outline to the tag server."></outline>
+					<outline created="Tue, 02 Feb 2021 17:16:48 GMT" text="so you're always dealing with small one-day outlines. "></outline>
+					</outline>
+				<outline created="Tue, 02 Feb 2021 17:17:37 GMT" text="You edit in a calendar structure">
+					<outline created="Tue, 02 Feb 2021 17:17:43 GMT" text="Put the tags where ever you like. "></outline>
+					<outline created="Tue, 02 Feb 2021 17:17:49 GMT" text="What the tagserver does with it is well-known at this point. "></outline>
+					</outline>
+				<outline created="Tue, 02 Feb 2021 17:18:12 GMT" text="What we need to do from a script to make this work">
+					<outline created="Tue, 02 Feb 2021 17:18:21 GMT" text="Get a section of an outline in OPML."></outline>
+					<outline created="Tue, 02 Feb 2021 17:18:39 GMT" text="Be able to write a public file on the server. "></outline>
+					<outline created="Tue, 02 Feb 2021 17:18:49 GMT" text="Get the url of that file."></outline>
+					</outline>
+				</outline>
+			</outline>
+		</body>
+	</opml>

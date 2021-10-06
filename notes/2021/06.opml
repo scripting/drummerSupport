@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="2.0">
+	<head>
+		<title>notes/2021/06.md</title>
+		<dateModified>&lt;%dateModified%></dateModified>
+		<expansionState></expansionState>
+		<vertScrollState>1</vertScrollState>
+		<windowTop>300</windowTop>
+		<windowLeft>700</windowLeft>
+		<windowBottom>900</windowBottom>
+		<windowRight>1500</windowRight>
+		</head>
+	<body created="Tue, 01 Jun 2021 12:50:24 GMT" name="june2021" text="notes/2021/06.mdo" type="calendarMonth">
+		<outline created="Tue, 29 Jun 2021 15:31:31 GMT" name="29" text="June 29" type="calendarDay">
+			<outline created="Wed, 30 Jun 2021 02:11:34 GMT" text="when processing one of the twitter outlines" type="outline">
+				<outline created="Wed, 30 Jun 2021 02:11:46 GMT" text="look for t.co urls and replace them with a link node"></outline>
+				</outline>
+			<outline created="Wed, 30 Jun 2021 02:06:09 GMT" text="for tomorrow --" type="outline">
+				<outline created="Wed, 30 Jun 2021 02:06:13 GMT" text="review publish and subscribe commands in the file menu">
+					<outline created="Wed, 30 Jun 2021 02:06:25 GMT" text="it should be as simple as &quot;make this file public&quot; (if it's private)"></outline>
+					<outline created="Wed, 30 Jun 2021 02:06:43 GMT" text="and &quot;subscribe to outline&quot; and you enter the url for the OPML file">
+						<outline created="Wed, 30 Jun 2021 02:06:58 GMT" text="you get an error if it doesn't have the right headers"></outline>
+						</outline>
+					</outline>
+				<outline created="Wed, 30 Jun 2021 02:17:25 GMT" text="in drummer no need to call instantoutliner.com">
+					<outline created="Wed, 30 Jun 2021 02:17:40 GMT" text="it'll be there after LO2 is retired, so the standalone urls still work"></outline>
+					<outline created="Wed, 30 Jun 2021 02:18:12 GMT" text="it'll redirect to drummer with a url= param on the url"></outline>
+					</outline>
+				</outline>
+			<outline created="Tue, 29 Jun 2021 15:52:31 GMT" text="npm/opml project" type="outline">
+				<outline created="Tue, 29 Jun 2021 16:29:51 GMT" text="both client and server">
+					<outline created="Tue, 29 Jun 2021 15:52:44 GMT" text="opml.parse (opmltext) returns an outline structure "></outline>
+					<outline created="Tue, 29 Jun 2021 15:53:37 GMT" text="opml.stringify (theOutline)"></outline>
+					</outline>
+				<outline created="Tue, 29 Jun 2021 16:30:07 GMT" text="client only">
+					<outline created="Tue, 29 Jun 2021 16:30:10 GMT" text="read and parse an outline over http, using $.ajax"></outline>
+					<outline created="Tue, 29 Jun 2021 16:30:50 GMT" text="subscribe to an outline">
+						<outline created="Tue, 29 Jun 2021 16:30:53 GMT" text="opml.subscribe (url, callback)">
+							<outline created="Tue, 29 Jun 2021 16:31:10 GMT" text="whenever we are notified that an outline has been modified, the callback is called with the outline as a JS structure."></outline>
+							</outline>
+						</outline>
+					</outline>
+				<outline created="Tue, 29 Jun 2021 16:30:20 GMT" text="server only">
+					<outline created="Tue, 29 Jun 2021 16:30:10 GMT" text="read and parse an outline over http, using request"></outline>
+					<outline created="Tue, 29 Jun 2021 16:31:44 GMT" text="handle websocket subscription and notification"></outline>
+					</outline>
+				</outline>
+			<outline created="Tue, 29 Jun 2021 15:31:32 GMT" text="todo" type="outline">
+				<outline created="Tue, 29 Jun 2021 15:31:32 GMT" text="see if publicfolder is ready to be installed/used">
+					<outline created="Tue, 29 Jun 2021 15:31:48 GMT" text="point logseq guy at it"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 28 Jun 2021 13:31:28 GMT" name="28" text="June 28" type="calendarDay">
+			<outline created="Mon, 28 Jun 2021 13:31:29 GMT" text="todo" type="outline">
+				<outline created="Mon, 28 Jun 2021 23:22:08 GMT" text="masterpiece">
+					<outline created="Mon, 28 Jun 2021 23:22:12 GMT" text="http://scripting.com/code/socketserver/log/index.html"></outline>
+					<outline created="Mon, 28 Jun 2021 23:22:17 GMT" text="it has three columns one for each app that can subscribe to an opml outline">
+						<outline created="Mon, 28 Jun 2021 23:22:33 GMT" text="LO2"></outline>
+						<outline created="Mon, 28 Jun 2021 23:22:35 GMT" text="Drummer"></outline>
+						<outline created="Mon, 28 Jun 2021 23:22:37 GMT" text="Socket Client"></outline>
+						</outline>
+					<outline created="Mon, 28 Jun 2021 23:22:42 GMT" text="and this is where we pick up tomorrow"></outline>
+					</outline>
+				<outline created="Mon, 28 Jun 2021 22:19:19 GMT" text="socket server">
+					<outline created="Mon, 28 Jun 2021 22:19:24 GMT" text="hook up to">
+						<outline created="Mon, 28 Jun 2021 22:19:32 GMT" text="LO2"></outline>
+						<outline created="Mon, 28 Jun 2021 22:19:31 GMT" text="drummer"></outline>
+						<outline created="Mon, 28 Jun 2021 22:19:41 GMT" text="socket client demo">
+							<outline created="Mon, 28 Jun 2021 22:19:35 GMT" text="http://scripting.com/code/instantoutlinesrepo/demo/index.html"></outline>
+							</outline>
+						</outline>
+					</outline>
+				<outline created="Mon, 28 Jun 2021 14:07:35 GMT" text="artshow broken?">
+					<outline created="Mon, 28 Jun 2021 14:59:43 GMT" text="some of the images seem to be missing on twitter">
+						<outline created="Mon, 28 Jun 2021 14:59:51 GMT" text="that's where we're getting them from"></outline>
+						<outline created="Mon, 28 Jun 2021 15:00:28 GMT" text="the're not missing, they just fail to load?"></outline>
+						<outline created="Mon, 28 Jun 2021 15:01:16 GMT" text="added debugging code"></outline>
+						</outline>
+					</outline>
+				<outline created="Mon, 28 Jun 2021 14:07:41 GMT" text="threadviewer is wiping out threads again. "></outline>
+				<outline created="Mon, 28 Jun 2021 13:31:29 GMT" text="create an NPM project called instantOutlines.">
+					<outline created="Mon, 28 Jun 2021 22:18:51 GMT" text="not able to use that name, so i created a project called opml"></outline>
+					<outline created="Mon, 28 Jun 2021 22:19:01 GMT" text="amazingly i was able to get that"></outline>
+					</outline>
+				<outline created="Mon, 28 Jun 2021 13:31:44 GMT" text="start thinking about Markdown-for-Tweets."></outline>
+				<outline created="Mon, 28 Jun 2021 13:51:49 GMT" text="start recording @bullmancuso -- so i have a place to be annoying without bothering anyone"></outline>
+				<outline created="Mon, 28 Jun 2021 13:46:17 GMT" text="think about a database all my apps can share">
+					<outline created="Mon, 28 Jun 2021 13:46:25 GMT" text="lots of tables"></outline>
+					<outline created="Mon, 28 Jun 2021 13:46:42 GMT" text="well-documented"></outline>
+					</outline>
+				<outline created="Mon, 28 Jun 2021 13:31:57 GMT" text="socket server">
+					<outline created="Mon, 28 Jun 2021 13:37:00 GMT" text="switch over to new logging approach, using the array in stats"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 27 Jun 2021 17:22:28 GMT" name="27" text="June 27" type="calendarDay">
+			<outline created="Sun, 27 Jun 2021 17:22:29 GMT" text="socketserver work" type="outline">
+				<outline created="Sun, 27 Jun 2021 17:22:34 GMT" text="the log works, and i have a log displayer"></outline>
+				<outline created="Sun, 27 Jun 2021 17:22:46 GMT" text="when you click a link, it reads the head of the opml, looks for an urlInstant value, if present, it opens littleoutliner with that url"></outline>
+				<outline created="Sun, 27 Jun 2021 17:23:15 GMT" text="this is only necessary for littleoutliner -- drummer and other apps will get all the info they need from the head of the opml file">
+					<outline created="Sun, 27 Jun 2021 17:23:44 GMT" text="urlinstant is just something that's there for littleoutliner"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 26 Jun 2021 18:42:46 GMT" name="26" text="June 26" type="calendarDay">
+			<outline created="Sat, 26 Jun 2021 20:26:23 GMT" text="socketserver" type="outline">
+				<outline created="Sat, 26 Jun 2021 20:26:26 GMT" text="log each webhook call, save it in a calendar-structured folder on the srever"></outline>
+				<outline created="Sat, 26 Jun 2021 21:42:08 GMT" text="add an http call to get today's log"></outline>
+				<outline created="Sun, 27 Jun 2021 00:26:57 GMT" text="http://sockets.scripting.com/getlog"></outline>
+				</outline>
+			<outline created="Sat, 26 Jun 2021 19:29:13 GMT" text="Reading my tweets in a calendar structure" type="outline">
+				<outline created="Sat, 26 Jun 2021 19:29:30 GMT" text="start with the demo app for instant outlines">
+					<outline created="Sat, 26 Jun 2021 19:29:23 GMT" text="http://scripting.com/code/instantoutlinesrepo/demo/"></outline>
+					</outline>
+				<outline created="Sat, 26 Jun 2021 19:29:48 GMT" text="the opml we generate has to be better tuned">
+					<outline created="Sat, 26 Jun 2021 19:29:56 GMT" text="links become link nodes"></outline>
+					<outline created="Sat, 26 Jun 2021 19:30:03 GMT" text="links to tweets between tweet nodes"></outline>
+					<outline created="Sat, 26 Jun 2021 19:30:11 GMT" text="threads work great as-is"></outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 26 Jun 2021 18:46:32 GMT" text="test subscribing in LO2, Drummer" type="outline">
+				<outline created="Sat, 26 Jun 2021 18:46:58 GMT" text="there's still a fair amount of weirdness"></outline>
+				</outline>
+			<outline created="Sat, 26 Jun 2021 18:42:47 GMT" text="ioserver " type="outline">
+				<outline created="Sat, 26 Jun 2021 18:42:51 GMT" text="it now functions with an sql database behind it"></outline>
+				<outline created="Sat, 26 Jun 2021 18:43:02 GMT" text="what's next?">
+					<outline created="Sat, 26 Jun 2021 18:43:44 GMT" text="when you create a new short url, read the OPML file and get the title, description, socketserver, etc if there"></outline>
+					<outline created="Sat, 26 Jun 2021 18:46:07 GMT" text="use the values from the file over the values as part of the url"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 25 Jun 2021 15:03:32 GMT" name="25" text="June 25" type="calendarDay">
+			<outline created="Fri, 25 Jun 2021 22:46:50 GMT" text="new ioserver" type="outline">
+				<outline created="Fri, 25 Jun 2021 22:46:56 GMT" text="uses sql database"></outline>
+				<outline created="Fri, 25 Jun 2021 22:47:02 GMT" text="when we pick up next session, debug the create-new-link code"></outline>
+				<outline created="Sat, 26 Jun 2021 13:45:52 GMT" text="add membership?"></outline>
+				</outline>
+			<outline created="Fri, 25 Jun 2021 15:03:33 GMT" text="continuing using github for now" type="outline">
+				<outline created="Fri, 25 Jun 2021 15:03:46 GMT" text="a commenter suggested an approach that while not perfect, actually is workable">
+					<outline created="Fri, 25 Jun 2021 15:04:07 GMT" text="when you upload a file through the github api, it returns a bunch of data including the &quot;sha&quot; which identifies the change."></outline>
+					<outline created="Fri, 25 Jun 2021 15:04:55 GMT" text="when you access the content through the sha, it's perfect. once the API call returns, apparently the object is already available."></outline>
+					<outline created="Fri, 25 Jun 2021 15:05:17 GMT" text="you just have to construct the address like this --">
+						<outline created="Fri, 25 Jun 2021 15:05:25 GMT" text="&quot;https://raw.githubusercontent.com/scripting/instantOutlines/&quot; + githubResponse.commit.sha + &quot;/misc/now.txt&quot;; "></outline>
+						</outline>
+					<outline created="Fri, 25 Jun 2021 15:06:07 GMT" text="this presents a problem, because this address is supposed to be like the address of an RSS feed. ">
+						<outline created="Fri, 25 Jun 2021 15:06:24 GMT" text="something you can pass around, constant"></outline>
+						</outline>
+					<outline created="Fri, 25 Jun 2021 15:06:41 GMT" text="this means that there has to be a server in the middle that does the upload, retains the SHA, and can be called on to provide the most up to date content. since we already have to have a socketserver for this app, let's just merge the functionality, let it completely manage the storage. "></outline>
+					<outline created="Fri, 25 Jun 2021 15:07:47 GMT" text="it can also do whatever instantoutliner.com is doing"></outline>
+					<outline created="Fri, 25 Jun 2021 15:07:59 GMT" text="and it's a chance to use our new MySQL skills, to make something that can really grow."></outline>
+					</outline>
+				<outline created="Fri, 25 Jun 2021 15:08:22 GMT" text="the flow">
+					<outline created="Fri, 25 Jun 2021 15:08:26 GMT" text="a new NPM package called instantOutlines.">
+						<outline created="Fri, 25 Jun 2021 15:33:32 GMT" text="instantOutlines.publish (urlOutline, options, function (err, data) {">
+							<outline created="Fri, 25 Jun 2021 15:42:40 GMT" text=""></outline>
+							<outline created="Fri, 25 Jun 2021 15:42:40 GMT" text="the data it returns">
+								<outline created="Fri, 25 Jun 2021 15:42:45 GMT" text="url: &quot;http://instantoutlines.com/09&quot;"></outline>
+								</outline>
+							<outline created="Fri, 25 Jun 2021 15:42:40 GMT" text=""></outline>
+							<outline created="Fri, 25 Jun 2021 15:42:41 GMT" text=""></outline>
+							<outline created="Fri, 25 Jun 2021 15:39:45 GMT" text="});"></outline>
+							</outline>
+						<outline created="Fri, 25 Jun 2021 15:33:32 GMT" text="instantOutlines.update (id, function (err, data) {">
+							<outline created="Fri, 25 Jun 2021 15:39:45 GMT" text="});"></outline>
+							</outline>
+						<outline created="Fri, 25 Jun 2021 15:39:27 GMT" text=""></outline>
+						</outline>
+					<outline created="Fri, 25 Jun 2021 15:41:03 GMT" text="a websockets call ">
+						<outline created="Fri, 25 Jun 2021 15:41:15 GMT" text="you send it an id, and it watches the outline"></outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 24 Jun 2021 12:31:42 GMT" name="24" text="June 24" type="calendarDay">
+			<outline created="Thu, 24 Jun 2021 20:58:41 GMT" text="tomorrow, forget about using github for instant outlines" type="outline">
+				<outline created="Thu, 24 Jun 2021 20:58:54 GMT" text="switch everything over to S3"></outline>
+				</outline>
+			<outline created="Thu, 24 Jun 2021 13:40:08 GMT" text="paragraph links at all levels in LO2 outlines" type="outline">
+				<outline created="Thu, 24 Jun 2021 13:40:24 GMT" text="http://my.this.how/brandontoner/blog.opml"></outline>
+				</outline>
+			<outline created="Thu, 24 Jun 2021 12:32:40 GMT" text="github" type="outline">
+				<outline created="Thu, 24 Jun 2021 12:32:43 GMT" text="yesterday's experiment proved that through the API we can't do realtime storage, they're doing some kind of caching."></outline>
+				</outline>
+			<outline created="Thu, 24 Jun 2021 12:32:22 GMT" text="threadviewer.com" type="outline">
+				<outline created="Thu, 24 Jun 2021 12:32:31 GMT" text="test yesterday's changes"></outline>
+				</outline>
+			<outline created="Thu, 24 Jun 2021 12:31:43 GMT" text="brandon.this.how" type="outline">
+				<outline created="Thu, 24 Jun 2021 12:31:47 GMT" text="A special place for Brandon to post his outlines."></outline>
+				<outline created="Thu, 24 Jun 2021 13:40:39 GMT" text="Punted on this. Asked him to use my.this.how, and i'll figure out a more general solution for blogging with Drummer."></outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 23 Jun 2021 22:21:56 GMT" name="23" text="June 23" type="calendarDay">
+			<outline created="Wed, 23 Jun 2021 22:21:57 GMT" text="threadviewer.com" type="outline">
+				<outline created="Wed, 23 Jun 2021 22:22:01 GMT" text="easier approach to cache">
+					<outline created="Wed, 23 Jun 2021 22:22:05 GMT" text="at start check to see if there's a cached version of the thread. "></outline>
+					<outline created="Wed, 23 Jun 2021 22:22:22 GMT" text="if so and if it's more than 12 hours old, just serve it, even if reload is true."></outline>
+					<outline created="Wed, 23 Jun 2021 22:22:39 GMT" text="that protects the cache from being wiped out."></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 22 Jun 2021 16:00:59 GMT" name="22" text="June 22" type="calendarDay">
+			<outline created="Tue, 22 Jun 2021 16:01:00 GMT" text="Today's todo" type="outline">
+				<outline created="Tue, 22 Jun 2021 23:45:54 GMT" text="a new test site for pagepark">
+					<outline created="Tue, 22 Jun 2021 23:46:01 GMT" text="test3.lucky.wtf"></outline>
+					</outline>
+				<outline created="Tue, 22 Jun 2021 16:01:05 GMT" text="mirror option in pagepark"></outline>
+				<outline created="Tue, 22 Jun 2021 16:01:15 GMT" text="fix bug in threadreader.com">
+					<outline created="Tue, 22 Jun 2021 16:04:08 GMT" text="first check if the thread is already in the cache">
+						<outline created="Tue, 22 Jun 2021 16:04:21 GMT" text="if it is, and if the date is more than 12 hours ago, even if flreload is true, serve it from the cache">
+							<outline created="Tue, 22 Jun 2021 16:04:50 GMT" text="because we're not going to get the thread if we reload, and we'll just wipe out the cached copy"></outline>
+							</outline>
+						</outline>
+					<outline created="Tue, 22 Jun 2021 16:05:18 GMT" text="after that fix is in, do a new demo thread for threadreader.com, because the original one has been wiped out"></outline>
+					</outline>
+				<outline created="Tue, 22 Jun 2021 16:01:21 GMT" text="why aren't updates to scripting.com opml showing up?">
+					<outline created="Tue, 22 Jun 2021 16:01:40 GMT" text="something broke"></outline>
+					<outline created="Tue, 22 Jun 2021 16:01:43 GMT" text="probably has something to do with urls"></outline>
+					<outline created="Tue, 22 Jun 2021 16:01:49 GMT" text="i hate this shit"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 21 Jun 2021 12:32:57 GMT" name="21" text="June 21" type="calendarDay">
+			<outline created="Mon, 21 Jun 2021 12:34:48 GMT" text="Todo today" type="outline">
+				<outline created="Mon, 21 Jun 2021 14:57:29 GMT" text="publishscriptingopml is an app in pagepark">
+					<outline created="Mon, 21 Jun 2021 16:58:09 GMT" text="this was a good idea, but putting it on palatka, a production server, was a bad idea">
+						<outline created="Mon, 21 Jun 2021 16:58:27 GMT" text="iterating over all the possibilities, including making changes to pagepark, that must be done off on the side."></outline>
+						<outline created="Mon, 21 Jun 2021 16:58:48 GMT" text="this is not frontier, where we still should have respected the importance of such servers"></outline>
+						</outline>
+					<outline created="Mon, 21 Jun 2021 16:05:27 GMT" text="first attempt didn't work">
+						<outline created="Mon, 21 Jun 2021 16:05:31 GMT" text="shorter domain name -- pp isn't able to handle such a long one gracefully">
+							<outline created="Mon, 21 Jun 2021 16:06:49 GMT" text="pubscriptopml.scripting.com"></outline>
+							</outline>
+						<outline created="Mon, 21 Jun 2021 16:06:16 GMT" text="don't include a main property in package.json, if it's there, pagepark will try to run it as a persistent script, not the intention"></outline>
+						</outline>
+					<outline created="Mon, 21 Jun 2021 14:59:20 GMT" text="each such app needs its own domain">
+						<outline created="Mon, 21 Jun 2021 15:07:27 GMT" text="these are called pagepark plugins, documented here.">
+							<outline created="Mon, 21 Jun 2021 15:07:50 GMT" text=""></outline>
+							</outline>
+						</outline>
+					<outline created="Mon, 21 Jun 2021 14:57:58 GMT" text="new domain pageparkapps.scripting.com">
+						<outline created="Mon, 21 Jun 2021 14:58:14 GMT" text="each app is a folder"></outline>
+						<outline created="Mon, 21 Jun 2021 14:58:25 GMT" text="contains an app, with its package.json, config.json and any data it maintains"></outline>
+						<outline created="Mon, 21 Jun 2021 14:58:47 GMT" text="it runs when a request is made"></outline>
+						<outline created="Mon, 21 Jun 2021 14:59:05 GMT" text="i remember adding this capability to pagepark, now let's see how well documented it is! :-)"></outline>
+						</outline>
+					</outline>
+				<outline created="Mon, 21 Jun 2021 12:34:53 GMT" text="get brandon going with pagepark">
+					<outline created="Mon, 21 Jun 2021 14:56:14 GMT" text="&lt;a href=&quot;https://github.com/scripting/Scripting-News/issues/210#issuecomment-865025393&quot;&gt;done&lt;/a&gt;, using the mirror property in config.json in pagepark"></outline>
+					</outline>
+				<outline created="Mon, 21 Jun 2021 12:35:00 GMT" text="there's a problem with the thread gatherer code in davetwitter">
+					<outline created="Mon, 21 Jun 2021 12:35:14 GMT" text="It only works for recent threads. In building the thread, we get the last 24 hours of the user's tweets. Any tweets that are in the thread are included. If you gather the thread more than 24 hours after the thread was complete, you won't get any of the original tweets. "></outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 21 Jun 2021 12:32:58 GMT" text="Subscribe to doc's outline in Drummer" type="outline">
+				<outline created="Mon, 21 Jun 2021 12:33:10 GMT" text="https://raw.githubusercontent.com/scripting/instantOutlines/main/outlines/twitter/dsearls.opml"></outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 20 Jun 2021 16:22:50 GMT" name="20" text="June 20" type="calendarDay">
+			<outline created="Sun, 20 Jun 2021 21:37:50 GMT" text="How we're going to deploy the app, publishscriptingopml, that creates the published version of scripting.com OPML " type="outline">
+				<outline created="Sun, 20 Jun 2021 21:38:24 GMT" text="create a new domain on palatka for cool little net-accessible scripts"></outline>
+				<outline created="Sun, 20 Jun 2021 21:38:55 GMT" text="instead of each of the apps to have their own domain, included web server, forever slot, let pagepark do all the work"></outline>
+				<outline created="Sun, 20 Jun 2021 21:39:22 GMT" text="this is exactly analogous to how Frontier's website framework did this"></outline>
+				</outline>
+			<outline created="Sun, 20 Jun 2021 16:22:51 GMT" text="Debugging socket server" type="outline">
+				<outline created="Sun, 20 Jun 2021 16:22:57 GMT" text="the problem is the urls are cross-wired. we use a different url than the one github notifies us about. we have to get these straightened out. first thing monday morning. then we can resume some non excruciating work."></outline>
+				<outline created="Sun, 20 Jun 2021 17:43:19 GMT" text="this seems to always be the vexing problem with socket server. it can be helped with some better debugging code. "></outline>
+				<outline created="Sun, 20 Jun 2021 17:43:47 GMT" text="then we'll need to figure out where to stash the code that uploads the opml for scripting.com to github. it has to be triggered by the publish event in old school."></outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 19 Jun 2021 13:37:17 GMT" name="19" text="June 19" type="calendarDay">
+			<outline created="Sat, 19 Jun 2021 13:55:26 GMT" text="Drummer" type="outline">
+				<outline created="Sat, 19 Jun 2021 13:55:28 GMT" text="need a way from the console to delete a tab and have it saved">
+					<outline created="Sat, 19 Jun 2021 13:55:38 GMT" text="sometimes a tab shows up without a closebox?"></outline>
+					<outline created="Sat, 19 Jun 2021 13:55:48 GMT" text="maybe it's better to make sure all tabs have them, why not?"></outline>
+					<outline created="Sat, 19 Jun 2021 14:05:10 GMT" text="actually it has a closebox, it's hidden. if you go into the debugger and make it visible it works. that's the best way to get rid of it. "></outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 19 Jun 2021 13:37:18 GMT" text="Debugging the public OPML for Scripting News" type="outline">
+				<outline created="Sat, 19 Jun 2021 13:37:36 GMT" text="trigger the rebuild from within old school, so there's an update when I publish a new version">
+					<outline created="Sat, 19 Jun 2021 13:40:10 GMT" text="right now i'm doing this manually"></outline>
+					</outline>
+				<outline created="Sat, 19 Jun 2021 13:56:16 GMT" text="try subscribing in drummer in the debugger">
+					<outline created="Sat, 19 Jun 2021 13:57:11 GMT" text="https://raw.githubusercontent.com/scripting/instantOutlines/main/outlines/scripting.opml"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 17 Jun 2021 18:54:40 GMT" name="17" text="June 17" type="calendarDay">
+			<outline created="Thu, 17 Jun 2021 18:54:41 GMT" text="Idea: github verbs for [[drummer]]" type="outline"></outline>
+			</outline>
+		<outline created="Wed, 16 Jun 2021 13:59:30 GMT" name="16" text="June 16" type="calendarDay">
+			<outline created="Wed, 16 Jun 2021 13:59:31 GMT" text="[[drummer]]" type="outline">
+				<outline created="Wed, 16 Jun 2021 13:59:35 GMT" text="Problem with instant outlines, sometimes the update shows up in another tab. No data is lost."></outline>
+				<outline created="Wed, 16 Jun 2021 14:29:44 GMT" text="Dark mode">
+					<outline created="Wed, 16 Jun 2021 14:29:46 GMT" text="when you hover over a tab, the background color is an off-white. i can't figure out which element is getting the background color. maybe there's a way to work around this?">
+						<outline created="Wed, 16 Jun 2021 14:30:20 GMT" text="the problem shows up in the menu too."></outline>
+						<outline created="Wed, 16 Jun 2021 14:47:11 GMT" text="how we took control">
+							<outline created="Wed, 16 Jun 2021 14:47:15 GMT" text=".nav-tabs &gt; li &gt; a:hover {">
+								<outline text="background-color: orange;"></outline>
+								<outline text="}"></outline>
+								</outline>
+							</outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 15 Jun 2021 16:10:43 GMT" name="15" text="June 15" type="calendarDay">
+			<outline created="Tue, 15 Jun 2021 16:10:44 GMT" text="[[drummer]]" type="outline">
+				<outline created="Tue, 15 Jun 2021 16:10:51 GMT" text="dark mode">
+					<outline created="Tue, 15 Jun 2021 16:11:01 GMT" text="$(&quot;body&quot;).css (&quot;background-color&quot;, &quot;black&quot;)"></outline>
+					<outline created="Tue, 15 Jun 2021 17:17:51 GMT" text="$(&quot;.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner&quot;).css (&quot;box-shadow&quot;, &quot;0 1px 10px white / 10%&quot;);"></outline>
+					<outline created="Tue, 15 Jun 2021 17:17:51 GMT" text="$(&quot;.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner&quot;).css (&quot;text-shadow&quot;, &quot;1px 1px gray;&quot;);"></outline>
+					<outline created="Tue, 15 Jun 2021 17:17:51 GMT" text="$(&quot;.navbar-inner&quot;).css (&quot;text-shadow&quot;, &quot;1px 1px gray&quot;);"></outline>
+					<outline created="Tue, 15 Jun 2021 17:18:26 GMT" text=""></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 14 Jun 2021 13:45:04 GMT" name="14" text="June 14" type="calendarDay">
+			<outline created="Mon, 14 Jun 2021 13:45:05 GMT" text="[[tagserver]]" type="outline">
+				<outline created="Mon, 14 Jun 2021 13:45:43 GMT" text="plan">
+					<outline created="Mon, 14 Jun 2021 14:13:44 GMT" text="start a new server just for scripting.com">
+						<outline created="Mon, 14 Jun 2021 14:13:52 GMT" text="tags.scripting.com"></outline>
+						</outline>
+					<outline created="Mon, 14 Jun 2021 14:19:20 GMT" text="the database is named">
+						<outline created="Mon, 14 Jun 2021 14:19:27 GMT" text="scriptingtagbase"></outline>
+						</outline>
+					<outline created="Mon, 14 Jun 2021 14:15:35 GMT" text="in oldschool, when rendering a tag for say Bull Mancuso, replace it with a link like this">
+						<outline created="Mon, 14 Jun 2021 14:16:11 GMT" text="[[&lt;a href=&quot;http://tags.scripting.com/?tag=Bull Mancuso&quot;&gt;Bull Mancuso&lt;/a&gt;]]"></outline>
+						</outline>
+					<outline created="Mon, 14 Jun 2021 14:17:55 GMT" text="When you go to that page, it shows a reverse chronologic table of references to the term, with the actual text indented underneath."></outline>
+					</outline>
+				<outline created="Mon, 14 Jun 2021 13:45:43 GMT" text="new http endpoint -- /gettagrefs?tag=x">
+					<outline created="Mon, 14 Jun 2021 13:46:11 GMT" text="returns an array of nodes that refernce the indicated tag"></outline>
+					</outline>
+				<outline created="Mon, 14 Jun 2021 13:45:11 GMT" text="I've got it running on my local machine">
+					<outline created="Mon, 14 Jun 2021 13:45:18 GMT" text="http://localhost:1491/"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 13 Jun 2021 15:14:50 GMT" name="13" text="June 13" type="calendarDay">
+			<outline created="Sun, 13 Jun 2021 15:14:51 GMT" text="[[tagserver]] doesn't have to do as much as it does" type="outline">
+				<outline created="Sun, 13 Jun 2021 15:16:20 GMT" text="this is what's required">
+					<outline created="Sun, 13 Jun 2021 15:16:24 GMT" text="submit an outline and add each of its tags to the database"></outline>
+					<outline created="Sun, 13 Jun 2021 15:16:47 GMT" text="ask for all instances of that tag, in reverse chronologic order"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 12 Jun 2021 21:01:04 GMT" name="12" text="June 12" type="calendarDay">
+			<outline created="Sat, 12 Jun 2021 21:01:05 GMT" text="Ideas for next directions" type="outline">
+				<outline created="Sat, 12 Jun 2021 21:02:49 GMT" text="release drummer alpha?">
+					<outline created="Sat, 12 Jun 2021 21:02:57 GMT" text="this might be the time"></outline>
+					<outline created="Sat, 12 Jun 2021 21:03:07 GMT" text="i don't want to update LO2"></outline>
+					<outline created="Sun, 13 Jun 2021 02:31:15 GMT" text="i want a tool that works with tagserver (see below)"></outline>
+					</outline>
+				<outline created="Sat, 12 Jun 2021 21:02:44 GMT" text="github verbs for drummer"></outline>
+				<outline created="Sat, 12 Jun 2021 21:01:10 GMT" text="tagserver">
+					<outline created="Sat, 12 Jun 2021 21:02:14 GMT" text="fresh database"></outline>
+					<outline created="Sat, 12 Jun 2021 21:02:32 GMT" text="docs/announcement"></outline>
+					<outline created="Sat, 12 Jun 2021 21:02:36 GMT" text="open source release?"></outline>
+					</outline>
+				<outline created="Sat, 12 Jun 2021 21:01:15 GMT" text="instantoutliner">
+					<outline created="Sat, 12 Jun 2021 21:01:21 GMT" text="use a relational database"></outline>
+					<outline created="Sat, 12 Jun 2021 21:01:26 GMT" text="use a signon"></outline>
+					<outline created="Sat, 12 Jun 2021 21:01:35 GMT" text="when you register a new short url, your username is attached"></outline>
+					<outline created="Sat, 12 Jun 2021 21:01:47 GMT" text="so you can log on, and edit any link you created"></outline>
+					<outline created="Sat, 12 Jun 2021 21:02:00 GMT" text="i've been editing maps.json by hand"></outline>
+					<outline created="Sat, 12 Jun 2021 21:02:07 GMT" text="yuk"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 11 Jun 2021 12:30:03 GMT" name="11" text="June 11" type="calendarDay">
+			<outline created="Fri, 11 Jun 2021 18:24:01 GMT" text="Trippi's podcast" type="outline">
+				<outline created="Fri, 11 Jun 2021 18:24:06 GMT" text="I learned he's talking to the Lincoln Project">
+					<outline created="Fri, 11 Jun 2021 18:24:57 GMT" text="They were doing great when they had a clear goal, but after the election it just stopped."></outline>
+					<outline created="Fri, 11 Jun 2021 18:25:15 GMT" text="All campaigns do this, from now on this must not happen. "></outline>
+					</outline>
+				<outline created="Fri, 11 Jun 2021 18:24:16 GMT" text="Be prepared for Insurrection 2.0.">
+					<outline created="Fri, 11 Jun 2021 18:24:30 GMT" text="Marketing. Start positioning it immediately, while it's fresh."></outline>
+					<outline created="Fri, 11 Jun 2021 18:24:46 GMT" text="Don't leave journalism with no idea what to say about it."></outline>
+					</outline>
+				<outline created="Fri, 11 Jun 2021 18:25:35 GMT" text="What can people do?">
+					<outline created="Fri, 11 Jun 2021 18:25:42 GMT" text="Give money. "></outline>
+					<outline created="Fri, 11 Jun 2021 18:25:47 GMT" text="Our problem, create something worth giving money to. "></outline>
+					</outline>
+				</outline>
+			<outline created="Fri, 11 Jun 2021 12:30:04 GMT" text="Instant OPML release" type="outline">
+				<outline created="Fri, 11 Jun 2021 12:37:14 GMT" text="new repo: instantOutlines">
+					<outline created="Sat, 12 Jun 2021 16:43:26 GMT" text="https://github.com/scripting/instantOutlines"></outline>
+					<outline created="Fri, 11 Jun 2021 12:37:21 GMT" text="readme.md">
+						<outline created="Fri, 11 Jun 2021 12:37:38 GMT" text="Tour of the resources"></outline>
+						</outline>
+					<outline created="Fri, 11 Jun 2021 12:37:51 GMT" text="outlines">
+						<outline created="Fri, 11 Jun 2021 12:38:05 GMT" text="twitter">
+							<outline created="Fri, 11 Jun 2021 12:38:30 GMT" text="davewiner.opml"></outline>
+							<outline created="Fri, 11 Jun 2021 12:38:34 GMT" text="gruber.opml"></outline>
+							<outline created="Fri, 11 Jun 2021 12:38:37 GMT" text=""></outline>
+							</outline>
+						</outline>
+					</outline>
+				<outline created="Fri, 11 Jun 2021 12:30:17 GMT" text="save the example files in this repo:socketServer">
+					<outline created="Fri, 11 Jun 2021 12:32:20 GMT" text="top level folders">
+						<outline created="Fri, 11 Jun 2021 12:32:31 GMT" text="server"></outline>
+						<outline created="Fri, 11 Jun 2021 12:32:33 GMT" text="demo"></outline>
+						<outline created="Fri, 11 Jun 2021 12:32:35 GMT" text="outlines">
+							<outline created="Fri, 11 Jun 2021 12:32:46 GMT" text="tweeters">
+								<outline created="Fri, 11 Jun 2021 12:32:51 GMT" text="dave.json"></outline>
+								<outline created="Fri, 11 Jun 2021 12:32:56 GMT" text="dave.opml"></outline>
+								<outline created="Fri, 11 Jun 2021 12:32:59 GMT" text="etc"></outline>
+								</outline>
+							</outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 10 Jun 2021 15:24:41 GMT" name="10" text="June 10" type="calendarDay">
+			<outline created="Thu, 10 Jun 2021 15:31:41 GMT" text="opmlTweets" type="outline">
+				<outline created="Thu, 10 Jun 2021 15:31:44 GMT" text="Don't include replies that aren't part of a thread">
+					<outline created="Thu, 10 Jun 2021 15:32:21 GMT" text="ie replies to other people's tweets"></outline>
+					<outline created="Thu, 10 Jun 2021 15:32:28 GMT" text="simple way to detect, if they begin with an @"></outline>
+					</outline>
+				</outline>
+			<outline created="Thu, 10 Jun 2021 15:25:28 GMT" text="Nuke the icon for tweets in Drummer" type="outline">
+				<outline created="Thu, 10 Jun 2021 15:25:47 GMT" text="They look awful when the whole outline is tweets."></outline>
+				<outline created="Thu, 10 Jun 2021 15:26:08 GMT" text="Very distracting, convey no information at all."></outline>
+				<outline created="Thu, 10 Jun 2021 15:26:20 GMT" text="And ugly! (imho)"></outline>
+				</outline>
+			<outline created="Thu, 10 Jun 2021 15:24:42 GMT" text="A client for sockets.scripting.com" type="outline">
+				<outline created="Thu, 10 Jun 2021 15:24:51 GMT" text="http://scripting.com/code/socketclient/"></outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 09 Jun 2021 13:56:01 GMT" name="09" text="June 9" type="calendarDay">
+			<outline created="Wed, 09 Jun 2021 15:51:21 GMT" text="opmlTweets schematic" type="outline">
+				<outline created="Wed, 09 Jun 2021 15:51:30 GMT" text="app that gathers info"></outline>
+				<outline created="Wed, 09 Jun 2021 15:51:42 GMT" text="github is where it stores public files"></outline>
+				<outline created="Wed, 09 Jun 2021 15:51:49 GMT" text="server app connects to github via webhooks">
+					<outline created="Wed, 09 Jun 2021 15:52:10 GMT" text="notified when any of the files updates"></outline>
+					</outline>
+				<outline created="Wed, 09 Jun 2021 15:52:19 GMT" text="apps can hook up to the server app via WebSockets">
+					<outline created="Wed, 09 Jun 2021 15:52:31 GMT" text="supported in every modern browser"></outline>
+					</outline>
+				<outline created="Wed, 09 Jun 2021 15:53:11 GMT" text="this is the infrastructure needed by instant outlines"></outline>
+				</outline>
+			<outline created="Wed, 09 Jun 2021 15:02:16 GMT" text="Electric Drummer" type="outline">
+				<outline created="Wed, 09 Jun 2021 15:02:20 GMT" text="Have to make it easy to make mods. Right now I have to rebuild to make a change, and even then I can't count on Electron to load the lastest version. "></outline>
+				<outline created="Wed, 09 Jun 2021 15:31:08 GMT" text="File/Open dialog can be told which folder to start the search at. ">
+					<outline created="Wed, 09 Jun 2021 15:31:33 GMT" text="I'd like it to be the last folder I opened a file in."></outline>
+					<outline created="Wed, 09 Jun 2021 15:31:41 GMT" text="So I can be based at the Electric Drummer folder, not the default one in the system."></outline>
+					</outline>
+				</outline>
+			<outline created="Wed, 09 Jun 2021 13:56:02 GMT" text="opmlTweets" type="outline">
+				<outline created="Wed, 09 Jun 2021 15:36:19 GMT" text="I really don't like the twitter icons, when all the nodes in an outline are tweets">
+					<outline created="Wed, 09 Jun 2021 15:36:51 GMT" text="maybe don't include the type attribute? still include the other metadata."></outline>
+					</outline>
+				<outline created="Wed, 09 Jun 2021 15:27:07 GMT" text="replies should only be added to the outline if they are to one of the messages already in the outline">
+					<outline created="Wed, 09 Jun 2021 15:27:26 GMT" text="no standalone replies"></outline>
+					<outline created="Wed, 09 Jun 2021 15:27:30 GMT" text="the idea is to capture threads that you wrote"></outline>
+					<outline created="Wed, 09 Jun 2021 15:27:37 GMT" text="this is for blogging, publishing outside of twitter"></outline>
+					<outline created="Wed, 09 Jun 2021 15:27:47 GMT" text="twitter as a writing tool"></outline>
+					</outline>
+				<outline created="Wed, 09 Jun 2021 13:56:18 GMT" text="if an incoming tweet is a reply to a message that's already in the outline, add it as the last child of the tweet, thus building threads">
+					<outline created="Wed, 09 Jun 2021 13:58:46 GMT" text="this might be a key feature? let's see."></outline>
+					<outline created="Wed, 09 Jun 2021 14:45:38 GMT" text="it works. ;-)"></outline>
+					</outline>
+				<outline created="Wed, 09 Jun 2021 13:57:28 GMT" text="uploading both OPML and jsonified OPML">
+					<outline created="Wed, 09 Jun 2021 13:57:39 GMT" text="at first I thought I could just upload JSON, then realized that's ridiculous. every existing consumer or OPML is looking for XML. Yes for some irrational reason people prefer JSON. It's ridiculous, but might as well take advantage of it. "></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 08 Jun 2021 16:00:00 GMT" name="08" text="June 8" type="calendarDay">
+			<outline created="Tue, 08 Jun 2021 16:00:01 GMT" text="Drummer and enclosures" type="outline">
+				<outline created="Tue, 08 Jun 2021 16:00:05 GMT" text="There's missing code that looks for the enclosure attribute and fills in enclosureLength and enclosureType. "></outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 06 Jun 2021 15:05:46 GMT" name="06" text="June 6" type="calendarDay">
+			<outline created="Sun, 06 Jun 2021 16:45:15 GMT" text="sockets.scripting.com" type="outline">
+				<outline created="Mon, 07 Jun 2021 15:34:53 GMT" text="notes">
+					<outline created="Mon, 07 Jun 2021 15:34:54 GMT" text="ws://sockets.scripting.com:1239/"></outline>
+					</outline>
+				<outline created="Sun, 06 Jun 2021 16:50:13 GMT" text="functionality">
+					<outline created="Sun, 06 Jun 2021 16:45:28 GMT" text="handles subscribe messages compatible with daveappserver"></outline>
+					<outline created="Sun, 06 Jun 2021 16:48:32 GMT" text="handle ping message, which says that a file has changed"></outline>
+					<outline created="Sun, 06 Jun 2021 16:48:43 GMT" text="when a file has changed we send update messages to subscribers"></outline>
+					<outline created="Sun, 06 Jun 2021 16:49:44 GMT" text="it is configured to only handle updates on certain files"></outline>
+					</outline>
+				<outline created="Sun, 06 Jun 2021 16:50:17 GMT" text="it's a daveappserver application">
+					<outline created="Sun, 06 Jun 2021 16:50:29 GMT" text="it can handle all of it with no replicated code"></outline>
+					<outline created="Sun, 06 Jun 2021 16:50:39 GMT" text="might require some things to be interfaced"></outline>
+					</outline>
+				</outline>
+			<outline created="Sun, 06 Jun 2021 15:59:33 GMT" text="opmltweets" type="outline">
+				<outline created="Sun, 06 Jun 2021 15:59:36 GMT" text="add docs head link, to the readme on the repo"></outline>
+				<outline created="Sun, 06 Jun 2021 15:59:48 GMT" text="create private repository for this project"></outline>
+				<outline created="Sun, 06 Jun 2021 15:59:59 GMT" text="only upload JSONified OPML">
+					<outline created="Sun, 06 Jun 2021 16:00:10 GMT" text="it really looks a lot better than the XML, sorry to say"></outline>
+					<outline created="Sun, 06 Jun 2021 16:00:21 GMT" text="more whitespace. "></outline>
+					</outline>
+				</outline>
+			<outline created="Sun, 06 Jun 2021 15:05:47 GMT" text="Docs" type="outline">
+				<outline created="Sun, 06 Jun 2021 14:53:18 GMT" text="Compatibility with LO2">
+					<outline created="Sun, 06 Jun 2021 14:57:20 GMT" text="For the most part Drummer is fully compatible with LO2, with a couple of important exceptions."></outline>
+					<outline created="Sun, 06 Jun 2021 14:53:23 GMT" text="Uses a different, but compatible, server">
+						<outline created="Sun, 06 Jun 2021 14:53:37 GMT" text="A small number of people are running their own back-end for LO2, using the nodeStorage package."></outline>
+						<outline created="Sun, 06 Jun 2021 14:54:14 GMT" text="Drummer's backend is not nodeStorage, even though it's compatible with it, it does things NS does not do. "></outline>
+						<outline created="Sun, 06 Jun 2021 14:54:40 GMT" text="The backend it does use is called daveappserver, and it is also open source. I expect I will be using that for my server software from this point on. "></outline>
+						<outline created="Sun, 06 Jun 2021 14:55:17 GMT" text="I wanted something simpler. nodeStorage had become a bit of a hairball. It happens, esp when it's the first package you write in a new OS. I've learned how to use the modularity of Node more effectively over time. "></outline>
+						</outline>
+					<outline created="Sun, 06 Jun 2021 14:57:36 GMT" text="It eliminates the myOutlines folder">
+						<outline created="Sun, 06 Jun 2021 14:57:52 GMT" text="In LO2, all your outlines were stored in a folder called myOutlines. The thought was the server would be used for things other than outlines, I guess. I don't remember making that decision. But it got in the way, and in Drummer, I chose to not replicate this design element. "></outline>
+						<outline created="Sun, 06 Jun 2021 14:58:51 GMT" text="The good news is that you can download your files in a zip archive, from both products, and this means you can easily move your LO2 work to Drummer, when it is available.  "></outline>
+						</outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 05 Jun 2021 14:21:43 GMT" name="05" text="June 5" type="calendarDay">
+			<outline created="Sat, 05 Jun 2021 17:39:38 GMT" text="New features for instantoutliner.com" type="outline">
+				<outline created="Sat, 05 Jun 2021 17:40:23 GMT" text=""></outline>
+				</outline>
+			<outline created="Sat, 05 Jun 2021 17:03:19 GMT" text="Drummer: Allow me to subscribe to an OPML file" type="outline">
+				<outline created="Sat, 05 Jun 2021 17:03:32 GMT" text="No I/O stub."></outline>
+				<outline created="Sat, 05 Jun 2021 17:39:28 GMT" text="works but obviously no socket"></outline>
+				</outline>
+			<outline created="Sat, 05 Jun 2021 15:45:01 GMT" text="Hook up instantoutliner.com to opmltweets" type="outline">
+				<outline created="Sat, 05 Jun 2021 15:46:14 GMT" text="Need to provide for outlines that are not managed by one of my servers.">
+					<outline created="Sat, 05 Jun 2021 15:46:25 GMT" text="nodestorage or daveappserver, both of which handle the socket notifications that the outline has changed. "></outline>
+					</outline>
+				</outline>
+			<outline created="Sat, 05 Jun 2021 14:21:44 GMT" text="Finish up opmlToTweets app" type="outline">
+				<outline created="Sat, 05 Jun 2021 15:18:50 GMT" text="where to upload?">
+					<outline created="Sat, 05 Jun 2021 15:18:55 GMT" text="Scripting-News/twitter/opmltweets/">
+						<outline created="Sat, 05 Jun 2021 15:21:39 GMT" text="gruber.opml"></outline>
+						<outline created="Sat, 05 Jun 2021 15:22:25 GMT" text="davewiner.opml"></outline>
+						<outline created="Sat, 05 Jun 2021 15:22:30 GMT" text="logseq.opml"></outline>
+						</outline>
+					</outline>
+				<outline created="Sat, 05 Jun 2021 15:23:03 GMT" text="commit message"></outline>
+				<outline created="Sat, 05 Jun 2021 15:16:58 GMT" text="what happens when you start following a new account">
+					<outline created="Sat, 05 Jun 2021 15:17:10 GMT" text="follow @gruber"></outline>
+					</outline>
+				<outline created="Sat, 05 Jun 2021 14:48:15 GMT" text="when you start up, check all the accounts, rapidly."></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 04 Jun 2021 15:23:50 GMT" name="04" text="June 4" type="calendarDay">
+			<outline created="Fri, 04 Jun 2021 21:59:01 GMT" text="Idea: Markdown with Outlines" type="outline"></outline>
+			<outline created="Fri, 04 Jun 2021 19:20:49 GMT" text="New app, opmltweets.." type="outline">
+				<outline created="Fri, 04 Jun 2021 19:21:19 GMT" text="Generates an OPML file for my tweets, and uploads it to GitHub."></outline>
+				<outline created="Fri, 04 Jun 2021 20:39:41 GMT" text="When using davegithub -- be sure to use a &quot;personal access token&quot; in place of your password. "></outline>
+				<outline created="Fri, 04 Jun 2021 20:40:02 GMT" text="I lost a couple of hours on this. Oy."></outline>
+				</outline>
+			<outline created="Fri, 04 Jun 2021 15:23:51 GMT" text="twitter.getUserTimeline gets a new param, sinceId, optional" type="outline">
+				<outline created="Fri, 04 Jun 2021 15:24:00 GMT" text="If provided, it's the id of the last message you've read, so you can do a sequence of calls to read all the tweets, over time. "></outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 03 Jun 2021 13:58:34 GMT" name="03" text="June 3" type="calendarDay">
+			<outline created="Thu, 03 Jun 2021 14:39:10 GMT" text="Todo" type="outline">
+				<outline created="Thu, 03 Jun 2021 14:39:12 GMT" text="Docs menu in electric drummer, it's not here!"></outline>
+				</outline>
+			<outline created="Thu, 03 Jun 2021 14:37:03 GMT" text="Breakage: Get my tweets command in Tools menu " type="outline">
+				<outline created="Thu, 03 Jun 2021 14:37:26 GMT" text="It calls a server that requires authentication for littleoutliner.com."></outline>
+				<outline created="Thu, 03 Jun 2021 14:37:51 GMT" text="My auth is for drummer.scripting.com."></outline>
+				</outline>
+			<outline created="Thu, 03 Jun 2021 14:10:12 GMT" text="Idea: Maintain an OPML archive of my tweets" type="outline">
+				<outline created="Thu, 03 Jun 2021 14:10:28 GMT" text="Just like my blog."></outline>
+				<outline created="Thu, 03 Jun 2021 14:10:33 GMT" text="Calendar-structured."></outline>
+				<outline created="Thu, 03 Jun 2021 14:10:41 GMT" text="Selected metadata as attributes."></outline>
+				<outline created="Thu, 03 Jun 2021 14:11:07 GMT" text="Drummer app."></outline>
+				<outline created="Thu, 03 Jun 2021 14:13:58 GMT" text="Use the websockets interface."></outline>
+				<outline created="Thu, 03 Jun 2021 14:11:11 GMT" text="Open source."></outline>
+				</outline>
+			<outline created="Thu, 03 Jun 2021 13:58:35 GMT" text="Idea: Tagserver for Twitter" type="outline">
+				<outline created="Thu, 03 Jun 2021 13:58:43 GMT" text="I have an agent script that reads my account periodically, and finds new posts that have [[double square brackets]]. "></outline>
+				<outline created="Thu, 03 Jun 2021 13:59:53 GMT" text="I can browse all my categories, the same way tagserver works now."></outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 02 Jun 2021 14:30:25 GMT" name="02" text="June 2" type="calendarDay">
+			<outline created="Wed, 02 Jun 2021 17:07:19 GMT" text="idea: do a simple http server in Electric Drummer" type="outline"></outline>
+			<outline created="Wed, 02 Jun 2021 17:06:04 GMT" text="authorName, authorEmail, authorWebsite" type="outline">
+				<outline created="Wed, 02 Jun 2021 17:06:15 GMT" text="You can now set these prefs in the Settings dialog."></outline>
+				</outline>
+			<outline created="Wed, 02 Jun 2021 16:56:23 GMT" text="Editing isComment attribute" type="outline">
+				<outline created="Wed, 02 Jun 2021 16:57:09 GMT" text="If you edit attributes and change the value of isComment, the outline display didn't used to reflect the new status.  "></outline>
+				</outline>
+			<outline created="Wed, 02 Jun 2021 15:01:37 GMT" text="The settings dialog now works in Electric Drummer" type="outline">
+				<outline created="Wed, 02 Jun 2021 15:05:00 GMT" isComment="true" text="I can change the font and size in the current outline, for example"></outline>
+				</outline>
+			<outline created="Wed, 02 Jun 2021 14:30:53 GMT" text="The eye icon should work for instant outlines" type="outline">
+				<outline created="Wed, 02 Jun 2021 14:31:02 GMT" text="they don't have a urlPublic header, but they do have "></outline>
+				</outline>
+			<outline created="Mon, 31 May 2021 19:52:45 GMT" text="Added link to GitHub account on scripting.com" type="outline"></outline>
+			</outline>
+		<outline created="Tue, 01 Jun 2021 12:50:25 GMT" name="01" text="June 1" type="calendarDay">
+			<outline created="Tue, 01 Jun 2021 20:50:33 GMT" text="browser-based drummer " type="outline">
+				<outline created="Tue, 01 Jun 2021 20:51:01 GMT" text="made an outline public using the filemenu command and it has none of the header attributes"></outline>
+				</outline>
+			<outline created="Sun, 30 May 2021 16:09:03 GMT" text="servermonitor now monitors drummer.scripting.com" type="outline"></outline>
+			<outline created="Tue, 01 Jun 2021 15:01:02 GMT" text="Building with something hoisted doesn't work" type="outline"></outline>
+			<outline created="Tue, 01 Jun 2021 13:41:01 GMT" text="View OPML command now works" type="outline">
+				<outline created="Tue, 01 Jun 2021 13:41:07 GMT" text="window.open (getActiveTabStatus ().fname) "></outline>
+				</outline>
+			<outline created="Tue, 01 Jun 2021 12:50:38 GMT" text="How I got the icon to change..." type="outline">
+				<outline created="Tue, 01 Jun 2021 12:50:45 GMT" text="I moved the Electric Drummer app from the development folder to the work folder. The icon changed when I did that. I wonder if it'll do it again?"></outline>
+				</outline>
+			<outline created="Tue, 01 Jun 2021 12:50:26 GMT" text="Did the first blog rollover with Electric Drummer." type="outline"></outline>
+			</outline>
+		</body>
+	</opml>

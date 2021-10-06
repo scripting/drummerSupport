@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="2.0">
+	<head>
+		<title>notes/2021/09.md</title>
+		<dateModified>&lt;%dateModified%></dateModified>
+		<expansionState></expansionState>
+		<vertScrollState>1</vertScrollState>
+		<windowTop>300</windowTop>
+		<windowLeft>700</windowLeft>
+		<windowBottom>900</windowBottom>
+		<windowRight>1500</windowRight>
+		</head>
+	<body created="Wed, 06 Oct 2021 15:29:55 GMT" text="notes/2021/09.mdo">
+		<outline created="Thu, 30 Sep 2021 13:53:49 GMT" name="30" text="September 30" type="calendarDay">
+			<outline created="Thu, 30 Sep 2021 13:39:29 GMT" text="Find Again working properly" type="outline">
+				<outline created="Thu, 30 Sep 2021 13:39:36 GMT" text="Ken Smith &lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/48&quot;&gt;found&lt;/a&gt; this one. "></outline>
+				<outline created="Thu, 30 Sep 2021 13:44:01 GMT" text="If you did a Find-Again by choosing the menu item, it worked reliably."></outline>
+				<outline created="Thu, 30 Sep 2021 13:44:17 GMT" text="However if you did it by pressing Cmd-G on the keyboard, it would skip a certain number of instances. "></outline>
+				<outline created="Thu, 30 Sep 2021 14:01:57 GMT" text="This is now fixed. When you press Cmd-G you reliably go to the next occurrence of the string you were searching for. "></outline>
+				<outline created="Thu, 30 Sep 2021 13:44:01 GMT" text="Reminder to self: The keyboard handling in Drummer is a patchwork. Some of it is inside Concord, some is handled by a Drummer-level keyboard handler (including stuff that should move down to Concord, for example the inclusion code)."></outline>
+				</outline>
+			<outline created="Thu, 30 Sep 2021 14:02:59 GMT" text="Hoisting problem fixed" type="outline">
+				<outline created="Fri, 01 Oct 2021 00:41:11 GMT" text="If you had a section hoisted in one tab, then did something that caused a file to be opened in a new tab, you could lose data in the original file. "></outline>
+				</outline>
+			<outline created="Thu, 30 Sep 2021 15:57:06 GMT" text="How to force a reload in Chrome" type="outline">
+				<outline created="Thu, 30 Sep 2021 15:57:23 GMT" text="When testing a new version of Drummer, using Chrome, this is how to force all the bits to reload, to be sure you're using all the current code.">
+					<outline created="Thu, 30 Sep 2021 15:57:52 GMT" text="Open Developer tools."></outline>
+					<outline created="Thu, 30 Sep 2021 15:59:19 GMT" text="As you click the reload icon in the browser chrome, hold the mouse button down until a popup menu appears."></outline>
+					<outline created="Thu, 30 Sep 2021 15:59:24 GMT" text="Choose &lt;i&gt;Hard Reload&lt;/i&gt; from the menu."></outline>
+					</outline>
+				<outline created="Thu, 30 Sep 2021 15:59:31 GMT" text="At that point, theoretically you have all the most recent bits that make up Drummer. "></outline>
+				</outline>
+			<outline created="Thu, 30 Sep 2021 16:06:54 GMT" text="Testing a new reader app" type="outline">
+				<outline created="Thu, 30 Sep 2021 16:06:59 GMT" text="&lt;a href=&quot;https://github.com/scripting/concord&quot;&gt;Concord&lt;/a&gt; is getting some attention these days, so I put together a &lt;a href=&quot;http://scripting.com/code/concordreader/&quot;&gt;little reader app&lt;/a&gt; that follows the Change Notes outline. Not sure what I'm going to do with it, but I wanted you all to see it. These are instant outlines, that means the reader app opens a socket to the server the file comes from and when it updates, gets the latest version and shows that. It's kind of like a self-updating feed in an outline. Proven to be an effective way to communicate. "></outline>
+				<outline created="Thu, 30 Sep 2021 17:57:54 GMT" text="You can have it view your own OPML file by using the url parameter. An &lt;a href=&quot;http://scripting.com/code/concordreader/?url=http://drummer.scripting.com/cluelessnewbie/states.opml&quot;&gt;example&lt;/a&gt; of a reader that's viewing the States outline. "></outline>
+				</outline>
+			<outline created="Thu, 30 Sep 2021 13:58:46 GMT" text="Version numbers" type="outline">
+				<outline created="Thu, 30 Sep 2021 13:58:52 GMT" text="A note from Ken asks if he should be seeing 2.0.8 as the version for web Drummer."></outline>
+				<outline created="Thu, 30 Sep 2021 13:59:12 GMT" text="Yes. I haven't been bumping version numbers in the user-facing code. I have been doing it for the JavaScript modules as new versions are released. "></outline>
+				<outline created="Thu, 30 Sep 2021 13:59:55 GMT" text="I don't find we need to bump the versions to communicate at this point. Maybe soon there will be a need. For sure when there is a &quot;release&quot; I will bump the version number on both web and electric releases. "></outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 29 Sep 2021 14:52:35 GMT" name="29" text="September 29" type="calendarDay">
+			<outline created="Wed, 29 Sep 2021 20:22:37 GMT" text="Hoisting bug fixed" type="outline">
+				<outline created="Wed, 29 Sep 2021 20:22:41 GMT" text="Glad I asked about hoisting yesterday. It got Ken Smith to try something --  ">
+					<outline created="Wed, 29 Sep 2021 20:23:25 GMT" text="He hoisted something and"></outline>
+					<outline created="Wed, 29 Sep 2021 20:23:35 GMT" text="Tried to bookmark it"></outline>
+					</outline>
+				<outline created="Wed, 29 Sep 2021 20:23:40 GMT" text="&lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/47#issuecomment-929514046&quot;&gt;All hell&lt;/a&gt; broke loose. I couldn't imagine that it would be hard to fix, but it turned out the problem was much more general, that's why it was initially hard to pin down. Turns out you could get Drummer to fail by doing this:">
+					<outline created="Wed, 29 Sep 2021 20:24:20 GMT" text="Hoist something."></outline>
+					<outline created="Wed, 29 Sep 2021 20:24:24 GMT" text="Open a file."></outline>
+					</outline>
+				<outline created="Wed, 29 Sep 2021 20:24:29 GMT" text="Boom. Everything in the newly opened file is garbage, all the headers, structures."></outline>
+				<outline created="Wed, 29 Sep 2021 20:24:05 GMT" text="It was a one-line fix. We just needed to empty out the hoist stack in the newly opened file. Instead the hoist stack from the previous outline was inherited by the newly opened file, and as they say hilarity ensued."></outline>
+				<outline created="Wed, 29 Sep 2021 20:26:14 GMT" text="I love getting out big bugs like this one. The reason I didn't see it myself is I wasn't hoisting much. "></outline>
+				<outline created="Wed, 29 Sep 2021 20:26:46 GMT" text="Good teamwork on this one. I really like the way this feels. "></outline>
+				</outline>
+			<outline created="Wed, 29 Sep 2021 14:52:36 GMT" text="oldSchool" type="outline">
+				<outline created="Wed, 29 Sep 2021 14:52:38 GMT" text="Fixed a bug in &lt;a href=&quot;https://github.com/scripting/oldSchoolBlog&quot;&gt;Old School&lt;/a&gt;, the software that renders Drummer blogs."></outline>
+				<outline created="Wed, 29 Sep 2021 14:52:54 GMT" text="I noticed that there were only five days worth of posts on the &lt;a href=&quot;http://oldschool.scripting.com/cluelessnewbie/&quot;&gt;cluelessnewbie blog&lt;/a&gt;. "></outline>
+				<outline created="Wed, 29 Sep 2021 14:53:16 GMT" text="But there were many more days worth of blog posts on the site, dating back to mid-August. "></outline>
+				<outline created="Wed, 29 Sep 2021 14:53:32 GMT" text="Turns out that Old School was counting days on the home page incorrectly. "></outline>
+				<outline created="Wed, 29 Sep 2021 14:53:53 GMT" text="There's a max of 25 days, it was counting every day as it worked its way back, whether or not I had posted anything that day. "></outline>
+				<outline created="Wed, 29 Sep 2021 14:54:20 GMT" text="So with 25 as the max, it ran out of days on Sept 4. And thus it didn't look at anything earlier than that."></outline>
+				<outline created="Wed, 29 Sep 2021 14:54:46 GMT" text="I had to rewrite the loop so it only counted days that there were actual posts on, and now it works."></outline>
+				<outline created="Wed, 29 Sep 2021 14:55:04 GMT" text="You might have been affected by this if:">
+					<outline created="Wed, 29 Sep 2021 14:55:10 GMT" text="You blog using Drummer. "></outline>
+					<outline created="Wed, 29 Sep 2021 14:55:14 GMT" text="You do it infrequently, as did the cluelessnewbie."></outline>
+					</outline>
+				<outline created="Wed, 29 Sep 2021 14:55:29 GMT" text="This bug has been in there a long time, but I never saw it with Scripting News because basically I blog every day even if I don't have anything to say. ÝÄù¥"></outline>
+				<outline created="Wed, 29 Sep 2021 14:56:08 GMT" text="Confirms that it's even worse than it appears. "></outline>
+				</outline>
+			<outline created="Thu, 30 Sep 2021 00:17:12 GMT" text="More bugs" type="outline">
+				<outline created="Thu, 30 Sep 2021 00:18:35 GMT" text="It was a good day of bug fixing."></outline>
+				<outline created="Thu, 30 Sep 2021 00:17:15 GMT" text="More bugs lined up to fix tomorrow."></outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 28 Sep 2021 16:28:36 GMT" name="28" text="September 28" type="calendarDay">
+			<outline created="Tue, 28 Sep 2021 21:52:14 GMT" text="It's been slow for a few days" type="outline">
+				<outline created="Tue, 28 Sep 2021 21:52:20 GMT" text="Hope to get the engines revved up again tomorrow, to start a final pre-ship sprint."></outline>
+				</outline>
+			<outline created="Tue, 28 Sep 2021 16:31:33 GMT" text="If you use hoisting..." type="outline">
+				<outline created="Tue, 28 Sep 2021 16:31:38 GMT" text="Have there been any problems, mysteries, lost work with &lt;a href=&quot;http://docserver.scripting.com/drummer/outliner.opml#1630683717000&quot;&gt;hoisting&lt;/a&gt;?"></outline>
+				<outline created="Tue, 28 Sep 2021 16:32:02 GMT" text="Please comment in this &lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/47&quot;&gt;thread&lt;/a&gt;."></outline>
+				</outline>
+			<outline created="Tue, 28 Sep 2021 16:28:37 GMT" text="Your own DocServer" type="outline">
+				<outline created="Tue, 28 Sep 2021 16:28:56 GMT" text="DocServer is actually a platform for DocServer-like docs."></outline>
+				<outline created="Tue, 28 Sep 2021 16:29:23 GMT" text="An &lt;a href=&quot;http://drummer.scripting.com/davewiner/exampleDocServerOutline.opml&quot;&gt;example&lt;/a&gt;, two pages one for making hot dogs and another for making potato salad. " type="include" url="http://drummer.scripting.com/davewiner/exampleDocServerOutline.opml"></outline>
+				<outline created="Tue, 28 Sep 2021 16:30:34 GMT" text="And here's that outline &lt;a href=&quot;http://docserver.scripting.com/?url=http://drummer.scripting.com/davewiner/exampleDocServerOutline.opml&quot;&gt;rendered through DocServer&lt;/a&gt;."></outline>
+				<outline created="Tue, 28 Sep 2021 16:30:58 GMT" text="The magic of OPML as a standard. Open formats for the win! ÝÄù¥"></outline>
+				<outline created="Tue, 28 Sep 2021 16:32:28 GMT" text="Note that DocServer doesn't care what you call your sections, that's why the same system that works for verbs also works for food recipes."></outline>
+				<outline created="Tue, 28 Sep 2021 21:56:28 GMT" text="Screen shot">
+					<outline created="Tue, 28 Sep 2021 21:56:31 GMT" text="&lt;img src=&quot;http://scripting.com/images/2021/09/28/hotdogs.png&quot;&gt;"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 26 Sep 2021 16:52:12 GMT" name="26" text="September 26" type="calendarDay">
+			<outline created="Sun, 26 Sep 2021 16:45:37 GMT" text="appServer" type="outline">
+				<outline created="Sun, 26 Sep 2021 16:45:41 GMT" text="There was some discussion during the Friday meetup about Anton running a Drummer server. I hadn't given this a lot of thought as of Friday, other than I was pretty sure it would be easier this time than it had been with LO2. The server behind Drummer is a simpler architecture. "></outline>
+				<outline created="Sun, 26 Sep 2021 16:46:51 GMT" text="Anyway, I am relieved that Anton doesn't want to run a server. Supporting other servers makes my job an order of magnitude harder, because I would have to lock down things, and manage migrations on other people's installations. I've taken on that job quite a few times in the past, with Manila, Radio Community Server, all the Poet's projects. It's only worth doing if you think it's a Change The World kind of thing. At this point I know better. It's just work. With not much if any reward. "></outline>
+				<outline created="Sun, 26 Sep 2021 16:48:36 GMT" text="I'm going to keep the focus on work that delivers benefits to end-users, and has the potential to get people excited about Drummer. "></outline>
+				</outline>
+			<outline created="Sun, 26 Sep 2021 17:22:36 GMT" text="Tree Chart" type="outline">
+				<outline created="Sun, 26 Sep 2021 17:22:39 GMT" text="A &lt;a href=&quot;http://scripting.com/code/testing/treechart/index.html&quot;&gt;project&lt;/a&gt; I started a few days ago, to render an outline as a tree chart, using SVG. "></outline>
+				<outline created="Sun, 26 Sep 2021 17:23:08 GMT" text="This is the kind of thing that will help people understand the utility of outliners."></outline>
+				<outline created="Sun, 26 Sep 2021 17:23:28 GMT" text="Obviously, quite far from being ready to go, more of a demo of a concept. "></outline>
+				<outline created="Sun, 26 Sep 2021 17:23:41 GMT" text="This was one of the key features in MORE. "></outline>
+				<outline created="Sun, 26 Sep 2021 17:24:12 GMT" text="It's one of the things that made outliners a hit on the Mac in the mid-late 80s."></outline>
+				<outline created="Sun, 26 Sep 2021 17:25:02 GMT" text="Screen shot">
+					<outline created="Sun, 26 Sep 2021 17:25:04 GMT" text="&lt;img src=&quot;http://scripting.com/images/2021/09/26/treechart.png&quot;&gt;"></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 25 Sep 2021 15:19:35 GMT" name="25" text="September 25" type="calendarDay">
+			<outline created="Sat, 25 Sep 2021 15:19:36 GMT" text="Error reading an instant outline no longer deadly" type="outline">
+				<outline created="Sat, 25 Sep 2021 15:20:34 GMT" text="When opening an instant outline, if Drummer can't read the file, it would previously go ahead and open a tab, which didn't have a close box and couldn't be closed via the Close command in the File menu. Now it puts up a dialog saying it can't read the file and doesn't open a tab. "></outline>
+				</outline>
+			<outline created="Sat, 25 Sep 2021 16:09:52 GMT" text="Bookmarking individual items in instant outlines now works" type="outline">
+				<outline created="Sat, 25 Sep 2021 16:23:12 GMT" text="Suppose you want to remember a particular note in my Change Notes outline. "></outline>
+				<outline created="Sat, 25 Sep 2021 16:23:44 GMT" text="The natural thing to want to do is bookmark it. But it didn't work -- although Drummer did remember the cursor location in the bookmark, when you used the bookmark, it ignored the cursor.  "></outline>
+				<outline created="Sat, 25 Sep 2021 16:25:01 GMT" text="Now it not only remembers the cursor location, it uses it. ÝÄù¥"></outline>
+				</outline>
+			<outline created="Sat, 25 Sep 2021 16:31:11 GMT" text="Pointing into an outline from a URL" type="outline">
+				<outline created="Sat, 25 Sep 2021 16:37:22 GMT" text="Check out this &lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/45&quot;&gt;post&lt;/a&gt; on GitHub for a demo. " type="link" url="https://github.com/scripting/drummerTesting/issues/45"></outline>
+				</outline>
+			<outline created="Sat, 25 Sep 2021 16:26:23 GMT" text="Try not to copy/paste headlines you think might get bookmarked" type="outline">
+				<outline created="Sat, 25 Sep 2021 16:26:44 GMT" text="This is a general note for all people who create outlines that might be shared with others. "></outline>
+				<outline created="Sat, 25 Sep 2021 16:27:01 GMT" text="The bookmarks key off the &lt;i&gt;created&lt;/i&gt; attribute for the headline. "></outline>
+				<outline created="Sat, 25 Sep 2021 16:27:17 GMT" text="When you're writing in Drummer, it takes care of adding the &lt;i&gt;created&lt;/i&gt; atts automatically."></outline>
+				<outline created="Sat, 25 Sep 2021 16:27:38 GMT" text="Unless you create two headlines in the same second, they will all have different &lt;i&gt;created&lt;/i&gt; atts. "></outline>
+				<outline created="Sat, 25 Sep 2021 16:28:04 GMT" text="But if you were to copy a headline and paste it, that would create two headlines with the same &lt;i&gt;created&lt;/i&gt; att. "></outline>
+				<outline created="Sat, 25 Sep 2021 16:28:25 GMT" text="If someone bookmarks one of those headlines, they might not get back to it when they use the bookmark."></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 24 Sep 2021 16:19:09 GMT" name="24" text="September 24" type="calendarDay">
+			<outline created="Fri, 24 Sep 2021 20:37:30 GMT" text="Technography" type="outline">
+				<outline created="Fri, 24 Sep 2021 20:37:33 GMT" text="Anton did a bit of technography on a Zoom call the other day. "></outline>
+				<outline created="Fri, 24 Sep 2021 20:38:11 GMT" text="Someone has an outline open during a meeting, and while other people talk, takes notes, which are visible to everyone in the meeting. "></outline>
+				<outline created="Fri, 24 Sep 2021 20:38:36 GMT" text="We did this in the 80s at Living Videotext, back when meetings were held in conference rooms. "></outline>
+				<outline created="Fri, 24 Sep 2021 20:38:54 GMT" text="I've written about technography a &lt;a href=&quot;http://scripting.com/davenet/1999/01/29/microsoftXmlRpc.html#3&quot;&gt;few&lt;/a&gt; &lt;a href=&quot;http://scripting.com/2003/08.html#technographyAtBerkman&quot;&gt;times&lt;/a&gt; on my blog. "></outline>
+				<outline created="Fri, 24 Sep 2021 20:40:49 GMT" text="There was a &lt;a href=&quot;http://bloggercon.scripting.com/2006/06/21.html&quot;&gt;session&lt;/a&gt; on it, at BloggerCon IV."></outline>
+				<outline created="Fri, 24 Sep 2021 20:39:04 GMT" text="Anton, this is something you could run with, I'm sure you'd be &lt;i&gt;great&lt;/i&gt; at it. "></outline>
+				<outline created="Fri, 24 Sep 2021 20:41:23 GMT" text="I bet this is something our resident English professor, Ken Smith, might have some ideas about."></outline>
+				</outline>
+			<outline created="Fri, 24 Sep 2021 17:48:45 GMT" text="Thanks!" type="outline">
+				<outline created="Fri, 24 Sep 2021 17:48:47 GMT" text="I'm glad we had our first meetup. Lots of food for thought, and ideas for the next one. "></outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 23 Sep 2021 13:41:30 GMT" name="23" text="September 23" type="calendarDay">
+			<outline created="Thu, 23 Sep 2021 15:55:32 GMT" text="Zoom meetup tomorrow at 1PM Eastern" type="outline">
+				<outline created="Thu, 23 Sep 2021 15:55:42 GMT" text="I set up a Zoom meeting for tomorrow at 1PM Eastern."></outline>
+				<outline created="Thu, 23 Sep 2021 15:55:54 GMT" text="Here's the &lt;a href=&quot;https://us04web.zoom.us/j/76842561476?pwd=M2lEWE1Mak9BU1pFQ2I3amw4SWtXQT09&quot;&gt;invite&lt;/a&gt;. All testers are welcome. "></outline>
+				<outline created="Thu, 23 Sep 2021 15:56:05 GMT" text="It's a 1/2 hour meeting. As a Basic user I am limited in the number of participants and time, which is actually a good thing imho. "></outline>
+				<outline created="Thu, 23 Sep 2021 15:56:53 GMT" text="My goal for the meetup is to talk about next steps for Drummer, and answer questions people may have. "></outline>
+				<outline created="Thu, 23 Sep 2021 15:57:26 GMT" text="If this goes well, I'd like to do this regularly. ÝÄù¥"></outline>
+				</outline>
+			<outline created="Thu, 23 Sep 2021 13:41:31 GMT" text="Backing off tweets.opml" type="outline">
+				<outline created="Thu, 23 Sep 2021 13:41:38 GMT" text="I'm going to take the feature out of the first public release of Drummer. "></outline>
+				<outline created="Thu, 23 Sep 2021 13:41:54 GMT" text="It was a mistake to try something so ambitious this late in the game. "></outline>
+				<outline created="Thu, 23 Sep 2021 13:42:09 GMT" text="We'll come back to in a couple of months. "></outline>
+				<outline created="Thu, 23 Sep 2021 13:42:31 GMT" text="This happens sometimes, I wish it hadn't happened in view of the testers."></outline>
+				<outline created="Thu, 23 Sep 2021 13:42:50 GMT" text="You all have been wonderful, enthusiastic, and understanding. "></outline>
+				<outline created="Thu, 23 Sep 2021 13:43:01 GMT" text="I'll let you know when the new version is ready. "></outline>
+				</outline>
+			<outline created="Thu, 23 Sep 2021 14:30:59 GMT" text="Voice memo about today's decision" type="outline">
+				<outline created="Thu, 23 Sep 2021 14:31:09 GMT" text="http://scripting.com/2021/09/23/waitingForTheTweets.m4a" type="link" url="http://scripting.com/2021/09/23/waitingForTheTweets.m4a"></outline>
+				</outline>
+			<outline created="Thu, 23 Sep 2021 16:56:17 GMT" text="Archived August and July change notes" type="outline">
+				<outline created="Thu, 23 Sep 2021 16:56:33 GMT" text="I thought the Change Notes file was getting a big large, so I archved &lt;a href=&quot;http://scripting.com/publicfolder/drummer/changeNotesArchive/2021/08.opml&quot;&gt;August&lt;/a&gt; and &lt;a href=&quot;http://scripting.com/publicfolder/drummer/changeNotesArchive/2021/07.opml&quot;&gt;July&lt;/a&gt; into separate OPML files."></outline>
+				<outline created="Thu, 23 Sep 2021 17:00:40 GMT" text="The file size went from 141K to 65K. "></outline>
+				<outline created="Thu, 23 Sep 2021 16:56:58 GMT" text="The notes are still available in the main file, as &quot;includes&quot; -- at the bottom of the file. "></outline>
+				<outline created="Thu, 23 Sep 2021 16:58:42 GMT" text="To create an include node:">
+					<outline created="Thu, 23 Sep 2021 16:59:06 GMT" text="Copy the URL of the OPML file to the clipboard, "></outline>
+					<outline created="Thu, 23 Sep 2021 16:59:16 GMT" text="In Drummer, put the bar cursor on the headline you want to be the include node."></outline>
+					<outline created="Thu, 23 Sep 2021 16:59:30 GMT" text="Choose &lt;i&gt;Include OPML&lt;/i&gt; from the File menu."></outline>
+					<outline created="Thu, 23 Sep 2021 16:59:39 GMT" text="Paste the URL and click OK"></outline>
+					</outline>
+				<outline created="Thu, 23 Sep 2021 16:59:47 GMT" text="Test the include node by expanding it. You should see the content of the outline appear, as if it were part of the outline. "></outline>
+				</outline>
+			<outline created="Thu, 23 Sep 2021 16:30:17 GMT" text="Electric Drummer new release" type="outline">
+				<outline created="Thu, 23 Sep 2021 16:30:25 GMT" text="When you double-click on a link node, in E/D it opens in an external browser window. It previously would open in a window inside E/D. "></outline>
+				<outline created="Thu, 23 Sep 2021 17:18:11 GMT" text="tweets.opml functionality removed."></outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 21 Sep 2021 16:57:14 GMT" name="21" text="September 21" type="calendarDay">
+			<outline created="Tue, 21 Sep 2021 21:19:46 GMT" text="New Electric Drummer" type="outline">
+				<outline created="Tue, 21 Sep 2021 21:19:52 GMT" text="There's a new release, download from the link on the &lt;a href=&quot;http://docserver.scripting.com/drummer/electricDrummer.opml&quot;&gt;Docs page&lt;/a&gt; for E/D."></outline>
+				</outline>
+			<outline created="Tue, 21 Sep 2021 16:51:32 GMT" text="Found and fixed the &quot;Untitled&quot; problem" type="outline">
+				<outline created="Tue, 21 Sep 2021 16:51:44 GMT" text="How to reproduce the problem (before the fix)">
+					<outline created="Tue, 21 Sep 2021 16:51:52 GMT" text="In Twitter, post something new."></outline>
+					<outline created="Tue, 21 Sep 2021 16:52:03 GMT" text="Switch to Drummer. "></outline>
+					<outline created="Tue, 21 Sep 2021 16:52:07 GMT" text="Be sure tweets.opml is open, but not active."></outline>
+					<outline created="Tue, 21 Sep 2021 16:52:22 GMT" text="Reload the page, to force a scan."></outline>
+					<outline created="Tue, 21 Sep 2021 16:52:30 GMT" text="The title of the tab with tweets.opml will change to Untitled."></outline>
+					<outline created="Tue, 21 Sep 2021 16:52:54 GMT" text="That is a rock-solid way to reproduce, it'll happen every time. "></outline>
+					</outline>
+				<outline created="Tue, 21 Sep 2021 16:53:46 GMT" text="The problem">
+					<outline created="Tue, 21 Sep 2021 16:53:07 GMT" text="It appears to the user that an outline in an inactive tab is actually present in some way, but it isn't. The outline isn't loaded until you activate it. So the twitter.opml software has to first be sure the tab has been loaded before proceeding to add the tweets. It wasn't doing that."></outline>
+					<outline created="Tue, 21 Sep 2021 16:54:59 GMT" text="The reason it appeared that only the title was changing was that Drummer was reading all the tweets each time. So the new tweet would appear at the top of the outline, as you would expect. It looked like everything else about the outline was working, but in fact it was re-creating the whole outline every time. Not the way you want it to work! ÝÄù¥"></outline>
+					</outline>
+				<outline created="Tue, 21 Sep 2021 16:56:24 GMT" text="The fix">
+					<outline created="Tue, 21 Sep 2021 16:56:26 GMT" text="Required a new capability be added, to load up the outline without activating it."></outline>
+					</outline>
+				<outline created="Tue, 21 Sep 2021 16:56:49 GMT" text="Why this makes me happy">
+					<outline created="Tue, 21 Sep 2021 16:56:56 GMT" text="Next time I sit down to work I can create something new! "></outline>
+					</outline>
+				<outline created="Tue, 21 Sep 2021 16:58:33 GMT" text="Why the programmer made this mistake">
+					<outline created="Tue, 21 Sep 2021 16:58:41 GMT" text="He wrote the code, you'd think he'd remember how it works, but he didn't. This new way Drummer works was a month-long project to re-do how the tabs work, so you won't have to wait for all the outlines to load before you can use the one you want to work with. As my outlines were getting larger, this had become a serious usability issue. This &quot;corner-turn&quot; was done earlier this year, in April if I recall correctly. "></outline>
+					<outline created="Tue, 21 Sep 2021 17:00:44 GMT" text="Anyway, in the intervening months, I had just been using the software and had largely forgotten that it was just an illusion that all the outlines appear to be open even when only one or two are."></outline>
+					<outline created="Tue, 21 Sep 2021 17:01:28 GMT" text="The lesson: You have to pay close attention to everything when using or programming a computer. It was working fine. It was my understanding of the software that was incorrect. It tricked me in a fun kind of way. "></outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 20 Sep 2021 15:41:37 GMT" text="Quick video demo" type="outline">
+				<outline created="Mon, 20 Sep 2021 15:41:42 GMT" text="I was &lt;a href=&quot;https://www.youtube.com/watch?v=SI_dDa9ylag&quot;&gt;clicking around&lt;/a&gt; my tweets.opml file and wanted to share it with you guys. "></outline>
+				</outline>
+			<outline created="Mon, 20 Sep 2021 15:00:29 GMT" text="New verb" type="outline">
+				<outline created="Mon, 20 Sep 2021 15:00:34 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=op.insertInCalendar&quot;&gt;op.insertInCalendar&lt;/a&gt;"></outline>
+				</outline>
+			<outline created="Mon, 20 Sep 2021 13:55:34 GMT" text="tweets.opml" type="outline">
+				<outline created="Mon, 20 Sep 2021 13:55:47 GMT" text="fixed a bug, where if tweets.opml is not the active tab, and tweets that are in reply to other tweets in the outline are part of what's scanned, the replies will not be added to the outline. to be clear, this was not a problem if tweets.opml was the active outline at the time of the scan. "></outline>
+				<outline created="Mon, 20 Sep 2021 14:22:59 GMT" text="instead of creating a link node out of a tweet with a link, now we replace the bare t.co link with (link) with the text &quot;link&quot; which is hotted up so that when you click on it it takes you to that page. a &lt;a href=&quot;http://scripting.com/images/2021/09/20/tweetwithalink.png&quot;&gt;screen shot&lt;/a&gt; might illuminate."></outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 19 Sep 2021 16:59:06 GMT" name="19" text="September 19" type="calendarDay">
+			<outline created="Sun, 19 Sep 2021 16:46:24 GMT" text="New feature: tweets.opml" type="outline">
+				<outline created="Sun, 19 Sep 2021 17:05:40 GMT" text="Purpose">
+					<outline created="Sun, 19 Sep 2021 17:05:47 GMT" text="Using Twitter as part of your writing work. "></outline>
+					</outline>
+				<outline created="Sun, 19 Sep 2021 17:01:31 GMT" text="The use-case">
+					<outline created="Sun, 19 Sep 2021 17:06:00 GMT" text="You're out and about, and get an idea that belongs on the to-do list for your latest project. Open Twitter, post a note. When you get back to your desktop the note will already be in a Drummer outline, ready for you to act on it. It doesn't matter what kind of writer you are, whether you write for yourself, as a note-taker or designer for your workgroup, if you write docs, or a blog, novels or Pulitzer-winning news reports. If you are a writer and and a steady user of Twitter, and interested in tools for thought and outliners, this new Drummer feature, tweets.opml, is for you."></outline>
+					</outline>
+				<outline created="Sun, 19 Sep 2021 16:50:28 GMT" text="Getting started, basics">
+					<outline created="Sun, 19 Sep 2021 16:46:49 GMT" text="Open tweets.opml from the &lt;i&gt;Special files&lt;/i&gt; sub-menu of the File menu. "></outline>
+					<outline created="Sun, 19 Sep 2021 16:48:01 GMT" text="When this file is open, Drummer will automatically look for new tweets and organize them in a calendar structure."></outline>
+					<outline created="Sun, 19 Sep 2021 16:48:37 GMT" text="This is when Drummer does a scan:">
+						<outline created="Sun, 19 Sep 2021 16:48:52 GMT" text="When you open the file for the first time. "></outline>
+						<outline created="Sun, 19 Sep 2021 16:49:01 GMT" text="When you start or reload Drummer, so reloading is a way to cause a scan. "></outline>
+						<outline created="Sun, 19 Sep 2021 16:49:20 GMT" text="Every five minutes, but not while you're typing. "></outline>
+						</outline>
+					<outline created="Sun, 19 Sep 2021 16:49:30 GMT" text="If you want Drummer to not scan, close tweets.opml. "></outline>
+					<outline created="Sun, 19 Sep 2021 16:49:43 GMT" text="It does not have to be the active tab for a scan to take place, another tab can be in front."></outline>
+					<outline created="Sun, 19 Sep 2021 16:55:02 GMT" text="When there are new tweets, the file icon turns green, as with Instant Outlines. "></outline>
+					</outline>
+				<outline created="Sun, 19 Sep 2021 16:50:44 GMT" text="Rules for tweets.opml">
+					<outline created="Sun, 19 Sep 2021 16:50:51 GMT" text="You can make the tweets.opml outline public and share it. "></outline>
+					<outline created="Sun, 19 Sep 2021 16:51:13 GMT" text="You can edit it, reorganize it, the tweets don't have to stay in the calendar structure. "></outline>
+					<outline created="Sun, 19 Sep 2021 16:51:29 GMT" text="You can copy from tweets.opml to other outlines. "></outline>
+					<outline created="Sun, 19 Sep 2021 16:51:46 GMT" text="You can bookmark tweets, and move them around in tweets.opml and they will still be found. "></outline>
+					<outline created="Sun, 19 Sep 2021 16:52:23 GMT" text="It understands threads, so tweets that are in reply to another tweet, are stored in an outline hierarchy."></outline>
+					<outline created="Sun, 19 Sep 2021 16:53:03 GMT" text="It downloads your tweets, no one else's. "></outline>
+					<outline created="Sun, 19 Sep 2021 19:31:05 GMT" text="If a tweet has a link, the headline it creates is a link not a tweet. Double-clicking opens the link in the browser."></outline>
+					</outline>
+				<outline created="Sun, 19 Sep 2021 16:53:37 GMT" text="Twitter is now part of outline.land">
+					<outline created="Sun, 19 Sep 2021 16:53:43 GMT" text="You can now think of Twitter as part of your writing system, because anything you write will automatically be the Drummer system."></outline>
+					</outline>
+				<outline created="Sun, 19 Sep 2021 17:02:16 GMT" text="How to opt out">
+					<outline created="Sun, 19 Sep 2021 17:02:19 GMT" text="Close tweets.opml."></outline>
+					</outline>
+				<outline created="Sun, 19 Sep 2021 17:33:14 GMT" text="A place to comment">
+					<outline created="Sun, 19 Sep 2021 22:45:31 GMT" text="Help out by reporting whether it works on your system, either way, I need to know. ÝÄù¥ "></outline>
+					<outline created="Sun, 19 Sep 2021 17:33:17 GMT" text="&lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/42&quot;&gt;Did it work&lt;/a&gt;? "></outline>
+					</outline>
+				</outline>
+			<outline created="Sun, 19 Sep 2021 17:15:06 GMT" text="Electric Drummer" type="outline">
+				<outline created="Sun, 19 Sep 2021 17:15:13 GMT" text="Download the latest release via the &lt;a href=&quot;http://docserver.scripting.com/drummer/electricDrummer.opml&quot;&gt;Electric Drummer docs&lt;/a&gt; page. "></outline>
+				</outline>
+			<outline created="Sun, 19 Sep 2021 16:59:07 GMT" text="outline.land" type="outline">
+				<outline created="Sun, 19 Sep 2021 16:59:24 GMT" text="I just wrote outline.land in some docs, so I had to buy the name.">
+					<outline created="Sun, 19 Sep 2021 16:59:46 GMT" text="http://outline.land/" type="link" url="http://outline.land/"></outline>
+					</outline>
+				<outline created="Sun, 19 Sep 2021 17:09:55 GMT" text="My name is Dave and I'm a domain addict."></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 17 Sep 2021 16:52:34 GMT" name="17" text="September 17" type="calendarDay">
+			<outline created="Fri, 17 Sep 2021 16:59:34 GMT" text="New feature coming" type="outline">
+				<outline created="Fri, 17 Sep 2021 16:59:41 GMT" text="Not quite at the level of the blogging feature, but close. "></outline>
+				<outline created="Fri, 17 Sep 2021 16:59:50 GMT" text="I have the software working, still want to do some tuning up. "></outline>
+				<outline created="Fri, 17 Sep 2021 17:00:01 GMT" text="So expect it tomorrow or Sunday, possibly Monday."></outline>
+				</outline>
+			<outline created="Fri, 17 Sep 2021 17:00:33 GMT" text="New Electric Drummer with bugfix" type="outline">
+				<outline created="Fri, 17 Sep 2021 17:08:40 GMT" text="Anton reported a serious file saving bug in Electric Drummer. "></outline>
+				<outline created="Fri, 17 Sep 2021 17:08:53 GMT" text="It was easy to find and easy to fix. He was using the product in a way that I never do. Which is one reason why testers are so valuable."></outline>
+				<outline created="Fri, 17 Sep 2021 17:09:23 GMT" text="The important difference is he used it without logging in, which is fine in E/D as long as you don't want to edit public files. "></outline>
+				<outline created="Fri, 17 Sep 2021 17:09:59 GMT" text="The new version is linked to from the &lt;a href=&quot;http://docserver.scripting.com/drummer/electricDrummer.opml&quot;&gt;docs page&lt;/a&gt; for Electric Drummer. I checked the link and it has the correct version. "></outline>
+				<outline created="Fri, 17 Sep 2021 17:10:46 GMT" text="&lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/41#issuecomment-921828723&quot;&gt;Please report&lt;/a&gt; whether it works or not, esp in re the problem Anton reported. "></outline>
+				</outline>
+			<outline created="Fri, 17 Sep 2021 16:52:35 GMT" text="New verb" type="outline">
+				<outline created="Fri, 17 Sep 2021 16:52:40 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=http.derefUrl&quot;&gt;http.derefUrl&lt;/a&gt;"></outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 16 Sep 2021 13:20:14 GMT" name="16" text="September 16" type="calendarDay">
+			<outline created="Thu, 16 Sep 2021 13:14:08 GMT" text="Have you seen problems saving in Electric Drummer?" type="outline">
+				<outline created="Thu, 16 Sep 2021 13:14:18 GMT" text="It seems such a big thing that for sure I would have gotten a lot of reports on this by now, but I need to ask."></outline>
+				<outline created="Thu, 16 Sep 2021 13:14:34 GMT" text="It was reported yesterday, and I want have an idea if it's an isolated problem, or not. I find here that E/D is perfectly reliable at saving, I've been using it steadily since May. "></outline>
+				<outline created="Thu, 16 Sep 2021 13:15:11 GMT" text="If you've seen this please post a comment in &lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/41#issuecomment-920517409&quot;&gt;this thread&lt;/a&gt;."></outline>
+				</outline>
+			<outline created="Thu, 16 Sep 2021 13:00:28 GMT" text="Remember to look for errors in JavaScript console" type="outline">
+				<outline created="Thu, 16 Sep 2021 13:01:01 GMT" text="When reporting a problem it's important to look in the JavaScript console to see if there was a program error that might have been the source of the problem. ">
+					<outline created="Thu, 16 Sep 2021 13:03:46 GMT" text="In Chrome on the desktop, the command is in the Developer sub-menu of the View menu. From there, click on Console. "></outline>
+					<outline created="Thu, 16 Sep 2021 13:05:14 GMT" text="In Electric Drummer, look in the Mac menubar, Window menu. "></outline>
+					</outline>
+				<outline created="Thu, 16 Sep 2021 13:05:11 GMT" text="Errors usually appear in red, but sometimes in black if they are code I put in the app to help diagnose problems. Usually it's pretty obvious when an error is being reported. "></outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 15 Sep 2021 14:22:12 GMT" name="15" text="September 15" type="calendarDay">
+			<outline created="Wed, 15 Sep 2021 16:15:42 GMT" text="Tweet nodes" type="outline">
+				<outline created="Wed, 15 Sep 2021 16:15:49 GMT" text="Headlines with a &lt;i&gt;type&lt;/i&gt; attribute of &quot;tweet&quot; now have an icon to go with it."></outline>
+				<outline created="Wed, 15 Sep 2021 16:16:03 GMT" text="This is a feature I turned off in June, because outlines with lots of tweets don't look that great, but I'm swinging the other way now. You need a visual clue that a headline represents a tweet, because a lot of power comes with that. "></outline>
+				</outline>
+			<outline created="Wed, 15 Sep 2021 15:49:50 GMT" text="The big + icon" type="outline">
+				<outline created="Wed, 15 Sep 2021 15:49:55 GMT" text="I made a change to how it works internally that is intended to be fully transparent, i.e. no change in behavior. So if you see it fail in some manner, it's not your imagination, it's something to try again and see if it's repeatable."></outline>
+				</outline>
+			<outline created="Wed, 15 Sep 2021 14:02:25 GMT" text="daveappserver" type="outline">
+				<outline created="Wed, 15 Sep 2021 14:02:31 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=file.writeWholeFile&quot;&gt;file.writeWholeFile&lt;/a&gt; verb is supposed to automatically create the folder to contain the file being written but it wasn't doing it. "></outline>
+				<outline created="Wed, 15 Sep 2021 14:23:26 GMT" text="This code should create the private sub-folder &quot;code&quot; because you wrote a file into it. ">
+					<outline created="Wed, 15 Sep 2021 14:23:02 GMT" text="file.writeWholeFile (&quot;code/alert.js&quot;, &quot;dialog.alert ('Yo')&quot;) ">
+						<outline created="Wed, 15 Sep 2021 14:25:10 GMT" isComment="true" text="dialog.alert ('Yo')"></outline>
+						</outline>
+					</outline>
+				<outline created="Wed, 15 Sep 2021 14:24:28 GMT" text="BTW, a bonus for people who are reading this...">
+					<outline created="Wed, 15 Sep 2021 14:24:38 GMT" text="You could run that script this way:">
+						<outline created="Wed, 15 Sep 2021 14:24:46 GMT" text="drummer.runScript (file.readWholeFile (&quot;code/alert.js&quot;))"></outline>
+						</outline>
+					<outline created="Wed, 15 Sep 2021 14:25:20 GMT" text="You could also put that under an icon."></outline>
+					</outline>
+				<outline created="Wed, 15 Sep 2021 14:25:38 GMT" text="Starting to piece together the top level scripting culture in Drummer. ">
+					<outline created="Wed, 15 Sep 2021 14:25:51 GMT" text="I was wondering if all that would work, and with this fix, it does."></outline>
+					</outline>
+				</outline>
+			</outline>
+		<outline created="Tue, 14 Sep 2021 11:56:21 GMT" name="14" text="September 14" type="calendarDay">
+			<outline created="Tue, 14 Sep 2021 16:31:27 GMT" text="New E/D release with bug fixes" type="outline">
+				<outline created="Tue, 14 Sep 2021 16:31:52 GMT" text="Use the download link in the Electric Drummer docs. "></outline>
+				<outline created="Tue, 14 Sep 2021 16:32:18 GMT" text="It's important to verify the problems with enabling/disabling are resolved. "></outline>
+				<outline created="Tue, 14 Sep 2021 16:32:44 GMT" text="The changes here only affect the enabling and disabling, not the other issues that were reported."></outline>
+				</outline>
+			<outline created="Tue, 14 Sep 2021 15:52:22 GMT" text="Bug fix: Change in Scripts menu erases DW and Docs menus" type="outline">
+				<outline created="Tue, 14 Sep 2021 16:10:35 GMT" text="&lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/38#issuecomment-919062808&quot;&gt;Reported&lt;/a&gt; by Scott. "></outline>
+				<outline created="Tue, 14 Sep 2021 15:53:20 GMT" text="This should be fixed in the current Drummer release, will be in the next E/D build. "></outline>
+				<outline created="Tue, 14 Sep 2021 16:11:40 GMT" text="Please verify this now works. You should be able to make changes in the Scripts menu and &lt;i&gt;not&lt;/i&gt; lose the DW and Docs menus. "></outline>
+				</outline>
+			<outline created="Tue, 14 Sep 2021 11:45:55 GMT" text="bug reports" type="outline">
+				<outline created="Tue, 14 Sep 2021 11:45:57 GMT" text="&lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/38#issuecomment-919062808&quot;&gt;Scott&lt;/a&gt; found problem with menus disappearing after changing the Scripts menu. At first he thought it was E/D but the problem shows up in web Drummer too. This is going to be a new thing to look out for. Problems that are unique to one version or the other. The thing to know is that most of the code, except for dealing with files, are identical in the two products. That was one of the toughest parts of the project, coming up with an internal API that made that possible. In the previous product, LO2 and Electric Outliner did not share a common code base, which made maintenence so difficult it was better to completely reorganize the code. "></outline>
+				<outline created="Tue, 14 Sep 2021 11:46:48 GMT" text="&lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/41#issuecomment-918630601&quot;&gt;Allen&lt;/a&gt; noted that when you click on the name of the product in Electric Drummer, you are taken to a dysfunctional place. Another difference between the web and the desktop versions. "></outline>
+				<outline created="Tue, 14 Sep 2021 11:48:02 GMT" text="&lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/41#issuecomment-918722770&quot;&gt;Anton&lt;/a&gt; found chaos in the enabling of menus. It looks pretty bad, but I'm fairly sure it'll be straightforward to fix. I did an overhaul of how enabling and disabling works in the menus, and wasn't thinking about E/D, which has different rules. "></outline>
+				<outline created="Tue, 14 Sep 2021 11:52:26 GMT" text="The bug reports are getting good as people develop a sense of what to expect from the software, and we've learned how to communicate on this stuff. "></outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 13 Sep 2021 13:28:04 GMT" name="13" text="September 13" type="calendarDay">
+			<outline created="Mon, 13 Sep 2021 21:46:27 GMT" text="New verbs that convert from OPML text to a JavaScript object and back to OPML" type="outline">
+				<outline created="Mon, 13 Sep 2021 21:46:31 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=opml.parse&quot;&gt;opml.parse&lt;/a&gt;"></outline>
+				<outline created="Mon, 13 Sep 2021 21:46:33 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=opml.stringify&quot;&gt;opml.stringify&lt;/a&gt;"></outline>
+				</outline>
+			<outline created="Mon, 13 Sep 2021 21:19:29 GMT" text="How updates will work" type="outline">
+				<outline created="Mon, 13 Sep 2021 21:19:32 GMT" text="There will be updates to the web Drummer that will not immediately be reflected in Electric Drummer. As explained in the docs, all the code is baked into the download, not accessed over the web, as a security thing. So I don't anticipate releasing a new E/D every time there's an update to web Drummer. We'll figure out the right way to do it."></outline>
+				</outline>
+			<outline created="Mon, 13 Sep 2021 21:17:40 GMT" text="Thanks to Scott and Ken" type="outline">
+				<outline created="Mon, 13 Sep 2021 21:17:55 GMT" text="Thanks to Scott Hanson and Ken Smith for verifying that Electric Drummer installs correctly, and when it boots up it behaves like Drummer. "></outline>
+				<outline created="Mon, 13 Sep 2021 21:18:43 GMT" text="Scott also verified that realtime updates on the Change Notes outline get through as well. "></outline>
+				<outline created="Mon, 13 Sep 2021 22:05:17 GMT" text="Knowing that it installs on users' machines makes it possible for me to chart out my next moves, which I am doing."></outline>
+				</outline>
+			<outline created="Mon, 13 Sep 2021 13:28:05 GMT" text="Naming the language" type="outline">
+				<outline created="Mon, 13 Sep 2021 13:28:10 GMT" text="Right now the language in Drummer doesn't have a name, and that's starting to be a problem. "></outline>
+				<outline created="Mon, 13 Sep 2021 13:28:26 GMT" text="The language is an extended JavaScript. It does one very important thing that JavaScript doesn't, it generates code that makes synchronization automatic."></outline>
+				<outline created="Mon, 13 Sep 2021 13:29:39 GMT" text="The resulting code is so natural, a few people don't even notice it, and that's a good thing. "></outline>
+				<outline created="Mon, 13 Sep 2021 13:30:12 GMT" text="With Frontier we more or less punted on the name of the language. We hired a writer, Dan Shafer, to write the docs, and he couldn't do it without a name for the language. The programmers were busy working on other things, so I told him to just pick a name and go with it, thinking there would be a moment when we could change it if we came up with something better. We didn't. The name he came up with was UserTalk. I hated that name. It means nothing, and it's a lie. Programming isn't for people we think of as users. It's almost a definition of what a user is, someone who doesn't program. "></outline>
+				<outline created="Mon, 13 Sep 2021 13:31:59 GMT" text="This language is far from the only language that generates JavaScript code. Because of its ubiquity, lots of language developers take the route of generating JavaScript code from their language compiler. Here's a &lt;a href=&quot;https://medium.com/frontend-development-with-js/why-preprocessors-are-so-important-63b4667accf5&quot;&gt;post&lt;/a&gt; about pre-processing for JavaScript. "></outline>
+				<outline created="Mon, 13 Sep 2021 13:33:52 GMT" flBulletedSubs="true" text="Here's some of my thinking about names --">
+					<outline created="Mon, 13 Sep 2021 13:34:07 GMT" text="Cmd-/ -- pronouced &quot;command slash.&quot; Because that's how you run scripts in the outliner. I have a &lt;a href=&quot;http://cmdslash.com/&quot;&gt;domain&lt;/a&gt; reserved for this. "></outline>
+					<outline created="Mon, 13 Sep 2021 13:35:52 GMT" text="javascriptscript -- imho javascript is not a scripting language at all, it's a system language. Like C, Pascal, other algol-like languages. The thing that prevents it from being a scripting language is the thing that this language adds. "></outline>
+					<outline created="Mon, 13 Sep 2021 13:37:25 GMT" text="DrummerScript or DrummerTalk or something with Drummer in its name. I like the idea of binding the name to the outliner. Even though you hardly notice it when programming in Drummer, the fact that the default editor for the language is an outliner is pretty innovative (for most people, in Frontier we were doing it a depressingly long time ago)."></outline>
+					<outline created="Mon, 13 Sep 2021 13:38:48 GMT" text="Or none of these, something altogether different. "></outline>
+					</outline>
+				<outline created="Mon, 13 Sep 2021 22:09:16 GMT" text="Bonus link, from 2003, &lt;a href=&quot;http://scripting.com/2003/08/02.html#howToNameAProduct&quot;&gt;How to name a product&lt;/a&gt;. "></outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 12 Sep 2021 14:22:53 GMT" name="12" text="September 12" type="calendarDay">
+			<outline created="Sun, 12 Sep 2021 19:15:17 GMT" text="Electric Drummer available now" type="outline">
+				<outline created="Sun, 12 Sep 2021 19:15:25 GMT" text="There is a download link in the &lt;a href=&quot;http://docserver.scripting.com/drummer/electricDrummer.opml&quot;&gt;Electric Drummer docs&lt;/a&gt; page. "></outline>
+				<outline created="Sun, 12 Sep 2021 19:15:39 GMT" text="You may find that Mac OS refuses to run the app. But you can tell it to run it anyway. Open the System Preferences app, then open the Security panel. There will be a place where you can decide to open Electric Drummer. You may get a few more dialogs confirming you want to run the app, or open a file. "></outline>
+				<outline created="Sun, 12 Sep 2021 19:17:21 GMT" text="Please read the docs. Certainly read them before reporting problems. ÝÄù¥ "></outline>
+				<outline created="Sun, 12 Sep 2021 19:18:01 GMT" text="Here's a &lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/41&quot;&gt;special page&lt;/a&gt; for comments and questions about Electric Drummer."></outline>
+				<outline created="Sun, 12 Sep 2021 22:05:30 GMT" text="Also, if it basically works, it would be helpful to hear that. "></outline>
+				</outline>
+			<outline created="Sun, 12 Sep 2021 15:37:40 GMT" text="drummer.land" type="outline">
+				<outline created="Sun, 12 Sep 2021 15:37:46 GMT" text="I've been putting off buying a domain for Drummer, preferring to put most of it under scripting.com. But there are some things that will need their own sub-domains, so they can be moved. scripting.com obviously is pretty immovable and it would make no sense to move it when only a small part of it needs to be somewhere else. Planning for the future.."></outline>
+				<outline created="Sun, 12 Sep 2021 15:41:11 GMT" text="I found myself typing the term &lt;i&gt;drummer land&lt;/i&gt; again into some text I was writing, so none of the other possible choices made any sense. and of course the .com, .org, .net etc names are taken. And I like the idea of &lt;a href=&quot;http://drummer.land/&quot;&gt;drummer.land&lt;/a&gt;. ÝÄù¥"></outline>
+				</outline>
+			<outline created="Sun, 12 Sep 2021 14:22:54 GMT" text="Query about the extended Markdown some outliners use" type="outline">
+				<outline created="Sun, 12 Sep 2021 14:23:04 GMT" text="A (public) braintrust &lt;a href=&quot;https://github.com/scripting/Scripting-News/issues/223&quot;&gt;query&lt;/a&gt;. Starting to think about import/export to gain some level op interop with Markdown-based outliners."></outline>
+				<outline created="Sun, 12 Sep 2021 15:28:31 GMT" text="A LogSeq user is pitching in. Lots of questions about what's software-generated vs what the user enters. "></outline>
+				<outline created="Sun, 12 Sep 2021 15:28:58 GMT" text="Their OPML import does not preserve head-level or item-level attributes. So whatever we got back from LogSeq after it was edited would be problematic in Drummer-land. "></outline>
+				</outline>
+			</outline>
+		<outline created="Sat, 11 Sep 2021 20:47:20 GMT" name="11" text="September 11" type="calendarDay">
+			<outline created="Sat, 11 Sep 2021 20:47:21 GMT" text="Electric Drummer" type="outline">
+				<outline created="Sat, 11 Sep 2021 20:48:07 GMT" text="It's a desktop version of Drummer that runs on the Mac.  "></outline>
+				<outline created="Sat, 11 Sep 2021 20:48:59 GMT" text="I've been using Electric Drummer since May to write Scripting News and all the docs for Drummer and other stuff. It's as solid as the web Drummer, and it does more. And it's different because all your files are on your local computer, and can easily be accessed by other software. "></outline>
+				<outline created="Sat, 11 Sep 2021 20:48:14 GMT" text="I hope to have something for you to download tomorrow or Monday. The docs are written, and I believe the software is ready to go, but I want to do a fresh review in the morning and probably rewrite the top-level stuff, explaining how it's different from the web version. "></outline>
+				<outline created="Sat, 11 Sep 2021 20:51:00 GMT" text="It will only be available for the Mac, but it should be possible to create Windows and Linux versions. "></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 10 Sep 2021 12:47:42 GMT" name="10" text="September 10" type="calendarDay">
+			<outline created="Fri, 10 Sep 2021 14:23:23 GMT" text="Fixing up the About page on blogs" type="outline">
+				<outline created="Fri, 10 Sep 2021 14:23:29 GMT" text="Two changes">
+					<outline created="Fri, 10 Sep 2021 14:23:35 GMT" text="You can now use the glossary specified in the head-level &lt;i&gt;urlGlossary&lt;/i&gt; att in your blog in the About page. "></outline>
+					<outline created="Fri, 10 Sep 2021 14:24:00 GMT" text="You can now use &lt;a href=&quot;https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#smileys--emotion&quot;&gt;emoji short codes&lt;/a&gt; in the About page. "></outline>
+					<outline created="Fri, 10 Sep 2021 14:24:15 GMT" text="In the About page on the cluelessnewbie blog you can see two examples of glossary references, the Drummer link and the picture of Curly."></outline>
+					<outline created="Fri, 10 Sep 2021 14:24:45 GMT" text="The emoji smiley is specified with the :smile: short code. (This will look weird in the email and in the changes blog.)"></outline>
+					</outline>
+				</outline>
+			<outline created="Fri, 10 Sep 2021 12:47:43 GMT" text="What I've been &quot;working&quot; on" type="outline">
+				<outline created="Fri, 10 Sep 2021 12:47:50 GMT" text="I want to make it possible for you to upload images to the Drummer server."></outline>
+				<outline created="Fri, 10 Sep 2021 12:48:02 GMT" text="I thought it would be easy, but I forgot what a mess this is in browsers and on the server. "></outline>
+				<outline created="Fri, 10 Sep 2021 12:48:20 GMT" text="No one ever cared about making this easy, and it's a dark maze with lots of paths in it, and so far none of them lead to the pot of gold."></outline>
+				<outline created="Fri, 10 Sep 2021 12:48:55 GMT" text="I was going to move on to other things this morning, but I'm not one of those people who gives up easily. ÝÄù¥"></outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 09 Sep 2021 14:06:08 GMT" name="09" text="September 9" type="calendarDay">
+			<outline created="Thu, 09 Sep 2021 19:46:00 GMT" text="Checking in.." type="outline">
+				<outline created="Thu, 09 Sep 2021 19:46:13 GMT" text="It's been a few days since I sent out a Drummer update. "></outline>
+				<outline created="Thu, 09 Sep 2021 19:46:26 GMT" text="All is good here. It's been a slow week, so not much to report. "></outline>
+				<outline created="Thu, 09 Sep 2021 19:46:49 GMT" text="As they say.."></outline>
+				<outline created="Thu, 09 Sep 2021 19:46:52 GMT" text="Still diggin! ÝÄù½"></outline>
+				</outline>
+			<outline created="Thu, 09 Sep 2021 14:06:09 GMT" text="Changes to Twitter verb set" type="outline">
+				<outline created="Thu, 09 Sep 2021 14:06:16 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=twitter.getUserInfo&quot;&gt;twitter.getUserInfo&lt;/a&gt; has a new property in the returned stuct, urlProfileImage. "></outline>
+				<outline created="Thu, 09 Sep 2021 14:08:41 GMT" text="&lt;a href=&quot;https://docserver.scripting.com/?verb=twitter.getRawUserInfo&quot;&gt;twitter.getRawUserInfo&lt;/a&gt; is a new verb. It returns to the caller exactly what Twitter returns when we ask for info about a user. "></outline>
+				<outline created="Thu, 09 Sep 2021 14:14:25 GMT" text="Added in response to a &lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/40#issue-991675149&quot;&gt;query&lt;/a&gt; from John Gruber."></outline>
+				</outline>
+			<outline created="Wed, 08 Sep 2021 18:54:42 GMT" text="New base64 verbs." type="outline">
+				<outline created="Wed, 08 Sep 2021 18:54:48 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=base64.encode&quot;&gt;base64.encode&lt;/a&gt;"></outline>
+				<outline created="Wed, 08 Sep 2021 18:54:54 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=base64.decode&quot;&gt;base64.decode&lt;/a&gt;"></outline>
+				</outline>
+			<outline created="Tue, 07 Sep 2021 16:41:34 GMT" text="Docs menu changes/removals" type="outline">
+				<outline created="Tue, 07 Sep 2021 16:41:38 GMT" text="Looking at the bottom of the Docs menu.">
+					<outline created="Tue, 07 Sep 2021 16:41:46 GMT" text="Version notes -- gone.">
+						<outline created="Tue, 07 Sep 2021 16:46:24 GMT" text="Change Notes is doing the job."></outline>
+						</outline>
+					<outline created="Tue, 07 Sep 2021 16:42:51 GMT" text="Verb docs -- gone.">
+						<outline created="Tue, 07 Sep 2021 16:46:31 GMT" text="Look up in DocServer works fine! :-)"></outline>
+						</outline>
+					<outline created="Tue, 07 Sep 2021 16:45:15 GMT" text="Questions -- stays -- linked to a new item in the Drummer testing repo."></outline>
+					<outline created="Tue, 07 Sep 2021 16:45:33 GMT" text="Using the outliner should be at the top of the menu, it comes before all the other docs, obviously."></outline>
+					</outline>
+				<outline created="Tue, 07 Sep 2021 16:49:51 GMT" text="A &lt;a href=&quot;http://scripting.com/images/2021/09/07/docsMenuScreenShot.png&quot;&gt;screen shot&lt;/a&gt; of the Docs menu for future reference. "></outline>
+				</outline>
+			<outline created="Tue, 07 Sep 2021 16:28:29 GMT" text="opml.attributes verbs complete" type="outline">
+				<outline created="Tue, 07 Sep 2021 16:28:43 GMT" text="These verbs operate on the head-level attributes for all OPML files in the user's Drummer account. "></outline>
+				<outline created="Tue, 07 Sep 2021 16:29:23 GMT" text="You can get and set the values of individual attributes or all attributes for a file. "></outline>
+				<outline created="Tue, 07 Sep 2021 16:29:55 GMT" text="They work for any file, not just files that are open in tabs. "></outline>
+				<outline created="Tue, 07 Sep 2021 16:30:24 GMT" text="For example, if you wanted to set the copyright attribute on your blog from a script, you'd write:">
+					<outline created="Tue, 07 Sep 2021 16:30:43 GMT" text="op.attributes.setOne (&quot;blog.opml&quot;, &quot;copyright&quot;, &quot;Copyright 2021 Clueless Newbie.&quot;)"></outline>
+					</outline>
+				<outline created="Tue, 07 Sep 2021 16:31:37 GMT" text="The verbs are documented in DocServer of course. ">
+					<outline created="Tue, 07 Sep 2021 16:31:42 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=opml.attributes.getOne&quot;&gt;opml.attributes.getOne&lt;/a&gt;"></outline>
+					<outline created="Tue, 07 Sep 2021 16:31:42 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=opml.attributes.getAll&quot;&gt;opml.attributes.getAll&lt;/a&gt;"></outline>
+					<outline created="Tue, 07 Sep 2021 16:31:42 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=opml.attributes.setOne&quot;&gt;opml.attributes.setOne&lt;/a&gt;"></outline>
+					<outline created="Tue, 07 Sep 2021 16:31:42 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=opml.attributes.setAll&quot;&gt;opml.attributes.setAll&lt;/a&gt;"></outline>
+					<outline created="Tue, 07 Sep 2021 16:31:42 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=opml.attributes.addGroup&quot;&gt;opml.attributes.addGroup&lt;/a&gt;"></outline>
+					<outline created="Tue, 07 Sep 2021 16:31:42 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=opml.attributes.deleteOne&quot;&gt;opml.attributes.deleteOne&lt;/a&gt;"></outline>
+					<outline created="Tue, 07 Sep 2021 16:31:42 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=opml.attributes.makeEmpty&quot;&gt;opml.attributes.makeEmpty&lt;/a&gt;"></outline>
+					<outline created="Tue, 07 Sep 2021 16:31:42 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/?verb=opml.attributes.exists&quot;&gt;opml.attributes.exists&lt;/a&gt;"></outline>
+					</outline>
+				</outline>
+			<outline created="Mon, 06 Sep 2021 12:35:01 GMT" text="Are you using Drummer with Twitter?" type="outline">
+				<outline created="Mon, 06 Sep 2021 12:35:04 GMT" flBulletedSubs="true" text="I want to call your attention to a very useful Drummer feature re Twitter."></outline>
+				<outline created="Mon, 06 Sep 2021 12:35:20 GMT" text="You can write a tweet in a headline. Just click the Twitter icon in the left margin and off it goes to Twitter. The headline then acts as a pointer to the tweet. If it's published as part of a blog, the headline has the tweet attached. "></outline>
+				<outline created="Thu, 09 Sep 2021 19:55:58 GMT" text="Here's an &lt;a href=&quot;http://scripting.com/2021/09/03/172320.html?title=weHaveToFightAtSomePoint&quot;&gt;example&lt;/a&gt; of a post where every paragraph is a tweet."></outline>
+				<outline created="Thu, 09 Sep 2021 19:57:07 GMT" text="More info about this feature in the &lt;a href=&quot;http://docserver.scripting.com/drummer/iconbar.opml#1630706852000&quot;&gt;iconbar docs&lt;/a&gt;. "></outline>
+				<outline created="Mon, 06 Sep 2021 12:36:23 GMT" text="Even better, if you have a structure of tweets they go to Twitter as a thread. "></outline>
+				<outline created="Mon, 06 Sep 2021 12:36:40 GMT" text="The idea of connecting an outliner with Twitter is new for most people. "></outline>
+				<outline created="Mon, 06 Sep 2021 12:37:36 GMT" text="If you use this feature to post to Twitter, please post a link to the tweet in &lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/34&quot;&gt;this thread&lt;/a&gt;?"></outline>
+				</outline>
+			</outline>
+		<outline created="Mon, 06 Sep 2021 12:35:00 GMT" name="06" text="September 6" type="calendarDay">
+			<outline created="Mon, 06 Sep 2021 21:07:25 GMT" text="A light day, it's a national holiday in the US" type="outline"></outline>
+			<outline created="Mon, 06 Sep 2021 14:30:17 GMT" text="This just worked" type="outline">
+				<outline created="Mon, 06 Sep 2021 14:30:25 GMT" text="Ask a friend who's a JavaScript dev why this is interesting. "></outline>
+				<outline created="Mon, 06 Sep 2021 14:30:21 GMT" text="opml.attributes.getOne (&quot;tmp.opml&quot;, &quot;name&quot;) + &quot; is &quot; + opml.attributes.getOne (&quot;tmp.opml&quot;, &quot;age&quot;) + &quot; years old.&quot;"></outline>
+				<outline created="Mon, 06 Sep 2021 14:30:50 GMT" text="Each of the two calls are implemented on a server, btw."></outline>
+				</outline>
+			<outline created="Mon, 06 Sep 2021 15:44:49 GMT" text="I considered changing the functionality of the Eye icon" type="outline">
+				<outline created="Mon, 06 Sep 2021 21:05:18 GMT" text="But I reconsidered and left it as it was. "></outline>
+				<outline created="Mon, 06 Sep 2021 15:44:59 GMT" text="If the bar cursor headline points to a tweet, Drummer opens it in the browser. "></outline>
+				<outline created="Mon, 06 Sep 2021 15:45:18 GMT" text="The eye is like &quot;Undo&quot; -- the user is saying to the software &quot;you figure out what this means.&quot;"></outline>
+				<outline created="Mon, 06 Sep 2021 21:05:51 GMT" text="So when the bar cursor is pointing at a tweet it opens the tweet in a browser. I imagine other types will be treated this way in the future. "></outline>
+				<outline created="Mon, 06 Sep 2021 21:06:19 GMT" text="If there's nothing special about the bar cursor headline, we look at the &lt;i&gt;urlPublic&lt;/i&gt; attribute at the head-level, and if it's there, open its URL."></outline>
+				<outline created="Mon, 06 Sep 2021 21:06:51 GMT" text="The feature is explained in the Iconbar doc. "></outline>
+				</outline>
+			<outline created="Mon, 06 Sep 2021 13:45:08 GMT" text="The Eye icon and View OPML in Electric Drummer" type="outline">
+				<outline created="Mon, 06 Sep 2021 13:45:21 GMT" text="Electric Drummer is the desktop version of Drummer, in development. It's not in testing yet."></outline>
+				<outline created="Mon, 06 Sep 2021 13:47:49 GMT" text="There was some confusion in Electric Drummer about what the View OPML command in the File menu should do. Since the files in E/D are on your local hard drive, the correct answer (or so it seems) is to open the file itself. This has an unusual effect on my machine, because now Viewing OPML opens Frontier which is configured (somehow, I forget how) to open files ending with a .opml extension. I can live with this. On your machine I hope it will open in the browser. Since at this time I am the only user of E/D it'll take some time to find out. "></outline>
+				</outline>
+			</outline>
+		<outline created="Sun, 05 Sep 2021 17:17:51 GMT" name="05" text="September 5" type="calendarDay">
+			<outline created="Mon, 06 Sep 2021 01:09:58 GMT" text="Two new verbs" type="outline">
+				<outline created="Mon, 06 Sep 2021 01:13:29 GMT" text="The opml.* verbs operate on an OPML file, when you're setting the attributes, you're setting the head-level atts for the file. "></outline>
+				<outline created="Mon, 06 Sep 2021 01:16:14 GMT" text="The new verbs -- ">
+					<outline created="Mon, 06 Sep 2021 01:10:08 GMT" text="opml.attributes.getAll " type="link" url="http://docserver.scripting.com/?verb=opml.attributes.setAll"></outline>
+					<outline created="Mon, 06 Sep 2021 01:10:08 GMT" text="opml.attributes.setAll " type="link" url="http://docserver.scripting.com/?verb=opml.attributes.setAll"></outline>
+					</outline>
+				<outline created="Mon, 06 Sep 2021 01:13:20 GMT" text="Those are the core verbs, the rest will come tomorrow."></outline>
+				<outline created="Mon, 06 Sep 2021 01:13:55 GMT" text="This is definitely something you want to be able to do from a script."></outline>
+				<outline created="Mon, 06 Sep 2021 01:14:04 GMT" text="It doesn't matter if the file is open or not, the code takes care of that."></outline>
+				<outline created="Mon, 06 Sep 2021 01:16:43 GMT" text="Also doesn't matter if it's public or private, it finds the file and changes the atts. "></outline>
+				</outline>
+			<outline created="Sun, 05 Sep 2021 17:18:22 GMT" text="First draft of the &lt;a href=&quot;http://docserver.scripting.com/drummer/iconbar.opml&quot;&gt;docs for the iconbar&lt;/a&gt;. " type="outline"></outline>
+			</outline>
+		<outline created="Sat, 04 Sep 2021 14:33:58 GMT" name="04" text="September 4" type="calendarDay">
+			<outline created="Sat, 04 Sep 2021 14:33:59 GMT" text="Change notes is now a blog too" type="outline">
+				<outline created="Sat, 04 Sep 2021 14:35:17 GMT" text="It came together remarkably easily, the hardest part was figuring out where to put it. "></outline>
+				<outline created="Sat, 04 Sep 2021 14:34:25 GMT" text="&lt;a href=&quot;http://scripting.com/drummer/blog/&quot;&gt;http://scripting.com/drummer/blog/&lt;/a&gt;"></outline>
+				<outline created="Sat, 04 Sep 2021 14:53:52 GMT" text="I realized the immediate need for it when a newbie asked for info that was in the change notes outline. The instructions for finding the info were awkward. Now it'll be possible to provide an URL. Much easier."></outline>
+				<outline created="Sat, 04 Sep 2021 21:50:41 GMT" text="An upgrade in developer-user communication. "></outline>
+				</outline>
+			<outline created="Sat, 04 Sep 2021 16:34:05 GMT" text="Scott Hanson is running his own DrummerCMS" type="outline">
+				<outline created="Sat, 04 Sep 2021 16:34:15 GMT" text="He explains how he did it &lt;a href=&quot;http://oldschool.scripting.com/ScottHansonDE/2021/09/04/134351.html?title=drummercmsOnLocalhost&quot;&gt;here&lt;/a&gt;. "></outline>
+				<outline created="Sat, 04 Sep 2021 21:51:11 GMT" text="I'm glad to have another set of eyes look at this stuff. "></outline>
+				<outline created="Sat, 04 Sep 2021 21:51:29 GMT" text="There's more to review: esp PagePark, daveappserver."></outline>
+				</outline>
+			<outline created="Sat, 04 Sep 2021 15:49:19 GMT" text="Bookmarks bug fix, video" type="outline">
+				<outline created="Sat, 04 Sep 2021 15:50:07 GMT" text="When you create a bookmark, Drummer not only remembers and opens the file, it also remembers where the cursor was when you created the bookmark, and the cursor goes there when you open the bookmark. I fixed a bug so now this important feature works again. "></outline>
+				<outline created="Sat, 04 Sep 2021 15:50:41 GMT" text="Also, the bookmark still works if you move the node you bookmarked to another location in the file. In other words it's not based on the path to the node."></outline>
+				<outline created="Sat, 04 Sep 2021 15:49:43 GMT" text="Here's a &lt;a href=&quot;https://www.youtube.com/watch?v=u4pN9L2ArGs&quot;&gt;video demo&lt;/a&gt; of the feature. " urlvideo="https://www.youtube.com/watch?v=u4pN9L2ArGs"></outline>
+				</outline>
+			<outline created="Sat, 04 Sep 2021 20:41:10 GMT" text="&quot;Include&quot; nodes get a power boost" type="outline">
+				<outline created="Sat, 04 Sep 2021 21:50:15 GMT" text="New feature: inter-outline inclusion."></outline>
+				<outline created="Sat, 04 Sep 2021 20:41:26 GMT" text="Include nodes point to other outlines, anywhere on the web. When you double-click on one, Drummer, behind the scenes, reads the other outline, and drops the result under the bar cursor headline. It sounds complicated and time consuming, perhaps -- but it's not. Today's internet is amazingly fast, and so is the computer you're running Drummer on. There is documentation on include nodes &lt;a href=&quot;http://opml.org/spec2.opml#1629042832000&quot;&gt;in the OPML spec&lt;/a&gt;. "></outline>
+				<outline created="Sat, 04 Sep 2021 20:43:16 GMT" text="Drummer has one enhancement implemented, and another mostly implemented as of today. ">
+					<outline created="Sat, 04 Sep 2021 20:43:44 GMT" text="You can use file:// urls in include nodes, they point to files in your Drummer account.  "></outline>
+					<outline created="Sat, 04 Sep 2021 20:44:41 GMT" text="You can include part of an outline, by using an identifier for the node in the outline you want to include. "></outline>
+					<outline created="Sat, 04 Sep 2021 20:45:15 GMT" text="The two features work together, so you can include part of an outline in your Drummer account. "></outline>
+					</outline>
+				<outline created="Sat, 04 Sep 2021 20:45:31 GMT" text="There is no spec on the partial inclusion, so I'll give you a preview here.">
+					<outline created="Sat, 04 Sep 2021 20:45:54 GMT" text="http://drummer.scripting.com/cluelessnewbie/states.opml?node=1599234206000"></outline>
+					<outline created="Sat, 04 Sep 2021 20:46:32 GMT" text="That points to a section of the states outline in my test account. "></outline>
+					<outline created="Sat, 04 Sep 2021 20:46:50 GMT" text="If you create an include node with that as the url attribute, you'll get part of the states outline, not the whole thing."></outline>
+					<outline created="Sat, 04 Sep 2021 20:48:16 GMT" text="Here's a demo. Double-click on it in Drummer. Be sure to reload the app before doing so (new software)." type="include" url="http://drummer.scripting.com/cluelessnewbie/states.opml?node=1599234206000"></outline>
+					<outline created="Sat, 04 Sep 2021 21:54:02 GMT" text="(The demo only works in Drummer, not in the email or on the blog.) "></outline>
+					<outline created="Sat, 04 Sep 2021 20:49:47 GMT" text="I love this soooo much. Been wanting to get to this place for quite some time. Other devs are working in this area, but I don't think anyone is this far along. We shall see."></outline>
+					<outline created="Sat, 04 Sep 2021 20:50:22 GMT" text="If you were a ThinkTank/MORE user, this is a web-like version of cloning, which was a very popular feature."></outline>
+					<outline created="Sat, 04 Sep 2021 20:50:49 GMT" text="(We have some MORE users in the loop now, btw.)"></outline>
+					</outline>
+				<outline created="Sat, 04 Sep 2021 20:51:17 GMT" text="BTW, many of you already know how to use the suitcase icon to look at the attributes of a headline. You can very clearly see what's going on by looking at the demo node and seeing what the attributes are. Very low-tech. &quot;Small pieces loosely joined.&quot;"></outline>
+				<outline created="Sat, 04 Sep 2021 20:53:35 GMT" text="What's not finished about this? Not sure. It's very new, so I want to let it settle in. Use the feature lightly, there very likely will be breakage. :boom:"></outline>
+				</outline>
+			<outline created="Sat, 04 Sep 2021 14:57:59 GMT" text="Support forums are just for support" type="outline">
+				<outline created="Sat, 04 Sep 2021 14:58:10 GMT" text="I'm going to be a super hardass about this so test me if you want, but there will be no &quot;give.&quot;"></outline>
+				<outline created="Sat, 04 Sep 2021 14:58:29 GMT" text="The only reason I'm running the private testing repo is to answer questions for users who need help."></outline>
+				<outline created="Sat, 04 Sep 2021 14:58:55 GMT" text="I also love it when other users help, when they know they have the answer. Don't guess here, we'll get the right answer. If you don't know the answer, kick back."></outline>
+				<outline created="Sat, 04 Sep 2021 14:59:26 GMT" text="A couple of times people have innocently asked questions of people, which I understand, we're all community-oriented but the support forum is not for that. Why? Because I know where that goes, I've been there many times, and I don't want to go there. "></outline>
+				<outline created="Sat, 04 Sep 2021 15:00:24 GMT" text="People behave weirdly in mail lists and in spaces where everyone is following everyone. It becomes about power. &quot;Who does he think he is?&quot; Well here, in support for a product I am developing, I am in fact a special person. Usually in support forums you don't communicate with the person developing the product. But I need to do that, to do my job. It's &lt;i&gt;how&lt;/i&gt; I do my job at this stage in its development, with contact with users."></outline>
+				<outline created="Sat, 04 Sep 2021 15:04:28 GMT" text="Once when I was testing a product, naively, gave everyone the means to communicate with every other user in the product itself. I had to kill the product because in about a week they were telling me what to do with my time. People very quickly forget in these contexts how to be a decent human being. "></outline>
+				<outline created="Sat, 04 Sep 2021 15:02:33 GMT" text="Anyway -- we need a way to help people get their questions answered. So that's where the line is. And as I said at the top, there is no give. "></outline>
+				</outline>
+			</outline>
+		<outline created="Fri, 03 Sep 2021 13:40:34 GMT" name="03" text="September 3" type="calendarDay">
+			<outline created="Fri, 03 Sep 2021 16:06:49 GMT" text="New doc: Outlines in Drummer" type="outline">
+				<outline created="Fri, 03 Sep 2021 16:06:51 GMT" text="&lt;a href=&quot;http://docserver.scripting.com/drummer/outliner.opml&quot;&gt;Outlines in Drummer&lt;/a&gt;."></outline>
+				<outline created="Fri, 03 Sep 2021 16:09:48 GMT" text="Added to the Docs menu."></outline>
+				</outline>
+			<outline created="Fri, 03 Sep 2021 14:45:11 GMT" text="Checking in with new Drummer users" type="outline">
+				<outline created="Fri, 03 Sep 2021 14:45:16 GMT" text="Yesterday we added new users to the Drummer test group.  "></outline>
+				<outline created="Fri, 03 Sep 2021 14:45:28 GMT" text="If you're part of this group, you should have a fresh new-user experience in your mind, having created an account on Drummer, and seen your Notes outline open, and maybe tried to do something beyond that. "></outline>
+				<outline created="Fri, 03 Sep 2021 14:45:57 GMT" text="Do you have any observations on the new-user experience?"></outline>
+				<outline created="Fri, 03 Sep 2021 14:47:25 GMT" text="&lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/33&quot;&gt;Here's&lt;/a&gt; a place to comment."></outline>
+				</outline>
+			<outline created="Fri, 03 Sep 2021 17:05:49 GMT" text="Enabling/disabling Reorg menu items" type="outline">
+				<outline created="Fri, 03 Sep 2021 17:05:59 GMT" text="The items in the Reorg menu now are enabled or disabled based on where the bar cursor is.">
+					<outline created="Fri, 03 Sep 2021 17:06:21 GMT" text="Move Up is enabled if you're not on the first headline at a level."></outline>
+					<outline created="Fri, 03 Sep 2021 17:07:02 GMT" text="Move Down is enabled if you're not on the last headline at a level."></outline>
+					<outline created="Fri, 03 Sep 2021 17:07:16 GMT" text="Move Left is enabled if you're not on a summit."></outline>
+					<outline created="Fri, 03 Sep 2021 17:07:26 GMT" text="Move Right is enabled if you're not the first item at a level."></outline>
+					<outline created="Fri, 03 Sep 2021 17:07:55 GMT" text="Promote is enabled if you're on a headline that has subs."></outline>
+					<outline created="Fri, 03 Sep 2021 17:08:13 GMT" text="Demote is enabled if you're not on the last headline at a level."></outline>
+					</outline>
+				<outline created="Fri, 03 Sep 2021 17:08:33 GMT" text="Bonus -- a few items in the Outliner menu are smart this way too">
+					<outline created="Fri, 03 Sep 2021 17:08:49 GMT" text="Expand is enabled if the headline has subs that are not expanded."></outline>
+					<outline created="Fri, 03 Sep 2021 17:09:04 GMT" text="Collapse is enabled if the headline has subs that are expanded."></outline>
+					<outline created="Fri, 03 Sep 2021 17:09:16 GMT" text="Hoist is enabled if the bar cursor headline has subs."></outline>
+					<outline created="Fri, 03 Sep 2021 17:09:26 GMT" text="Dehoist is enabled if something is hoisted."></outline>
+					</outline>
+				<outline created="Fri, 03 Sep 2021 17:09:34 GMT" text="The expensive/hard ones are Expand Everything and Collapse Everything">
+					<outline created="Fri, 03 Sep 2021 17:09:51 GMT" text="For big outlines expand everything could slow things down, or so I imagine..."></outline>
+					<outline created="Fri, 03 Sep 2021 17:10:11 GMT" text="Collapse Everything is difficult to program, but certainly not impossible.">
+						<outline created="Fri, 03 Sep 2021 17:10:50 GMT" text="The question is this -- are any of the summits expanded?"></outline>
+						<outline created="Fri, 03 Sep 2021 17:11:04 GMT" text="I don't have a good visit routine for visiting all the summits. "></outline>
+						<outline created="Fri, 03 Sep 2021 17:11:15 GMT" text="Not hard to write, I just don't have it handy. ÝÄù¥"></outline>
+						</outline>
+					</outline>
+				</outline>
+			<outline created="Fri, 03 Sep 2021 14:36:21 GMT" text="Drummer with no open tabs" type="outline">
+				<outline created="Fri, 03 Sep 2021 14:36:32 GMT" text="If you close all the tabs, previous versions would fail when trying to update the atts display at the bottom of the display. "></outline>
+				<outline created="Fri, 03 Sep 2021 14:36:56 GMT" text="Now we just display an empty string in its place. No more errors. "></outline>
+				</outline>
+			<outline created="Fri, 03 Sep 2021 14:14:27 GMT" text="Clicking + icon for read-only outlines" type="outline">
+				<outline created="Fri, 03 Sep 2021 14:14:03 GMT" text="It used to work. Bug. Fixed. "></outline>
+				</outline>
+			<outline created="Thu, 02 Sep 2021 19:50:43 GMT" text="DrummerCMS" type="outline">
+				<outline created="Thu, 02 Sep 2021 19:50:51 GMT" text="I uploaded the &lt;a href=&quot;https://github.com/scripting/drummerCms/blob/main/templates/minimal/index.html&quot;&gt;default template&lt;/a&gt; described yesterday in the &lt;a href=&quot;https://github.com/scripting/drummerCms&quot;&gt;drummerCms&lt;/a&gt; repo."></outline>
+				<outline created="Thu, 02 Sep 2021 19:51:31 GMT" text="Updated the &lt;a href=&quot;https://github.com/scripting/drummerCms/blob/main/README.md&quot;&gt;readme&lt;/a&gt;. "></outline>
+				</outline>
+			<outline created="Fri, 03 Sep 2021 13:43:30 GMT" text="When asking for help, check to see if you can repeat the problem" type="outline">
+				<outline created="Fri, 03 Sep 2021 13:43:54 GMT" text="Before reporting a problem, make sure it's repeatable. That's the first thing I'm going to need to do."></outline>
+				<outline created="Fri, 03 Sep 2021 13:44:31 GMT" text="When repeating it, read and follow the docs, and this time do it more carefully than the first time. I always try to provide a clear checklist of things you need to do. There aren't many wasted words in those checklists. You need to read all of them. "></outline>
+				<outline created="Fri, 03 Sep 2021 13:51:00 GMT" text="My process, on getting a problem report is:">
+					<outline created="Fri, 03 Sep 2021 13:51:07 GMT" text="I assume the person repeated it and it's a real problem."></outline>
+					<outline created="Fri, 03 Sep 2021 13:55:39 GMT" text="Sometimes there isn't enough info to repeat it, and I have to decide whether to ask for more info or move on.  "></outline>
+					<outline created="Fri, 03 Sep 2021 13:51:20 GMT" text="But if there is enough info, I go to the docs, and do it myself. "></outline>
+					<outline created="Fri, 03 Sep 2021 13:51:32 GMT" text="If I spot the problem, good -- this was a success. If not, we begin a process to find out if the product is wrong, or the user is. "></outline>
+					</outline>
+				<outline created="Fri, 03 Sep 2021 13:51:57 GMT" text="If you don't try to repeat it before reporting it, there's a good chance it was your mistake, not the software's. And we will have wasted time that could have been spent more productively."></outline>
+				</outline>
+			</outline>
+		<outline created="Thu, 02 Sep 2021 15:17:39 GMT" name="02" text="September 2" type="calendarDay">
+			<outline created="Thu, 02 Sep 2021 15:17:40 GMT" text="New template for blogs" type="outline">
+				<outline created="Thu, 02 Sep 2021 15:39:34 GMT" text="I just changed the default template for Drummer-built blogs."></outline>
+				<outline created="Thu, 02 Sep 2021 16:24:07 GMT" text="You can see what the finished product looks like at the &lt;a href=&quot;http://oldschool.scripting.com/cluelessnewbie/&quot;&gt;cluelessnewbie blog&lt;/a&gt;, where I experiment with this kind of stuff. "></outline>
+				<outline created="Thu, 02 Sep 2021 15:39:46 GMT" text="To see the change reflected in your blog, just rebuild your blog, and have a look."></outline>
+				<outline created="Thu, 02 Sep 2021 15:40:10 GMT" text="You'll see two big changes:">
+					<outline created="Thu, 02 Sep 2021 15:40:28 GMT" text="Your blog is in a tab."></outline>
+					<outline created="Thu, 02 Sep 2021 15:40:33 GMT" text="And you can see when it was last updated."></outline>
+					</outline>
+				<outline created="Thu, 02 Sep 2021 15:40:42 GMT" text="There are two more tabs you can activate, by adding head-level attributes. ">
+					<outline created="Thu, 02 Sep 2021 15:41:06 GMT" text="urlLinkblogJson">
+						<outline created="Thu, 02 Sep 2021 15:41:27 GMT" text="This is a file that's generated by radio3.io. "></outline>
+						<outline created="Thu, 02 Sep 2021 15:41:43 GMT" text="The URL for my linkblog JSON file is: http://radio3.io/users/davewiner/linkblog.json"></outline>
+						<outline created="Thu, 02 Sep 2021 15:42:03 GMT" text="If you have a Radio3 linkblog, yours is just like mine, except of course replace my name with yours. If you add a &lt;i&gt;urlLinkblogJson&lt;/i&gt; head-level attribute with this value and rebuild you will have a second tab, Links."></outline>
+						</outline>
+					<outline created="Thu, 02 Sep 2021 15:41:26 GMT" text="urlAboutOpml">
+						<outline created="Thu, 02 Sep 2021 15:43:17 GMT" text="If you have a head-level attribute named &lt;i&gt;urlAboutOpml&lt;/i&gt;, there will be a third tab, named About, displaying the contents of this outline."></outline>
+						<outline created="Thu, 02 Sep 2021 16:00:18 GMT" text="You can of course use Drummer to write that outline."></outline>
+						</outline>
+					</outline>
+				<outline created="Thu, 02 Sep 2021 15:44:05 GMT" text="If you want to go back to the previous template...">
+					<outline created="Thu, 02 Sep 2021 15:44:28 GMT" text="Add a head-level attribute named &lt;i&gt;urlTemplate&lt;/i&gt; and set it to this value:"></outline>
+					<outline created="Thu, 02 Sep 2021 15:44:48 GMT" text="http://scripting.com/code/drummercms/template/index.html"></outline>
+					</outline>
+				<outline created="Thu, 02 Sep 2021 15:45:27 GMT" text="I'm going to upload the source for the template HTML, CSS and JavaScript to the &lt;a href=&quot;https://github.com/scripting/drummerCms&quot;&gt;DrummerCMS&lt;/a&gt; repo, so you can if you're skilled in this tech, create your own template, and you could theoretically add more tabs by following the example in the code. I would like to see one or two people take up that project. Two templates are a lot more fun than one. ÝÄù¥"></outline>
+				<outline created="Thu, 02 Sep 2021 15:56:02 GMT" text="&lt;a href=&quot;https://github.com/scripting/drummerTesting/issues/30#issuecomment-908774936&quot;&gt;Here's&lt;/a&gt; where you can ask questions."></outline>
+				</outline>
+			</outline>
+		<outline created="Wed, 01 Sep 2021 12:46:55 GMT" name="01" text="September 1" type="calendarDay">
+			<outline created="Wed, 01 Sep 2021 12:48:13 GMT" text="Change notes outline" type="outline">
+				<outline created="Wed, 01 Sep 2021 12:48:18 GMT" text="This marks the first complete month for the change notes outline for Drummer. I'd say it's been a success. I plan to keep doing it. "></outline>
+				</outline>
+			<outline created="Wed, 01 Sep 2021 12:46:56 GMT" text="Old School" type="outline">
+				<outline created="Wed, 01 Sep 2021 12:47:01 GMT" text="I did the monthly rollover on Scripting News and I'm happy to report the caching appears to have worked. So the radical change I made a couple of days ago seems to have worked. Onward! ÝÄù¥"></outline>
+				</outline>
+			</outline>
+		</body>
+	</opml>
