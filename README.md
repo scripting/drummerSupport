@@ -34,7 +34,7 @@ We have docs! Here are some of them. You'll see links to others in the sidebars,
 
 * <a href="http://docserver.scripting.com/">DocServer</a> -- a collection of docs for the verb set.
 
-* <a href="http://drummer.scripting.com/davewiner/drummer/changeNotes.opml">Change notes</a> (opens in Drummer)
+* <a href="http://drummer.scripting.com/?url=http://drummer.scripting.com/davewiner/drummer/changeNotes.opml">Change notes</a> (opens in Drummer)
 
 For developers there are also docs that explain <a href="http://this.how/opmlChecklist/">how to support OPML</a>, and provide working code in JavaScript. OPML is the file format for outlines in Drummer. It's also a widely used format in the RSS world.  
 
