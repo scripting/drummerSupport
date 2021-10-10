@@ -4,15 +4,11 @@ A public site for support of <a href="http://drummer.scripting.com/">Drummer</a>
 
 ### What is Drummer?
 
-Drummer is a web scripting environment built around outlining and JavaScript.
+<a href="http://docserver.scripting.com/drummer/electricDrummer.opml">Drummer</a> is a web scripting environment built around outlining and JavaScript.
 
 A <a href="http://scripting.com/2021/04/03/133021.html?title=theMakingOfDrummer">blog post</a> I wrote about Drummer, in development, in April 2021. 
 
 v2.0.9, the first public version of Drummer, was released on October 10, 2021.
-
-### Quick overview
-
-Please give <a href="http://drummer.scripting.com/">Drummer</a> a try.
 
 We're basically retracing the steps that led to Frontier from a user scripting standpoint. Only this time the language is JavaScript, and the <a href="http://scripting.com/code/docserver/?verb=op.go">verb set</a> applies to files and apps that exist in the cloud. 
 
@@ -24,7 +20,7 @@ An <a href="http://docserver.scripting.com/drummer/electricDrummer.opml">Electro
 
 ### Docs
 
-There are lots of docs! Here are some of them. You'll see links to others in the sidebars, and in the Docs menu in Drummer.  
+We have docs! Here are some of them. You'll see links to others in the sidebars, and in the Docs menu in Drummer itself.  
 
 * <a href="http://docserver.scripting.com/drummer/about.opml">About Drummer</a>
 
