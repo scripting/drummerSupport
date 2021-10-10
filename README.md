@@ -40,7 +40,7 @@ For developers there are also docs that explain <a href="http://this.how/opmlChe
 
 ### Questions/comments...
 
-Add an item to this thread, or start one of your own.
+Add an item to <a href="https://github.com/scripting/drummerTesting/issues/38">this thread</a>, or start one of your own.
 
 Remember, when explaining a problem be sure to 
 
